@@ -3,36 +3,56 @@ Current Flow=Generic
 VCS=0
 version=4
 Current Config=compile
+
 [Configurations]
 compile=MainModule
+
 [Library]
 MainModule=.\MainModule\MainModule.lib
+
 [$LibMap$]
 MainModule=.
 Active_lib=
+
 [Settings]
 FLOW_TYPE=HDL
 LANGUAGE=VERILOG
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
-[Files]
-/MainModule.v=-1
-/timer.v=-1
-/serialOut.v=-1
-/serialIn.v=-1
-/TestBench.v=-1
-/..\..\..\..\..\3-Electro3\TPs\TP2\MainModule\src\simulation.awc=-1
+fileopenfolder=D:\Electronica\Electronica 3\TP2\TP2-G2_E3\MainModule\src\testbenches
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
 [Files.Data]
 .\src\MainModule.v=Verilog Source Code
 .\src\timer.v=Verilog Source Code
 .\src\serialOut.v=Verilog Source Code
 .\src\serialIn.v=Verilog Source Code
-.\src\TestBench.v=Verilog Source Code
-.\..\..\..\..\3-Electro3\TPs\TP2\MainModule\src\simulation.awc=Accelerated Waveform Configuration
-[SpecTracer]
-WindowVisible=0
-[HierarchyViewer]
-HierarchyInformation=
-ShowHide=ShowTopLevel
-Selected=
+.\src\CodeChecker.v=Verilog Source Code
+.\src\easySerialOut.v=Verilog Source Code
+.\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.asdb=Accelerated Waveform File
+.\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.awc=Accelerated Waveform Configuration
+.\src\MainTestBench.v=Verilog Source Code
+.\src\testEasySerialOut.v=Verilog Source Code
+.\src\testTimer.v=Verilog Source Code
+
+[Files]
+/MainModule.v=-1
+/timer.v=-1
+/serialOut.v=-1
+/serialIn.v=-1
+/CodeChecker.v=-1
+/easySerialOut.v=-1
+/MainTestBench.v=-1
+/testEasySerialOut.v=-1
+/testTimer.v=-1
+/..\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.asdb=-1
+/..\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.awc=-1
+

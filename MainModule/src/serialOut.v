@@ -1,8 +1,3 @@
-
-
-
-
-
 module serialOut (
     input wire init,        // Recibo de aviso de transmisión
     input wire clk,         // señal de clock

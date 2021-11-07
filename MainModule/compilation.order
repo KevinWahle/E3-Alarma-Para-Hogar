@@ -2,4 +2,8 @@
 .\src\timer.v
 .\src\serialOut.v
 .\src\serialIn.v
-.\src\TestBench.v
+.\src\CodeChecker.v
+.\src\easySerialOut.v
+.\src\MainTestBench.v
+.\src\testEasySerialOut.v
+.\src\testTimer.v

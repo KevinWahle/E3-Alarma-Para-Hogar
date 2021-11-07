@@ -4,7 +4,7 @@ module Test;
 
     wire STATUS_OUT_; //Datos
     wire STATUS_SEND_; //Habilitador
-    reg KB_IN_;   //Datos
+    reg [1:0] KB_IN_;   //Datos
     reg KB_RECV_;   //Habilitador 
 
     wire CTRL_IN_, CTRL_RECV_, CTRL_CLK_;
@@ -24,9 +24,18 @@ module Test;
 initial begin
 	#10ns SENSOR1_IN_ = 0;
 	#10ns SENSOR2_IN_ = 0;
-	#10ns KB_RECV_ = 1;
-	#50ns KB_RECV_ = 0;
 	#50ns SENSOR1_IN_ = 1;
+
+	#5ns KB_IN_={1'b1,1'b1};
+	#5ns KB_RECV_ =1; KB_IN_= 0; 
+	#1ns KB_RECV_ =0;
+	#5ns KB_RECV_ =1; KB_IN_=1; 
+	#1ns KB_RECV_ =0;
+	#5ns KB_RECV_ =1; KB_IN_=2;
+	#1ns KB_RECV_ =0;
+	#5ns KB_RECV_ =1; KB_IN_=3;
+	#1ns KB_RECV_ =0;
+
 	#400ns $finish;	
 	
 end

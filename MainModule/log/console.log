@@ -1,0 +1,983 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MainModule.v : (52, 34): Syntax error. Unexpected token: ;.
+# Error: VCP2000 MainModule.v : (88, 16): Syntax error. Unexpected token: default[_DEFAULT].
+# Error: VCP2020 MainModule.v : (90, 12): begin...end pair(s) mismatch detected. 1 <end> tokens are missing.
+# Error: VCP2020 MainModule.v : (90, 12): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 MainModule.v : (90, 12): Syntax error. Unexpected token: endcase[_ENDCASE].
+# Info: VCP2113 Module timer found in current working library.
+# Compile failure 5 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2000 MainModule.v : (52, 24): Syntax error. Unexpected token: ==[O_EQU].
+# Error: VCP2804 MainModule.v : (52, 33): Task name expected: NO_KEY.
+# Compile failure 2 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+# Warning: Content of 'wave.asdb' has changed after last modification of AWC file.
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialOut serialIn Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 +access +r +m+Test Test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 6 (100.00%) other processes in SLP
+# SLP: 36 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5524 kB (elbread=1280 elab2=4110 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:26, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialOut serialIn Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+run
+run
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+Test Test
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 6 (100.00%) other processes in SLP
+# SLP: 36 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5524 kB (elbread=1280 elab2=4110 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:26, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# Adding file D:\Users\nicob\Desktop\ITBA\3-Electro3\TPs\TP2\MainModule\src\simulation.awc ... Done
+asim +acces +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module MainModule found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:28, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0085 "/Test/SERCLK_OUT_" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/SIREN_OUT_" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/SENSOR1_IN_" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/SENSOR2_IN_" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/KB_RECV_" does not have read access. Use switch +access +r for this region.
+# Warning: WAVEFORM: Object matching /Test/SERCLK_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/SIREN_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/SENSOR1_IN_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/SENSOR2_IN_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/KB_RECV_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# KERNEL: Warning: KERNEL_0085 "/Test/SERCLK_OUT_" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+# Warning: WAVEFORM: Object matching /Test/SERCLK_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# KERNEL: Warning: KERNEL_0085 "/Test/SERCLK_OUT_" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+# Warning: WAVEFORM: Object matching /Test/SERCLK_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+endsim
+# VSIM: Simulation has finished.
+run
+# Simulation not initialized
+asim +acces +r
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:28, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+asim +acces +r
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:29, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0085 "/Test/SERCLK_OUT_" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+# Warning: WAVEFORM: Object matching /Test/SERCLK_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# KERNEL: Warning: KERNEL_0085 "/Test/SERCLK_OUT_" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+# Warning: WAVEFORM: Object matching /Test/SERCLK_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+run
+# KERNEL: Warning: KERNEL_0085 "/Test/SERCLK_OUT_" does not have read access. Use switch +access +r for this region.
+# 0 signal(s) traced.
+# Warning: WAVEFORM: Object matching /Test/SERCLK_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+endsim
+# VSIM: Simulation has finished.
+asim +access +r
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:31, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+# 1 signal(s) traced.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+run
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+All-Verilog
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.4 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:32, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0085 "/Test/SERCLK_OUT_" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/alarmante/state" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/alarmante/SENSOR2_IN" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/alarmante/SIREN_OUT" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: KERNEL_0085 "/Test/alarmante/KB_RECV" does not have read access. Use switch +access +r for this region.
+# Warning: WAVEFORM: Object matching /Test/SERCLK_OUT_ not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/alarmante/state not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/alarmante/SENSOR2_IN not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/alarmante/SIREN_OUT not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /Test/alarmante/KB_RECV not found in D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:32, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 110 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 110 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module MainModule found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:34, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 180 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 180 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# Adding file D:\Users\nicob\Desktop\ITBA\3-Electro3\TPs\TP2\MainModule\src\simulation.awc ... Done
+# Adding file D:\Users\nicob\Desktop\ITBA\3-Electro3\TPs\TP2\MainModule\src\simulation.awc ... Done
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:38, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 230 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# Adding file D:\Users\nicob\Desktop\ITBA\3-Electro3\TPs\TP2\MainModule\src\simulation.awc ... Done
+# 1 signal(s) traced.
+# 1 signal(s) traced.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/timer.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module MainModule found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:40, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 230 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module MainModule found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:41, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 530 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 530 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:44, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 530 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 530 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP2980 MainModule.v : (83, 30): Variable 'TIME_OUT' cannot be driven by both procedural and continuous assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 1[s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:44, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.4 [s]
+# SLP: Finished : 0.5 [s]
+# SLP: 0 primitives and 8 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:45, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 530 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 530 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+asim +access +r
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/timer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: MainModule.v (27): Length of connection (32) does not match the length of port "RST" (1) on instance "/Test/alarmante/mainTimer".
+# SLP: Elaboration phase ... done : 0.0 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.5 [s]
+# SLP: Finished : 0.6 [s]
+# SLP: 0 primitives and 9 (100.00%) other processes in SLP
+# SLP: 49 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.6 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5526 kB (elbread=1280 elab2=4112 kernel=133 sdf=0)
+# KERNEL: ASDB file was created in location D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2\MainModule\src\wave.asdb
+#  20:46, sábado, 6 de noviembre de 2021
+#  Simulation has been initialized
+# Waveform file 'D:/Users/nicob/Desktop/ITBA/3-Electro3/TPs/TP2/MainModule/src/simulation.awc' connected to 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 TestBench.v (30): $finish called.
+# KERNEL: Time: 530 ns,  Iteration: 0,  Instance: /Test,  Process: @INITIAL#24_0@.
+# KERNEL: stopped at time: 530 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# Adding file D:\Users\nicob\Desktop\ITBA\3-Electro3\TPs\TP2\MainModule\src\simulation.awc ... Done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialOut serialIn Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialOut serialIn Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MainModule.v : (133, 10): Syntax error. Unexpected token: endmodule[_ENDMODULE].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module timer found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialOut serialIn Test.
+# $root top modules: Test serialOut serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MainModule.v : (40, 28): Syntax error. Unexpected token: ,.
+# Warning: VCP2515 MainModule.v : (40, 40): Undefined module: SENSOR2_IN was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MainModule.v : (38, 28): Syntax error. Unexpected token: ,.
+# Warning: VCP2515 MainModule.v : (38, 40): Undefined module: SENSOR2_IN was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 1 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP2000 MainModule.v : (38, 17): Syntax error. Unexpected token: [.
+# Error: VCP2000 MainModule.v : (38, 42): Syntax error. Unexpected token: 0[_0].
+# Warning: VCP2515 MainModule.v : (38, 28): Undefined module: SENSOR1_IN was used. Port connection rules will not be checked at such instantiations.
+# Compile failure 2 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP5200 MainModule.v : (38, 46): Only a sized object can be concatenated - assuming 32 bit: 0.
+# Warning: VCP5200 MainModule.v : (38, 46): Only a sized object can be concatenated - assuming 32 bit: 0.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialIn Test.
+# $root top modules: Test serialIn.
+# Compile success 0 Errors 2 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP5200 MainModule.v : (38, 46): Only a sized object can be concatenated - assuming 32 bit: 0.
+# Warning: VCP5200 MainModule.v : (38, 46): Only a sized object can be concatenated - assuming 32 bit: 0.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialIn Test.
+# $root top modules: Test serialIn.
+# Compile success 0 Errors 2 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialIn Test.
+# $root top modules: Test serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/TestBench.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: serialIn Test.
+# $root top modules: Test serialIn.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# Adding file D:\Users\nicob\Desktop\ITBA\3-Electro3\TPs\TP2\MainModule\src\simulation.awc ... Done

@@ -1,0 +1,5 @@
+.\src\MainModule.v
+.\src\timer.v
+.\src\serialOut.v
+.\src\serialIn.v
+.\src\TestBench.v

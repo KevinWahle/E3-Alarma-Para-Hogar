@@ -1,0 +1,11 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\MainModule.v|]
+TemplateId=2
+ActiveDocument=1
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench.v|]
+TemplateId=2
+[OPENDOC|Aldec.WaveFormASDB.7|.\..\..\..\..\3-Electro3\TPs/TP2/MainModule/src/simulation.awc|]
+TemplateId=1
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\timer.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\serialOut.v|]
+TemplateId=2

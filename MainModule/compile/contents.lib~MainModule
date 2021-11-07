@@ -1,0 +1,13 @@
+68
+~M 0 "" 0 $root
+~A 1 "" 0 $root
+~M 1 "../src/MainModule.v" 1 MainModule
+~A 1 "../src/MainModule.v" 1 MainModule
+~M 3 "../src/TestBench.v" 1 Test
+~A 1 "../src/TestBench.v" 1 Test
+~M 3 "../src/serialIn.v" 1 serialIn
+~A 1 "../src/serialIn.v" 1 serialIn
+~M 1 "../src/serialOut.v" 6 serialOut
+~A 1 "../src/serialOut.v" 6 serialOut
+~M 1 "../src/timer.v" 4 timer
+~A 1 "../src/timer.v" 4 timer

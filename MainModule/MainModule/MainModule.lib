@@ -1,6 +1,12 @@
-timestamp=1636243545410
+timestamp=1636261010485
 
 [~A]
+CUSP_Counter=7
+D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/MainModule.v=0*217478*218933
+D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/MainModule.v_timer.v_serialOut.v_serialIn.v_CodeChecker.v_easySerialOut.v_MainTestBench.v_testEasySerialOut.v_testTimer.v=0*236322*239886
+D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/MainModule.v_timer.v_serialOut.v_serialIn.v_TestBench.v=0*180908*183414
+D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/MainModule.v_timer.v_serialOut.v_serialIn.v_TestBench.v_CodeChecker.v_easySerialOut.v=0*205005*208165
+D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/TestBench.v=0*215469*216234
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/MainModule.v=0*150055*151323
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/MainModule.v_TestBench.v=0*127851*129435
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/MainModule.v_timer.v_TestBench.v=0*88258*90010
@@ -10,60 +16,102 @@ D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/TestBench.v=0*132
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/serialOut.v=0*61943*62601
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/timer.v=0*139289*139959
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/timer.v_TestBench.v=0*130661*131695
-LastVerilogToplevel=Test
-ModifyID=68
+LastVerilogToplevel=testCLK
+ModifyID=82
 Version=74
 
 [~MFT]
-0=10|0MainModule.mgf|174056|107766
-1=12|1MainModule.mgf|325967|317293
-3=24|3MainModule.mgf|245764|238139
+0=16|0MainModule.mgf|239886|137340
+1=22|1MainModule.mgf|491226|472449
+3=44|3MainModule.mgf|368452|353934
 
 [$root]
-A/$root=22|||1*317293
-BinI32/$root=3*238139
-SLP=3*238243
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92164175d4be24aa021893d989f5719b52dc
+A/$root=22|||1*472449
+BinI32/$root=3*353934
+SLP=3*354038
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216318817742168e2ffdd20c12de7705b34
 
 [MainModule]
-A/MainModule=22|../src/MainModule.v|1|1*317667
-BinI32/MainModule=3*238311
+A/MainModule=22|../src/MainModule.v|1|1*472839
+BinI32/MainModule=3*354106
 R=../src/MainModule.v|1
-SLP=3*240507
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|43615d02bc632f2b0b1ffabf651d78cd833a4c1c8227764e868d33607abb7ea1368a97f4276f3c05c4a1d431794a47ce
+SLP=3*356411
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|43615d02bc632f2b0b1ffabf651d78cd833a4c1c8227764e868d33607abb7ea16b5aab0cbb17a71117953a6493f5d865
 
 [Test]
-A/Test=22|../src/TestBench.v|1|1*325967
-BinI32/Test=3*244871
-R=../src/TestBench.v|1
-SLP=3*245764
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f46b564c3ef88fe1c883b891ccb8cc03859fe5affb3a0678596e403625054146
+A/Test=22|../src/MainTestBench.v|1|1*485420
+BinI32/Test=3*363740
+R=../src/MainTestBench.v|1
+SLP=3*365139
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f46b564c3ef88fe1c883b891ccb8cc0358d154893c2b07dbfe35626ca7b24329
+
+[UnitScopePackage_7]
+A/UnitScopePackage_7=22|../src/MainModule.v|0|1*491226
+BinI32/UnitScopePackage_7=3*368265
+CUSP=1
+R=../src/MainModule.v|0
+SLP=3*368452
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|fab98aed36991913255ea6c02c9bb53eb13ed4abf3b032444233340a25b963b6cb8968a1ed84dabb4b60d18381154dbb
+
+[easySerialOut]
+A/easySerialOut=22|../src/easySerialOut.v|5|1*479215
+BinI32/easySerialOut=3*358856
+R=../src/easySerialOut.v|5
+SLP=3*359497
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c5663e96af30df21e8a6ed0df2d5006479719e6ec52c8a8fe4d0b70a61dc1b3ac53187202b9514a35a5d682e8ed12ea3
+
+[keyChecker]
+A/keyChecker=22|../src/CodeChecker.v|3|1*481011
+BinI32/keyChecker=3*359982
+CUSP=UnitScopePackage_7
+R=../src/CodeChecker.v|3
+SLP=3*361094
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|020ecdcb0820f72a6110ad9c7bd2f26d099e898f144dbe3e7fdd6fa8e1e77f2c0c98deaa1485e8f07b0f3d5c7c54a7c8
 
 [serialIn]
-A/serialIn=22|../src/serialIn.v|1|1*324650
-BinI32/serialIn=3*243955
+A/serialIn=22|../src/serialIn.v|1|1*484103
+BinI32/serialIn=3*362824
 R=../src/serialIn.v|1
-SLP=3*244448
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|29efba79cfa8a5ecebaafe2a26bdd42b56eb0ceb8be75f0fa1debaacb9c1553df49d73c8bc4b6bb0cd95806d7139caaa
+SLP=3*363317
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|29efba79cfa8a5ecebaafe2a26bdd42b56eb0ceb8be75f0fa1debaacb9c1553de1a164cc447321d1ead4f6e622c943bc
 
 [serialOut]
-A/serialOut=22|../src/serialOut.v|6|1*323301
-BinI32/serialOut=3*242789
-R=../src/serialOut.v|6
-SLP=3*243490
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2e284213e73823c3ad7dcaed77b73efae9215e4a9e21b919b5b4f6e3d86a4bf95c82e57359f3fe208f6b76e4a5b5b69
+A/serialOut=22|../src/serialOut.v|1|1*482758
+BinI32/serialOut=3*361660
+R=../src/serialOut.v|1
+SLP=3*362361
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2e284213e73823c3ad7dcaed77b73efae9215e4a9e21b919b5b4f6e3d86a4bf7abacfbe40aa683bcdcabadcd36bccaf
+
+[test]
+A/test=22|../src/testEasySerialOut.v|1|1*487402
+BinI32/test=3*365701
+R=../src/testEasySerialOut.v|1
+SLP=3*366603
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e1f76c805e2c0a9a3d36a8be8882f20658d154893c2b07dbfe35626ca7b24329
+
+[testCLK]
+A/testCLK=22|../src/testTimer.v|1|1*489349
+BinI32/testCLK=3*366950
+R=../src/testTimer.v|1
+SLP=3*367822
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|1c206e98e38e0a3c9cc68fc63886ac5c26527262ddaa47cb266f3a3c4d9b973abe2847499a06e9429ca5a76b819635a0
 
 [timer]
-A/timer=22|../src/timer.v|4|1*321806
-BinI32/timer=3*241535
+A/timer=22|../src/timer.v|4|1*477720
+BinI32/timer=3*357602
 R=../src/timer.v|4
-SLP=3*242251
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c2ae8f0b7b95b6d69da7be83d99f8f49b9d7c11fe8c86cbe1ae73cd46a788886
+SLP=3*358318
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c2ae8f0b7b95b6d69da7be83d99f8f49d7f96226dbbcf00f46ce0186fbe60586
 
 [~U]
-$root=12|0*170143|
-MainModule=12|0*170357|
-Test=12|0*171463||0x10
-serialIn=12|0*171221||0x10
-serialOut=12|0*170982|
-timer=12|0*170742|
+$root=12|0*233632|
+MainModule=12|0*233878|
+Test=12|0*235544||0x10
+UnitScopePackage_7=12|0*236097||0x40200000
+easySerialOut=12|0*234541|
+keyChecker=12|0*234798|
+serialIn=12|0*235302||0x10
+serialOut=12|0*235063|
+test=12|0*235755||0x10
+testCLK=12|0*235930||0x10
+timer=12|0*234301|

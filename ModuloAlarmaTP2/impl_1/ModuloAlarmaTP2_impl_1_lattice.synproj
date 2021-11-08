@@ -1,0 +1,52 @@
+-a "iCE40UP"
+-p iCE40UP5K
+-t SG48
+-sp "High-Performance_1.2V"
+-frequency 200
+-optimization_goal Area
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-fix_gated_clocks 1
+-loop_limit 1950
+
+
+
+
+-use_io_reg auto
+
+
+-sethld
+
+
+
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-sdc "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.sdc"
+-path "C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data" "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/impl_1" "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2"
+-ver "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
+-ver "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v"
+
+
+-path "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2"
+-top MainModule
+-udb "ModuloAlarmaTP2_impl_1_rtl.udb"
+-output_hdl "ModuloAlarmaTP2_impl_1.vm"
+

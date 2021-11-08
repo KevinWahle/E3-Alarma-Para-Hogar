@@ -1,0 +1,103 @@
+
+"C:/Program Files/lscc/radiant/3.0/tcltk/windows/bin/tclsh" "ModuloAlarmaTP2_impl_1_synthesize.tcl"
+
+synthesis -f ModuloAlarmaTP2_impl_1_lattice.synproj
+synthesis:  version Radiant Software (64-bit) 3.0.0.24.1
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Nov  8 00:54:13 2021
+
+
+Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
+
+INFO - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO - User-Selected Strategy SettingsOptimization goal = Area
+Top-level module name = MainModule.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = ModuloAlarmaTP2_impl_1.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.sdc.
+-path C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
+-path D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2 (searchpath added)
+-path D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/impl_1 (searchpath added)
+Mixed language design
+Verilog design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v
+VHDL library = pmi
+VHDL design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v. VERI-1482
+Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
+
+INFO - "c:/programanalyzing package . VHDL-1014unit MainModule is not yet analyzed. VHDL-1485
+INFO - The default VHDL library search path is now ""D:/Electronica/Electronica". VHDL-1504Top module language type = Verilog.
+Top module name (Verilog, mixed language): MainModule
+INFO - "d:/electronica/electronicacompiling module . VERI-1018INFO - "C:/Programcompiling module . VERI-1018INFO - "d:/electronica/electronicacompiling module . VERI-1018WARNING - "d:/electronica/electronicaexpression size  truncated to fit in target size . VERI-1209WARNING - "d:/electronica/electronicaassignment under multiple single edges is not supported for synthesis. VERI-1466WARNING - "d:/electronica/electronicaassignment under multiple single edges is not supported for synthesis. VERI-1466child process exited abnormally
+Fail to run synthesis -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset {D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/promote.xml} 

@@ -14,7 +14,7 @@ reg[1:0] led_sel = 0;
 
 always #10ns clkSignal <= ~clkSignal;
 
-timer myCLK(.EN(1), .clkSignal(clkSignal), .maxCount(maxCount), .clkCont(cont), .clkFinish(finish), .RST(RESET));
+timer myCLK(.EN(1), .clkSignal(clkSignal), .maxCount(maxCount), .clkFinish(finish), .RST(RESET));
 
 initial 
 	begin

@@ -4,6 +4,10 @@ TemplateId=2
 TemplateId=2
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\timer.v|]
 TemplateId=2
+ActiveDocument=1
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\CodeChecker.v|]
 TemplateId=2
-ActiveDocument=1
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\easySerialOut.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\serialIn.v|]
+TemplateId=2

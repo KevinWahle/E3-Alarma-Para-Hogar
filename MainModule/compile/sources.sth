@@ -1,8 +1,8 @@
 [Files List]
-C:\Program Files (x86)\Aldec\Active-HDL-Student-Edition\vlib\std/src/standard.vhd=S
-D:\Electronica\Electronica 3\TP2\TP2-G2_E3\MainModule/src/serialOut.v=S
-D:\Electronica\Electronica 3\TP2\TP2-G2_E3\MainModule/src/CodeChecker.v=S
-D:\Electronica\Electronica 3\TP2\TP2-G2_E3\MainModule/src/easySerialOut.v=S
-D:\Electronica\Electronica 3\TP2\TP2-G2_E3\MainModule/src/timer.v=S
-D:\Electronica\Electronica 3\TP2\TP2-G2_E3\MainModule/src/MainModule.v=S
-D:\Electronica\Electronica 3\TP2\TP2-G2_E3\MainModule/src/MainTestBench.v=S
+C:\Aldec\Active-HDL-Student-Edition\vlib\std/src/standard.vhd=S
+D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\MainModule/src/serialOut.v=S
+D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\MainModule/src/CodeChecker.v=S
+D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\MainModule/src/easySerialOut.v=S
+D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\MainModule/src/timer.v=S
+D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\MainModule/src/MainModule.v=S
+D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\MainModule/src/MainTestBench.v=S

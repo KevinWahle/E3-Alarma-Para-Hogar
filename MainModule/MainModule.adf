@@ -30,6 +30,16 @@ HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
+[Files]
+/MainModule.v=-1
+/timer.v=-1
+/serialOut.v=-1
+/serialIn.v=-1
+/CodeChecker.v=-1
+/easySerialOut.v=-1
+/..\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.asdb=-1
+/..\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.awc=-1
+
 [Files.Data]
 .\src\MainModule.v=Verilog Source Code
 .\src\timer.v=Verilog Source Code
@@ -39,20 +49,4 @@ Selected=
 .\src\easySerialOut.v=Verilog Source Code
 .\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.asdb=Accelerated Waveform File
 .\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.awc=Accelerated Waveform Configuration
-.\src\MainTestBench.v=Verilog Source Code
-.\src\testEasySerialOut.v=Verilog Source Code
-.\src\testTimer.v=Verilog Source Code
-
-[Files]
-/MainModule.v=-1
-/timer.v=-1
-/serialOut.v=-1
-/serialIn.v=-1
-/CodeChecker.v=-1
-/easySerialOut.v=-1
-/MainTestBench.v=-1
-/testEasySerialOut.v=-1
-/testTimer.v=-1
-/..\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.asdb=-1
-/..\..\..\..\..\Electronica3\TP2\TP2-G2_E3\MainModule\src\MainTestWF.awc=-1
 

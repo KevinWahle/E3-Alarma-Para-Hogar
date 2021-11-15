@@ -1,12 +1,12 @@
 module MainModule (
     // I/O PINS
-    output reg SIREN_OUT = 0,   //Salida de sirena
+    output reg SIREN_OUT = 0,   	//Salida de sirena
     input SENSOR1_IN, SENSOR2_IN,  //Sensores
 
     output wire STATUS_OUT, 	//Datos
-    output wire STATUS_SEND, //Habilitador
-    input wire[1:0] KB_IN,   		//Datos
-    input KB_RECV,   	//Habilitador 
+    output wire STATUS_SEND, 	//Habilitador
+    input wire[1:0] KB_IN,   	//Datos
+    input KB_RECV,   			//Habilitador 
 
     output wire SERCLK_OUT,
 
@@ -23,31 +23,28 @@ module MainModule (
     // SET DE TIMER
     wire TIME_OUT;
     reg TIMER_EN;
-    wire [17:0] TIMER_COUNTER = 15000; // 15 Segundos = 150000
-    timer mainTimer (		 // CLK con tiempo customizable
-        .clkSignal(SERCLK_OUT),		        // Señal del CLK a utilizar
-        .maxCount(TIMER_COUNTER),           // Cantidad de pulsos a contar. Max: 262.143e3
-        .EN(TIMER_EN),                      // Señal de ENABLE
-        .RST(1'b0),                            // Señal de RESET
-        .clkFinish(TIME_OUT) 		        // Cuando se llega a 0, emite señal de FINISH (Activo alto)
+    wire [17:0] TIMER_COUNTER = 15000; 	// 15 Segundos = 150000
+    timer mainTimer (		 			// CLK con tiempo customizable
+        .clkSignal(SERCLK_OUT),		    // Señal del CLK a utilizar
+        .maxCount(TIMER_COUNTER),       // Cantidad de pulsos a contar. Max: 262.143e3
+        .EN(TIMER_EN),                  // Señal de ENABLE
+        .RST(1'b0),                     // Señal de RESET
+        .clkFinish(TIME_OUT) 		    // Cuando se llega a 0, emite señal de FINISH (Activo alto)
     );
     //--------------------------------------------------------------------
 
     // SET DE KEYBOARD
     wire [3:0] MSG;
-
     reg INIT = 1;
     easySerialOut STATE_OUT(
-        .EN(1'b1),	        // ENANBLE
-        .CLK(SERCLK_OUT),	    // CLK Signal
-        .msg(MSG),		// Mensaje a transmitir
-        .SB(3), 		// Stand By, canidad de pulsos en los que no se transmite
+        .EN(1'b1),	        		// ENANBLE
+        .CLK(SERCLK_OUT),	    	// CLK Signal
+        .msg(MSG),					// Mensaje a transmitir
+        .SB(3), 					// Stand By, canidad de pulsos en los que no se transmite
         .state_send(STATUS_SEND),	// Aviso de comienzo de transmision	
         .state_out(STATUS_OUT)		// Canal de transmision
     );
     //--------------------------------------------------------------------
-
-
 
     //Variables y parametros
     reg [1:0]state = 0; // Comienza en modo inactivo
@@ -125,10 +122,9 @@ module MainModule (
 	*/
     keyChecker checkitout(KB_RECV, KB_IN[1], KB_IN[0], key, RESULT);
     
-    always @(RESULT) begin
-        KEY_STATUS = RESULT;
-    end
+    //always @(RESULT) begin
+    //    KEY_STATUS = RESULT;
+    //end
     //--------------------------------------------------------------------
  
-
 endmodule

@@ -1,0 +1,9 @@
+DRC: Design Rule Check Radiant Software (64-bit) 3.0.0.24.1
+Sun Nov 14 22:13:03 2021
+
+WARNING - Top module port 'KB_IN[1]' does not connect to anything.
+WARNING - Top module port 'KB_IN[0]' does not connect to anything.
+WARNING - Top module port 'KB_RECV' does not connect to anything.
+WARNING - Top module port 'CTRL_IN' does not connect to anything.
+WARNING - Top module port 'CTRL_RECV' does not connect to anything.
+WARNING - Top module port 'CTRL_CLK' does not connect to anything.

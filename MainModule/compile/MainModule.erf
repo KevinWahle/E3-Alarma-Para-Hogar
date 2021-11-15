@@ -1,14 +1,6 @@
 MESSAGE "Pass 1. Scanning modules hierarchy."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
 BEGINPROGRESS Compiling...
-UPDATEPROGRESS 3
-UPDATEPROGRESS 7
-UPDATEPROGRESS 11
-UPDATEPROGRESS 15
-UPDATEPROGRESS 19
-UPDATEPROGRESS 23
-UPDATEPROGRESS 27
-UPDATEPROGRESS 31
 UPDATEPROGRESS 35
 MESSAGE "Pass 2. Processing instantiations."
 UPDATEPROGRESS 45
@@ -17,20 +9,12 @@ UPDATEPROGRESS 80
 MESSAGE "Running Optimizer."
 MESSAGE "ELB/DAG code generating."
 MESSAGE_SP VCP2113 "Module \$root found in current working library."
-UPDATEPROGRESS 81
-UPDATEPROGRESS 83
 UPDATEPROGRESS 84
-UPDATEPROGRESS 86
-UPDATEPROGRESS 87
-UPDATEPROGRESS 89
-UPDATEPROGRESS 90
+UPDATEPROGRESS 88
 UPDATEPROGRESS 92
-UPDATEPROGRESS 93
-UPDATEPROGRESS 95
 UPDATEPROGRESS 96
-MESSAGE "Unit top modules: serialIn Test test testCLK."
-MESSAGE "$root top modules: Test serialIn test testCLK."
 UPDATEPROGRESS 100
+MESSAGE "$root top modules: Test serialIn test testCLK."
 ENDPROGRESS Compiling...
 SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
 WARNING ALOG: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."

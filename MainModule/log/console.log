@@ -1,2 +1,46 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+# Design Explorer: Shortcut to "D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\MainModule\MainModule.aws" workspace added.
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/timer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialIn test testCLK.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/MainModule.v $dsn/src/timer.v $dsn/src/serialOut.v $dsn/src/serialIn.v $dsn/src/CodeChecker.v $dsn/src/easySerialOut.v $dsn/src/MainTestBench.v $dsn/src/testEasySerialOut.v $dsn/src/testTimer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Error: VCP1010 Cannot find source file: D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/MainModule/src/testTimer.v
+# Error: VCP1010 Cannot find source file: D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/MainModule/src/testEasySerialOut.v
+# Error: VCP1010 Cannot find source file: D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/MainModule/src/MainTestBench.v
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/timer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialIn test testCLK.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work MainModule $dsn/src/timer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: Test serialIn test testCLK.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done

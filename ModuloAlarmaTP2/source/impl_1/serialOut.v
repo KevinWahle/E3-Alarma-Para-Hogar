@@ -12,22 +12,22 @@ module serialOut (
     always @(posedge clk)
 		begin
 			if (counter == 0)
-	            begin
+	        begin
 	                status_send =0;
 	                status_out =0;
 					aux = state;
-	            end
+	        end
 
 			if (init)           // Comienza la transmision
-                begin
+            begin
                 counter = 4;    // Inicio el contador, aviso y empiezo a transmitir
                 status_send =1; 
-                end
+            end
             
             if (counter)    // Transmisión de bits
-                begin
+            begin
                 status_out = aux[counter-1];
                 counter = counter - 1;
-                end  
+            end  
 		end	
 endmodule   

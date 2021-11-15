@@ -4,6 +4,3 @@
 .\src\serialIn.v
 .\src\CodeChecker.v
 .\src\easySerialOut.v
-.\src\MainTestBench.v
-.\src\testEasySerialOut.v
-.\src\testTimer.v

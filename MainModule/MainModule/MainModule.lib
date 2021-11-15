@@ -1,4 +1,4 @@
-timestamp=1636261010485
+timestamp=1636938140603
 
 [~A]
 CUSP_Counter=7
@@ -7,6 +7,7 @@ D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/MainModule.v_timer.v_s
 D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/MainModule.v_timer.v_serialOut.v_serialIn.v_TestBench.v=0*180908*183414
 D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/MainModule.v_timer.v_serialOut.v_serialIn.v_TestBench.v_CodeChecker.v_easySerialOut.v=0*205005*208165
 D:/Electronica/Electronica 3/TP2/TP2-G2_E3/MainModule/src/TestBench.v=0*215469*216234
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/MainModule/src/timer.v=0*244678*245354
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/MainModule.v=0*150055*151323
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/MainModule.v_TestBench.v=0*127851*129435
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/MainModule.v_timer.v_TestBench.v=0*88258*90010
@@ -17,19 +18,19 @@ D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/serialOut.v=0*619
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/timer.v=0*139289*139959
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2/MainModule/src/timer.v_TestBench.v=0*130661*131695
 LastVerilogToplevel=testCLK
-ModifyID=82
+ModifyID=85
 Version=74
 
 [~MFT]
-0=16|0MainModule.mgf|239886|137340
-1=22|1MainModule.mgf|491226|472449
-3=44|3MainModule.mgf|368452|353934
+0=6|0MainModule.mgf|245354|139886
+1=4|1MainModule.mgf|496672|478104
+3=8|3MainModule.mgf|372261|358212
 
 [$root]
-A/$root=22|||1*472449
-BinI32/$root=3*353934
-SLP=3*354038
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216318817742168e2ffdd20c12de7705b34
+A/$root=22|||1*496282
+BinI32/$root=3*371413
+SLP=3*371517
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216795b964766d5b377452617524248166a
 
 [MainModule]
 A/MainModule=22|../src/MainModule.v|1|1*472839
@@ -97,14 +98,14 @@ SLP=3*367822
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|1c206e98e38e0a3c9cc68fc63886ac5c26527262ddaa47cb266f3a3c4d9b973abe2847499a06e9429ca5a76b819635a0
 
 [timer]
-A/timer=22|../src/timer.v|4|1*477720
-BinI32/timer=3*357602
+A/timer=22|../src/timer.v|4|1*496672
+BinI32/timer=3*371585
 R=../src/timer.v|4
-SLP=3*358318
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c2ae8f0b7b95b6d69da7be83d99f8f49d7f96226dbbcf00f46ce0186fbe60586
+SLP=3*372261
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c2ae8f0b7b95b6d69da7be83d99f8f49647d6b15250ce9114be2bf2c01e88355
 
 [~U]
-$root=12|0*233632|
+$root=12|0*244192|
 MainModule=12|0*233878|
 Test=12|0*235544||0x10
 UnitScopePackage_7=12|0*236097||0x40200000
@@ -114,4 +115,4 @@ serialIn=12|0*235302||0x10
 serialOut=12|0*235063|
 test=12|0*235755||0x10
 testCLK=12|0*235930||0x10
-timer=12|0*234301|
+timer=12|0*244438|

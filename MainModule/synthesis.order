@@ -5,6 +5,3 @@ i<>.\src\easySerialOut.v
 i<>.\src\serialIn.v
 i<>.\src\serialOut.v
 i<>.\src\timer.v
-i<>.\src\MainTestBench.v
-i<>.\src\testEasySerialOut.v
-i<>.\src\testTimer.v

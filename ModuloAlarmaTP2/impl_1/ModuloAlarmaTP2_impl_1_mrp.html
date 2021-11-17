@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Map Report</TITLE>
-<link href="file:///C:/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -47,23 +47,22 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sun Nov 14 22:15:54 2021
+Mapped on: Wed Nov 17 17:30:26 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map ModuloAlarmaTP2_impl_1_syn.udb
-     D:/Users/nicob/Desktop/ITBA/3-Electro
-     3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.pdc -o
+Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
+     3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.pdc -o
      ModuloAlarmaTP2_impl_1_map.udb -mp ModuloAlarmaTP2_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers:  44 out of  5280 (1%)
+   Number of slice registers:  82 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           184 out of  5280 (3%)
-      Number of logic LUT4s:             125
-      Number of inserted feedthru LUT4s:   1
-      Number of replicated LUT4s:          4
+   Number of LUT4s:           297 out of  5280 (6%)
+      Number of logic LUT4s:             201
+      Number of inserted feedthru LUT4s:  37
+      Number of replicated LUT4s:          5
       Number of ripple logic:             27 (54 LUT4s)
    Number of IO sites used:   7 out of 39 (18%)
       Number of IO sites used for general PIO: 7
@@ -87,94 +86,114 @@ Command line:   map ModuloAlarmaTP2_impl_1_syn.udb
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net SERCLK_OUT_c: 44 loads, 44 rising, 0 falling (Driver: Pin
+      Net SERCLK_OUT_c: 82 loads, 82 rising, 0 falling (Driver: Pin
      OSCInst1/CLKLF)
-   Number of Clock Enables:  2
+   Number of Clock Enables:  38
       Net VCC_net: 1 loads, 0 SLICEs
-      Net STATE_OUT.serial.n302: 1 loads, 1 SLICEs
-   Number of LSRs:  2
-      Net STATE_OUT.state_send_N_72: 5 loads, 5 SLICEs
-      Net STATE_OUT.serial.n1646: 1 loads, 1 SLICEs
-   Top 10 highest fanout non-clock nets:
-      Net STATE_OUT.n1488: 39 loads
-      Net STATE_OUT.init: 38 loads
-      Net VCC_net: 35 loads
-      Net STATE_OUT.counter_31__N_126[2]: 31 loads
+      Net STATE_OUT.serial.n299: 1 loads, 1 SLICEs
+      Net mainTimer.n402: 1 loads, 1 SLICEs
+      Net mainTimer.n401: 1 loads, 1 SLICEs
+      Net mainTimer.n400: 1 loads, 1 SLICEs
+      Net mainTimer.n399: 1 loads, 1 SLICEs
+      Net mainTimer.n398: 1 loads, 1 SLICEs
+      Net mainTimer.n397: 1 loads, 1 SLICEs
+      Net mainTimer.n396: 1 loads, 1 SLICEs
+      Net mainTimer.n395: 1 loads, 1 SLICEs
+      Net mainTimer.n394: 1 loads, 1 SLICEs
 
-      Net mainTimer.TIME_OUT: 21 loads
-      Net mainTimer.TIMER_EN: 20 loads
-      Net STATE_OUT.counter[2]: 10 loads
+      Net mainTimer.n393: 1 loads, 1 SLICEs
+      Net mainTimer.n392: 1 loads, 1 SLICEs
+      Net mainTimer.n391: 1 loads, 1 SLICEs
+      Net mainTimer.n390: 1 loads, 1 SLICEs
+      Net mainTimer.n389: 1 loads, 1 SLICEs
+      Net mainTimer.n388: 1 loads, 1 SLICEs
+      Net mainTimer.n387: 1 loads, 1 SLICEs
+      Net mainTimer.n386: 1 loads, 1 SLICEs
+      Net mainTimer.n376: 1 loads, 1 SLICEs
+      Net mainTimer.n380: 1 loads, 1 SLICEs
+      Net mainTimer.n312: 1 loads, 1 SLICEs
+      Net mainTimer.n344: 1 loads, 1 SLICEs
+      Net mainTimer.n336: 1 loads, 1 SLICEs
+      Net mainTimer.n328: 1 loads, 1 SLICEs
+      Net mainTimer.n332: 1 loads, 1 SLICEs
+      Net mainTimer.n340: 1 loads, 1 SLICEs
+      Net mainTimer.n320: 1 loads, 1 SLICEs
+      Net mainTimer.n316: 1 loads, 1 SLICEs
+      Net mainTimer.n372: 1 loads, 1 SLICEs
+      Net mainTimer.n368: 1 loads, 1 SLICEs
+      Net mainTimer.n364: 1 loads, 1 SLICEs
+      Net mainTimer.n360: 1 loads, 1 SLICEs
+      Net mainTimer.n356: 1 loads, 1 SLICEs
+      Net mainTimer.n352: 1 loads, 1 SLICEs
+      Net mainTimer.n308: 1 loads, 1 SLICEs
+      Net mainTimer.n348: 1 loads, 1 SLICEs
+      Net mainTimer.n403: 1 loads, 1 SLICEs
+   Number of LSRs:  40
+      Net STATE_OUT.state_send_N_163: 5 loads, 5 SLICEs
+      Net STATE_OUT.serial.n2206: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_65: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_71: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_41: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_44: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_47: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_50: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_53: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_62: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_56: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_59: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_68: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_29: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_22: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_32: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_26: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_74: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_35: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_113: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_116: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_128: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_83: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_77: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_122: 1 loads, 1 SLICEs
+      Net mainTimer.clkFinish_N_150: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_80: 1 loads, 1 SLICEs
+      Net mainTimer.clkFinish_N_155: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_86: 1 loads, 1 SLICEs
+
+      Net mainTimer.clkCont_17__N_119: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_89: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_110: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_107: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_104: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_101: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_98: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_125: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_95: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_92: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_38: 1 loads, 1 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net clkCont_17__N_23: 60 loads
+      Net TIME_OUT: 57 loads
+      Net STATE_OUT.init: 40 loads
+      Net STATE_OUT.n1975: 39 loads
+      Net VCC_net: 35 loads
+      Net STATE_OUT.counter_31__N_217[2]: 29 loads
+      Net STATE_OUT.counter[2]: 12 loads
+      Net state[1]: 9 loads
       Net state[0]: 8 loads
-      Net state[1]: 8 loads
       Net STATE_OUT.waiting: 6 loads
 
 
 
 
-   Number of warnings:  45
+   Number of warnings:  12
    Number of errors:    0
 
+   Number of errors:    0
 
 
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: No port matched '<led_green>'.
-WARNING - map: Can't resolve object '<led_green>' in constraint
-     'ldc_set_location -site {<39>} [get_ports <led_green>]'.
-WARNING - map: No port matched '<led_blue>'.
-WARNING - map: Can't resolve object '<led_blue>' in constraint 'ldc_set_location
-     -site {<40>} [get_ports <led_blue>]'.
-WARNING - map: No port matched '<led_red>'.
-WARNING - map: Can't resolve object '<led_red>' in constraint 'ldc_set_location
-     -site {<41>} [get_ports <led_red>]'.
-WARNING - map: No port matched '<JTAG_TCK>'.
-WARNING - map: Can't resolve object '<JTAG_TCK>' in constraint 'ldc_set_location
-     -site {<35>} [get_ports <JTAG_TCK>]'.
-WARNING - map: No port matched '<JTAG_TDI>'.
-WARNING - map: Can't resolve object '<JTAG_TDI>' in constraint 'ldc_set_location
-     -site {<28>} [get_ports <JTAG_TDI>]'.
-WARNING - map: No port matched '<JTAG_TMS>'.
-WARNING - map: Can't resolve object '<JTAG_TMS>' in constraint 'ldc_set_location
-     -site {<32>} [get_ports <JTAG_TMS>]'.
-WARNING - map: No port matched '<JTAG_TDO>'.
-WARNING - map: Can't resolve object '<JTAG_TDO>' in constraint 'ldc_set_location
-     -site {<31>} [get_ports <JTAG_TDO>]'.
-WARNING - map: No port matched 'JTAG_TDI'.
-WARNING - map: Can't resolve object 'JTAG_TDI' in constraint 'ldc_set_location
-     -site {28} [get_ports JTAG_TDI]'.
-WARNING - map: No port matched 'JTAG_TMS'.
-WARNING - map: Can't resolve object 'JTAG_TMS' in constraint 'ldc_set_location
-     -site {32} [get_ports JTAG_TMS]'.
-WARNING - map: No port matched 'JTAG_TDO'.
-WARNING - map: Can't resolve object 'JTAG_TDO' in constraint 'ldc_set_location
-     -site {31} [get_ports JTAG_TDO]'.
-WARNING - map: No port matched 'JTAG_TCK'.
-WARNING - map: Can't resolve object 'JTAG_TCK' in constraint 'ldc_set_location
-     -site {35} [get_ports JTAG_TCK]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {<39>}
-     [get_ports <led_green>]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {<40>}
-     [get_ports <led_blue>]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {<41>}
-     [get_ports <led_red>]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {<35>}
-     [get_ports <JTAG_TCK>]'.
-
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {<28>}
-     [get_ports <JTAG_TDI>]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {<32>}
-     [get_ports <JTAG_TMS>]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {<31>}
-     [get_ports <JTAG_TDO>]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {28} [get_ports
-     JTAG_TDI]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {32} [get_ports
-     JTAG_TMS]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {31} [get_ports
-     JTAG_TDO]'.
-WARNING - map: Remove invalid constraint 'ldc_set_location -site {35} [get_ports
-     JTAG_TCK]'.
 WARNING - map: Top module port 'KB_IN[1]' does not connect to anything.
 WARNING - map: Top module port 'KB_IN[0]' does not connect to anything.
 WARNING - map: Top module port 'KB_RECV' does not connect to anything.
@@ -201,6 +220,7 @@ WARNING - map: Top module port 'CTRL_CLK' does not connect to anything.
 | SIREN_OUT           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | STATUS_SEND         | OUTPUT    | LVCMOS33  |       |       |           |
+
 +---------------------+-----------+-----------+-------+-------+-----------+
 | SERCLK_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -222,7 +242,6 @@ OSC 1:                                 Pin/Node Value
 
 
 
-
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
@@ -236,27 +255,7 @@ Instance Name: OSCInst1
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 56 MB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Peak Memory Usage: 58 MB
 
 
 

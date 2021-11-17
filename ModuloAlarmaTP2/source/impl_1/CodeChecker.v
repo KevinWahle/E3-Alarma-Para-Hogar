@@ -32,7 +32,7 @@ module keyChecker(
 	always	@(posedge pulsed)
 		begin	
 			actualKey[counter]={cable1,cable2};
-			counter = counter + 1;
+			counter = counter + 1'b1;
 			if (counter==4)
 				begin
 					valid=OK;

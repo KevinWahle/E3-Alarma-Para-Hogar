@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Nov 14 22:16:11 2021
+Wed Nov 17 17:30:41 2021
 
 
 Command: bitgen -w -freq 0 -gui ModuloAlarmaTP2_impl_1.udb 
@@ -21,5 +21,5 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\ModuloAlarmaTP2\impl_1\ModuloAlarmaTP2_impl_1.bin".
+Saving bit stream in "D:\Electronica\Electronica 3\TP2\TP2-G2_E3\ModuloAlarmaTP2\impl_1\ModuloAlarmaTP2_impl_1.bin".
 Bitstream generation complete!

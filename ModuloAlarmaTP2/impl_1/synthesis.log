@@ -5,13 +5,12 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Nov 14 22:15:27 2021
+Wed Nov 17 17:30:24 2021
 
 
-Command Line:  C:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
+Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
 
 Synthesis options:
-The -top option is not used.
 The -a option is iCE40UP.
 The -t option is SG48.
 The -sp option is High-Performance_1.2V.
@@ -39,6 +38,7 @@ The -p option is iCE40UP5K.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Area
+Top-level module name = MainModule.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -67,86 +67,77 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--sdc option: SDC file input is D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.sdc.
--path C:/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
--path D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2 (searchpath added)
--path D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1 (searchpath added)
+-sdc option: SDC file input is D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.sdc.
+-path C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
+-path D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2 (searchpath added)
+-path D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/impl_1 (searchpath added)
 Mixed language design
-WARNING - synthesis: A top-level module has not been specified for the mixed language design.
-Verilog design file = C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v
+Verilog design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v
+Verilog design file = D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v
 VHDL library = pmi
-VHDL design file = C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
+VHDL design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_addsub.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_addsub.v(40): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_add.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_add.v(50): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_counter.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_counter.v(39): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_fifo.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_fifo.v(44): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_mac.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_mac.v(52): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_mult.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_mult.v(51): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_rom.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_rom.v(45): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_sub.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_sub.v(50): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v. VERI-1482
-Analyzing VHDL file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-Analyzing VHDL file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
+Analyzing Verilog file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_addsub.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_addsub.v(40): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_add.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_add.v(50): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_counter.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_counter.v(39): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo.v(44): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mac.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mac.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mult.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mult.v(51): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_rom.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_rom.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_sub.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_sub.v(50): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v. VERI-1482
+Analyzing Verilog file d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v. VERI-1482
+Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
 
-INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-unit  is not an entity or configuration. VHDL-1486
-WARNING - synthesis: Setting MainModule as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
-INFO - synthesis: The default VHDL library search path is now "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1". VHDL-1504
+INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+unit MainModule is not yet analyzed. VHDL-1485
+INFO - synthesis: The default VHDL library search path is now "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/impl_1". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): MainModule
-INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(1): compiling module MainModule. VERI-1018
-INFO - synthesis: C:/lscc/radiant/3.0/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(764): compiling module LSOSC. VERI-1018
-INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(4): compiling module timer. VERI-1018
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(14): no support for synthesis of mixed edge and level triggers. VERI-1084
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(21): clkFinish should be on the sensitivity list. VERI-1221
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(27): clkCont should be on the sensitivity list. VERI-1221
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(27): expression size 32 truncated to fit in target size 18. VERI-1209
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(28): maxCount should be on the sensitivity list. VERI-1221
-INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v(5): compiling module easySerialOut. VERI-1018
-INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v(1): compiling module serialOut. VERI-1018
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v(33): expression size 32 truncated to fit in target size 4. VERI-1209
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(43): actual bit length 32 differs from formal bit length 4 for port SB. VERI-1330
-INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v(2): compiling module keyChecker. VERI-1018
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v(29): using initial value of key since it is never assigned. VERI-1220
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(123): actual bit length 6 differs from formal bit length 8 for port keyIn. VERI-1330
+INFO - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(1): compiling module MainModule. VERI-1018
+INFO - synthesis: C:/Program Files/lscc/radiant/3.0/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(764): compiling module LSOSC. VERI-1018
+INFO - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(4): compiling module timer. VERI-1018
+WARNING - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(34): assignment under multiple single edges is not supported for synthesis. VERI-1466
+INFO - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v(5): compiling module easySerialOut. VERI-1018
+INFO - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v(1): compiling module serialOut. VERI-1018
+INFO - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v(2): compiling module keyChecker. VERI-1018
+WARNING - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v(29): using initial value of key since it is never assigned. VERI-1220
                                                          
 
 
@@ -188,38 +179,76 @@ WARNING - synthesis: I/O Port KB_RECV 's net has no driver and is unused.
 WARNING - synthesis: I/O Port CTRL_IN 's net has no driver and is unused.
 WARNING - synthesis: I/O Port CTRL_RECV 's net has no driver and is unused.
 WARNING - synthesis: I/O Port CTRL_CLK 's net has no driver and is unused.
+WARNING - synthesis: Register \mainTimer/clkCont_i1 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i0 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i3 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i2 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkFinish with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i17 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i16 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i15 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i14 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i13 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i12 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i11 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i10 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i9 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i8 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i7 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i6 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i5 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
+WARNING - synthesis: Register \mainTimer/clkCont_i4 with asynchronous clock enable is not supported. (d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v 21[8] 34[19])
 WARNING - synthesis: Initial value found on instance \STATE_OUT/waiting will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i13_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i0_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkFinish_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i16_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i14_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i17_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i15_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i2_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i5_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i6_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i4_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i7_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i8_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i9_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i10_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i11_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i1_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i3_set will be ignored.
+WARNING - synthesis: Initial value found on instance \mainTimer/clkCont_i12_set will be ignored.
 WARNING - synthesis: Mapping latch state_1__I_1_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch SIREN_OUT_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch TIMER_EN_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkFinish_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i242 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i246 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch state_1__I_1_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i9 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i10 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i11 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i12 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i13 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i14 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i15 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i16 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i17 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch \mainTimer/clkCont_17__I_0_i18 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i250 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i254 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i258 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i262 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i266 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i270 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i274 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i278 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i282 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i286 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i290 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i294 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i298 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i302 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i306 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i310 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i238 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 
 ################### Begin Area Report (MainModule)######################
-Number of register bits => 44 of 5280 (0 % )
+Number of register bits => 82 of 5280 (1 % )
 CCU2 => 27
-FD1P3XZ => 44
+FD1P3XZ => 82
 IB => 2
 LSOSC_CORE => 1
-LUT4 => 123
+LUT4 => 202
 OB => 5
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -233,21 +262,21 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : STATE_OUT/init, loads : 38
-  Net : STATE_OUT/n1488, loads : 37
-  Net : STATE_OUT/counter_31__N_126[2], loads : 31
-  Net : mainTimer/TIME_OUT, loads : 21
-  Net : mainTimer/TIMER_EN, loads : 20
-  Net : STATE_OUT/serial/counter[2], loads : 7
+  Net : clkCont_17__N_23, loads : 59
+  Net : TIMER_EN_N_18, loads : 55
+  Net : STATE_OUT/init, loads : 40
+  Net : STATE_OUT/serial/n1975, loads : 36
+  Net : STATE_OUT/counter_31__N_217[2], loads : 29
+  Net : STATE_OUT/serial/counter[2], loads : 9
+  Net : state[0], loads : 7
   Net : state[1], loads : 6
   Net : STATE_OUT/waiting, loads : 6
-  Net : mainTimer/state[0], loads : 5
   Net : STATE_OUT/cont[0], loads : 5
 ################### End Clock Report ##################
 
-Peak Memory Usage: 82 MB
+Peak Memory Usage: 79 MB
 
 --------------------------------------------------------------
 Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 0 secs 
 --------------------------------------------------------------

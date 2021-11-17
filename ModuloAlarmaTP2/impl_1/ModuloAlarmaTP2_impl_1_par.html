@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Place & Route Report</TITLE>
-<link href="file:///C:/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -41,7 +41,7 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Sun Nov 14 22:15:56 2021
+Wed Nov 17 17:30:28 2021
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	ModuloAlarmaTP2_impl_1_map.udb ModuloAlarmaTP2_impl_1.udb 
@@ -51,15 +51,15 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            99977.120    0            1.719        0            12           Completed
+5_1   *      0            99825.408    0            1.719        0            10           Completed
 * : Design saved.
 
-Total (real) run time for 1-seed: 13 secs 
+Total (real) run time for 1-seed: 10 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;ModuloAlarmaTP2_impl_1_map.udb&quot;
-Sun Nov 14 22:15:56 2021
+Wed Nov 17 17:30:28 2021
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -68,7 +68,7 @@ Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
 	ModuloAlarmaTP2_impl_1_map.udb ModuloAlarmaTP2_impl_1_par.dir/5_1.udb 
 
 Loading ModuloAlarmaTP2_impl_1_map.udb ...
-Loading device for application GENERIC from file &apos;itpa08.nph&apos; in environment: C:/lscc/radiant/3.0/ispfpga.
+Loading device for application GENERIC from file &apos;itpa08.nph&apos; in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 
@@ -79,6 +79,30 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
+WARNING - par: Unable to find the instance/port &apos;KB_IN[0]&apos; in the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_IN[1]&apos; in the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_RECV&apos; in the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_IN[0]&apos; in the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_IN[1]&apos; in the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_RECV&apos; in the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;, the locate object is not specified
+
 WARNING - par: Top module port &apos;KB_IN[1]&apos; does not connect to anything.
 WARNING - par: Top module port &apos;KB_IN[0]&apos; does not connect to anything.
 WARNING - par: Top module port &apos;KB_RECV&apos; does not connect to anything.
@@ -103,14 +127,14 @@ WARNING - par: Top module port &apos;KB_RECV&apos; does not connect to anything.
 WARNING - par: Top module port &apos;CTRL_IN&apos; does not connect to anything.
 WARNING - par: Top module port &apos;CTRL_RECV&apos; does not connect to anything.
 WARNING - par: Top module port &apos;CTRL_CLK&apos; does not connect to anything.
-Number of Signals: 279
-Number of Connections: 712
+Number of Signals: 430
+Number of Connections: 1094
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   SLICE (est.)      96/2640          3% used
-     LUT            184/5280          3% used
-     REG             44/5280         &lt;1% used
+   SLICE (est.)     181/2640          6% used
+     LUT            297/5280          5% used
+     REG             82/5280          1% used
    PIO                7/56           12% used
                       7/36           19% bonded
    IOLOGIC            0/56            0% used
@@ -131,9 +155,8 @@ Number of Connections: 712
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   0 out of 7 pins locked (0% locked).
-.
-...............
+   7 out of 7 pins locked (100% locked).
+
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -144,25 +167,37 @@ Starting Placer Phase 1. CPU time: 1 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 25401.
+Placer score = 47872.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE             96/2640          3% used
+   SLICE            173/2640          6% used
 
-Finished Placer Phase 1. CPU time: 10 secs , REAL time: 10 secs 
+WARNING - par: Unable to find the instance/port &apos;KB_IN[0]&apos; in the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_IN[1]&apos; in the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_RECV&apos; in the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;, the locate object is not specified
+
+Finished Placer Phase 1. CPU time: 8 secs , REAL time: 8 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  32158
-Finished Placer Phase 2.  CPU time: 10 secs , REAL time: 10 secs 
+Placer score =  55925
+Finished Placer Phase 2.  CPU time: 8 secs , REAL time: 9 secs 
 
 
 
 <A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
 
 Global Clocks :
-  PRIMARY &quot;SERCLK_OUT_c&quot; from comp &quot;OSCInst1&quot; on site &quot;LFOSC_R26C32&quot;, clk load = 25, ce load = 0, sr load = 0
+  PRIMARY &quot;SERCLK_OUT_c&quot; from comp &quot;OSCInst1&quot; on site &quot;LFOSC_R26C32&quot;, clk load = 63, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -179,17 +214,29 @@ I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 0 / 14 (  0%) | OFF        |            |            |
-| 1        | 6 / 14 ( 42%) | 3.3V       |            |            |
-| 2        | 1 / 8 ( 12%)  | 3.3V       |            |            |
+| 0        | 7 / 14 ( 50%) | 3.3V       |            |            |
+| 1        | 0 / 14 (  0%) | OFF        |            |            |
+| 2        | 0 / 8 (  0%)  | OFF        |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 10 secs , REAL time: 10 secs 
+Total Placer CPU time: 8 secs , REAL time: 9 secs 
 
 Writing design to file ModuloAlarmaTP2_impl_1_par.dir/5_1.udb ...
 
+WARNING - par: Unable to find the instance/port &apos;KB_IN[0]&apos; in the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;
 
-Start NBR router at 22:16:07 11/14/21
+WARNING - par: In the constraint &apos;ldc_set_location -site {31} [get_ports {KB_IN[0]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_IN[1]&apos; in the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {35} [get_ports {KB_IN[1]}]&apos;, the locate object is not specified
+
+WARNING - par: Unable to find the instance/port &apos;KB_RECV&apos; in the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;
+
+WARNING - par: In the constraint &apos;ldc_set_location -site {32} [get_ports KB_RECV]&apos;, the locate object is not specified
+
+
+Start NBR router at 17:30:37 11/17/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -207,43 +254,37 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-90 connections routed with dedicated routing resources
+128 connections routed with dedicated routing resources
 1 global clock signals routed
-115 connections routed (of 691 total) (16.64%)
+191 connections routed (of 1073 total) (17.80%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
 #5  Signal &quot;SERCLK_OUT_c&quot;
-       Clock   loads: 25    out of    25 routed (100.00%)
+       Clock   loads: 63    out of    63 routed (100.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 22:16:07 11/14/21
+Start NBR section for initial routing at 17:30:37 11/17/21
 Level 4, iteration 1
 6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 99976.640ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 99821.616ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 22:16:07 11/14/21
+Start NBR section for normal routing at 17:30:38 11/17/21
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 99976.640ns/0.000ns; real time: 0 secs 
-Level 4, iteration 2
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 99976.640ns/0.000ns; real time: 0 secs 
-Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack&lt;setup&gt;: 99976.640ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack&lt;setup&gt;: 99821.616ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 22:16:07 11/14/21
+Start NBR section for setup/hold timing optimization with effort level 3 at 17:30:38 11/17/21
 
 Starting full timing analysis...
 
-Start NBR section for post-routing at 22:16:08 11/14/21
+Start NBR section for post-routing at 17:30:38 11/17/21
 
 End NBR router with 0 unrouted connection
 
@@ -263,7 +304,7 @@ Starting full timing analysis...
 Total CPU time 1 secs 
 Total REAL time: 0 secs 
 Completely routed.
-End of route.  691 routed (100.00%); 0 unrouted.
+End of route.  1073 routed (100.00%); 0 unrouted.
 
 Writing design to file ModuloAlarmaTP2_impl_1_par.dir/5_1.udb ...
 
@@ -273,15 +314,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = 99977.120
+PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = 99825.408
 PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = 1.719
 PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 12 secs 
-Total REAL Time: 13 secs 
-Peak Memory Usage: 101 MB
+Total CPU  Time: 10 secs 
+Total REAL Time: 10 secs 
+Peak Memory Usage: 107 MB
 
 
 par done!

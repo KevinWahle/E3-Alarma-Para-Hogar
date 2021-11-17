@@ -30,7 +30,7 @@ module	easySerialOut(
 		end
 		else if (EN) begin		
 			if (waiting) begin
-				cont = cont + 1;
+				cont = cont + 1'b1;
 				if (cont == SB) begin
 					waiting = 0;
 					init = 1;

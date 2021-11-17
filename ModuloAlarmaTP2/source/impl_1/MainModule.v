@@ -40,7 +40,7 @@ module MainModule (
         .EN(1'b1),	        		// ENANBLE
         .CLK(SERCLK_OUT),	    	// CLK Signal
         .msg(MSG),					// Mensaje a transmitir
-        .SB(3), 					// Stand By, canidad de pulsos en los que no se transmite
+        .SB(4'd3), 					// Stand By, canidad de pulsos en los que no se transmite
         .state_send(STATUS_SEND),	// Aviso de comienzo de transmision	
         .state_out(STATUS_OUT)		// Canal de transmision
     );
@@ -110,7 +110,7 @@ module MainModule (
     //--------------------------------------------------------------------
 	// Verificacion de mensaje recibido
 	wire[1:0] RESULT;
-	wire[5:0] key = {2'b00,2'b01,2'b10,2'b11};
+	wire[7:0] key = {2'b00,2'b01,2'b10,2'b11};
 	
 	/*initial
 	begin
@@ -120,7 +120,7 @@ module MainModule (
 		key[3] = 3;
 	end
 	*/
-    keyChecker checkitout(KB_RECV, KB_IN[1], KB_IN[0], key, RESULT);
+    keyChecker Keyboard(.pulsed(KB_RECV), .cable1(KB_IN[1]), .cable2(KB_IN[0]), .keyIn(key), .valid(RESULT));
     
     //always @(RESULT) begin
     //    KEY_STATUS = RESULT;

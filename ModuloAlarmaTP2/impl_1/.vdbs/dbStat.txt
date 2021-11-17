@@ -1,1 +1,1 @@
-ModuloAlarmaTP2_impl_1_rtl_rtl.vdb
+MainModule_rtl.vdb

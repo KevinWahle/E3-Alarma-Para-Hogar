@@ -1,12 +1,12 @@
 module MainModule (
     // I/O PINS
-    output reg SIREN_OUT = 0,   	//Salida de sirena
+    output wire SIREN_OUT,   	//Salida de sirena
     input SENSOR1_IN, SENSOR2_IN,  //Sensores
 
     output wire STATUS_OUT, 	//Datos
     output wire STATUS_SEND, 	//Habilitador
-    input wire[1:0] KB_IN,   	//Datos
-    input KB_RECV,   			//Habilitador 
+    input wire [1:0] KB_IN,   	//Datos
+    input wire KB_RECV,   			//Habilitador 
 
     output wire SERCLK_OUT,
 
@@ -19,6 +19,7 @@ module MainModule (
     // Clock interno del modulo principal
     LSOSC OSCInst1 (.CLKLFEN(1'b1), .CLKLFPU(1'b1), .CLKLF(SERCLK_OUT));
     //--------------------------------------------------------------------	
+
 
     // SET DE TIMER
     wire TIME_OUT;
@@ -33,7 +34,8 @@ module MainModule (
     );
     //--------------------------------------------------------------------
 
-    // SET DE KEYBOARD
+
+    // SET DE KEYBOARD - SERIAL OUT
     wire [3:0] MSG;
     reg INIT = 1;
     easySerialOut STATE_OUT(
@@ -46,85 +48,100 @@ module MainModule (
     );
     //--------------------------------------------------------------------
 
-    //Variables y parametros
-    reg [1:0]state = 0; // Comienza en modo inactivo
-    parameter INACTIVO = 0, ARMADO = 1, ESPERA = 2, ALARMA = 3;
-    reg [1:0]KEY_STATUS;
-    parameter KEY_OK = 0, KEY_OKNEG = 1, KEY_ERROR = 2, NO_KEY = 3;
+
+	// Verificador de mensaje recibido
+	// wire[1:0] RESULT;
+	wire [7:0] key = {2'b00,2'b01,2'b10,2'b11};
+	wire [1:0]KEY_STATUS;
+    reg KEY_RST = 1'b0;
+
+    keyChecker Keyboard(
+        .pulsed(KB_RECV), 
+        .cable1(KB_IN[1]), 
+        .cable2(KB_IN[0]), 
+        .keyIn(key),
+        .keyStatus(KEY_STATUS),
+        .reset(KEY_RST)
+    );
     //--------------------------------------------------------------------
-	assign MSG = {SENSOR2_IN, SENSOR1_IN, state==ALARMA, !(state==INACTIVO)};
-	
+
+
+    //Variables y parametros
+    reg [1:0]Sreg = 0; // Comienza en modo inactivo
+    reg [1:0]Snext;
+    parameter INACTIVO = 0, ARMADO = 1, ESPERA = 2, ALARMA = 3;
+    parameter KEY_OK = 0, KEY_ERROR = 2, NO_KEY = 3;
+
+
+    //--------------------------------------------------------------------
+	assign MSG = {SENSOR2_IN, SENSOR1_IN, Sreg==ALARMA, !(Sreg==INACTIVO)};
+    //--------------------------------------------------------------------
+
+
     // Asignacion de estados
-    always @ (state, KEY_STATUS, SENSOR1_IN, SENSOR2_IN, TIME_OUT) begin      //IT IS NOT TERMINADO
-    case (state)
+    always @ (Sreg, KEY_STATUS, SENSOR1_IN, SENSOR2_IN, TIME_OUT) begin      //IT IS NOT TERMINADO
+    case (Sreg)
         INACTIVO: begin
 			if (KEY_STATUS == KEY_OK) begin
-				state <= ARMADO;	
+				Snext <= ARMADO;	
 			end				
-			SIREN_OUT <= 0;
-			KEY_STATUS <= NO_KEY;
+			// KEY_STATUS <= NO_KEY;
 		   	end 
         
 		ARMADO:	begin
-            if (KEY_STATUS == KEY_OKNEG)
-                state <= INACTIVO;
+            if (KEY_STATUS == KEY_OK)
+                Snext <= INACTIVO;
             else if (KEY_STATUS == KEY_ERROR)
-                state <= ALARMA;
+                Snext <= ALARMA;
             else if (KEY_STATUS == NO_KEY) begin
                 if (SENSOR1_IN)		 	// Ventana
-                    state <= ALARMA;
+                    Snext <= ALARMA;
                 else if (SENSOR2_IN) 	// Puerta
-                    state <= ESPERA;
+                    Snext <= ESPERA;
             end
-			KEY_STATUS <= NO_KEY;
+			// KEY_STATUS <= NO_KEY;
 			end
 			
         ESPERA: begin
 			if (TIME_OUT) begin
-                state <= ALARMA;
-                TIMER_EN <= 0;
+                Snext <= ALARMA;
+                TIMER_EN <= 1'b0;
             end				
             else if (KEY_STATUS == KEY_OK) begin
-                state <= INACTIVO;
-                TIMER_EN <= 0;
+                Snext <= INACTIVO;
+                TIMER_EN <= 1'b0;
             end
             else if (KEY_STATUS == KEY_ERROR || KEY_STATUS == NO_KEY) begin
-				TIMER_EN <= 1;
+				TIMER_EN <= 1'b1;
 			end
-			KEY_STATUS <= NO_KEY;
+			//KEY_STATUS <= NO_KEY;
 			end
 			
         ALARMA:	begin
             if (KEY_STATUS == KEY_OK)
-                state <= INACTIVO;
-            else if (KEY_STATUS == KEY_ERROR || KEY_STATUS == NO_KEY) begin
-				SIREN_OUT <= 1;
-            end	
-			KEY_STATUS <= NO_KEY;
+                Snext <= INACTIVO;
+			// KEY_STATUS <= NO_KEY;
 			end
                 
 		default:
-			state <= INACTIVO;
+			Snext <= INACTIVO;
     endcase
+
+    if (KEY_STATUS == NO_KEY) begin
+        KEY_RST = 1'b0;
+    end
+    else begin
+        KEY_RST = 1'b1;
+    end
     end
     //--------------------------------------------------------------------
-	// Verificacion de mensaje recibido
-	wire[1:0] RESULT;
-	wire[7:0] key = {2'b00,2'b01,2'b10,2'b11};
-	
-	/*initial
-	begin
-		key[0] = 0;
-		key[1] = 1;
-		key[2] = 2;
-		key[3] = 3;
-	end
-	*/
-    keyChecker Keyboard(.pulsed(KB_RECV), .cable1(KB_IN[1]), .cable2(KB_IN[0]), .keyIn(key), .valid(RESULT));
-    
-    //always @(RESULT) begin
-    //    KEY_STATUS = RESULT;
-    //end
+
+
+    //Cambiador de Estados para la máquina de ...
+    always @(posedge SERCLK_OUT)
+	    Sreg <= Snext;
     //--------------------------------------------------------------------
+
+    assign SIREN_OUT = Sreg == ALARMA;  
  
 endmodule

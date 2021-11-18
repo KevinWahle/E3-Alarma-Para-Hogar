@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 18 14:51:57 2021
+Thu Nov 18 15:12:29 2021
 
 
 Command Line:  C:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
@@ -198,7 +198,7 @@ FD1P3XZ => 102
 IB => 6
 IOL_B => 1
 LSOSC_CORE => 1
-LUT4 => 164
+LUT4 => 166
 OB => 9
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
@@ -214,14 +214,14 @@ Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : STATE_OUT/waiting, loads : 32
-  Net : STATE_OUT/waiting_N_140, loads : 31
-  Net : STATE_OUT/serial/n121, loads : 30
-  Net : mainTimer/timeout_c, loads : 25
-  Net : mainTimer/clkCont_17__N_38, loads : 19
-  Net : Sreg[1], loads : 10
+  Net : STATE_OUT/waiting_N_141, loads : 31
+  Net : STATE_OUT/serial/n120, loads : 30
+  Net : mainTimer/timeout_c, loads : 24
+  Net : mainTimer/clkCont_17__N_39, loads : 19
+  Net : keyboard/state[1], loads : 11
+  Net : keyboard/state[0], loads : 11
   Net : Sreg[0], loads : 10
-  Net : keyboard/state[1], loads : 9
-  Net : keyboard/state[0], loads : 9
+  Net : Sreg[1], loads : 9
   Net : keyboard/counter[0], loads : 8
 ################### End Clock Report ##################
 
@@ -229,5 +229,5 @@ Peak Memory Usage: 79 MB
 
 --------------------------------------------------------------
 Total CPU Time: 2 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 3 secs 
 --------------------------------------------------------------

@@ -1,0 +1,7 @@
+-- all messages logged in file hdlparser.log
+-- Analyzing Verilog file 'C:/Program Files/lscc/radiant/3.0/cae_library/synthesis/verilog/iCE40UP.v' (VERI-1482)
+-- Analyzing Verilog file 'D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v' (VERI-1482)
+-- Analyzing Verilog file 'D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v' (VERI-1482)
+-- Analyzing Verilog file 'D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v' (VERI-1482)
+-- Analyzing Verilog file 'D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v' (VERI-1482)
+-- Analyzing Verilog file 'D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v' (VERI-1482)

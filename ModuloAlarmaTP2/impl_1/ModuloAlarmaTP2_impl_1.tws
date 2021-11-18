@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Thu Nov 18 14:45:10 2021
+Thu Nov 18 14:52:01 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -59,43 +59,43 @@ create_clock -name {SERCLK_OUT_c} -period 100000 [get_pins {OSCInst1/CLKLF }]
 Combinational Loops
 -------------------
 ++++ Loop1
-i1861_4_lut/Z	->	i1_4_lut/Z
+i464_4_lut/B	->	i464_4_lut/Z
 
 ++++ Loop2
-i457_4_lut/B	->	i457_4_lut/Z
+i1796_4_lut/B	->	i1796_4_lut/Z
 
 ++++ Loop3
-keyboard/i479_3_lut/A	->	keyboard/i479_3_lut/Z
+i1_3_lut/B	->	i1_3_lut/Z
 
 ++++ Loop4
-i681_4_lut/A	->	i681_4_lut/Z
+keyboard/i486_3_lut/A	->	keyboard/i486_3_lut/Z
 
 ++++ Loop5
-keyboard/i481_3_lut/A	->	keyboard/i481_3_lut/Z
+keyboard/i488_3_lut/A	->	keyboard/i488_3_lut/Z
 
 ++++ Loop6
-keyboard/i477_3_lut/A	->	keyboard/i477_3_lut/Z
+keyboard/i484_3_lut/A	->	keyboard/i484_3_lut/Z
 
 ++++ Loop7
-keyboard/i475_3_lut/A	->	keyboard/i475_3_lut/Z
+keyboard/i482_3_lut/A	->	keyboard/i482_3_lut/Z
 
 ++++ Loop8
-keyboard/i465_3_lut/A	->	keyboard/i465_3_lut/Z
+keyboard/i468_3_lut/A	->	keyboard/i468_3_lut/Z
 
 ++++ Loop9
-keyboard/i461_3_lut/A	->	keyboard/i461_3_lut/Z
+keyboard/i472_3_lut/A	->	keyboard/i472_3_lut/Z
 
 ++++ Loop10
-keyboard/i463_3_lut/A	->	keyboard/i463_3_lut/Z
+keyboard/i470_3_lut/A	->	keyboard/i470_3_lut/Z
 
 ++++ Loop11
-keyboard/i467_3_lut/A	->	keyboard/i467_3_lut/Z
+keyboard/i474_3_lut/A	->	keyboard/i474_3_lut/Z
 
 ++++ Loop12
-keyboard/i1_2_lut_adj_38/Z	->	keyboard/i12_4_lut/Z
+keyboard/i1_2_lut_adj_40/Z	->	keyboard/i12_4_lut/Z
 
 ++++ Loop13
-keyboard/i469_4_lut/A	->	keyboard/i469_4_lut/Z
+keyboard/i476_4_lut/A	->	keyboard/i476_4_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -125,7 +125,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 95.2489%
+Constraint Coverage: 94.9381%
 
 3.1.2  Timing Errors
 ---------------------
@@ -143,13 +143,13 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
 -------------------------------------------------------
 STATE_OUT/j__i1/SR                       |99968.246 ns 
 STATE_OUT/j__i0/SR                       |99968.246 ns 
-STATE_OUT/j__i21/D                       |99968.550 ns 
 STATE_OUT/j__i20/D                       |99968.550 ns 
 STATE_OUT/j__i19/D                       |99968.550 ns 
 STATE_OUT/j__i18/D                       |99968.550 ns 
 STATE_OUT/waiting_c/D                    |99968.550 ns 
-STATE_OUT/j__i17/D                       |99968.550 ns 
 STATE_OUT/j__i25/D                       |99968.550 ns 
+STATE_OUT/j__i17/D                       |99968.550 ns 
+STATE_OUT/j__i27/D                       |99968.550 ns 
 STATE_OUT/j__i16/D                       |99968.550 ns 
 -------------------------------------------------------
                                          |             
@@ -165,6 +165,7 @@ Setup # of endpoints with negative slack:|           0
 -------------------------------------------------------
 STATE_OUT/serial/temp_data_out_i0_i3/D   |    1.671 ns 
 STATE_OUT/serial/status_send/DO0         |    1.671 ns 
+mainTimer/clkCont_i14/D                  |    4.196 ns 
 mainTimer/clkCont_i15/D                  |    4.196 ns 
 mainTimer/clkCont_i16/D                  |    4.196 ns 
 mainTimer/clkCont_i17/D                  |    4.196 ns 
@@ -172,7 +173,6 @@ mainTimer/state/D                        |    4.196 ns
 keyboard/state_i1/D                      |    4.196 ns 
 PREV_KEY_i0_i0/D                         |    4.196 ns 
 PREV_KEY_i0_i1/D                         |    4.196 ns 
-Sreg_i1/D                                |    4.196 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -204,8 +204,8 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
 Sreg_i0/SR                              |           No arrival time
 Sreg_i1/SR                              |           No arrival time
-keyboard/counter_109__i0/D              |    No arrival or required
-keyboard/counter_109__i1/D              |    No arrival or required
+keyboard/counter_111__i0/D              |    No arrival or required
+keyboard/counter_111__i1/D              |    No arrival or required
 STATE_OUT/serial/temp_data_out_i0_i0/D  |           No arrival time
 STATE_OUT/serial/temp_data_out_i0_i1/D  |           No arrival time
 -------------------------------------------------------------------
@@ -294,109 +294,109 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-STATE_OUT/i112_2_lut/B->STATE_OUT/i112_2_lut/Z
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+STATE_OUT/i114_2_lut/B->STATE_OUT/i114_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.450        35.374  2       
-STATE_OUT/n141_c ( SR )                                   NET DELAY         2.075        37.449  2       
+STATE_OUT/n143_c ( SR )                                   NET DELAY         2.075        37.449  2       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -436,109 +436,109 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-STATE_OUT/i112_2_lut/B->STATE_OUT/i112_2_lut/Z
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+STATE_OUT/i114_2_lut/B->STATE_OUT/i114_2_lut/Z
                                           LUT4            B_TO_Z_DELAY      0.450        35.374  2       
-STATE_OUT/n141_c ( SR )                                   NET DELAY         2.075        37.449  2       
+STATE_OUT/n143_c ( SR )                                   NET DELAY         2.075        37.449  2       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -556,147 +556,6 @@ Path Slack  (Passed)                                                            
 
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : STATE_OUT/j__i0/Q  (FD1P3XZ)
-Path End         : STATE_OUT/j__i21/D  (FD1P3XZ)
-Source Clock     : SERCLK_OUT_c (R)
-Destination Clock: SERCLK_OUT_c (R)
-Logic Level      : 36
-Delay Ratio      : 61.0% (route), 39.0% (logic)
-Clock Skew       : 0.000 ns
-Setup Constraint : 100000.000 ns 
-Path Slack       : 99968.550 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  103     
-SERCLK_OUT_c                                              NET DELAY      6.225         6.225  103     
-
-
-
-STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         7.616  1       
-STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
-STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
-                                          FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
-STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
-STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
-STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
-STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
-STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
-STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
-STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
-STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
-STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
-STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
-STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
-STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
-STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
-STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
-STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
-STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
-STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
-STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
-STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
-STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
-STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
-STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
-STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
-STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
-STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
-STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
-STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
-STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
-                                          FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
-STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
-                                          FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
-STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
-                                          FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
-STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
-                                          LUT4            A_TO_Z_DELAY      0.477        27.745  1       
-STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
-STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
-                                          LUT4            D_TO_Z_DELAY      0.477        30.297  1       
-STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
-                                          LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-i409_4_lut_4_lut/B->i409_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
-n528 ( D )                                                NET DELAY         2.075        37.476  1       
-
-
-                                                          CONSTRAINT     0.000    100000.000  1       
-OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000    100000.000  103     
-SERCLK_OUT_c ( CK )                                       NET DELAY      6.225    100006.225  103     
-                                                          Uncertainty    0.000    100006.225  
-                                                          Setup time     0.199    100006.026  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                     100006.026  
-Arrival Time                                                                         -37.476  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                               99968.550  
-
-
-
-
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/j__i0/Q  (FD1P3XZ)
 Path End         : STATE_OUT/j__i20/D  (FD1P3XZ)
@@ -719,108 +578,108 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-i407_4_lut_4_lut/B->i407_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
-n526 ( D )                                                NET DELAY         2.075        37.476  1       
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+i414_4_lut_4_lut/B->i414_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
+n533 ( D )                                                NET DELAY         2.075        37.476  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -837,7 +696,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/j__i0/Q  (FD1P3XZ)
 Path End         : STATE_OUT/j__i19/D  (FD1P3XZ)
@@ -860,108 +719,108 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-i405_4_lut_4_lut/B->i405_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
-n524 ( D )                                                NET DELAY         2.075        37.476  1       
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+i412_4_lut_4_lut/B->i412_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
+n531 ( D )                                                NET DELAY         2.075        37.476  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -978,7 +837,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/j__i0/Q  (FD1P3XZ)
 Path End         : STATE_OUT/j__i18/D  (FD1P3XZ)
@@ -1001,108 +860,108 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-i403_4_lut_4_lut/B->i403_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
-n522 ( D )                                                NET DELAY         2.075        37.476  1       
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+i410_4_lut_4_lut/B->i410_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
+n529 ( D )                                                NET DELAY         2.075        37.476  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -1119,7 +978,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/j__i0/Q  (FD1P3XZ)
 Path End         : STATE_OUT/waiting_c/D  (FD1P3XZ)
@@ -1142,109 +1001,250 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
 STATE_OUT/i12_3_lut/A->STATE_OUT/i12_3_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        35.401  1       
-STATE_OUT/n1735 ( D )                                     NET DELAY         2.075        37.476  1       
+STATE_OUT/n1651 ( D )                                     NET DELAY         2.075        37.476  1       
+
+
+                                                          CONSTRAINT     0.000    100000.000  1       
+OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000    100000.000  103     
+SERCLK_OUT_c ( CK )                                       NET DELAY      6.225    100006.225  103     
+                                                          Uncertainty    0.000    100006.225  
+                                                          Setup time     0.199    100006.026  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                     100006.026  
+Arrival Time                                                                         -37.476  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                               99968.550  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : STATE_OUT/j__i0/Q  (FD1P3XZ)
+Path End         : STATE_OUT/j__i25/D  (FD1P3XZ)
+Source Clock     : SERCLK_OUT_c (R)
+Destination Clock: SERCLK_OUT_c (R)
+Logic Level      : 36
+Delay Ratio      : 61.0% (route), 39.0% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 100000.000 ns 
+Path Slack       : 99968.550 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  103     
+SERCLK_OUT_c                                              NET DELAY      6.225         6.225  103     
+
+
+
+STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.391         7.616  1       
+STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
+STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
+                                          FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
+                                          FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
+                                          FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
+                                          FA2             D1_TO_S1_DELAY    0.477        26.988  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
+STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
+                                          LUT4            A_TO_Z_DELAY      0.477        27.745  1       
+STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
+STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
+                                          LUT4            D_TO_Z_DELAY      0.477        30.297  1       
+STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
+                                          LUT4            C_TO_Z_DELAY      0.477        32.849  32      
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+i424_4_lut_4_lut/B->i424_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
+n543 ( D )                                                NET DELAY         2.075        37.476  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -1284,108 +1284,108 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-i401_4_lut_4_lut/B->i401_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
-n520 ( D )                                                NET DELAY         2.075        37.476  1       
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+i408_4_lut_4_lut/B->i408_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
+n527 ( D )                                                NET DELAY         2.075        37.476  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -1405,7 +1405,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/j__i0/Q  (FD1P3XZ)
-Path End         : STATE_OUT/j__i25/D  (FD1P3XZ)
+Path End         : STATE_OUT/j__i27/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 36
@@ -1425,108 +1425,108 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-i417_4_lut_4_lut/B->i417_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
-n536 ( D )                                                NET DELAY         2.075        37.476  1       
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+i428_4_lut_4_lut/B->i428_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
+n547 ( D )                                                NET DELAY         2.075        37.476  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -1566,108 +1566,108 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     FD1P3XZ         CK_TO_Q_DELAY     1.39
 STATE_OUT/j[0]_2                                          NET DELAY         2.075         9.691  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.049  2       
-STATE_OUT/n1306                                           NET DELAY         0.280        10.329  2       
+STATE_OUT/n1216                                           NET DELAY         0.280        10.329  2       
 STATE_OUT/add_7_add_5_3/CI0->STATE_OUT/add_7_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        10.607  2       
-STATE_OUT/n3072                                           NET DELAY         0.280        10.887  2       
+STATE_OUT/n3005                                           NET DELAY         0.280        10.887  2       
 STATE_OUT/add_7_add_5_3/CI1->STATE_OUT/add_7_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.165  2       
-STATE_OUT/n1308                                           NET DELAY         0.280        11.445  2       
+STATE_OUT/n1218                                           NET DELAY         0.280        11.445  2       
 STATE_OUT/add_7_add_5_5/CI0->STATE_OUT/add_7_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.723  2       
-STATE_OUT/n3075                                           NET DELAY         0.280        12.003  2       
+STATE_OUT/n3008                                           NET DELAY         0.280        12.003  2       
 STATE_OUT/add_7_add_5_5/CI1->STATE_OUT/add_7_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        12.281  2       
-STATE_OUT/n1310                                           NET DELAY         0.280        12.561  2       
+STATE_OUT/n1220                                           NET DELAY         0.280        12.561  2       
 STATE_OUT/add_7_add_5_7/CI0->STATE_OUT/add_7_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.839  2       
-STATE_OUT/n3078                                           NET DELAY         0.280        13.119  2       
+STATE_OUT/n3011                                           NET DELAY         0.280        13.119  2       
 STATE_OUT/add_7_add_5_7/CI1->STATE_OUT/add_7_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.397  2       
-STATE_OUT/n1312                                           NET DELAY         0.280        13.677  2       
+STATE_OUT/n1222                                           NET DELAY         0.280        13.677  2       
 STATE_OUT/add_7_add_5_9/CI0->STATE_OUT/add_7_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.955  2       
-STATE_OUT/n3081                                           NET DELAY         0.280        14.235  2       
+STATE_OUT/n3014                                           NET DELAY         0.280        14.235  2       
 STATE_OUT/add_7_add_5_9/CI1->STATE_OUT/add_7_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.513  2       
-STATE_OUT/n1314                                           NET DELAY         0.280        14.793  2       
+STATE_OUT/n1224                                           NET DELAY         0.280        14.793  2       
 STATE_OUT/add_7_add_5_11/CI0->STATE_OUT/add_7_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.071  2       
-STATE_OUT/n3084                                           NET DELAY         0.280        15.351  2       
+STATE_OUT/n3017                                           NET DELAY         0.280        15.351  2       
 STATE_OUT/add_7_add_5_11/CI1->STATE_OUT/add_7_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.629  2       
-STATE_OUT/n1316                                           NET DELAY         0.280        15.909  2       
+STATE_OUT/n1226                                           NET DELAY         0.280        15.909  2       
 STATE_OUT/add_7_add_5_13/CI0->STATE_OUT/add_7_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.187  2       
-STATE_OUT/n3087                                           NET DELAY         0.280        16.467  2       
+STATE_OUT/n3020                                           NET DELAY         0.280        16.467  2       
 STATE_OUT/add_7_add_5_13/CI1->STATE_OUT/add_7_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.745  2       
-STATE_OUT/n1318                                           NET DELAY         0.280        17.025  2       
+STATE_OUT/n1228                                           NET DELAY         0.280        17.025  2       
 STATE_OUT/add_7_add_5_15/CI0->STATE_OUT/add_7_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        17.303  2       
-STATE_OUT/n3090                                           NET DELAY         0.280        17.583  2       
+STATE_OUT/n3023                                           NET DELAY         0.280        17.583  2       
 STATE_OUT/add_7_add_5_15/CI1->STATE_OUT/add_7_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.861  2       
-STATE_OUT/n1320                                           NET DELAY         0.280        18.141  2       
+STATE_OUT/n1230                                           NET DELAY         0.280        18.141  2       
 STATE_OUT/add_7_add_5_17/CI0->STATE_OUT/add_7_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.419  2       
-STATE_OUT/n3093                                           NET DELAY         0.280        18.699  2       
+STATE_OUT/n3026                                           NET DELAY         0.280        18.699  2       
 STATE_OUT/add_7_add_5_17/CI1->STATE_OUT/add_7_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.977  2       
-STATE_OUT/n1322                                           NET DELAY         0.280        19.257  2       
+STATE_OUT/n1232                                           NET DELAY         0.280        19.257  2       
 STATE_OUT/add_7_add_5_19/CI0->STATE_OUT/add_7_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.535  2       
-STATE_OUT/n3096                                           NET DELAY         0.280        19.815  2       
+STATE_OUT/n3029                                           NET DELAY         0.280        19.815  2       
 STATE_OUT/add_7_add_5_19/CI1->STATE_OUT/add_7_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.093  2       
-STATE_OUT/n1324                                           NET DELAY         0.280        20.373  2       
+STATE_OUT/n1234                                           NET DELAY         0.280        20.373  2       
 STATE_OUT/add_7_add_5_21/CI0->STATE_OUT/add_7_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.651  2       
-STATE_OUT/n3099                                           NET DELAY         0.280        20.931  2       
+STATE_OUT/n3032                                           NET DELAY         0.280        20.931  2       
 STATE_OUT/add_7_add_5_21/CI1->STATE_OUT/add_7_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.209  2       
-STATE_OUT/n1326                                           NET DELAY         0.280        21.489  2       
+STATE_OUT/n1236                                           NET DELAY         0.280        21.489  2       
 STATE_OUT/add_7_add_5_23/CI0->STATE_OUT/add_7_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.767  2       
-STATE_OUT/n3102                                           NET DELAY         0.280        22.047  2       
+STATE_OUT/n3035                                           NET DELAY         0.280        22.047  2       
 STATE_OUT/add_7_add_5_23/CI1->STATE_OUT/add_7_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        22.325  2       
-STATE_OUT/n1328                                           NET DELAY         0.280        22.605  2       
+STATE_OUT/n1238                                           NET DELAY         0.280        22.605  2       
 STATE_OUT/add_7_add_5_25/CI0->STATE_OUT/add_7_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.883  2       
-STATE_OUT/n3105                                           NET DELAY         0.280        23.163  2       
+STATE_OUT/n3038                                           NET DELAY         0.280        23.163  2       
 STATE_OUT/add_7_add_5_25/CI1->STATE_OUT/add_7_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.441  2       
-STATE_OUT/n1330                                           NET DELAY         0.280        23.721  2       
+STATE_OUT/n1240                                           NET DELAY         0.280        23.721  2       
 STATE_OUT/add_7_add_5_27/CI0->STATE_OUT/add_7_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.999  2       
-STATE_OUT/n3108                                           NET DELAY         0.280        24.279  2       
+STATE_OUT/n3041                                           NET DELAY         0.280        24.279  2       
 STATE_OUT/add_7_add_5_27/CI1->STATE_OUT/add_7_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.557  2       
-STATE_OUT/n1332                                           NET DELAY         0.280        24.837  2       
+STATE_OUT/n1242                                           NET DELAY         0.280        24.837  2       
 STATE_OUT/add_7_add_5_29/CI0->STATE_OUT/add_7_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.115  2       
-STATE_OUT/n3111                                           NET DELAY         0.280        25.395  2       
+STATE_OUT/n3044                                           NET DELAY         0.280        25.395  2       
 STATE_OUT/add_7_add_5_29/CI1->STATE_OUT/add_7_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.673  2       
-STATE_OUT/n1334                                           NET DELAY         0.280        25.953  2       
+STATE_OUT/n1244                                           NET DELAY         0.280        25.953  2       
 STATE_OUT/add_7_add_5_31/CI0->STATE_OUT/add_7_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.231  2       
-STATE_OUT/n3114                                           NET DELAY         0.280        26.511  2       
+STATE_OUT/n3047                                           NET DELAY         0.280        26.511  2       
 STATE_OUT/add_7_add_5_31/D1->STATE_OUT/add_7_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.988  2       
-waiting_N_140[30]                                         NET DELAY         0.280        27.268  2       
+waiting_N_141[30]                                         NET DELAY         0.280        27.268  2       
 STATE_OUT/i21_4_lut/A->STATE_OUT/i21_4_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477        27.745  1       
 STATE_OUT/n50                                             NET DELAY         2.075        29.820  1       
 STATE_OUT/i27_4_lut/D->STATE_OUT/i27_4_lut/Z
                                           LUT4            D_TO_Z_DELAY      0.477        30.297  1       
 STATE_OUT/n56                                             NET DELAY         2.075        32.372  1       
-STATE_OUT/i640_4_lut/C->STATE_OUT/i640_4_lut/Z
+STATE_OUT/i678_4_lut/C->STATE_OUT/i678_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        32.849  32      
-waiting_N_139                                             NET DELAY         2.075        34.924  32      
-i399_4_lut_4_lut/B->i399_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
-n518 ( D )                                                NET DELAY         2.075        37.476  1       
+waiting_N_140                                             NET DELAY         2.075        34.924  32      
+i406_4_lut_4_lut/B->i406_4_lut_4_lut/Z    LUT4            B_TO_Z_DELAY      0.477        35.401  1       
+n525 ( D )                                                NET DELAY         2.075        37.476  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -1723,8 +1723,8 @@ SERCLK_OUT_c                                              NET DELAY      6.225  
 
 
 
-Sreg_i1/CK->Sreg_i1/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  9       
-Sreg[1] ( D )                                             NET DELAY      0.280         7.896  9       
+Sreg_i1/CK->Sreg_i1/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  10      
+Sreg[1] ( D )                                             NET DELAY      0.280         7.896  10      
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1781,7 +1781,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/state/Q  (FD1P3XZ)
-Path End         : mainTimer/clkCont_i15/D  (FD1P3XZ)
+Path End         : mainTimer/clkCont_i14/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1797,11 +1797,11 @@ SERCLK_OUT_c                                              NET DELAY      6.225  
 
 
 
-mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  23      
-timeout_c                                                 NET DELAY      0.280         7.896  23      
-mainTimer/i627_2_lut/B->mainTimer/i627_2_lut/Z
+mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  26      
+timeout_c                                                 NET DELAY      0.280         7.896  26      
+mainTimer/i666_2_lut/B->mainTimer/i666_2_lut/Z
                                           LUT4            B_TO_Z_DELAY   0.450         8.346  1       
-mainTimer/clkCont_17__N_19[15] ( D )                      NET DELAY      2.075        10.421  1       
+mainTimer/clkCont_17__N_20[14] ( D )                      NET DELAY      2.075        10.421  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1821,7 +1821,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/state/Q  (FD1P3XZ)
-Path End         : mainTimer/clkCont_i16/D  (FD1P3XZ)
+Path End         : mainTimer/clkCont_i15/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1837,11 +1837,11 @@ SERCLK_OUT_c                                              NET DELAY      6.225  
 
 
 
-mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  23      
-timeout_c                                                 NET DELAY      0.280         7.896  23      
-mainTimer/i626_2_lut/B->mainTimer/i626_2_lut/Z
+mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  26      
+timeout_c                                                 NET DELAY      0.280         7.896  26      
+mainTimer/i665_2_lut/B->mainTimer/i665_2_lut/Z
                                           LUT4            B_TO_Z_DELAY   0.450         8.346  1       
-mainTimer/clkCont_17__N_19[16] ( D )                      NET DELAY      2.075        10.421  1       
+mainTimer/clkCont_17__N_20[15] ( D )                      NET DELAY      2.075        10.421  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1861,7 +1861,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/state/Q  (FD1P3XZ)
-Path End         : mainTimer/clkCont_i17/D  (FD1P3XZ)
+Path End         : mainTimer/clkCont_i16/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1877,11 +1877,11 @@ SERCLK_OUT_c                                              NET DELAY      6.225  
 
 
 
-mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  23      
-timeout_c                                                 NET DELAY      0.280         7.896  23      
-mainTimer/i625_2_lut/B->mainTimer/i625_2_lut/Z
+mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  26      
+timeout_c                                                 NET DELAY      0.280         7.896  26      
+mainTimer/i664_2_lut/B->mainTimer/i664_2_lut/Z
                                           LUT4            B_TO_Z_DELAY   0.450         8.346  1       
-mainTimer/clkCont_17__N_19[17] ( D )                      NET DELAY      2.075        10.421  1       
+mainTimer/clkCont_17__N_20[16] ( D )                      NET DELAY      2.075        10.421  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1899,6 +1899,46 @@ Path Slack  (Passed)                                                            
 
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : mainTimer/state/Q  (FD1P3XZ)
+Path End         : mainTimer/clkCont_i17/D  (FD1P3XZ)
+Source Clock     : SERCLK_OUT_c (R)
+Destination Clock: SERCLK_OUT_c (R)
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  103     
+SERCLK_OUT_c                                              NET DELAY      6.225         6.225  103     
+
+
+
+mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  26      
+timeout_c                                                 NET DELAY      0.280         7.896  26      
+mainTimer/i663_2_lut/B->mainTimer/i663_2_lut/Z
+                                          LUT4            B_TO_Z_DELAY   0.450         8.346  1       
+mainTimer/clkCont_17__N_20[17] ( D )                      NET DELAY      2.075        10.421  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  103     
+SERCLK_OUT_c ( CK )                                       NET DELAY      6.225         6.225  103     
+                                                          Uncertainty    0.000         6.225  
+                                                          Hold time      0.000         6.225  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -6.225  
+Arrival Time                                                                          10.421  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   4.196  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/clkCont_i3/Q  (FD1P3XZ)
 Path End         : mainTimer/state/D  (FD1P3XZ)
@@ -1922,48 +1962,7 @@ mainTimer/clkCont_i3/CK->mainTimer/clkCont_i3/Q
 mainTimer/clkCont[3]                                      NET DELAY      0.280         7.896  2       
 mainTimer/i5_4_lut/A->mainTimer/i5_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.450         8.346  1       
-mainTimer/n2774 ( D )                                     NET DELAY      2.075        10.421  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  103     
-SERCLK_OUT_c ( CK )                                       NET DELAY      6.225         6.225  103     
-                                                          Uncertainty    0.000         6.225  
-                                                          Hold time      0.000         6.225  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -6.225  
-Arrival Time                                                                          10.421  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   4.196  
-
-
-
-
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : keyboard/state_i0/Q  (FD1P3XZ)
-Path End         : keyboard/state_i1/D  (FD1P3XZ)
-Source Clock     : SERCLK_OUT_c (R)
-Destination Clock: SERCLK_OUT_c (R)
-Logic Level      : 2
-Delay Ratio      : 56.1% (route), 43.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 4.196 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  103     
-SERCLK_OUT_c                                              NET DELAY      6.225         6.225  103     
-
-
-
-keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  11      
-state[0]                                                  NET DELAY      0.280         7.896  11      
-keyboard/i1_2_lut_adj_38/A->keyboard/i1_2_lut_adj_38/Z
-                                          LUT4            A_TO_Z_DELAY   0.450         8.346  2       
-keyboard/nextState[1] ( D )                               NET DELAY      2.075        10.421  2       
+mainTimer/n2708 ( D )                                     NET DELAY      2.075        10.421  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1983,7 +1982,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : keyboard/state_i0/Q  (FD1P3XZ)
-Path End         : PREV_KEY_i0_i0/D  (FD1P3XZ)
+Path End         : keyboard/state_i1/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -2000,10 +1999,11 @@ SERCLK_OUT_c                                              NET DELAY      6.225  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  11      
-state[0]                                                  NET DELAY      0.280         7.896  11      
-i333_4_lut/B->i333_4_lut/Z                LUT4            B_TO_Z_DELAY   0.450         8.346  1       
-n452 ( D )                                                NET DELAY      2.075        10.421  1       
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  10      
+state[0]                                                  NET DELAY      0.280         7.896  10      
+keyboard/i1_2_lut_adj_40/A->keyboard/i1_2_lut_adj_40/Z
+                                          LUT4            A_TO_Z_DELAY   0.450         8.346  2       
+keyboard/nextState[1] ( D )                               NET DELAY      2.075        10.421  2       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -2022,8 +2022,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : keyboard/state_i1/Q  (FD1P3XZ)
-Path End         : PREV_KEY_i0_i1/D  (FD1P3XZ)
+Path Begin       : keyboard/state_i0/Q  (FD1P3XZ)
+Path End         : PREV_KEY_i0_i0/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -2039,11 +2039,11 @@ SERCLK_OUT_c                                              NET DELAY      6.225  
 
 
 
-keyboard/state_i1/CK->keyboard/state_i1/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  12      
-state[1]                                                  NET DELAY      0.280         7.896  12      
-i430_3_lut_4_lut/C->i430_3_lut_4_lut/Z    LUT4            C_TO_Z_DELAY   0.450         8.346  1       
-n549 ( D )                                                NET DELAY      2.075        10.421  1       
+keyboard/state_i0/CK->keyboard/state_i0/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  10      
+state[0]                                                  NET DELAY      0.280         7.896  10      
+i340_4_lut/D->i340_4_lut/Z                LUT4            D_TO_Z_DELAY   0.450         8.346  1       
+n459 ( D )                                                NET DELAY      2.075        10.421  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -2062,8 +2062,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : keyboard/state_i1/Q  (FD1P3XZ)
-Path End         : Sreg_i1/D  (FD1P3XZ)
+Path Begin       : PREV_KEY_i0_i1/Q  (FD1P3XZ)
+Path End         : PREV_KEY_i0_i1/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -2075,15 +2075,14 @@ Path Slack       : 4.196 ns  (Passed)
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  103     
-SERCLK_OUT_c                                              NET DELAY      6.225         6.225  103     
+SERCLK_OUT_c ( CK )                                       NET DELAY      6.225         6.225  103     
 
 
 
-keyboard/state_i1/CK->keyboard/state_i1/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  12      
-state[1]                                                  NET DELAY      0.280         7.896  12      
-i1861_4_lut/A->i1861_4_lut/Z              LUT4            A_TO_Z_DELAY   0.450         8.346  3       
-debug_c_1 ( D )                                           NET DELAY      2.075        10.421  3       
+PREV_KEY_i0_i1/CK->PREV_KEY_i0_i1/Q       FD1P3XZ         CK_TO_Q_DELAY  1.391         7.616  2       
+PREV_KEY[1]                                               NET DELAY      0.280         7.896  2       
+i437_3_lut/A->i437_3_lut/Z                LUT4            A_TO_Z_DELAY   0.450         8.346  1       
+n556 ( D )                                                NET DELAY      2.075        10.421  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       

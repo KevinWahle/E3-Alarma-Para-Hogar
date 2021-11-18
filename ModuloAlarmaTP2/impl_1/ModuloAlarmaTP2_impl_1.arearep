@@ -9,22 +9,22 @@ I/O cells:      15
                                  IB         6          100.0
                               IOL_B         1          100.0
                          LSOSC_CORE         1          100.0
-                               LUT4       162          100.0
+                               LUT4       164          100.0
                                  OB         9          100.0
 SUB MODULES
                           codeCkeck         1
                       easySerialOut         1
                           serialOut         1
                               timer         1
-                              TOTAL       329
+                              TOTAL       331
 ----------------------------------------------------------------------
 Report for cell codeCkeck.v1
 Instance Path : keyboard
                                   Cell usage:
                                cell     count   Res Usage(%)
                             FD1P3XZ         4            3.9
-                               LUT4        22           13.6
-                              TOTAL        26
+                               LUT4        23           14.0
+                              TOTAL        27
 ----------------------------------------------------------------------
 Report for cell timer.v1
 Instance Path : mainTimer
@@ -32,7 +32,7 @@ Instance Path : mainTimer
                                cell     count   Res Usage(%)
                                 FA2        10           22.7
                             FD1P3XZ        19           18.6
-                               LUT4        26           16.0
+                               LUT4        26           15.9
                               TOTAL        55
 ----------------------------------------------------------------------
 Report for cell easySerialOut.v1
@@ -42,7 +42,7 @@ Instance Path : STATE_OUT
                                 FA2        34           77.3
                             FD1P3XZ        75           73.5
                               IOL_B         1          100.0
-                               LUT4        34           21.0
+                               LUT4        34           20.7
 SUB MODULES
                           serialOut         1
                               TOTAL       145
@@ -54,5 +54,5 @@ Instance Path : STATE_OUT.serial
                                 FA2        17           38.6
                             FD1P3XZ        37           36.3
                               IOL_B         1          100.0
-                               LUT4        14            8.6
+                               LUT4        14            8.5
                               TOTAL        69

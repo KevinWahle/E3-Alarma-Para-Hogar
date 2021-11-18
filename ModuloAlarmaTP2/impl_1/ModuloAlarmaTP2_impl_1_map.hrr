@@ -4,28 +4,28 @@ Report for cell MainModule
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	        259        100.0
+                                  LUT4	        261        100.0
                                  IOREG	          1        100.0
                                  IOBUF	         15        100.0
                                 PFUREG	        102        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                             codeCkeck	          1         8.5
-                         easySerialOut	          1        39.0
-                                 timer	          1        17.8
+                             codeCkeck	          1         8.8
+                         easySerialOut	          1        38.7
+                                 timer	          1        17.6
 ---------------------------------------------------
 Report for cell codeCkeck
    Instance path: MainModule/keyboard
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         22         8.5
+                                  LUT4	         23         8.8
                                 PFUREG	          4         3.9
 ---------------------------------------------------
 Report for cell timer
    Instance path: MainModule/mainTimer
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         46        17.8
+                                  LUT4	         46        17.6
                                 PFUREG	         19        18.6
 ---------------------------------------------------
 Report for cell easySerialOut
@@ -33,18 +33,18 @@ Report for cell easySerialOut
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	        101        39.0
+                                  LUT4	        101        38.7
                                  IOREG	          1        100.0
                                 PFUREG	         75        73.5
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                             serialOut	          1        18.1
+                             serialOut	          1        18.0
 ---------------------------------------------------
 Report for cell serialOut
    Instance path: MainModule/STATE_OUT/serial
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       1.00        100.0
-                                  LUT4	         47        18.1
+                                  LUT4	         47        18.0
                                  IOREG	          1        100.0
                                 PFUREG	         37        36.3

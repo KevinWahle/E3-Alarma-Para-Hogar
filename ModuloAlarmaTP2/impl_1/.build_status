@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1637257541">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1637257541"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1637257542"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1637257544"/>
+        <Milestone name="Export" build_result="2" build_time="1637257949">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1637257949"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1637257950"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1637257952"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1637257513">
-            <Task name="Map" build_result="2" update_result="0" update_time="1637257513"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1637257515"/>
+        <Milestone name="Map" build_result="2" build_time="1637257922">
+            <Task name="Map" build_result="2" update_result="0" update_time="1637257922"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1637257924"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1637257537">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1637257537"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1637257539"/>
+        <Milestone name="PAR" build_result="2" build_time="1637257945">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1637257945"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1637257948"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1637257510">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1637257510"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1637257544"/>
-            <Task name="SynTrace" build_result="2" update_result="0" update_time="1637257511"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1637257920">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1637257920"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1637257952"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1637257921"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="IBIS/ModuloAlarmaTP2_impl_1.ibs" last_build_time="1637257542" last_build_size="54595"/>
-        <Report name="ModuloAlarmaTP2_impl_1.bgn" last_build_time="1637257541" last_build_size="1032"/>
-        <Report name="ModuloAlarmaTP2_impl_1.bin" last_build_time="1637257541" last_build_size="104156"/>
+        <Report name="IBIS/ModuloAlarmaTP2_impl_1.ibs" last_build_time="1637257950" last_build_size="54595"/>
+        <Report name="ModuloAlarmaTP2_impl_1.bgn" last_build_time="1637257949" last_build_size="1032"/>
+        <Report name="ModuloAlarmaTP2_impl_1.bin" last_build_time="1637257949" last_build_size="104156"/>
         <Report name="ModuloAlarmaTP2_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="ModuloAlarmaTP2_impl_1.tw1.html" last_build_time="1637257515" last_build_size="230412"/>
-        <Report name="ModuloAlarmaTP2_impl_1.twr.html" last_build_time="1637257539" last_build_size="434555"/>
-        <Report name="ModuloAlarmaTP2_impl_1.tws.html" last_build_time="1637257511" last_build_size="420016"/>
-        <Report name="ModuloAlarmaTP2_impl_1.udb" last_build_time="1637257537" last_build_size="39702"/>
-        <Report name="ModuloAlarmaTP2_impl_1_map.udb" last_build_time="1637257513" last_build_size="24803"/>
-        <Report name="ModuloAlarmaTP2_impl_1_rtl.udb" last_build_time="1637257508" last_build_size="13670"/>
-        <Report name="ModuloAlarmaTP2_impl_1_syn.udb" last_build_time="1637257510" last_build_size="18229"/>
-        <Report name="ModuloAlarmaTP2_impl_1_vo.sdf" last_build_time="1637257544" last_build_size="179008"/>
-        <Report name="ModuloAlarmaTP2_impl_1_vo.vo" last_build_time="1637257544" last_build_size="177399"/>
+        <Report name="ModuloAlarmaTP2_impl_1.tw1.html" last_build_time="1637257924" last_build_size="230342"/>
+        <Report name="ModuloAlarmaTP2_impl_1.twr.html" last_build_time="1637257947" last_build_size="433409"/>
+        <Report name="ModuloAlarmaTP2_impl_1.tws.html" last_build_time="1637257921" last_build_size="420064"/>
+        <Report name="ModuloAlarmaTP2_impl_1.udb" last_build_time="1637257945" last_build_size="39751"/>
+        <Report name="ModuloAlarmaTP2_impl_1_map.udb" last_build_time="1637257922" last_build_size="25069"/>
+        <Report name="ModuloAlarmaTP2_impl_1_rtl.udb" last_build_time="1637257919" last_build_size="13708"/>
+        <Report name="ModuloAlarmaTP2_impl_1_syn.udb" last_build_time="1637257920" last_build_size="18440"/>
+        <Report name="ModuloAlarmaTP2_impl_1_vo.sdf" last_build_time="1637257952" last_build_size="180036"/>
+        <Report name="ModuloAlarmaTP2_impl_1_vo.vo" last_build_time="1637257952" last_build_size="177777"/>
     </Strategy>
 </BuildStatus>

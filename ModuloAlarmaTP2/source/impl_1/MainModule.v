@@ -101,11 +101,11 @@ module MainModule (
 			end
 				
 			ESPERA: begin
-				if (KEY_STATUS == NO_KEY) TIMER_EN <= 1'b1;
-				else if (TIME_OUT) begin
+				if (TIME_OUT) begin
 					TIMER_EN <= 1'b0;
 					Snext <= ALARMA;
 				end				
+				else if (KEY_STATUS == NO_KEY) TIMER_EN <= 1'b1;
 				else if (KEY_STATUS == KEY_OK) begin
 					TIMER_EN <= 1'b0;
 					Snext <= INACTIVO;

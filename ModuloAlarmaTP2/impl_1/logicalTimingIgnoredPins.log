@@ -1,7 +1,29 @@
-FA2/A0 input add_7_add_5_3is connected to a constant net
-FA2/A1 input add_7_add_5_3is connected to a constant net
+FA2/A0 input add_7_add_5_1is connected to a constant net
+FA2/A1 input add_7_add_5_1is connected to a constant net
+FA2/A0 input add_7_add_5_29is connected to a constant net
+FA2/A1 input add_7_add_5_29is connected to a constant net
 FA2/A0 input add_7_add_5_5is connected to a constant net
 FA2/A1 input add_7_add_5_5is connected to a constant net
+FA2/A0 input add_7_add_5_3is connected to a constant net
+FA2/A1 input add_7_add_5_3is connected to a constant net
+FA2/A0 input add_7_add_5_15is connected to a constant net
+FA2/A1 input add_7_add_5_15is connected to a constant net
+FA2/A0 input add_7_add_5_13is connected to a constant net
+FA2/A1 input add_7_add_5_13is connected to a constant net
+FA2/A0 input add_7_add_5_11is connected to a constant net
+FA2/A1 input add_7_add_5_11is connected to a constant net
+FA2/A0 input add_7_add_5_7is connected to a constant net
+FA2/A1 input add_7_add_5_7is connected to a constant net
+FA2/A0 input add_7_add_5_5is connected to a constant net
+FA2/A1 input add_7_add_5_5is connected to a constant net
+FA2/A0 input add_7_add_5_3is connected to a constant net
+FA2/A1 input add_7_add_5_3is connected to a constant net
+FA2/A0 input add_7_add_5_9is connected to a constant net
+FA2/A1 input add_7_add_5_9is connected to a constant net
+FA2/A0 input add_7_add_5_17is connected to a constant net
+FA2/A1 input add_7_add_5_17is connected to a constant net
+FA2/A0 input add_7_add_5_1is connected to a constant net
+FA2/A1 input add_7_add_5_1is connected to a constant net
 FA2/A0 input add_7_add_5_19is connected to a constant net
 FA2/A1 input add_7_add_5_19is connected to a constant net
 FA2/B1 input add_7_add_5_19is connected to a constant net
@@ -12,42 +34,10 @@ FA2/CI1 input add_7_add_5_19 has no outgoing device arc
 FA2/B0 input add_7_add_5_19 is on an incomplete path
 FA2/C0 input add_7_add_5_19is connected to a constant net
 FA2/CI0 input add_7_add_5_19 is on an incomplete path
-FA2/A0 input add_7_add_5_17is connected to a constant net
-FA2/A1 input add_7_add_5_17is connected to a constant net
-FA2/A0 input add_7_add_5_15is connected to a constant net
-FA2/A1 input add_7_add_5_15is connected to a constant net
-FA2/A0 input add_7_add_5_13is connected to a constant net
-FA2/A1 input add_7_add_5_13is connected to a constant net
-FA2/A0 input add_7_add_5_11is connected to a constant net
-FA2/A1 input add_7_add_5_11is connected to a constant net
-FA2/A0 input add_7_add_5_1is connected to a constant net
-FA2/A1 input add_7_add_5_1is connected to a constant net
-FA2/A0 input add_7_add_5_7is connected to a constant net
-FA2/A1 input add_7_add_5_7is connected to a constant net
-FA2/A0 input add_7_add_5_9is connected to a constant net
-FA2/A1 input add_7_add_5_9is connected to a constant net
-FA2/A0 input add_7_add_5_5is connected to a constant net
-FA2/A1 input add_7_add_5_5is connected to a constant net
-FA2/A0 input add_7_add_5_3is connected to a constant net
-FA2/A1 input add_7_add_5_3is connected to a constant net
-FA2/A0 input add_6_add_5_7is connected to a constant net
-FA2/A1 input add_6_add_5_7is connected to a constant net
-LSOSC_CORE/CLKLFPU input OSCInst1is connected to a constant net
-LSOSC_CORE/CLKLFEN input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM9 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM8 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM7 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM6 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM5 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM4 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM3 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM2 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM1 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM0 input OSCInst1is connected to a constant net
 VHI/Z VCC  i2
-     *** STATE_OUT/serial/status_out/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i0/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i21/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/status_out/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i22/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/status_send/CE is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i1/SP is driven by constant or a pin on an incomplete path
@@ -82,8 +72,9 @@ VHI/Z VCC  i2
      *** STATE_OUT/serial/j__i20/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_1/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i16/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i25/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i27/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i17/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i25/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/waiting_c/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/init_c/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i18/SP is driven by constant or a pin on an incomplete path
@@ -92,15 +83,14 @@ VHI/Z VCC  i2
      *** STATE_OUT/j__i21/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i28/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i29/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_1/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i30/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i22/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i23/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i24/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_108__i0/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_110__i0/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i31/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i11/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i12/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i9/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i8/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i7/SP is driven by constant or a pin on an incomplete path
@@ -110,14 +100,14 @@ VHI/Z VCC  i2
      *** STATE_OUT/j__i10/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i3/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i2/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i15/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i13/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i14/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_108__i1/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_108__i2/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_108__i3/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i12/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i13/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_110__i1/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_110__i2/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_110__i3/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i26/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i27/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i15/SP is driven by constant or a pin on an incomplete path
      *** mainTimer/state/SP is driven by constant or a pin on an incomplete path
      *** mainTimer/clkCont_i17/SP is driven by constant or a pin on an incomplete path
      *** mainTimer/clkCont_i16/SP is driven by constant or a pin on an incomplete path
@@ -139,10 +129,12 @@ VHI/Z VCC  i2
      *** mainTimer/add_7_add_5_1/C1 is driven by constant or a pin on an incomplete path
      *** mainTimer/clkCont_i0/SP is driven by constant or a pin on an incomplete path
      *** keyboard/state_i1/SP is driven by constant or a pin on an incomplete path
-     *** keyboard/counter_109__i0/SP is driven by constant or a pin on an incomplete path
-     *** keyboard/counter_109__i1/SP is driven by constant or a pin on an incomplete path
+     *** keyboard/counter_111__i0/SP is driven by constant or a pin on an incomplete path
+     *** keyboard/counter_111__i1/SP is driven by constant or a pin on an incomplete path
      *** keyboard/state_i0/SP is driven by constant or a pin on an incomplete path
      *** Sreg_i0/SP is driven by constant or a pin on an incomplete path
+     *** OSCInst1/CLKLFPU is driven by constant or a pin on an incomplete path
+     *** OSCInst1/CLKLFEN is driven by constant or a pin on an incomplete path
      *** Sreg_i1/SP is driven by constant or a pin on an incomplete path
      *** PREV_KEY_i0_i1/SP is driven by constant or a pin on an incomplete path
      *** PREV_KEY_i0_i0/SP is driven by constant or a pin on an incomplete path
@@ -155,6 +147,16 @@ VHI/Z VCC  i2
      *** debug_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** debug_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** timeout_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+LSOSC_CORE/TRIM9 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM8 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM7 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM6 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM5 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM4 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM3 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM2 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM1 input OSCInst1is connected to a constant net
+LSOSC_CORE/TRIM0 input OSCInst1is connected to a constant net
 VLO/Z GND  i1
      *** STATE_OUT/serial/j__i21/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i22/SR is driven by constant or a pin on an incomplete path
@@ -164,6 +166,11 @@ VLO/Z GND  i1
      *** STATE_OUT/serial/status_send/HOLD is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/status_send/INCLK is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/temp_data_out_i0_i0/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_33/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_33/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_33/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_33/B1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_33/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i23/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i24/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i25/SR is driven by constant or a pin on an incomplete path
@@ -176,15 +183,10 @@ VLO/Z GND  i1
      *** STATE_OUT/serial/temp_data_out_i0_i1/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/temp_data_out_i0_i2/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i2/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_11/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_11/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_11/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_11/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_33/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_33/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_33/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_33/B1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_33/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_31/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_31/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_31/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_31/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i3/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i4/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i5/SR is driven by constant or a pin on an incomplete path
@@ -203,10 +205,10 @@ VLO/Z GND  i1
      *** STATE_OUT/serial/j__i18/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i19/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i20/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_31/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_31/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_31/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_31/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_11/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_11/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_11/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_29/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_29/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_29/A1 is driven by constant or a pin on an incomplete path
@@ -215,55 +217,60 @@ VLO/Z GND  i1
      *** STATE_OUT/serial/add_6_add_5_27/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_27/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_27/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_5/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_5/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_5/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_5/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_25/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_25/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_25/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_25/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_3/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_3/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_3/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_3/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_15/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_15/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_15/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_15/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_9/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_9/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_9/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_23/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_23/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_23/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_23/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_5/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_5/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_5/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_21/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_21/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_21/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_21/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_3/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_3/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_3/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_19/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_19/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_19/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_19/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_13/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_13/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_13/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_13/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_17/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_17/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_17/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_17/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_15/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_15/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_15/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_15/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_7/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_7/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_9/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_9/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_13/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_13/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_13/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_13/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_1/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_1/B0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_1/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_1/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/add_6_add_5_7/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i16/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i25/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i27/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i17/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_29/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_29/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i25/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/waiting_c/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/init_c/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i18/SR is driven by constant or a pin on an incomplete path
@@ -273,20 +280,17 @@ VLO/Z GND  i1
      *** STATE_OUT/j__i28/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_5/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i29/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_3/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i29/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_1/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i30/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i22/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i23/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i24/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_1/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_1/B0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_1/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_1/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i31/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i11/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i12/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i9/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i8/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i7/SR is driven by constant or a pin on an incomplete path
@@ -296,39 +300,10 @@ VLO/Z GND  i1
      *** STATE_OUT/j__i10/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i3/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i2/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i15/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i13/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i14/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i12/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i13/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/j__i26/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_13/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_13/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_13/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_13/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_11/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_11/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_11/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_11/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_9/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_9/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_9/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_7/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_7/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_7/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_33/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_33/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_33/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_33/B1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_33/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_31/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_31/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_31/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_31/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_29/A0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_29/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_29/A1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/add_7_add_5_29/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_27/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_27/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_27/A1 is driven by constant or a pin on an incomplete path
@@ -345,6 +320,11 @@ VLO/Z GND  i1
      *** STATE_OUT/add_7_add_5_21/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_21/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_21/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_33/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_33/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_33/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_33/B1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_33/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_19/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_19/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_19/A1 is driven by constant or a pin on an incomplete path
@@ -357,9 +337,27 @@ VLO/Z GND  i1
      *** STATE_OUT/add_7_add_5_15/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_15/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/add_7_add_5_15/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/j__i27/SR is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_17/C0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_17/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_13/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_13/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_13/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_13/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_11/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_11/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_9/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_9/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_7/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_7/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_31/A0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_31/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_31/A1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/add_7_add_5_31/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/j__i15/SR is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_15/C0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_15/C1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_13/C0 is driven by constant or a pin on an incomplete path
@@ -376,9 +374,11 @@ VLO/Z GND  i1
      *** mainTimer/add_7_add_5_3/C1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_1/B0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_1/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_17/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_17/C1 is driven by constant or a pin on an incomplete path
      *** keyboard/state_i1/SR is driven by constant or a pin on an incomplete path
-     *** keyboard/counter_109__i0/SR is driven by constant or a pin on an incomplete path
-     *** keyboard/counter_109__i1/SR is driven by constant or a pin on an incomplete path
+     *** keyboard/counter_111__i0/SR is driven by constant or a pin on an incomplete path
+     *** keyboard/counter_111__i1/SR is driven by constant or a pin on an incomplete path
      *** keyboard/state_i0/SR is driven by constant or a pin on an incomplete path
      *** PREV_KEY_i0_i1/SR is driven by constant or a pin on an incomplete path
      *** PREV_KEY_i0_i0/SR is driven by constant or a pin on an incomplete path
@@ -388,14 +388,14 @@ VLO/Z GND  i1
      *** KB_IN_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** KB_RECV_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RESET_IN_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-FA2/D1 input add_7_add_5_33 has no outgoing device arc
-FA2/CI1 input add_7_add_5_33 has no outgoing device arc
-     ** STATE_OUT/add_7_add_5_33/CO0 is driving a pin on an incomplete path
-FA2/B0 input add_7_add_5_33 is on an incomplete path
-FA2/CI0 input add_7_add_5_33 is on an incomplete path
 FA2/D1 input add_6_add_5_33 has no outgoing device arc
 FA2/CI1 input add_6_add_5_33 has no outgoing device arc
      ** STATE_OUT/serial/add_6_add_5_33/CO0 is driving a pin on an incomplete path
 FA2/B0 input add_6_add_5_33 is on an incomplete path
 FA2/CI0 input add_6_add_5_33 is on an incomplete path
      ** STATE_OUT/serial/j__i31/Q is driving a pin on an incomplete path
+FA2/D1 input add_7_add_5_33 has no outgoing device arc
+FA2/CI1 input add_7_add_5_33 has no outgoing device arc
+     ** STATE_OUT/add_7_add_5_33/CO0 is driving a pin on an incomplete path
+FA2/B0 input add_7_add_5_33 is on an incomplete path
+FA2/CI0 input add_7_add_5_33 is on an incomplete path

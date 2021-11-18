@@ -1,33 +1,27 @@
 module serialOut (
-    input wire init,        // Recibo de aviso de transmisi贸n
-    input wire clk,         // se帽al de clock
-    input wire[3:0] state,        // Estado a transmitir
-    output reg status_send,// Envio de aviso de transmisi贸n
-    output reg status_out // Canal de transmisi贸n
-    );
-
-    integer counter=0;
-	reg[3:0] aux;
-
-    always @(posedge clk)
-		begin
-			if (counter == 0)
-	        begin
-	                status_send =0;
-	                status_out =0;
-					aux = state;
-	        end
-
-			if (init)           // Comienza la transmision
-            begin
-                counter = 4;    // Inicio el contador, aviso y empiezo a transmitir
-                status_send =1; 
-            end
-            
-            if (counter)    // Transmisi贸n de bits
-            begin
-                status_out = aux[counter-1];
-                counter = counter - 1;
-            end  
-		end	
-endmodule   
+    input wire init,        	// Recibo de aviso de transmisi髇
+    input wire clk,         	// se馻l de clock
+    input wire [3:0]state,      // Estado a transmitir
+    output reg status_send,		// Envio de aviso de transmisi髇
+    output reg status_out 		// Canal de transmisi髇
+	);
+	
+	integer j;
+	reg [3:0]temp_data_out;
+	
+    always @(posedge clk) begin
+		if (!init) begin
+			status_send <= 1'b0;
+			status_out <= 1'b0;
+			temp_data_out <= state;
+			j = 0;
+		end
+		else if (init) begin			// Comienza la transmision
+			status_send <= 1'b1;
+			status_out <= temp_data_out[j];	
+			j = j + 1;
+			if (j>3)
+				j=0;
+		end  
+	end
+endmodule

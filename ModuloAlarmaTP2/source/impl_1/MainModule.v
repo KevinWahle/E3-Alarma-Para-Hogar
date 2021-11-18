@@ -12,7 +12,7 @@ module MainModule (
 
     //input CTRL_IN, CTRL_RECV, CTRL_CLK,
 
-    output reg RESET_OUT, 
+    //output reg RESET_OUT, 
     //input RESET_IN
 	
 	
@@ -67,7 +67,7 @@ module MainModule (
         .cable2(KB_IN[0]), 
         .keyIn(key),
         .keyStatus(KEY_STATUS),
-        .reset(KEY_RST),
+        //.reset(KEY_RST),
 		.salidaActualKey(DEBUG_KEY)
     );
     //--------------------------------------------------------------------
@@ -76,8 +76,8 @@ module MainModule (
     //Variables y parametros
     //reg [1:0]Sreg = 0; // Comienza en modo inactivo
     reg [1:0]Snext;
-    parameter INACTIVO = 0, ARMADO = 1, ESPERA = 2, ALARMA = 3;
-    parameter KEY_OK = 0, KEY_ERROR = 2, NO_KEY = 3;
+    parameter [1:0] INACTIVO = 0, ARMADO = 1, ESPERA = 2, ALARMA = 3;
+    parameter [1:0] KEY_OK = 0, KEY_ERROR = 2, NO_KEY = 3;
 
 
     //--------------------------------------------------------------------
@@ -91,9 +91,9 @@ module MainModule (
         INACTIVO: begin
 			if (KEY_STATUS == KEY_OK) begin
 				Snext <= ARMADO;	
-			end				
+			end
 			// KEY_STATUS <= NO_KEY;
-		   	end 
+		   	end
         
 		ARMADO:	begin
             if (KEY_STATUS == KEY_OK)

@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Wed Nov 17 21:56:45 2021
+Wed Nov 17 23:54:03 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -65,13 +65,13 @@ Operating conditions:
 Combinational Loops
 -------------------
 ++++ Loop1
-i364_4_lut/A	->	i364_4_lut/Z
+i280_4_lut/A	->	i280_4_lut/Z
 
 ++++ Loop2
-i1_4_lut/Z	->	i1_4_lut_adj_46/Z
+i1_4_lut/Z	->	i1_4_lut_adj_45/Z
 
 ++++ Loop3
-i366_4_lut/A	->	i366_4_lut/Z
+i282_4_lut/A	->	i282_4_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -101,7 +101,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 66.596%
+Constraint Coverage: 66.453%
 
 3.1.2  Timing Errors
 ---------------------
@@ -120,13 +120,13 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
 STATE_OUT/serial/counter_i31/D           |99979.981 ns 
 STATE_OUT/serial/counter_i30/D           |99980.259 ns 
 STATE_OUT/serial/counter_i29/D           |99980.537 ns 
+STATE_OUT/serial/status_out/D            |99980.546 ns 
 STATE_OUT/serial/counter_i28/D           |99980.815 ns 
 STATE_OUT/serial/counter_i27/D           |99981.093 ns 
 STATE_OUT/serial/counter_i26/D           |99981.371 ns 
 STATE_OUT/serial/counter_i25/D           |99981.649 ns 
 STATE_OUT/serial/counter_i24/D           |99981.927 ns 
 STATE_OUT/serial/counter_i23/D           |99982.205 ns 
-STATE_OUT/serial/counter_i22/D           |99982.483 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -143,11 +143,11 @@ STATE_OUT/serial/counter_i29/D           |    3.092 ns
 STATE_OUT/serial/counter_i30/D           |    3.092 ns 
 STATE_OUT/serial/counter_i31/D           |    3.092 ns 
 STATE_OUT/serial/counter_i0/D            |    3.092 ns 
-STATE_OUT/cont_143__i1/D                 |    3.092 ns 
-STATE_OUT/cont_143__i2/D                 |    3.092 ns 
+STATE_OUT/cont_119__i3/D                 |    3.092 ns 
+STATE_OUT/cont_119__i2/D                 |    3.092 ns 
+STATE_OUT/cont_119__i1/D                 |    3.092 ns 
 STATE_OUT/init_c/D                       |    3.092 ns 
-STATE_OUT/cont_143__i3/D                 |    3.092 ns 
-STATE_OUT/cont_143__i0/D                 |    3.092 ns 
+STATE_OUT/cont_119__i0/D                 |    3.092 ns 
 Sreg_i2/D                                |    3.092 ns 
 -------------------------------------------------------
                                          |             
@@ -215,20 +215,20 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-Keyboard/counter_144__i23               |                  No Clock
-Keyboard/counter_144__i21               |                  No Clock
-Keyboard/counter_144__i5                |                  No Clock
-Keyboard/counter_144__i3                |                  No Clock
-Keyboard/counter_144__i1                |                  No Clock
-Keyboard/counter_144__i19               |                  No Clock
-Keyboard/counter_144__i17               |                  No Clock
-Keyboard/counter_144__i13               |                  No Clock
-Keyboard/counter_144__i32               |                  No Clock
-Keyboard/counter_144__i15               |                  No Clock
+Keyboard/counter_121__i11               |                  No Clock
+Keyboard/counter_121__i31               |                  No Clock
+Keyboard/counter_121__i9                |                  No Clock
+Keyboard/counter_121__i29               |                  No Clock
+Keyboard/counter_121__i7                |                  No Clock
+Keyboard/counter_121__i27               |                  No Clock
+Keyboard/counter_121__i1                |                  No Clock
+Keyboard/counter_121__i5                |                  No Clock
+Keyboard/counter_121__i3                |                  No Clock
+Keyboard/counter_121__i25               |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                       150
+ition                                   |                       140
                                         |                          
 -------------------------------------------------------------------
 
@@ -271,108 +271,108 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.273  2       
-STATE_OUT/serial/n850                                     NET DELAY            0.000        19.273  2       
+STATE_OUT/serial/n790                                     NET DELAY            0.000        19.273  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        19.551  2       
-STATE_OUT/serial/n2268                                    NET DELAY            0.000        19.551  2       
+STATE_OUT/serial/n2236                                    NET DELAY            0.000        19.551  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.829  2       
-STATE_OUT/serial/n852                                     NET DELAY            0.000        19.829  2       
+STATE_OUT/serial/n792                                     NET DELAY            0.000        19.829  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        20.107  2       
-STATE_OUT/serial/n2271                                    NET DELAY            0.000        20.107  2       
+STATE_OUT/serial/n2239                                    NET DELAY            0.000        20.107  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI1->STATE_OUT/serial/sub_11_add_2_add_5_29/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        20.385  2       
-STATE_OUT/serial/n854                                     NET DELAY            0.000        20.385  2       
+STATE_OUT/serial/n794                                     NET DELAY            0.000        20.385  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/CI0->STATE_OUT/serial/sub_11_add_2_add_5_31/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        20.663  2       
-STATE_OUT/serial/n2274                                    NET DELAY            0.000        20.663  2       
+STATE_OUT/serial/n2242                                    NET DELAY            0.000        20.663  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/CI1->STATE_OUT/serial/sub_11_add_2_add_5_31/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        20.941  2       
-STATE_OUT/serial/n856                                     NET DELAY            0.000        20.941  2       
+STATE_OUT/serial/n796                                     NET DELAY            0.000        20.941  2       
 STATE_OUT/serial/sub_11_add_2_add_5_33/D0->STATE_OUT/serial/sub_11_add_2_add_5_33/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        21.418  1       
-STATE_OUT/serial/counter_31__N_153[31]                    NET DELAY            2.075        23.493  1       
+STATE_OUT/serial/counter_31__N_152[31]                    NET DELAY            2.075        23.493  1       
 STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        23.970  1       
-STATE_OUT/serial/counter_31__N_84[31] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[31] ( DI0 )
                                                           NET DELAY            0.000        23.970  1       
 
 
@@ -411,105 +411,105 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.273  2       
-STATE_OUT/serial/n850                                     NET DELAY            0.000        19.273  2       
+STATE_OUT/serial/n790                                     NET DELAY            0.000        19.273  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        19.551  2       
-STATE_OUT/serial/n2268                                    NET DELAY            0.000        19.551  2       
+STATE_OUT/serial/n2236                                    NET DELAY            0.000        19.551  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.829  2       
-STATE_OUT/serial/n852                                     NET DELAY            0.000        19.829  2       
+STATE_OUT/serial/n792                                     NET DELAY            0.000        19.829  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        20.107  2       
-STATE_OUT/serial/n2271                                    NET DELAY            0.000        20.107  2       
+STATE_OUT/serial/n2239                                    NET DELAY            0.000        20.107  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI1->STATE_OUT/serial/sub_11_add_2_add_5_29/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        20.385  2       
-STATE_OUT/serial/n854                                     NET DELAY            0.000        20.385  2       
+STATE_OUT/serial/n794                                     NET DELAY            0.000        20.385  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/CI0->STATE_OUT/serial/sub_11_add_2_add_5_31/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        20.663  2       
-STATE_OUT/serial/n2274                                    NET DELAY            0.000        20.663  2       
+STATE_OUT/serial/n2242                                    NET DELAY            0.000        20.663  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/D1->STATE_OUT/serial/sub_11_add_2_add_5_31/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        21.140  1       
-STATE_OUT/serial/counter_31__N_153[30]                    NET DELAY            2.075        23.215  1       
+STATE_OUT/serial/counter_31__N_152[30]                    NET DELAY            2.075        23.215  1       
 STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        23.692  1       
-STATE_OUT/serial/counter_31__N_84[30] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[30] ( DI0 )
                                                           NET DELAY            0.000        23.692  1       
 
 
@@ -548,102 +548,102 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.273  2       
-STATE_OUT/serial/n850                                     NET DELAY            0.000        19.273  2       
+STATE_OUT/serial/n790                                     NET DELAY            0.000        19.273  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        19.551  2       
-STATE_OUT/serial/n2268                                    NET DELAY            0.000        19.551  2       
+STATE_OUT/serial/n2236                                    NET DELAY            0.000        19.551  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.829  2       
-STATE_OUT/serial/n852                                     NET DELAY            0.000        19.829  2       
+STATE_OUT/serial/n792                                     NET DELAY            0.000        19.829  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        20.107  2       
-STATE_OUT/serial/n2271                                    NET DELAY            0.000        20.107  2       
+STATE_OUT/serial/n2239                                    NET DELAY            0.000        20.107  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI1->STATE_OUT/serial/sub_11_add_2_add_5_29/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        20.385  2       
-STATE_OUT/serial/n854                                     NET DELAY            0.000        20.385  2       
+STATE_OUT/serial/n794                                     NET DELAY            0.000        20.385  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/D0->STATE_OUT/serial/sub_11_add_2_add_5_31/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        20.862  1       
-STATE_OUT/serial/counter_31__N_153[29]                    NET DELAY            2.075        22.937  1       
+STATE_OUT/serial/counter_31__N_152[29]                    NET DELAY            2.075        22.937  1       
 STATE_OUT/serial/counter_31__I_36_i30_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i30_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        23.414  1       
-STATE_OUT/serial/counter_31__N_84[29] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[29] ( DI0 )
                                                           NET DELAY            0.000        23.414  1       
 
 
@@ -662,6 +662,66 @@ Path Slack  (Passed)                                                            
 
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : STATE_OUT/serial/counter_i9/Q  (SLICE)
+Path End         : STATE_OUT/serial/status_out/D  (SLICE)
+Source Clock     : SERCLK_OUT_c (R)
+Destination Clock: SERCLK_OUT_c (R)
+Logic Level      : 8
+Delay Ratio      : 75.4% (route), 24.6% (logic)
+Clock Skew       : 0.000 ns
+Setup Constraint : 100000.000 ns 
+Path Slack       : 99980.546 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  67      
+mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150         4.150  67      
+
+
+
+STATE_OUT/serial/counter_i9/CK->STATE_OUT/serial/counter_i9/Q
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  3       
+STATE_OUT/serial/counter[9]_2                             NET DELAY        2.075         7.616  3       
+STATE_OUT/serial/i6_4_lut/B->STATE_OUT/serial/i6_4_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477         8.093  1       
+STATE_OUT/serial/n16                                      NET DELAY        2.075        10.168  1       
+STATE_OUT/serial/i8_3_lut/B->STATE_OUT/serial/i8_3_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477        10.645  1       
+STATE_OUT/serial/n18                                      NET DELAY        2.075        12.720  1       
+STATE_OUT/i1_4_lut/D->STATE_OUT/i1_4_lut/Z
+                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
+STATE_OUT/n4                                              NET DELAY        2.075        15.272  1       
+STATE_OUT/i2_4_lut/B->STATE_OUT/i2_4_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.477        15.749  42      
+STATE_OUT/serial/n63                                      NET DELAY        2.075        17.824  42      
+STATE_OUT/serial/aux_3__I_0_i4_3_lut/C->STATE_OUT/serial/aux_3__I_0_i4_3_lut/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477        18.301  1       
+STATE_OUT/serial/aux_3__N_115[3]                          NET DELAY        2.075        20.376  1       
+STATE_OUT/serial/counter_31__N_182[0]_bdd_4_lut/C->STATE_OUT/serial/counter_31__N_182[0]_bdd_4_lut/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
+STATE_OUT/serial/n1844                                    NET DELAY        2.075        22.928  1       
+STATE_OUT/serial/n1844_bdd_4_lut/A->STATE_OUT/serial/n1844_bdd_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        23.405  1       
+STATE_OUT/serial/status_out_N_189 ( DI0 )
+                                                          NET DELAY        0.000        23.405  1       
+
+
+                                                          CONSTRAINT     0.000    100000.000  1       
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000    100000.000  67      
+mainTimer/SERCLK_OUT_c ( CLK )                            NET DELAY      4.150    100004.150  67      
+                                                          Uncertainty    0.000    100004.150  
+                                                          Setup time     0.199    100003.951  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                     100003.951  
+Arrival Time                                                                         -23.405  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                               99980.546  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/init_c/Q  (SLICE)
 Path End         : STATE_OUT/serial/counter_i28/D  (SLICE)
@@ -682,99 +742,99 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.273  2       
-STATE_OUT/serial/n850                                     NET DELAY            0.000        19.273  2       
+STATE_OUT/serial/n790                                     NET DELAY            0.000        19.273  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        19.551  2       
-STATE_OUT/serial/n2268                                    NET DELAY            0.000        19.551  2       
+STATE_OUT/serial/n2236                                    NET DELAY            0.000        19.551  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.829  2       
-STATE_OUT/serial/n852                                     NET DELAY            0.000        19.829  2       
+STATE_OUT/serial/n792                                     NET DELAY            0.000        19.829  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        20.107  2       
-STATE_OUT/serial/n2271                                    NET DELAY            0.000        20.107  2       
+STATE_OUT/serial/n2239                                    NET DELAY            0.000        20.107  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/D1->STATE_OUT/serial/sub_11_add_2_add_5_29/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        20.584  1       
-STATE_OUT/serial/counter_31__N_153[28]                    NET DELAY            2.075        22.659  1       
+STATE_OUT/serial/counter_31__N_152[28]                    NET DELAY            2.075        22.659  1       
 STATE_OUT/serial/counter_31__I_36_i29_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i29_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        23.136  1       
-STATE_OUT/serial/counter_31__N_84[28] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[28] ( DI0 )
                                                           NET DELAY            0.000        23.136  1       
 
 
@@ -792,7 +852,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/init_c/Q  (SLICE)
 Path End         : STATE_OUT/serial/counter_i27/D  (SLICE)
@@ -813,96 +873,96 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.273  2       
-STATE_OUT/serial/n850                                     NET DELAY            0.000        19.273  2       
+STATE_OUT/serial/n790                                     NET DELAY            0.000        19.273  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        19.551  2       
-STATE_OUT/serial/n2268                                    NET DELAY            0.000        19.551  2       
+STATE_OUT/serial/n2236                                    NET DELAY            0.000        19.551  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.829  2       
-STATE_OUT/serial/n852                                     NET DELAY            0.000        19.829  2       
+STATE_OUT/serial/n792                                     NET DELAY            0.000        19.829  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/D0->STATE_OUT/serial/sub_11_add_2_add_5_29/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        20.306  1       
-STATE_OUT/serial/counter_31__N_153[27]                    NET DELAY            2.075        22.381  1       
+STATE_OUT/serial/counter_31__N_152[27]                    NET DELAY            2.075        22.381  1       
 STATE_OUT/serial/counter_31__I_36_i28_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i28_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        22.858  1       
-STATE_OUT/serial/counter_31__N_84[27] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[27] ( DI0 )
                                                           NET DELAY            0.000        22.858  1       
 
 
@@ -920,7 +980,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/init_c/Q  (SLICE)
 Path End         : STATE_OUT/serial/counter_i26/D  (SLICE)
@@ -941,93 +1001,93 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.273  2       
-STATE_OUT/serial/n850                                     NET DELAY            0.000        19.273  2       
+STATE_OUT/serial/n790                                     NET DELAY            0.000        19.273  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        19.551  2       
-STATE_OUT/serial/n2268                                    NET DELAY            0.000        19.551  2       
+STATE_OUT/serial/n2236                                    NET DELAY            0.000        19.551  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/D1->STATE_OUT/serial/sub_11_add_2_add_5_27/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        20.028  1       
-STATE_OUT/serial/counter_31__N_153[26]                    NET DELAY            2.075        22.103  1       
+STATE_OUT/serial/counter_31__N_152[26]                    NET DELAY            2.075        22.103  1       
 STATE_OUT/serial/counter_31__I_36_i27_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i27_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        22.580  1       
-STATE_OUT/serial/counter_31__N_84[26] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[26] ( DI0 )
                                                           NET DELAY            0.000        22.580  1       
 
 
@@ -1045,7 +1105,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/init_c/Q  (SLICE)
 Path End         : STATE_OUT/serial/counter_i25/D  (SLICE)
@@ -1066,90 +1126,90 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        19.273  2       
-STATE_OUT/serial/n850                                     NET DELAY            0.000        19.273  2       
+STATE_OUT/serial/n790                                     NET DELAY            0.000        19.273  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/D0->STATE_OUT/serial/sub_11_add_2_add_5_27/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        19.750  1       
-STATE_OUT/serial/counter_31__N_153[25]                    NET DELAY            2.075        21.825  1       
+STATE_OUT/serial/counter_31__N_152[25]                    NET DELAY            2.075        21.825  1       
 STATE_OUT/serial/counter_31__I_36_i26_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i26_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        22.302  1       
-STATE_OUT/serial/counter_31__N_84[25] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[25] ( DI0 )
                                                           NET DELAY            0.000        22.302  1       
 
 
@@ -1167,7 +1227,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/init_c/Q  (SLICE)
 Path End         : STATE_OUT/serial/counter_i24/D  (SLICE)
@@ -1188,87 +1248,87 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.995  2       
-STATE_OUT/serial/n2265                                    NET DELAY            0.000        18.995  2       
+STATE_OUT/serial/n2233                                    NET DELAY            0.000        18.995  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/D1->STATE_OUT/serial/sub_11_add_2_add_5_25/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        19.472  1       
-STATE_OUT/serial/counter_31__N_153[24]                    NET DELAY            2.075        21.547  1       
+STATE_OUT/serial/counter_31__N_152[24]                    NET DELAY            2.075        21.547  1       
 STATE_OUT/serial/counter_31__I_36_i25_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i25_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        22.024  1       
-STATE_OUT/serial/counter_31__N_84[24] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[24] ( DI0 )
                                                           NET DELAY            0.000        22.024  1       
 
 
@@ -1286,7 +1346,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/init_c/Q  (SLICE)
 Path End         : STATE_OUT/serial/counter_i23/D  (SLICE)
@@ -1307,84 +1367,84 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
 STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
+STATE_OUT/serial/counter_31__N_120[0]                     NET DELAY            2.075        12.243  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
+STATE_OUT/serial/n766                                     NET DELAY            0.000        12.601  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
+STATE_OUT/serial/n2200                                    NET DELAY            0.000        12.879  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
+STATE_OUT/serial/n768                                     NET DELAY            0.000        13.157  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
+STATE_OUT/serial/n2203                                    NET DELAY            0.000        13.435  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
+STATE_OUT/serial/n770                                     NET DELAY            0.000        13.713  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
+STATE_OUT/serial/n2206                                    NET DELAY            0.000        13.991  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
+STATE_OUT/serial/n772                                     NET DELAY            0.000        14.269  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
+STATE_OUT/serial/n2209                                    NET DELAY            0.000        14.547  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
+STATE_OUT/serial/n774                                     NET DELAY            0.000        14.825  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
+STATE_OUT/serial/n2212                                    NET DELAY            0.000        15.103  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
+STATE_OUT/serial/n776                                     NET DELAY            0.000        15.381  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
+STATE_OUT/serial/n2215                                    NET DELAY            0.000        15.659  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
+STATE_OUT/serial/n778                                     NET DELAY            0.000        15.937  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
+STATE_OUT/serial/n2218                                    NET DELAY            0.000        16.215  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
+STATE_OUT/serial/n780                                     NET DELAY            0.000        16.493  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
+STATE_OUT/serial/n2221                                    NET DELAY            0.000        16.771  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
+STATE_OUT/serial/n782                                     NET DELAY            0.000        17.049  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
+STATE_OUT/serial/n2224                                    NET DELAY            0.000        17.327  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
+STATE_OUT/serial/n784                                     NET DELAY            0.000        17.605  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
+STATE_OUT/serial/n2227                                    NET DELAY            0.000        17.883  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
+STATE_OUT/serial/n786                                     NET DELAY            0.000        18.161  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
+STATE_OUT/serial/n2230                                    NET DELAY            0.000        18.439  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        18.717  2       
-STATE_OUT/serial/n848                                     NET DELAY            0.000        18.717  2       
+STATE_OUT/serial/n788                                     NET DELAY            0.000        18.717  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/D0->STATE_OUT/serial/sub_11_add_2_add_5_25/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        19.194  1       
-STATE_OUT/serial/counter_31__N_153[23]                    NET DELAY            2.075        21.269  1       
+STATE_OUT/serial/counter_31__N_152[23]                    NET DELAY            2.075        21.269  1       
 STATE_OUT/serial/counter_31__I_36_i24_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i24_3_lut_4_lut/Z
                                           SLICE           C0_TO_F0_DELAY       0.477        21.746  1       
-STATE_OUT/serial/counter_31__N_84[23] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[23] ( DI0 )
                                                           NET DELAY            0.000        21.746  1       
 
 
@@ -1398,119 +1458,6 @@ Required Time                                                                   
 Arrival Time                                                                         -21.746  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 Path Slack  (Passed)                                                               99982.205  
-
-
-
-
-++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : STATE_OUT/init_c/Q  (SLICE)
-Path End         : STATE_OUT/serial/counter_i22/D  (SLICE)
-Source Clock     : SERCLK_OUT_c (R)
-Destination Clock: SERCLK_OUT_c (R)
-Logic Level      : 26
-Delay Ratio      : 47.9% (route), 52.1% (logic)
-Clock Skew       : 0.000 ns
-Setup Constraint : 100000.000 ns 
-Path Slack       : 99982.483 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  67      
-mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150         4.150  67      
-
-
-
-STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   SLICE           CLK_TO_Q0_DELAY      1.391         5.541  68      
-STATE_OUT/serial/init                                     NET DELAY            4.150         9.691  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
-                                          SLICE           A0_TO_F0_DELAY       0.477        10.168  1       
-STATE_OUT/serial/counter_31__N_121[0]                     NET DELAY            2.075        12.243  1       
-STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
-                                          SLICE           B1_TO_COUT1_DELAY    0.358        12.601  2       
-STATE_OUT/serial/n826                                     NET DELAY            0.000        12.601  2       
-STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        12.879  2       
-STATE_OUT/serial/n2232                                    NET DELAY            0.000        12.879  2       
-STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        13.157  2       
-STATE_OUT/serial/n828                                     NET DELAY            0.000        13.157  2       
-STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        13.435  2       
-STATE_OUT/serial/n2235                                    NET DELAY            0.000        13.435  2       
-STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        13.713  2       
-STATE_OUT/serial/n830                                     NET DELAY            0.000        13.713  2       
-STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        13.991  2       
-STATE_OUT/serial/n2238                                    NET DELAY            0.000        13.991  2       
-STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        14.269  2       
-STATE_OUT/serial/n832                                     NET DELAY            0.000        14.269  2       
-STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        14.547  2       
-STATE_OUT/serial/n2241                                    NET DELAY            0.000        14.547  2       
-STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        14.825  2       
-STATE_OUT/serial/n834                                     NET DELAY            0.000        14.825  2       
-STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        15.103  2       
-STATE_OUT/serial/n2244                                    NET DELAY            0.000        15.103  2       
-STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        15.381  2       
-STATE_OUT/serial/n836                                     NET DELAY            0.000        15.381  2       
-STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        15.659  2       
-STATE_OUT/serial/n2247                                    NET DELAY            0.000        15.659  2       
-STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        15.937  2       
-STATE_OUT/serial/n838                                     NET DELAY            0.000        15.937  2       
-STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        16.215  2       
-STATE_OUT/serial/n2250                                    NET DELAY            0.000        16.215  2       
-STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        16.493  2       
-STATE_OUT/serial/n840                                     NET DELAY            0.000        16.493  2       
-STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        16.771  2       
-STATE_OUT/serial/n2253                                    NET DELAY            0.000        16.771  2       
-STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        17.049  2       
-STATE_OUT/serial/n842                                     NET DELAY            0.000        17.049  2       
-STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        17.327  2       
-STATE_OUT/serial/n2256                                    NET DELAY            0.000        17.327  2       
-STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        17.605  2       
-STATE_OUT/serial/n844                                     NET DELAY            0.000        17.605  2       
-STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        17.883  2       
-STATE_OUT/serial/n2259                                    NET DELAY            0.000        17.883  2       
-STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
-                                          SLICE           CIN1_TO_COUT1_DELAY  0.278        18.161  2       
-STATE_OUT/serial/n846                                     NET DELAY            0.000        18.161  2       
-STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
-                                          SLICE           CIN0_TO_COUT0_DELAY  0.278        18.439  2       
-STATE_OUT/serial/n2262                                    NET DELAY            0.000        18.439  2       
-STATE_OUT/serial/sub_11_add_2_add_5_23/D1->STATE_OUT/serial/sub_11_add_2_add_5_23/S1
-                                          SLICE           D1_TO_F1_DELAY       0.477        18.916  1       
-STATE_OUT/serial/counter_31__N_153[22]                    NET DELAY            2.075        20.991  1       
-STATE_OUT/serial/counter_31__I_36_i23_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i23_3_lut_4_lut/Z
-                                          SLICE           C0_TO_F0_DELAY       0.477        21.468  1       
-STATE_OUT/serial/counter_31__N_84[22] ( DI0 )
-                                                          NET DELAY            0.000        21.468  1       
-
-
-                                                          CONSTRAINT     0.000    100000.000  1       
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000    100000.000  67      
-mainTimer/SERCLK_OUT_c ( CLK )                            NET DELAY      4.150    100004.150  67      
-                                                          Uncertainty    0.000    100004.150  
-                                                          Setup time     0.199    100003.951  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                     100003.951  
-Arrival Time                                                                         -21.468  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                               99982.483  
 
 
 
@@ -1559,7 +1506,7 @@ STATE_OUT/serial/counter_i29/CK->STATE_OUT/serial/counter_i29/Q
 STATE_OUT/serial/counter[29]                              NET DELAY        2.075         6.993  3       
 STATE_OUT/serial/counter_31__I_36_i30_3_lut_4_lut/A->STATE_OUT/serial/counter_31__I_36_i30_3_lut_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/serial/counter_31__N_84[29] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[29] ( DI0 )
                                                           NET DELAY        0.000         7.242  1       
 
 
@@ -1601,7 +1548,7 @@ STATE_OUT/serial/counter_i30/CK->STATE_OUT/serial/counter_i30/Q
 STATE_OUT/serial/counter[30]                              NET DELAY        2.075         6.993  3       
 STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/A->STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/serial/counter_31__N_84[30] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[30] ( DI0 )
                                                           NET DELAY        0.000         7.242  1       
 
 
@@ -1643,7 +1590,7 @@ STATE_OUT/serial/counter_i31/CK->STATE_OUT/serial/counter_i31/Q
 STATE_OUT/serial/counter[31]                              NET DELAY        2.075         6.993  3       
 STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/A->STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/serial/counter_31__N_84[31] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[31] ( DI0 )
                                                           NET DELAY        0.000         7.242  1       
 
 
@@ -1685,7 +1632,7 @@ STATE_OUT/serial/counter_i0/CK->STATE_OUT/serial/counter_i0/Q
 STATE_OUT/serial/counter[0]                               NET DELAY        2.075         6.993  3       
 STATE_OUT/serial/counter_31__I_36_i1_3_lut_4_lut/B->STATE_OUT/serial/counter_31__I_36_i1_3_lut_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/serial/counter_31__N_84[0] ( DI0 )
+STATE_OUT/serial/counter_31__N_83[0] ( DI0 )
                                                           NET DELAY        0.000         7.242  1       
 
 
@@ -1705,8 +1652,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : STATE_OUT/waiting_c/Q  (SLICE)
-Path End         : STATE_OUT/cont_143__i1/D  (SLICE)
+Path Begin       : STATE_OUT/cont_119__i3/Q  (SLICE)
+Path End         : STATE_OUT/cont_119__i3/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1718,16 +1665,16 @@ Path Slack       : 3.092 ns  (Passed)
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  68      
-mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150         4.150  68      
+mainTimer/SERCLK_OUT_c ( CLK )                            NET DELAY      4.150         4.150  68      
 
 
 
-STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  6       
-STATE_OUT/serial/waiting                                  NET DELAY        2.075         6.993  6       
-STATE_OUT/i686_2_lut_3_lut/B->STATE_OUT/i686_2_lut_3_lut/Z
-                                          SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/n21[1] ( DI0 )                                  NET DELAY        0.000         7.242  1       
+STATE_OUT/cont_119__i3/CK->STATE_OUT/cont_119__i3/Q
+                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  2       
+STATE_OUT/cont[3]                                         NET DELAY        2.075         6.993  2       
+STATE_OUT/i650_3_lut/A->STATE_OUT/i650_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
+STATE_OUT/n21[3] ( DI0 )                                  NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1747,7 +1694,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/waiting_c/Q  (SLICE)
-Path End         : STATE_OUT/cont_143__i2/D  (SLICE)
+Path End         : STATE_OUT/cont_119__i2/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1766,7 +1713,7 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         4.918  6       
 STATE_OUT/serial/waiting                                  NET DELAY        2.075         6.993  6       
-STATE_OUT/i693_2_lut_3_lut_4_lut/B->STATE_OUT/i693_2_lut_3_lut_4_lut/Z
+STATE_OUT/i643_2_lut_4_lut/B->STATE_OUT/i643_2_lut_4_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
 STATE_OUT/n21[2] ( DI0 )                                  NET DELAY        0.000         7.242  1       
 
@@ -1788,6 +1735,47 @@ Path Slack  (Passed)                                                            
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/waiting_c/Q  (SLICE)
+Path End         : STATE_OUT/cont_119__i1/D  (SLICE)
+Source Clock     : SERCLK_OUT_c (R)
+Destination Clock: SERCLK_OUT_c (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  68      
+mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150         4.150  68      
+
+
+
+STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
+                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  6       
+STATE_OUT/serial/waiting                                  NET DELAY        2.075         6.993  6       
+STATE_OUT/i636_2_lut_3_lut/A->STATE_OUT/i636_2_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
+STATE_OUT/n21[1] ( DI0 )                                  NET DELAY        0.000         7.242  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  68      
+mainTimer/SERCLK_OUT_c ( CLK )                            NET DELAY      4.150         4.150  68      
+                                                          Uncertainty    0.000         4.150  
+                                                          Hold time      0.000         4.150  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -4.150  
+Arrival Time                                                                           7.242  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : STATE_OUT/waiting_c/Q  (SLICE)
 Path End         : STATE_OUT/init_c/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
@@ -1807,50 +1795,9 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         4.918  6       
 STATE_OUT/serial/waiting                                  NET DELAY        2.075         6.993  6       
-STATE_OUT/serial/i636_4_lut_4_lut/D->STATE_OUT/serial/i636_4_lut_4_lut/Z
+STATE_OUT/serial/i578_4_lut_4_lut/D->STATE_OUT/serial/i578_4_lut_4_lut/Z
                                           SLICE           D0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/serial/n449 ( DI0 )                             NET DELAY        0.000         7.242  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  68      
-mainTimer/SERCLK_OUT_c ( CLK )                            NET DELAY      4.150         4.150  68      
-                                                          Uncertainty    0.000         4.150  
-                                                          Hold time      0.000         4.150  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -4.150  
-Arrival Time                                                                           7.242  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : STATE_OUT/cont_143__i1/Q  (SLICE)
-Path End         : STATE_OUT/cont_143__i3/D  (SLICE)
-Source Clock     : SERCLK_OUT_c (R)
-Destination Clock: SERCLK_OUT_c (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  68      
-mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150         4.150  68      
-
-
-
-STATE_OUT/cont_143__i1/CK->STATE_OUT/cont_143__i1/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  4       
-STATE_OUT/cont[1]                                         NET DELAY        2.075         6.993  4       
-STATE_OUT/i700_3_lut_4_lut/A->STATE_OUT/i700_3_lut_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/n21[3] ( DI0 )                                  NET DELAY        0.000         7.242  1       
+STATE_OUT/serial/n355 ( DI0 )                             NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1870,7 +1817,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/waiting_c/Q  (SLICE)
-Path End         : STATE_OUT/cont_143__i0/D  (SLICE)
+Path End         : STATE_OUT/cont_119__i0/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1889,7 +1836,7 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         4.918  6       
 STATE_OUT/serial/waiting                                  NET DELAY        2.075         6.993  6       
-STATE_OUT/i678_2_lut/A->STATE_OUT/i678_2_lut/Z
+STATE_OUT/i628_2_lut/A->STATE_OUT/i628_2_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
 STATE_OUT/n21[0] ( DI0 )                                  NET DELAY        0.000         7.242  1       
 
@@ -1910,7 +1857,7 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : Sreg_i1/Q  (SLICE)
+Path Begin       : mainTimer/state/Q  (SLICE)
 Path End         : Sreg_i2/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
@@ -1927,8 +1874,8 @@ mainTimer/SERCLK_OUT_c                                    NET DELAY      4.150  
 
 
 
-Sreg_i1/CK->Sreg_i1/Q                     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  13      
-STATE_OUT/serial/Sreg_c_0                                 NET DELAY        2.075         6.993  13      
+mainTimer/state/CK->mainTimer/state/Q     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  25      
+mainTimer/TIME_OUT                                        NET DELAY        2.075         6.993  25      
 SLICE_55/A0->SLICE_55/F0                  SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
 Snext[1]$n9 ( DI0 )                                       NET DELAY        0.000         7.242  1       
 

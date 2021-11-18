@@ -1,6 +1,6 @@
 ldc_set_location -site {28} [get_ports SENSOR1_IN]
 ldc_set_location -site {38} [get_ports SENSOR2_IN]
-ldc_set_location -site {42} [get_ports RESET_OUT]
+#ldc_set_location -site {42} [get_ports RESET_OUT]
 ldc_set_location -site {36} [get_ports SERCLK_OUT]
 ldc_set_location -site {43} [get_ports SIREN_OUT]
 ldc_set_location -site {34} [get_ports STATUS_OUT]

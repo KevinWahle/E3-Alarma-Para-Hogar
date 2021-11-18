@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Wed Nov 17 21:56:44 2021
+Mapped on: Wed Nov 17 23:54:03 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -59,20 +59,20 @@ Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of slice registers: 107 out of  5280 (2%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           263 out of  5280 (5%)
-      Number of logic LUT4s:             160
+   Number of LUT4s:           261 out of  5280 (5%)
+      Number of logic LUT4s:             158
       Number of inserted feedthru LUT4s:   1
       Number of replicated LUT4s:         14
       Number of ripple logic:             44 (88 LUT4s)
-   Number of IO sites used:   16 out of 39 (41%)
-      Number of IO sites used for general PIO: 16
+   Number of IO sites used:   15 out of 39 (38%)
+      Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 16 out of 36 (44%)
+      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 16 out of 39 (41%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -91,25 +91,25 @@ Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
      OSCInst1/CLKLF)
    Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
-      Net STATE_OUT.serial.n435: 1 loads, 1 SLICEs
+      Net STATE_OUT.serial.n341: 1 loads, 1 SLICEs
    Number of LSRs:  5
-      Net Keyboard.n2020: 1 loads, 1 SLICEs
-      Net Keyboard.n445: 17 loads, 17 SLICEs
-      Net STATE_OUT.state_send_N_67: 5 loads, 5 SLICEs
-      Net STATE_OUT.serial.counter_31__N_185: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_38: 19 loads, 19 SLICEs
+      Net Keyboard.valid_1__N_272[0]: 1 loads, 1 SLICEs
+      Net Keyboard.n351: 17 loads, 17 SLICEs
+      Net STATE_OUT.state_send_N_66: 5 loads, 5 SLICEs
+      Net STATE_OUT.serial.counter_31__N_184: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_37: 19 loads, 19 SLICEs
    Top 10 highest fanout non-clock nets:
       Net STATE_OUT.init: 68 loads
 
-      Net STATE_OUT.serial.n63: 42 loads
+      Net STATE_OUT.n63: 42 loads
       Net VCC_net: 36 loads
-      Net TIME_OUT: 24 loads
-      Net DEBUG_KEY_c_1: 19 loads
-      Net mainTimer.clkCont_17__N_38: 19 loads
-      Net Keyboard.n445: 17 loads
-      Net Sreg_c_0: 13 loads
-      Net Sreg_c_1: 12 loads
-      Net KB_IN_c_0: 8 loads
+      Net TIME_OUT: 25 loads
+      Net mainTimer.clkCont_17__N_37: 19 loads
+      Net Keyboard.n351: 17 loads
+      Net DEBUG_KEY_c_0: 13 loads
+      Net Sreg_c_0: 10 loads
+      Net Sreg_c_1: 10 loads
+      Net Keyboard.n35: 9 loads
 
 
 
@@ -142,8 +142,6 @@ WARNING - map: The clock port [KB_RECV] is assigned to a non clock dedicated pin
 +---------------------+-----------+-----------+-------+-------+-----------+
 | SERCLK_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RESET_OUT           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | Sreg[1]             | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | Sreg[0]             | OUTPUT    | LVCMOS33  |       |       |           |
@@ -161,12 +159,18 @@ WARNING - map: The clock port [KB_RECV] is assigned to a non clock dedicated pin
 | SENSOR2_IN          | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | KB_IN[1]            | INPUT     | LVCMOS33  |       |       |           |
-
 +---------------------+-----------+-----------+-------+-------+-----------+
 | KB_IN[0]            | INPUT     | LVCMOS33  |       |       |           |
+
 +---------------------+-----------+-----------+-------+-------+-----------+
 | KB_RECV             | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i1 was optimized away.
 
 OSC Summary
 -----------
@@ -193,9 +197,6 @@ Instance Name: OSCInst1
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 58 MB
-
-
-
 
 
 
@@ -296,6 +297,7 @@ Copyright (c) 2002-2021 Lattice Semiconductor
 <LI><A href=#mrp_ds>Design Summary</A></LI>
 <LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
 <LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
 <LI><A href=#mrp_asic>ASIC Components</A></LI>
 <LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
 </UL>

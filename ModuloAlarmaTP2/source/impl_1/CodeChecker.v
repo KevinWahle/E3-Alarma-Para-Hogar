@@ -4,13 +4,13 @@ module keyChecker(
 	input wire cable2,
 	input wire[7:0] keyIn,
 	output wire[1:0] keyStatus,
-	input wire reset,
+	//input wire reset,
 	
 	// DEBUG
 	output [1:0]salidaActualKey
 );
 
-	parameter OK=0, ERROR=2, NOKEY=3; 
+	parameter [1:0] OK=0, ERROR=2, NOKEY=3; 
 
 	reg [1:0] valid = NOKEY;
 	assign keyStatus = valid;
@@ -18,7 +18,7 @@ module keyChecker(
 
 	wire [1:0]key[3:0];
 	integer counter=0;
-	integer i = 0, j=0;
+	//integer i = 0, j=0;
 	reg [1:0]actualKey[0:3]; // = {2'b00,2'b00,2'b00,2'b00};
 
 	assign salidaActualKey = counter[1:0];
@@ -44,22 +44,29 @@ module keyChecker(
 			//end
 			//else
 			if (pulsed)
-				begin	
+				begin
 				actualKey[counter]={cable1,cable2};
 				counter = counter + 1'b1;
 				if (counter==4)
 					begin
-						valid<=OK;
-						for (i = 0; i < 4; i = i + 1)
-							for (j = 0; j < 2; j = j + 1)
-								if (actualKey[i][j] != key[i][j])
-									valid <= ERROR;	
 						counter=0;
+						//valid<=OK;
+						
+						if (actualKey[0] == key[0] && actualKey[1] == key[1] &&
+							actualKey[2] == key[2] && actualKey[3] == key[3] )
+							valid <= OK;
+						else
+							valid <= ERROR;
+						
+						//for (i = 0; i < 4; i = i + 1)
+						//	for (j = 0; j < 2; j = j + 1)
+						//		if (actualKey[i][j] != key[i][j])
+						//			valid <= ERROR;	
 					end
 				else 
 					begin
 					valid <= NOKEY;
 					end
-				end 
+			end 
 		end
 endmodule	

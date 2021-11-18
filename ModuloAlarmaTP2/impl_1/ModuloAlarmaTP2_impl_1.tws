@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Wed Nov 17 21:56:43 2021
+Wed Nov 17 23:54:02 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -59,13 +59,13 @@ create_clock -name {SERCLK_OUT_c} -period 100000 [get_pins {OSCInst1/CLKLF }]
 Combinational Loops
 -------------------
 ++++ Loop1
-i364_4_lut/A	->	i364_4_lut/Z
+i280_4_lut/A	->	i280_4_lut/Z
 
 ++++ Loop2
-i1_4_lut/Z	->	i1_4_lut_adj_46/Z
+i1_4_lut/Z	->	i1_4_lut_adj_45/Z
 
 ++++ Loop3
-i366_4_lut/A	->	i366_4_lut/Z
+i282_4_lut/A	->	i282_4_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -95,7 +95,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 64.3763%
+Constraint Coverage: 64.1489%
 
 3.1.2  Timing Errors
 ---------------------
@@ -137,11 +137,11 @@ STATE_OUT/serial/status_send/D           |    3.746 ns
 STATE_OUT/serial/counter_i30/D           |    4.196 ns 
 STATE_OUT/serial/counter_i31/D           |    4.196 ns 
 STATE_OUT/serial/counter_i0/D            |    4.196 ns 
-STATE_OUT/cont_143__i1/D                 |    4.196 ns 
-STATE_OUT/cont_143__i2/D                 |    4.196 ns 
+STATE_OUT/cont_119__i3/D                 |    4.196 ns 
+STATE_OUT/cont_119__i2/D                 |    4.196 ns 
+STATE_OUT/cont_119__i1/D                 |    4.196 ns 
 STATE_OUT/init_c/D                       |    4.196 ns 
-STATE_OUT/cont_143__i3/D                 |    4.196 ns 
-STATE_OUT/cont_143__i0/D                 |    4.196 ns 
+STATE_OUT/cont_119__i0/D                 |    4.196 ns 
 Sreg_i2/D                                |    4.196 ns 
 -------------------------------------------------------
                                          |             
@@ -171,16 +171,16 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-Keyboard/i199/D                         |    No arrival or required
-Keyboard/i202/D                         |    No arrival or required
-Keyboard/i205/D                         |    No arrival or required
-Keyboard/i208/D                         |    No arrival or required
-Keyboard/i211/D                         |    No arrival or required
-Keyboard/i214/D                         |    No arrival or required
-Keyboard/i217/D                         |    No arrival or required
-Keyboard/valid_i0_i1/D                  |    No arrival or required
-Keyboard/valid_i0_i2/D                  |    No arrival or required
-Keyboard/valid_i0_i2/SR                 |    No arrival or required
+Keyboard/actualKey[3]__i1/D             |    No arrival or required
+Keyboard/actualKey[3]__i8/D             |    No arrival or required
+Keyboard/actualKey[3]__i7/D             |    No arrival or required
+Keyboard/actualKey[3]__i6/D             |    No arrival or required
+Keyboard/actualKey[3]__i5/D             |    No arrival or required
+Keyboard/actualKey[3]__i4/D             |    No arrival or required
+Keyboard/actualKey[3]__i3/D             |    No arrival or required
+Keyboard/actualKey[3]__i2/D             |    No arrival or required
+Keyboard/counter_121__i1/D              |    No arrival or required
+Keyboard/counter_121__i1/SR             |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
@@ -265,108 +265,108 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.198  2       
-STATE_OUT/serial/n850                                     NET DELAY         0.280        24.478  2       
+STATE_OUT/serial/n790                                     NET DELAY         0.280        24.478  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        24.756  2       
-STATE_OUT/serial/n2268                                    NET DELAY         0.280        25.036  2       
+STATE_OUT/serial/n2236                                    NET DELAY         0.280        25.036  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.314  2       
-STATE_OUT/serial/n852                                     NET DELAY         0.280        25.594  2       
+STATE_OUT/serial/n792                                     NET DELAY         0.280        25.594  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.872  2       
-STATE_OUT/serial/n2271                                    NET DELAY         0.280        26.152  2       
+STATE_OUT/serial/n2239                                    NET DELAY         0.280        26.152  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI1->STATE_OUT/serial/sub_11_add_2_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        26.430  2       
-STATE_OUT/serial/n854                                     NET DELAY         0.280        26.710  2       
+STATE_OUT/serial/n794                                     NET DELAY         0.280        26.710  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/CI0->STATE_OUT/serial/sub_11_add_2_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.988  2       
-STATE_OUT/serial/n2274                                    NET DELAY         0.280        27.268  2       
+STATE_OUT/serial/n2242                                    NET DELAY         0.280        27.268  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/CI1->STATE_OUT/serial/sub_11_add_2_add_5_31/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        27.546  2       
-STATE_OUT/serial/n856                                     NET DELAY         0.280        27.826  2       
+STATE_OUT/serial/n796                                     NET DELAY         0.280        27.826  2       
 STATE_OUT/serial/sub_11_add_2_add_5_33/D0->STATE_OUT/serial/sub_11_add_2_add_5_33/S0
                                           FA2             D0_TO_S0_DELAY    0.477        28.303  1       
-STATE_OUT/serial/counter_31__N_153[31]                    NET DELAY         2.075        30.378  1       
+STATE_OUT/serial/counter_31__N_152[31]                    NET DELAY         2.075        30.378  1       
 STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        30.855  1       
-STATE_OUT/serial/counter_31__N_84[31] ( D )
+STATE_OUT/serial/counter_31__N_83[31] ( D )
                                                           NET DELAY         2.075        32.930  1       
 
 
@@ -405,105 +405,105 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.198  2       
-STATE_OUT/serial/n850                                     NET DELAY         0.280        24.478  2       
+STATE_OUT/serial/n790                                     NET DELAY         0.280        24.478  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        24.756  2       
-STATE_OUT/serial/n2268                                    NET DELAY         0.280        25.036  2       
+STATE_OUT/serial/n2236                                    NET DELAY         0.280        25.036  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.314  2       
-STATE_OUT/serial/n852                                     NET DELAY         0.280        25.594  2       
+STATE_OUT/serial/n792                                     NET DELAY         0.280        25.594  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.872  2       
-STATE_OUT/serial/n2271                                    NET DELAY         0.280        26.152  2       
+STATE_OUT/serial/n2239                                    NET DELAY         0.280        26.152  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI1->STATE_OUT/serial/sub_11_add_2_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        26.430  2       
-STATE_OUT/serial/n854                                     NET DELAY         0.280        26.710  2       
+STATE_OUT/serial/n794                                     NET DELAY         0.280        26.710  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/CI0->STATE_OUT/serial/sub_11_add_2_add_5_31/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        26.988  2       
-STATE_OUT/serial/n2274                                    NET DELAY         0.280        27.268  2       
+STATE_OUT/serial/n2242                                    NET DELAY         0.280        27.268  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/D1->STATE_OUT/serial/sub_11_add_2_add_5_31/S1
                                           FA2             D1_TO_S1_DELAY    0.477        27.745  1       
-STATE_OUT/serial/counter_31__N_153[30]                    NET DELAY         2.075        29.820  1       
+STATE_OUT/serial/counter_31__N_152[30]                    NET DELAY         2.075        29.820  1       
 STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        30.297  1       
-STATE_OUT/serial/counter_31__N_84[30] ( D )
+STATE_OUT/serial/counter_31__N_83[30] ( D )
                                                           NET DELAY         2.075        32.372  1       
 
 
@@ -542,102 +542,102 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.198  2       
-STATE_OUT/serial/n850                                     NET DELAY         0.280        24.478  2       
+STATE_OUT/serial/n790                                     NET DELAY         0.280        24.478  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        24.756  2       
-STATE_OUT/serial/n2268                                    NET DELAY         0.280        25.036  2       
+STATE_OUT/serial/n2236                                    NET DELAY         0.280        25.036  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.314  2       
-STATE_OUT/serial/n852                                     NET DELAY         0.280        25.594  2       
+STATE_OUT/serial/n792                                     NET DELAY         0.280        25.594  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.872  2       
-STATE_OUT/serial/n2271                                    NET DELAY         0.280        26.152  2       
+STATE_OUT/serial/n2239                                    NET DELAY         0.280        26.152  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI1->STATE_OUT/serial/sub_11_add_2_add_5_29/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        26.430  2       
-STATE_OUT/serial/n854                                     NET DELAY         0.280        26.710  2       
+STATE_OUT/serial/n794                                     NET DELAY         0.280        26.710  2       
 STATE_OUT/serial/sub_11_add_2_add_5_31/D0->STATE_OUT/serial/sub_11_add_2_add_5_31/S0
                                           FA2             D0_TO_S0_DELAY    0.477        27.187  1       
-STATE_OUT/serial/counter_31__N_153[29]                    NET DELAY         2.075        29.262  1       
+STATE_OUT/serial/counter_31__N_152[29]                    NET DELAY         2.075        29.262  1       
 STATE_OUT/serial/counter_31__I_36_i30_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i30_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        29.739  1       
-STATE_OUT/serial/counter_31__N_84[29] ( D )
+STATE_OUT/serial/counter_31__N_83[29] ( D )
                                                           NET DELAY         2.075        31.814  1       
 
 
@@ -676,99 +676,99 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.198  2       
-STATE_OUT/serial/n850                                     NET DELAY         0.280        24.478  2       
+STATE_OUT/serial/n790                                     NET DELAY         0.280        24.478  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        24.756  2       
-STATE_OUT/serial/n2268                                    NET DELAY         0.280        25.036  2       
+STATE_OUT/serial/n2236                                    NET DELAY         0.280        25.036  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.314  2       
-STATE_OUT/serial/n852                                     NET DELAY         0.280        25.594  2       
+STATE_OUT/serial/n792                                     NET DELAY         0.280        25.594  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/CI0->STATE_OUT/serial/sub_11_add_2_add_5_29/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        25.872  2       
-STATE_OUT/serial/n2271                                    NET DELAY         0.280        26.152  2       
+STATE_OUT/serial/n2239                                    NET DELAY         0.280        26.152  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/D1->STATE_OUT/serial/sub_11_add_2_add_5_29/S1
                                           FA2             D1_TO_S1_DELAY    0.477        26.629  1       
-STATE_OUT/serial/counter_31__N_153[28]                    NET DELAY         2.075        28.704  1       
+STATE_OUT/serial/counter_31__N_152[28]                    NET DELAY         2.075        28.704  1       
 STATE_OUT/serial/counter_31__I_36_i29_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i29_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        29.181  1       
-STATE_OUT/serial/counter_31__N_84[28] ( D )
+STATE_OUT/serial/counter_31__N_83[28] ( D )
                                                           NET DELAY         2.075        31.256  1       
 
 
@@ -807,96 +807,96 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.198  2       
-STATE_OUT/serial/n850                                     NET DELAY         0.280        24.478  2       
+STATE_OUT/serial/n790                                     NET DELAY         0.280        24.478  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        24.756  2       
-STATE_OUT/serial/n2268                                    NET DELAY         0.280        25.036  2       
+STATE_OUT/serial/n2236                                    NET DELAY         0.280        25.036  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI1->STATE_OUT/serial/sub_11_add_2_add_5_27/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        25.314  2       
-STATE_OUT/serial/n852                                     NET DELAY         0.280        25.594  2       
+STATE_OUT/serial/n792                                     NET DELAY         0.280        25.594  2       
 STATE_OUT/serial/sub_11_add_2_add_5_29/D0->STATE_OUT/serial/sub_11_add_2_add_5_29/S0
                                           FA2             D0_TO_S0_DELAY    0.477        26.071  1       
-STATE_OUT/serial/counter_31__N_153[27]                    NET DELAY         2.075        28.146  1       
+STATE_OUT/serial/counter_31__N_152[27]                    NET DELAY         2.075        28.146  1       
 STATE_OUT/serial/counter_31__I_36_i28_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i28_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        28.623  1       
-STATE_OUT/serial/counter_31__N_84[27] ( D )
+STATE_OUT/serial/counter_31__N_83[27] ( D )
                                                           NET DELAY         2.075        30.698  1       
 
 
@@ -935,93 +935,93 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.198  2       
-STATE_OUT/serial/n850                                     NET DELAY         0.280        24.478  2       
+STATE_OUT/serial/n790                                     NET DELAY         0.280        24.478  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/CI0->STATE_OUT/serial/sub_11_add_2_add_5_27/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        24.756  2       
-STATE_OUT/serial/n2268                                    NET DELAY         0.280        25.036  2       
+STATE_OUT/serial/n2236                                    NET DELAY         0.280        25.036  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/D1->STATE_OUT/serial/sub_11_add_2_add_5_27/S1
                                           FA2             D1_TO_S1_DELAY    0.477        25.513  1       
-STATE_OUT/serial/counter_31__N_153[26]                    NET DELAY         2.075        27.588  1       
+STATE_OUT/serial/counter_31__N_152[26]                    NET DELAY         2.075        27.588  1       
 STATE_OUT/serial/counter_31__I_36_i27_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i27_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        28.065  1       
-STATE_OUT/serial/counter_31__N_84[26] ( D )
+STATE_OUT/serial/counter_31__N_83[26] ( D )
                                                           NET DELAY         2.075        30.140  1       
 
 
@@ -1060,90 +1060,90 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI1->STATE_OUT/serial/sub_11_add_2_add_5_25/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        24.198  2       
-STATE_OUT/serial/n850                                     NET DELAY         0.280        24.478  2       
+STATE_OUT/serial/n790                                     NET DELAY         0.280        24.478  2       
 STATE_OUT/serial/sub_11_add_2_add_5_27/D0->STATE_OUT/serial/sub_11_add_2_add_5_27/S0
                                           FA2             D0_TO_S0_DELAY    0.477        24.955  1       
-STATE_OUT/serial/counter_31__N_153[25]                    NET DELAY         2.075        27.030  1       
+STATE_OUT/serial/counter_31__N_152[25]                    NET DELAY         2.075        27.030  1       
 STATE_OUT/serial/counter_31__I_36_i26_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i26_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        27.507  1       
-STATE_OUT/serial/counter_31__N_84[25] ( D )
+STATE_OUT/serial/counter_31__N_83[25] ( D )
                                                           NET DELAY         2.075        29.582  1       
 
 
@@ -1182,87 +1182,87 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/CI0->STATE_OUT/serial/sub_11_add_2_add_5_25/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        23.640  2       
-STATE_OUT/serial/n2265                                    NET DELAY         0.280        23.920  2       
+STATE_OUT/serial/n2233                                    NET DELAY         0.280        23.920  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/D1->STATE_OUT/serial/sub_11_add_2_add_5_25/S1
                                           FA2             D1_TO_S1_DELAY    0.477        24.397  1       
-STATE_OUT/serial/counter_31__N_153[24]                    NET DELAY         2.075        26.472  1       
+STATE_OUT/serial/counter_31__N_152[24]                    NET DELAY         2.075        26.472  1       
 STATE_OUT/serial/counter_31__I_36_i25_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i25_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        26.949  1       
-STATE_OUT/serial/counter_31__N_84[24] ( D )
+STATE_OUT/serial/counter_31__N_83[24] ( D )
                                                           NET DELAY         2.075        29.024  1       
 
 
@@ -1301,84 +1301,84 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI1->STATE_OUT/serial/sub_11_add_2_add_5_23/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        23.082  2       
-STATE_OUT/serial/n848                                     NET DELAY         0.280        23.362  2       
+STATE_OUT/serial/n788                                     NET DELAY         0.280        23.362  2       
 STATE_OUT/serial/sub_11_add_2_add_5_25/D0->STATE_OUT/serial/sub_11_add_2_add_5_25/S0
                                           FA2             D0_TO_S0_DELAY    0.477        23.839  1       
-STATE_OUT/serial/counter_31__N_153[23]                    NET DELAY         2.075        25.914  1       
+STATE_OUT/serial/counter_31__N_152[23]                    NET DELAY         2.075        25.914  1       
 STATE_OUT/serial/counter_31__I_36_i24_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i24_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        26.391  1       
-STATE_OUT/serial/counter_31__N_84[23] ( D )
+STATE_OUT/serial/counter_31__N_83[23] ( D )
                                                           NET DELAY         2.075        28.466  1       
 
 
@@ -1417,81 +1417,81 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 STATE_OUT/init_c/CK->STATE_OUT/init_c/Q   FD1P3XZ         CK_TO_Q_DELAY     1.391         5.541  68      
 STATE_OUT/init                                            NET DELAY         2.355         7.896  68      
-STATE_OUT/i1_2_lut_adj_40/A->STATE_OUT/i1_2_lut_adj_40/Z
+STATE_OUT/i1_2_lut/A->STATE_OUT/i1_2_lut/Z
                                           LUT4            A_TO_Z_DELAY      0.477         8.373  1       
-STATE_OUT/counter_31__N_121[0]                            NET DELAY         2.075        10.448  1       
+STATE_OUT/counter_31__N_120[0]                            NET DELAY         2.075        10.448  1       
 STATE_OUT/serial/sub_11_add_2_add_5_1/B1->STATE_OUT/serial/sub_11_add_2_add_5_1/CO1
                                           FA2             B1_TO_CO1_DELAY   0.358        10.806  2       
-STATE_OUT/serial/n826                                     NET DELAY         0.280        11.086  2       
+STATE_OUT/serial/n766                                     NET DELAY         0.280        11.086  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI0->STATE_OUT/serial/sub_11_add_2_add_5_3/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        11.364  2       
-STATE_OUT/serial/n2232                                    NET DELAY         0.280        11.644  2       
+STATE_OUT/serial/n2200                                    NET DELAY         0.280        11.644  2       
 STATE_OUT/serial/sub_11_add_2_add_5_3/CI1->STATE_OUT/serial/sub_11_add_2_add_5_3/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        11.922  2       
-STATE_OUT/serial/n828                                     NET DELAY         0.280        12.202  2       
+STATE_OUT/serial/n768                                     NET DELAY         0.280        12.202  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI0->STATE_OUT/serial/sub_11_add_2_add_5_5/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        12.480  2       
-STATE_OUT/serial/n2235                                    NET DELAY         0.280        12.760  2       
+STATE_OUT/serial/n2203                                    NET DELAY         0.280        12.760  2       
 STATE_OUT/serial/sub_11_add_2_add_5_5/CI1->STATE_OUT/serial/sub_11_add_2_add_5_5/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        13.038  2       
-STATE_OUT/serial/n830                                     NET DELAY         0.280        13.318  2       
+STATE_OUT/serial/n770                                     NET DELAY         0.280        13.318  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI0->STATE_OUT/serial/sub_11_add_2_add_5_7/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        13.596  2       
-STATE_OUT/serial/n2238                                    NET DELAY         0.280        13.876  2       
+STATE_OUT/serial/n2206                                    NET DELAY         0.280        13.876  2       
 STATE_OUT/serial/sub_11_add_2_add_5_7/CI1->STATE_OUT/serial/sub_11_add_2_add_5_7/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        14.154  2       
-STATE_OUT/serial/n832                                     NET DELAY         0.280        14.434  2       
+STATE_OUT/serial/n772                                     NET DELAY         0.280        14.434  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI0->STATE_OUT/serial/sub_11_add_2_add_5_9/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        14.712  2       
-STATE_OUT/serial/n2241                                    NET DELAY         0.280        14.992  2       
+STATE_OUT/serial/n2209                                    NET DELAY         0.280        14.992  2       
 STATE_OUT/serial/sub_11_add_2_add_5_9/CI1->STATE_OUT/serial/sub_11_add_2_add_5_9/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        15.270  2       
-STATE_OUT/serial/n834                                     NET DELAY         0.280        15.550  2       
+STATE_OUT/serial/n774                                     NET DELAY         0.280        15.550  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI0->STATE_OUT/serial/sub_11_add_2_add_5_11/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        15.828  2       
-STATE_OUT/serial/n2244                                    NET DELAY         0.280        16.108  2       
+STATE_OUT/serial/n2212                                    NET DELAY         0.280        16.108  2       
 STATE_OUT/serial/sub_11_add_2_add_5_11/CI1->STATE_OUT/serial/sub_11_add_2_add_5_11/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        16.386  2       
-STATE_OUT/serial/n836                                     NET DELAY         0.280        16.666  2       
+STATE_OUT/serial/n776                                     NET DELAY         0.280        16.666  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI0->STATE_OUT/serial/sub_11_add_2_add_5_13/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        16.944  2       
-STATE_OUT/serial/n2247                                    NET DELAY         0.280        17.224  2       
+STATE_OUT/serial/n2215                                    NET DELAY         0.280        17.224  2       
 STATE_OUT/serial/sub_11_add_2_add_5_13/CI1->STATE_OUT/serial/sub_11_add_2_add_5_13/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        17.502  2       
-STATE_OUT/serial/n838                                     NET DELAY         0.280        17.782  2       
+STATE_OUT/serial/n778                                     NET DELAY         0.280        17.782  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI0->STATE_OUT/serial/sub_11_add_2_add_5_15/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        18.060  2       
-STATE_OUT/serial/n2250                                    NET DELAY         0.280        18.340  2       
+STATE_OUT/serial/n2218                                    NET DELAY         0.280        18.340  2       
 STATE_OUT/serial/sub_11_add_2_add_5_15/CI1->STATE_OUT/serial/sub_11_add_2_add_5_15/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        18.618  2       
-STATE_OUT/serial/n840                                     NET DELAY         0.280        18.898  2       
+STATE_OUT/serial/n780                                     NET DELAY         0.280        18.898  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI0->STATE_OUT/serial/sub_11_add_2_add_5_17/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        19.176  2       
-STATE_OUT/serial/n2253                                    NET DELAY         0.280        19.456  2       
+STATE_OUT/serial/n2221                                    NET DELAY         0.280        19.456  2       
 STATE_OUT/serial/sub_11_add_2_add_5_17/CI1->STATE_OUT/serial/sub_11_add_2_add_5_17/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        19.734  2       
-STATE_OUT/serial/n842                                     NET DELAY         0.280        20.014  2       
+STATE_OUT/serial/n782                                     NET DELAY         0.280        20.014  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI0->STATE_OUT/serial/sub_11_add_2_add_5_19/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        20.292  2       
-STATE_OUT/serial/n2256                                    NET DELAY         0.280        20.572  2       
+STATE_OUT/serial/n2224                                    NET DELAY         0.280        20.572  2       
 STATE_OUT/serial/sub_11_add_2_add_5_19/CI1->STATE_OUT/serial/sub_11_add_2_add_5_19/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        20.850  2       
-STATE_OUT/serial/n844                                     NET DELAY         0.280        21.130  2       
+STATE_OUT/serial/n784                                     NET DELAY         0.280        21.130  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI0->STATE_OUT/serial/sub_11_add_2_add_5_21/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        21.408  2       
-STATE_OUT/serial/n2259                                    NET DELAY         0.280        21.688  2       
+STATE_OUT/serial/n2227                                    NET DELAY         0.280        21.688  2       
 STATE_OUT/serial/sub_11_add_2_add_5_21/CI1->STATE_OUT/serial/sub_11_add_2_add_5_21/CO1
                                           FA2             CI1_TO_CO1_DELAY  0.278        21.966  2       
-STATE_OUT/serial/n846                                     NET DELAY         0.280        22.246  2       
+STATE_OUT/serial/n786                                     NET DELAY         0.280        22.246  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/CI0->STATE_OUT/serial/sub_11_add_2_add_5_23/CO0
                                           FA2             CI0_TO_CO0_DELAY  0.278        22.524  2       
-STATE_OUT/serial/n2262                                    NET DELAY         0.280        22.804  2       
+STATE_OUT/serial/n2230                                    NET DELAY         0.280        22.804  2       
 STATE_OUT/serial/sub_11_add_2_add_5_23/D1->STATE_OUT/serial/sub_11_add_2_add_5_23/S1
                                           FA2             D1_TO_S1_DELAY    0.477        23.281  1       
-STATE_OUT/serial/counter_31__N_153[22]                    NET DELAY         2.075        25.356  1       
+STATE_OUT/serial/counter_31__N_152[22]                    NET DELAY         2.075        25.356  1       
 STATE_OUT/serial/counter_31__I_36_i23_3_lut_4_lut/C->STATE_OUT/serial/counter_31__I_36_i23_3_lut_4_lut/Z
                                           LUT4            C_TO_Z_DELAY      0.477        25.833  1       
-STATE_OUT/serial/counter_31__N_84[22] ( D )
+STATE_OUT/serial/counter_31__N_83[22] ( D )
                                                           NET DELAY         2.075        27.908  1       
 
 
@@ -1587,10 +1587,10 @@ SERCLK_OUT_c ( CK )                                       NET DELAY      4.150  
 
 STATE_OUT/serial/counter_i30/CK->STATE_OUT/serial/counter_i30/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  3       
-STATE_OUT/serial/counter[30]                              NET DELAY      0.280         5.821  3       
+STATE_OUT/counter[30]                                     NET DELAY      0.280         5.821  3       
 STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/A->STATE_OUT/serial/counter_31__I_36_i31_3_lut_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.450         6.271  1       
-STATE_OUT/serial/counter_31__N_84[30] ( D )
+STATE_OUT/serial/counter_31__N_83[30] ( D )
                                                           NET DELAY      2.075         8.346  1       
 
 
@@ -1629,10 +1629,10 @@ SERCLK_OUT_c ( CK )                                       NET DELAY      4.150  
 
 STATE_OUT/serial/counter_i31/CK->STATE_OUT/serial/counter_i31/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  3       
-STATE_OUT/serial/counter[31]                              NET DELAY      0.280         5.821  3       
+STATE_OUT/counter[31]                                     NET DELAY      0.280         5.821  3       
 STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/A->STATE_OUT/serial/counter_31__I_36_i32_3_lut_4_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.450         6.271  1       
-STATE_OUT/serial/counter_31__N_84[31] ( D )
+STATE_OUT/serial/counter_31__N_83[31] ( D )
                                                           NET DELAY      2.075         8.346  1       
 
 
@@ -1674,7 +1674,7 @@ STATE_OUT/serial/counter_i0/CK->STATE_OUT/serial/counter_i0/Q
 STATE_OUT/counter[0]                                      NET DELAY      0.280         5.821  3       
 STATE_OUT/serial/counter_31__I_36_i1_3_lut_4_lut/B->STATE_OUT/serial/counter_31__I_36_i1_3_lut_4_lut/Z
                                           LUT4            B_TO_Z_DELAY   0.450         6.271  1       
-STATE_OUT/serial/counter_31__N_84[0] ( D )
+STATE_OUT/serial/counter_31__N_83[0] ( D )
                                                           NET DELAY      2.075         8.346  1       
 
 
@@ -1694,8 +1694,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : STATE_OUT/waiting_c/Q  (FD1P3XZ)
-Path End         : STATE_OUT/cont_143__i1/D  (FD1P3XZ)
+Path Begin       : STATE_OUT/cont_119__i3/Q  (FD1P3XZ)
+Path End         : STATE_OUT/cont_119__i3/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1707,16 +1707,16 @@ Path Slack       : 4.196 ns  (Passed)
 Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
 ----------------------------------------  --------------  -------------  -----  ------------  ------  
 OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  67      
-SERCLK_OUT_c                                              NET DELAY      4.150         4.150  67      
+SERCLK_OUT_c ( CK )                                       NET DELAY      4.150         4.150  67      
 
 
 
-STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  6       
-STATE_OUT/waiting                                         NET DELAY      0.280         5.821  6       
-STATE_OUT/i686_2_lut_3_lut/B->STATE_OUT/i686_2_lut_3_lut/Z
-                                          LUT4            B_TO_Z_DELAY   0.450         6.271  1       
-STATE_OUT/n21[1] ( D )                                    NET DELAY      2.075         8.346  1       
+STATE_OUT/cont_119__i3/CK->STATE_OUT/cont_119__i3/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  2       
+STATE_OUT/cont[3]                                         NET DELAY      0.280         5.821  2       
+STATE_OUT/i650_3_lut/A->STATE_OUT/i650_3_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.450         6.271  1       
+STATE_OUT/n21[3] ( D )                                    NET DELAY      2.075         8.346  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1736,7 +1736,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/waiting_c/Q  (FD1P3XZ)
-Path End         : STATE_OUT/cont_143__i2/D  (FD1P3XZ)
+Path End         : STATE_OUT/cont_119__i2/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1755,7 +1755,7 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  6       
 STATE_OUT/waiting                                         NET DELAY      0.280         5.821  6       
-STATE_OUT/i693_2_lut_3_lut_4_lut/B->STATE_OUT/i693_2_lut_3_lut_4_lut/Z
+STATE_OUT/i643_2_lut_4_lut/B->STATE_OUT/i643_2_lut_4_lut/Z
                                           LUT4            B_TO_Z_DELAY   0.450         6.271  1       
 STATE_OUT/n21[2] ( D )                                    NET DELAY      2.075         8.346  1       
 
@@ -1777,6 +1777,47 @@ Path Slack  (Passed)                                                            
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/waiting_c/Q  (FD1P3XZ)
+Path End         : STATE_OUT/cont_119__i1/D  (FD1P3XZ)
+Source Clock     : SERCLK_OUT_c (R)
+Destination Clock: SERCLK_OUT_c (R)
+Logic Level      : 2
+Delay Ratio      : 56.1% (route), 43.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 4.196 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  67      
+SERCLK_OUT_c                                              NET DELAY      4.150         4.150  67      
+
+
+
+STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
+                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  6       
+STATE_OUT/waiting                                         NET DELAY      0.280         5.821  6       
+STATE_OUT/i636_2_lut_3_lut/A->STATE_OUT/i636_2_lut_3_lut/Z
+                                          LUT4            A_TO_Z_DELAY   0.450         6.271  1       
+STATE_OUT/n21[1] ( D )                                    NET DELAY      2.075         8.346  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  67      
+SERCLK_OUT_c ( CK )                                       NET DELAY      4.150         4.150  67      
+                                                          Uncertainty    0.000         4.150  
+                                                          Hold time      0.000         4.150  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -4.150  
+Arrival Time                                                                           8.346  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   4.196  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : STATE_OUT/waiting_c/Q  (FD1P3XZ)
 Path End         : STATE_OUT/init_c/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
@@ -1796,50 +1837,9 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  6       
 STATE_OUT/waiting                                         NET DELAY      0.280         5.821  6       
-STATE_OUT/serial/i636_4_lut_4_lut/D->STATE_OUT/serial/i636_4_lut_4_lut/Z
+STATE_OUT/serial/i578_4_lut_4_lut/D->STATE_OUT/serial/i578_4_lut_4_lut/Z
                                           LUT4            D_TO_Z_DELAY   0.450         6.271  1       
-STATE_OUT/n449 ( D )                                      NET DELAY      2.075         8.346  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  67      
-SERCLK_OUT_c ( CK )                                       NET DELAY      4.150         4.150  67      
-                                                          Uncertainty    0.000         4.150  
-                                                          Hold time      0.000         4.150  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -4.150  
-Arrival Time                                                                           8.346  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   4.196  
-
-
-
-
-++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : STATE_OUT/cont_143__i1/Q  (FD1P3XZ)
-Path End         : STATE_OUT/cont_143__i3/D  (FD1P3XZ)
-Source Clock     : SERCLK_OUT_c (R)
-Destination Clock: SERCLK_OUT_c (R)
-Logic Level      : 2
-Delay Ratio      : 56.1% (route), 43.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 4.196 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-OSCInst1/CLKLF                            LSOSC_CORE      CLOCK LATENCY  0.000         0.000  67      
-SERCLK_OUT_c                                              NET DELAY      4.150         4.150  67      
-
-
-
-STATE_OUT/cont_143__i1/CK->STATE_OUT/cont_143__i1/Q
-                                          FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  4       
-STATE_OUT/cont[1]                                         NET DELAY      0.280         5.821  4       
-STATE_OUT/i700_3_lut_4_lut/A->STATE_OUT/i700_3_lut_4_lut/Z
-                                          LUT4            A_TO_Z_DELAY   0.450         6.271  1       
-STATE_OUT/n21[3] ( D )                                    NET DELAY      2.075         8.346  1       
+STATE_OUT/n355 ( D )                                      NET DELAY      2.075         8.346  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1859,7 +1859,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : STATE_OUT/waiting_c/Q  (FD1P3XZ)
-Path End         : STATE_OUT/cont_143__i0/D  (FD1P3XZ)
+Path End         : STATE_OUT/cont_119__i0/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1878,7 +1878,7 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 STATE_OUT/waiting_c/CK->STATE_OUT/waiting_c/Q
                                           FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  6       
 STATE_OUT/waiting                                         NET DELAY      0.280         5.821  6       
-STATE_OUT/i678_2_lut/A->STATE_OUT/i678_2_lut/Z
+STATE_OUT/i628_2_lut/A->STATE_OUT/i628_2_lut/Z
                                           LUT4            A_TO_Z_DELAY   0.450         6.271  1       
 STATE_OUT/n21[0] ( D )                                    NET DELAY      2.075         8.346  1       
 
@@ -1899,7 +1899,7 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : Sreg_i1/Q  (FD1P3XZ)
+Path Begin       : mainTimer/state/Q  (FD1P3XZ)
 Path End         : Sreg_i2/D  (FD1P3XZ)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
@@ -1916,8 +1916,8 @@ SERCLK_OUT_c                                              NET DELAY      4.150  
 
 
 
-Sreg_i1/CK->Sreg_i1/Q                     FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  10      
-Sreg_c_0                                                  NET DELAY      0.280         5.821  10      
+mainTimer/state/CK->mainTimer/state/Q     FD1P3XZ         CK_TO_Q_DELAY  1.391         5.541  24      
+TIME_OUT                                                  NET DELAY      0.280         5.821  24      
 i1_4_lut/A->i1_4_lut/Z                    LUT4            A_TO_Z_DELAY   0.450         6.271  2       
 Snext[1] ( D )                                            NET DELAY      2.075         8.346  2       
 

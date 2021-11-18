@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Wed Nov 17 21:56:53 2021
+Wed Nov 17 23:54:12 2021
 
 Pinout by Port Name:
 +---------------+----------+--------------+-------+--------------------+
@@ -19,7 +19,6 @@ Pinout by Port Name:
 | KB_RECV       | 32/0     | LVCMOS33_IN  | PR17A | PULL:100K          |
 | KEY_STATUS[0] | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
 | KEY_STATUS[1] | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA PULL:NA  |
-| RESET_OUT     | 42/0     | LVCMOS33_OUT | PR9A  | DRIVE:8mA PULL:NA  |
 | SENSOR1_IN    | 28/0     | LVCMOS33_IN  | PR18A | PULL:100K          |
 | SENSOR2_IN    | 38/0     | LVCMOS33_IN  | PR9B  | PULL:100K          |
 | SERCLK_OUT    | 36/0     | LVCMOS33_OUT | PR10B | DRIVE:8mA PULL:NA  |
@@ -74,7 +73,7 @@ Pinout by Pin Number:
 | 39/0     |                     |            |              | PR5A  | RGB0             |
 | 40/0     |                     |            |              | PR6A  | RGB1             |
 | 41/0     |                     |            |              | PR7A  | RGB2             |
-| 42/0     | RESET_OUT           | LOCATED    | LVCMOS33_OUT | PR9A  |                  |
+| 42/0     |     unused, PULL:UP |            |              | PR9A  |                  |
 | 43/0     | SIREN_OUT           | LOCATED    | LVCMOS33_OUT | PR10A |                  |
 | 44/2     |     unused, PULL:UP |            |              | PL7B  | PCLKT2_0         |
 | 45/2     | DEBUG_KEY[1]        | LOCATED    | LVCMOS33_OUT | PL8B  |                  |
@@ -110,7 +109,6 @@ ldc_set_location -site {35} [ get_ports {KB_IN[1]} ]
 ldc_set_location -site {32} [ get_ports {KB_RECV} ]
 ldc_set_location -site {2} [ get_ports {KEY_STATUS[0]} ]
 ldc_set_location -site {46} [ get_ports {KEY_STATUS[1]} ]
-ldc_set_location -site {42} [ get_ports {RESET_OUT} ]
 ldc_set_location -site {28} [ get_ports {SENSOR1_IN} ]
 ldc_set_location -site {38} [ get_ports {SENSOR2_IN} ]
 ldc_set_location -site {36} [ get_ports {SERCLK_OUT} ]
@@ -125,5 +123,5 @@ ldc_set_location -site {25} [ get_ports {Sreg[1]} ]
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Wed Nov 17 21:56:54 2021
+Wed Nov 17 23:54:12 2021
 

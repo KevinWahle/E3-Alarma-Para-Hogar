@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Nov 17 21:56:41 2021
+Wed Nov 17 23:54:00 2021
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
@@ -203,9 +203,6 @@ INFO - synthesis: d:/electronica/electronica 3/tp2/tp2-g2_e3/moduloalarmatp2/sou
                                                          
 
 
-WARNING - synthesis: Initial value found on net TIMER_EN_N_19 will be ignored due to unrecognized driver type
-WARNING - synthesis: I/O Port RESET_OUT 's net has no driver and is unused.
-######## Missing driver on net RESET_OUT. Patching with GND.
 
 
 
@@ -223,8 +220,8 @@ CCU2 => 44
 FD1P3XZ => 107
 IB => 5
 LSOSC_CORE => 1
-LUT4 => 158
-OB => 11
+LUT4 => 157
+OB => 10
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
 Number of even-length carry chains : 3
@@ -236,19 +233,19 @@ Number of even-length carry chains : 3
 Clock Nets
 Number of Clocks: 2
   Net : SERCLK_OUT_c, loads : 1
-  Net : KB_RECV_c, loads : 2
+  Net : KB_RECV_c, loads : 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : STATE_OUT/init, loads : 68
-  Net : STATE_OUT/serial/n63, loads : 38
-  Net : Keyboard/n445, loads : 32
+  Net : STATE_OUT/n63, loads : 38
+  Net : Keyboard/n351, loads : 32
   Net : mainTimer/TIME_OUT, loads : 23
-  Net : mainTimer/clkCont_17__N_38, loads : 19
-  Net : Keyboard/DEBUG_KEY_c_1, loads : 11
-  Net : Sreg_c_1, loads : 10
-  Net : Sreg_c_0, loads : 10
+  Net : mainTimer/clkCont_17__N_37, loads : 19
+  Net : Sreg_c_1, loads : 8
+  Net : Sreg_c_0, loads : 8
+  Net : Keyboard/DEBUG_KEY_c_0, loads : 8
   Net : STATE_OUT/waiting, loads : 6
   Net : KB_IN_c_0, loads : 5
 ################### End Clock Report ##################

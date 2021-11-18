@@ -1,13 +1,33 @@
-FA2/A0 input sub_11_add_2_add_5_23is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_23is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_17is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_17is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_15is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_15is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_25is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_25is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_27is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_27is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_5is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_5is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_3is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_3is connected to a constant net
 FA2/A0 input sub_11_add_2_add_5_21is connected to a constant net
 FA2/A1 input sub_11_add_2_add_5_21is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_1is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_1is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_23is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_23is connected to a constant net
 FA2/A0 input sub_11_add_2_add_5_19is connected to a constant net
 FA2/A1 input sub_11_add_2_add_5_19is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_13is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_13is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_15is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_15is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_17is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_17is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_31is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_31is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_11is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_11is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_7is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_7is connected to a constant net
+FA2/A0 input sub_11_add_2_add_5_9is connected to a constant net
+FA2/A1 input sub_11_add_2_add_5_9is connected to a constant net
 FA2/A0 input sub_11_add_2_add_5_33is connected to a constant net
 FA2/A1 input sub_11_add_2_add_5_33is connected to a constant net
 FA2/B1 input sub_11_add_2_add_5_33is connected to a constant net
@@ -18,100 +38,239 @@ FA2/CI1 input sub_11_add_2_add_5_33 has no outgoing device arc
 FA2/B0 input sub_11_add_2_add_5_33 is on an incomplete path
 FA2/C0 input sub_11_add_2_add_5_33is connected to a constant net
 FA2/CI0 input sub_11_add_2_add_5_33 is on an incomplete path
-     ** STATE_OUT/serial/i476_2_lut/Z is driving a pin on an incomplete path
-LUT4/A input i476_2_lut is on an incomplete path
-LUT4/B input i476_2_lut is on an incomplete path
-FA2/A0 input sub_11_add_2_add_5_31is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_31is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_13is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_13is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_27is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_27is connected to a constant net
+     ** STATE_OUT/serial/i399_2_lut/Z is driving a pin on an incomplete path
+LUT4/A input i399_2_lut is on an incomplete path
+LUT4/B input i399_2_lut is on an incomplete path
 FA2/A0 input sub_11_add_2_add_5_29is connected to a constant net
 FA2/A1 input sub_11_add_2_add_5_29is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_5is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_5is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_11is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_11is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_7is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_7is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_25is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_25is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_9is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_9is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_3is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_3is connected to a constant net
-FA2/A0 input counter_144_add_4_11is connected to a constant net
-FA2/A1 input counter_144_add_4_11is connected to a constant net
-FA2/A0 input sub_11_add_2_add_5_1is connected to a constant net
-FA2/A1 input sub_11_add_2_add_5_1is connected to a constant net
-LSOSC_CORE/CLKLFPU input OSCInst1is connected to a constant net
-LSOSC_CORE/CLKLFEN input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM9 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM8 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM7 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM6 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM5 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM4 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM3 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM2 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM1 input OSCInst1is connected to a constant net
-LSOSC_CORE/TRIM0 input OSCInst1is connected to a constant net
-FA2/A0 input add_7_add_5_17is connected to a constant net
-FA2/A1 input add_7_add_5_17is connected to a constant net
-FA2/A0 input add_7_add_5_15is connected to a constant net
-FA2/A1 input add_7_add_5_15is connected to a constant net
-FA2/A0 input counter_144_add_4_13is connected to a constant net
-FA2/A1 input counter_144_add_4_13is connected to a constant net
-FA2/A0 input counter_144_add_4_33is connected to a constant net
-FA2/A1 input counter_144_add_4_33is connected to a constant net
-FA2/B1 input counter_144_add_4_33is connected to a constant net
-FA2/C1 input counter_144_add_4_33is connected to a constant net
-FA2/D1 input counter_144_add_4_33 has no outgoing device arc
-FA2/CI1 input counter_144_add_4_33 has no outgoing device arc
-     ** Keyboard/counter_144_add_4_33/CO0 is driving a pin on an incomplete path
-FA2/B0 input counter_144_add_4_33is connected to a constant net
-FA2/C0 input counter_144_add_4_33 is on an incomplete path
-FA2/CI0 input counter_144_add_4_33 is on an incomplete path
-FA2/A0 input counter_144_add_4_15is connected to a constant net
-FA2/A1 input counter_144_add_4_15is connected to a constant net
-FA2/A0 input counter_144_add_4_31is connected to a constant net
-FA2/A1 input counter_144_add_4_31is connected to a constant net
-FA2/A0 input counter_144_add_4_27is connected to a constant net
-FA2/A1 input counter_144_add_4_27is connected to a constant net
-FA2/A0 input counter_144_add_4_7is connected to a constant net
-FA2/A1 input counter_144_add_4_7is connected to a constant net
-FA2/A0 input counter_144_add_4_9is connected to a constant net
-FA2/A1 input counter_144_add_4_9is connected to a constant net
-FA2/A0 input counter_144_add_4_29is connected to a constant net
-FA2/A1 input counter_144_add_4_29is connected to a constant net
-FA2/A0 input counter_144_add_4_25is connected to a constant net
-FA2/A1 input counter_144_add_4_25is connected to a constant net
+FA2/A0 input add_7_add_5_9is connected to a constant net
+FA2/A1 input add_7_add_5_9is connected to a constant net
+FA2/A0 input add_7_add_5_13is connected to a constant net
+FA2/A1 input add_7_add_5_13is connected to a constant net
+FA2/A0 input counter_121_add_4_25is connected to a constant net
+FA2/A1 input counter_121_add_4_25is connected to a constant net
+FA2/A0 input counter_121_add_4_31is connected to a constant net
+FA2/A1 input counter_121_add_4_31is connected to a constant net
+VHI/Z VCC  i2
+     *** mainTimer/clkCont_i17/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i16/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i15/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i14/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i13/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i12/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i11/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i10/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i9/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i8/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i7/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i6/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i5/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i4/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i3/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i2/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i1/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/clkCont_i0/SP is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/state/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_27/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_27/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i0/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i31/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_25/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_25/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_5/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_5/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_3/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_3/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_23/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_23/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_1/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_21/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_21/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i30/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i29/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i28/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i27/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i26/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i25/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i24/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i23/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i22/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i21/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i20/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i19/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i18/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i17/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i16/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i15/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i14/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i13/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i12/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i11/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i10/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i9/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_19/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_19/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i8/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i7/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i6/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i5/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i4/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i3/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i2/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/counter_i1/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/aux_i3/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/aux_i2/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/aux_i1/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/status_out/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_17/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_17/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_15/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_15/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_13/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_13/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_11/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_11/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_31/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_31/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_29/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_29/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/aux_i0/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_119__i0/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/init_c/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_119__i1/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_119__i2/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/cont_119__i3/SP is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/waiting_c/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i1/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i8/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i7/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i6/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i5/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i4/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i3/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i2/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i1/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/valid_i0_i2/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i2/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i3/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i4/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i5/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i6/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i7/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i8/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i9/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i10/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i11/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i12/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i13/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i14/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i15/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i16/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i17/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i18/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i19/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i20/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i21/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i22/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i23/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i24/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i25/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i26/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i27/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i28/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i29/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i30/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i31/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121__i32/SP is driven by constant or a pin on an incomplete path
+     *** Keyboard/valid_i0_i1/SP is driven by constant or a pin on an incomplete path
+     *** Sreg_i1/SP is driven by constant or a pin on an incomplete path
+     *** Sreg_i2/SP is driven by constant or a pin on an incomplete path
+     *** OSCInst1/CLKLFPU is driven by constant or a pin on an incomplete path
+     *** OSCInst1/CLKLFEN is driven by constant or a pin on an incomplete path
+     *** STATUS_OUT_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** SIREN_OUT_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** STATUS_SEND_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** SERCLK_OUT_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** Sreg_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** Sreg_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** KEY_STATUS_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** KEY_STATUS_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** DEBUG_KEY_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** DEBUG_KEY_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
+FA2/A0 input counter_121_add_4_11is connected to a constant net
+FA2/A1 input counter_121_add_4_11is connected to a constant net
+FA2/A0 input counter_121_add_4_7is connected to a constant net
+FA2/A1 input counter_121_add_4_7is connected to a constant net
+FA2/A0 input counter_121_add_4_29is connected to a constant net
+FA2/A1 input counter_121_add_4_29is connected to a constant net
+FA2/A0 input counter_121_add_4_9is connected to a constant net
+FA2/A1 input counter_121_add_4_9is connected to a constant net
+FA2/A0 input counter_121_add_4_27is connected to a constant net
+FA2/A1 input counter_121_add_4_27is connected to a constant net
+FA2/A0 input counter_121_add_4_5is connected to a constant net
+FA2/A1 input counter_121_add_4_5is connected to a constant net
+FA2/A0 input counter_121_add_4_1is connected to a constant net
+FA2/A1 input counter_121_add_4_1is connected to a constant net
+FA2/A0 input counter_121_add_4_3is connected to a constant net
+FA2/A1 input counter_121_add_4_3is connected to a constant net
+FA2/A0 input counter_121_add_4_21is connected to a constant net
+FA2/A1 input counter_121_add_4_21is connected to a constant net
+FA2/A0 input counter_121_add_4_23is connected to a constant net
+FA2/A1 input counter_121_add_4_23is connected to a constant net
+FA2/A0 input counter_121_add_4_19is connected to a constant net
+FA2/A1 input counter_121_add_4_19is connected to a constant net
+FA2/A0 input counter_121_add_4_15is connected to a constant net
+FA2/A1 input counter_121_add_4_15is connected to a constant net
+FA2/A0 input counter_121_add_4_17is connected to a constant net
+FA2/A1 input counter_121_add_4_17is connected to a constant net
+FA2/A0 input counter_121_add_4_13is connected to a constant net
+FA2/A1 input counter_121_add_4_13is connected to a constant net
+FA2/A0 input counter_121_add_4_33is connected to a constant net
+FA2/A1 input counter_121_add_4_33is connected to a constant net
+FA2/B1 input counter_121_add_4_33is connected to a constant net
+FA2/C1 input counter_121_add_4_33is connected to a constant net
+FA2/D1 input counter_121_add_4_33 has no outgoing device arc
+FA2/CI1 input counter_121_add_4_33 has no outgoing device arc
+     ** Keyboard/counter_121_add_4_33/CO0 is driving a pin on an incomplete path
+FA2/B0 input counter_121_add_4_33is connected to a constant net
+FA2/C0 input counter_121_add_4_33 is on an incomplete path
+FA2/CI0 input counter_121_add_4_33 is on an incomplete path
 VLO/Z GND  i1
+     *** mainTimer/add_7_add_5_9/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_9/C1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_13/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_13/C1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_7/A0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_7/A1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_7/C1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_19/A0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_19/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_19/A1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_19/B1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_19/C1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_17/A0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_17/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_17/A1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_17/C1 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_15/A0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_15/C0 is driven by constant or a pin on an incomplete path
+     *** mainTimer/add_7_add_5_15/A1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_15/C1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_5/A0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_5/C0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_5/A1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_13/A0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_13/C0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_13/A1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_13/C1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_9/A0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_9/A1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_9/C1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_1/A0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_1/B0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_1/C0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_1/A1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_7/A0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_7/A1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_7/C1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_3/A0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_3/C0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_3/A1 is driven by constant or a pin on an incomplete path
@@ -120,14 +279,11 @@ VLO/Z GND  i1
      *** mainTimer/add_7_add_5_11/C0 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_11/A1 is driven by constant or a pin on an incomplete path
      *** mainTimer/add_7_add_5_11/C1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_19/A0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_19/C0 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_19/A1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_19/B1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_19/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/counter_i0/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/status_send/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/counter_i31/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_1/B0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/sub_11_add_2_add_5_1/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/counter_i30/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/counter_i29/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/counter_i28/SR is driven by constant or a pin on an incomplete path
@@ -161,224 +317,66 @@ VLO/Z GND  i1
      *** STATE_OUT/serial/aux_i3/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/aux_i2/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/aux_i1/SR is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_1/B0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_1/C0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/aux_i0/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/init_c/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_23/A0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_23/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_23/A1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_23/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_21/A0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_21/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_21/A1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_21/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_5/A0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_5/A1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_3/A0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_3/A1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_1/A0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_1/A1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/i199/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/i202/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_19/A0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_19/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_19/A1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_19/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/i205/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/i208/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/i211/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/i214/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/i217/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i1/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_31/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_31/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_29/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_29/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i8/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i7/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_27/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_27/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i6/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i5/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i4/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i3/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/actualKey[3]__i2/SR is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_25/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_25/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_23/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_23/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_21/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_21/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_19/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_19/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_17/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_17/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** Keyboard/counter_121_add_4_13/B1 is driven by constant or a pin on an incomplete path
      *** Keyboard/valid_i0_i1/SR is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_17/A0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_17/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_17/A1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_17/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_15/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_15/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_13/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_13/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_31/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_31/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_29/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_29/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_27/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_27/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_25/B0 is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_25/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/i196/SR is driven by constant or a pin on an incomplete path
      *** Sreg_i1/SR is driven by constant or a pin on an incomplete path
      *** Sreg_i2/SR is driven by constant or a pin on an incomplete path
-     *** RESET_OUT_pad.bb_inst/I is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM9 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM8 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM7 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM6 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM5 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM4 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM3 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM2 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM1 is driven by constant or a pin on an incomplete path
+     *** OSCInst1/TRIM0 is driven by constant or a pin on an incomplete path
      *** SENSOR1_IN_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** SENSOR2_IN_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** KB_IN_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** KB_IN_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** KB_RECV_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-VHI/Z VCC  i2
-     *** mainTimer/clkCont_i0/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/add_7_add_5_1/C1 is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i17/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i16/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i15/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i14/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i13/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i12/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i11/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i10/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i9/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i8/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i7/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i6/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i5/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i4/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i3/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i2/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/clkCont_i1/SP is driven by constant or a pin on an incomplete path
-     *** mainTimer/state/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i0/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_23/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_23/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_21/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_21/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_19/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_19/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_17/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_17/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_15/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_15/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i31/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_31/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_31/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_29/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_29/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_13/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_13/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_27/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_27/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_11/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_11/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_9/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_9/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_7/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_7/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_5/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_5/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_25/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_25/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_3/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_3/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i30/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i29/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i28/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i27/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i26/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i25/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i24/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i23/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i22/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i21/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i20/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i19/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i18/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i17/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i16/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i15/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i14/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i13/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i12/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i11/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i10/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i9/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i8/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i7/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i6/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i5/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i4/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i3/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i2/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/counter_i1/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/aux_i3/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/aux_i2/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/aux_i1/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/status_out/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/sub_11_add_2_add_5_1/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/serial/aux_i0/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_143__i0/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_143__i3/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/init_c/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_143__i2/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/cont_143__i1/SP is driven by constant or a pin on an incomplete path
-     *** STATE_OUT/waiting_c/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** Keyboard/i199/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/i202/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/i205/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/i208/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/i211/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/i214/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/i217/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/valid_i0_i1/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/valid_i0_i2/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i1/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i2/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i3/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i4/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i5/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i6/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i7/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i8/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i9/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i10/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i11/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i12/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i13/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i14/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i15/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i16/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i17/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i18/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i19/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i20/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i21/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i22/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i23/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i24/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i25/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i26/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i27/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i28/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i29/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i30/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i31/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/counter_144__i32/SP is driven by constant or a pin on an incomplete path
-     *** Keyboard/i196/SP is driven by constant or a pin on an incomplete path
-     *** Sreg_i1/SP is driven by constant or a pin on an incomplete path
-     *** Sreg_i2/SP is driven by constant or a pin on an incomplete path
-     *** STATUS_OUT_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** SIREN_OUT_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** STATUS_SEND_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** SERCLK_OUT_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** RESET_OUT_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** Sreg_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** Sreg_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** KEY_STATUS_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** KEY_STATUS_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** DEBUG_KEY_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** DEBUG_KEY_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
 FA2/D1 input add_7_add_5_19 has no outgoing device arc
 FA2/CI1 input add_7_add_5_19 has no outgoing device arc
      ** mainTimer/add_7_add_5_19/CO0 is driving a pin on an incomplete path

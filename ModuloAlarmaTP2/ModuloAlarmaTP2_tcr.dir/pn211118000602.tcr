@@ -1,0 +1,44 @@
+#Start recording tcl command: 11/17/2021 23:11:27
+#Project Location: D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2; Project name: ModuloAlarmaTP2
+D:/Electronica/Electronica 3/CopiaTP2Local
+CopiaTP2Local
+#Start recording tcl command: 11/18/2021 00:06:02
+#Project Location: D:/Electronica/Electronica 3/CopiaTP2Local; Project name: CopiaTP2Local
+prj_open "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/ModuloAlarmaTP2.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_saveas -name "CopiaTP2Local" -dir "D:/Electronica/Electronica 3/CopiaTP2Local"
+#Stop recording: 11/18/2021 00:06:02

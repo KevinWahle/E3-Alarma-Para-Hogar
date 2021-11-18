@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 3.0.0.24.1
-// Netlist written on Thu Nov 18 12:48:53 2021
+// Netlist written on Thu Nov 18 13:30:26 2021
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v"

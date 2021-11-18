@@ -1,5 +1,5 @@
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 18 12:49:39 2021
+Thu Nov 18 13:30:31 2021
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	ModuloAlarmaTP2_impl_1_map.udb ModuloAlarmaTP2_impl_1.udb 
@@ -8,16 +8,16 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            99971.688    0            1.719        0            17           Completed
+5_1   *      0            99971.688    0            1.719        0            19           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 17 secs 
+Total (real) run time for 1-seed: 19 secs 
 
 par done!
 
 Lattice Place and Route Report for Design "ModuloAlarmaTP2_impl_1_map.udb"
-Thu Nov 18 12:49:39 2021
+Thu Nov 18 13:30:31 2021
 
 PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -68,9 +68,9 @@ Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 0 secs
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 2 secs 
+Finished Placer Phase 0 (AP).  CPU time: 2 secs , REAL time: 2 secs 
 
-Starting Placer Phase 1. CPU time: 1 secs , REAL time: 2 secs 
+Starting Placer Phase 1. CPU time: 2 secs , REAL time: 2 secs 
 ..  ..
 ....................
 
@@ -79,13 +79,13 @@ Placer score = 34977.
 Device SLICE utilization summary after final SLICE packing:
    SLICE            137/2640          5% used
 
-Finished Placer Phase 1. CPU time: 13 secs , REAL time: 14 secs 
+Finished Placer Phase 1. CPU time: 15 secs , REAL time: 16 secs 
 
 Starting Placer Phase 2.
 .
 
 Placer score =  40471
-Finished Placer Phase 2.  CPU time: 13 secs , REAL time: 14 secs 
+Finished Placer Phase 2.  CPU time: 15 secs , REAL time: 16 secs 
 
 
 ------------------ Clock Report ------------------
@@ -113,12 +113,12 @@ I/O Bank Usage Summary:
 | 2        | 4 / 8 ( 50%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 13 secs , REAL time: 14 secs 
+Total Placer CPU time: 15 secs , REAL time: 16 secs 
 
 Writing design to file ModuloAlarmaTP2_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 12:49:54 11/18/21
+Start NBR router at 13:30:47 11/18/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -152,27 +152,27 @@ Other clocks:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 12:49:54 11/18/21
+Start NBR section for initial routing at 13:30:47 11/18/21
 Level 4, iteration 1
 5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 12:49:55 11/18/21
+Start NBR section for normal routing at 13:30:48 11/18/21
 Level 4, iteration 1
 1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 0 secs 
 Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 2 secs 
+Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 12:49:55 11/18/21
+Start NBR section for setup/hold timing optimization with effort level 3 at 13:30:48 11/18/21
 
 Starting full timing analysis...
 
-Start NBR section for post-routing at 12:49:55 11/18/21
+Start NBR section for post-routing at 13:30:49 11/18/21
 
 End NBR router with 0 unrouted connection
 
@@ -207,8 +207,8 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.719
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 16 secs 
-Total REAL Time: 17 secs 
+Total CPU  Time: 17 secs 
+Total REAL Time: 19 secs 
 Peak Memory Usage: 104 MB
 
 

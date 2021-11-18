@@ -1,5 +1,5 @@
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 18 12:49:39 2021
+Thu Nov 18 13:30:31 2021
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	ModuloAlarmaTP2_impl_1_map.udb ModuloAlarmaTP2_impl_1.udb 
@@ -8,10 +8,10 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            99971.688    0            1.719        0            17           Completed
+5_1   *      0            99971.688    0            1.719        0            19           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 17 secs 
+Total (real) run time for 1-seed: 19 secs 
 
 par done!

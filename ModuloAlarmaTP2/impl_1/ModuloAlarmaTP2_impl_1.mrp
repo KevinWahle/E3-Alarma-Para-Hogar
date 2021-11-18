@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Thu Nov 18 12:49:37 2021
+Mapped on: Thu Nov 18 13:30:29 2021
 
 Design Information
 ------------------
@@ -154,7 +154,7 @@ Instance Name: STATE_OUT/serial/status_send
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 0 secs
+   Total CPU Time: 1 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 57 MB
 

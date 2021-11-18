@@ -2,8 +2,8 @@
 // Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 3.0.0.24.1
 
 // backanno -o ModuloAlarmaTP2_impl_1_vo.vo -sp High-Performance_1.2V -w -neg -gui ModuloAlarmaTP2_impl_1.udb 
-// Netlist created on Thu Nov 18 12:49:56 2021
-// Netlist written on Thu Nov 18 12:50:10 2021
+// Netlist created on Thu Nov 18 13:30:50 2021
+// Netlist written on Thu Nov 18 13:30:56 2021
 // Design is for device iCE40UP5K
 // Design is for package SG48
 // Design is for performance grade High-Performance_1.2V

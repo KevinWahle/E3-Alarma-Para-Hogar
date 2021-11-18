@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
-        <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
-        </Message>
-    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35001786</ID>
@@ -494,6 +488,12 @@
         </Message>
         <Message>
             <ID>35002039</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1191031</ID>
             <Severity>1</Severity>
         </Message>
     </Task>

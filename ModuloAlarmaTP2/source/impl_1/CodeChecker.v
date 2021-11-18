@@ -10,17 +10,18 @@ module keyChecker(
 	output [1:0]salidaActualKey
 );
 
-	reg [1:0] valid;
+	parameter OK=0, ERROR=2, NOKEY=3; 
+
+	reg [1:0] valid = NOKEY;
 	assign keyStatus = valid;
 
-	parameter OK=0, ERROR=2, NOKEY=3; 
 
 	wire [1:0]key[3:0];
 	integer counter=0;
 	integer i = 0, j=0;
 	reg [1:0]actualKey[0:3]; // = {2'b00,2'b00,2'b00,2'b00};
 
-	assign salidaActualKey = actualKey[1];
+	assign salidaActualKey = counter[1:0];
 
 	initial
 	begin
@@ -35,7 +36,7 @@ module keyChecker(
 	assign key[2] = keyIn[5:4];
 	assign key[3] = keyIn[7:6];
 	
-	always	@(posedge pulsed or posedge reset)
+	always	@(posedge pulsed)// or posedge reset)
 		begin	
 			//if (reset) begin
 			//	counter = 0; 

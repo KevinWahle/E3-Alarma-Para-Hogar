@@ -5,11 +5,11 @@ module codeCkeck (
 	input wire [7:0] validKey,
 	input wire CLK,
 	
-	output reg [1:0] KEY_STATUS = 2'd3,
+	output reg [1:0] KEY_STATUS = 2'd3
 	
 	// DEBUG
-	output wire [1:0] DEBUG,
-	output wire [7:0] DEBUG_KEY
+	//output wire [1:0] DEBUG,
+	//output wire [7:0] DEBUG_KEY
 
 );
 
@@ -33,8 +33,8 @@ module codeCkeck (
 	reg [1:0] nextState = WAIT;
 	
 	
-	assign DEBUG = state;	//counter;
-	assign DEBUG_KEY = { actualKey[3], actualKey[2], actualKey[1], actualKey[0] };
+	//assign DEBUG = state;	//counter;
+	//assign DEBUG_KEY = { actualKey[3], actualKey[2], actualKey[1], actualKey[0] };
 
 	
 	always @ (posedge KB_RECV)

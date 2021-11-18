@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Thu Nov 18 16:20:57 2021
+Thu Nov 18 17:06:57 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -65,52 +65,49 @@ Operating conditions:
 Combinational Loops
 -------------------
 ++++ Loop1
-i1_3_lut/A	->	i1_3_lut/Z
+i495_3_lut/A	->	i495_3_lut/Z
 
 ++++ Loop2
-i40_4_lut/Z	->	i39_3_lut/Z
+i493_3_lut_4_lut/A	->	i493_3_lut_4_lut/Z
 
 ++++ Loop3
-i1_3_lut_adj_45/A	->	i1_3_lut_adj_45/Z
+i497_4_lut/A	->	i497_4_lut/Z
 
 ++++ Loop4
-i29_3_lut/Z	->	i1935_4_lut/Z
+i1_4_lut/B	->	i1_4_lut/Z
 
 ++++ Loop5
-i924_4_lut/Z	->	i29_3_lut/Z
+i513_3_lut/A	->	i513_3_lut/Z
 
 ++++ Loop6
-i936_3_lut/A	->	i936_3_lut/Z
+keyboard/i519_3_lut/A	->	keyboard/i519_3_lut/Z
 
 ++++ Loop7
 keyboard/i517_3_lut/A	->	keyboard/i517_3_lut/Z
 
 ++++ Loop8
-keyboard/i519_3_lut/A	->	keyboard/i519_3_lut/Z
-
-++++ Loop9
 keyboard/i515_3_lut/A	->	keyboard/i515_3_lut/Z
 
+++++ Loop9
+keyboard/i521_3_lut/A	->	keyboard/i521_3_lut/Z
+
 ++++ Loop10
-keyboard/i513_3_lut/A	->	keyboard/i513_3_lut/Z
-
-++++ Loop11
-keyboard/i503_3_lut/A	->	keyboard/i503_3_lut/Z
-
-++++ Loop12
-keyboard/i497_3_lut/A	->	keyboard/i497_3_lut/Z
-
-++++ Loop13
 keyboard/i501_3_lut/A	->	keyboard/i501_3_lut/Z
 
-++++ Loop14
+++++ Loop11
 keyboard/i499_3_lut/A	->	keyboard/i499_3_lut/Z
 
-++++ Loop15
+++++ Loop12
+keyboard/i503_3_lut/A	->	keyboard/i503_3_lut/Z
+
+++++ Loop13
+keyboard/i505_3_lut/A	->	keyboard/i505_3_lut/Z
+
+++++ Loop14
 keyboard/i1_2_lut/Z	->	keyboard/i12_4_lut/Z
 
-++++ Loop16
-keyboard/i505_4_lut/A	->	keyboard/i505_4_lut/Z
+++++ Loop15
+keyboard/i507_4_lut/A	->	keyboard/i507_4_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -140,7 +137,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 95.0658%
+Constraint Coverage: 95.9161%
 
 3.1.2  Timing Errors
 ---------------------
@@ -179,11 +176,11 @@ Setup # of endpoints with negative slack:|           0
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
 STATE_OUT/serial/status_send/DO0         |    2.843 ns 
+mainTimer/clkCont_i15/D                  |    3.092 ns 
 mainTimer/clkCont_i16/D                  |    3.092 ns 
 mainTimer/clkCont_i17/D                  |    3.092 ns 
 mainTimer/state/D                        |    3.092 ns 
 keyboard/state_i1/D                      |    3.092 ns 
-Sreg_i0/D                                |    3.092 ns 
 STATE_OUT/serial/j__i0/D                 |    3.092 ns 
 STATE_OUT/serial/j__i1/D                 |    3.092 ns 
 STATE_OUT/j__i0/D                        |    3.092 ns 
@@ -256,7 +253,7 @@ SIREN_OUT                               |                    output
 SERCLK_OUT                              |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        15
+Number of I/O ports without constraint  |                        10
                                         |                          
 -------------------------------------------------------------------
 
@@ -265,8 +262,8 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 2 Instance(s)          |           Type           
 -------------------------------------------------------------------
-keyboard/counter_156__i1                |                  No Clock
-keyboard/counter_156__i0                |                  No Clock
+keyboard/counter_153__i0                |                  No Clock
+keyboard/counter_153__i1                |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
@@ -312,40 +309,42 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i893_2_lut/A->i893_2_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        20.853  6       
-KEY_STATUS_c_1                                            NET DELAY        2.075        22.928  6       
-i2_4_lut/B->i2_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  2       
-n63                                                       NET DELAY        2.075        25.480  2       
-i1_3_lut_adj_45/C->i1_3_lut_adj_45/Z      SLICE           C0_TO_F0_DELAY   0.477        25.957  2       
-PREV_KEY[0]                                               NET DELAY        2.075        28.032  2       
-i1946_2_lut/A->i1946_2_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        28.509  1       
-n2448                                                     NET DELAY        2.075        30.584  1       
-i41_4_lut/A->i41_4_lut/Z                  SLICE           A0_TO_F0_DELAY   0.477        31.061  2       
-n22                                                       NET DELAY        2.075        33.136  2       
-i39_3_lut/B->i39_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        33.613  2       
-debug_c_0                                                 NET DELAY        2.075        35.688  2       
-i1_2_lut_3_lut_adj_43/C->i1_2_lut_3_lut_adj_43/Z
-                                          SLICE           C0_TO_F0_DELAY   0.477        36.165  1       
-n45                                                       NET DELAY        2.075        38.240  1       
-i40_4_lut/D->i40_4_lut/Z                  SLICE           D0_TO_F0_DELAY   0.477        38.717  2       
-n19                                                       NET DELAY        2.075        40.792  2       
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Mux_85_i1_3_lut_3_lut_4_lut/C->Mux_85_i1_3_lut_3_lut_4_lut/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477        25.957  1       
+n1                                                        NET DELAY        2.075        28.032  1       
+Mux_85_i3_4_lut/A->Mux_85_i3_4_lut/Z      SLICE           A0_TO_F0_DELAY   0.477        28.509  1       
+PREV_KEY_1__N_7                                           NET DELAY        2.075        30.584  1       
+i493_3_lut_4_lut/D->i493_3_lut_4_lut/Z    SLICE           D0_TO_F0_DELAY   0.477        31.061  2       
+PREV_KEY[0]                                               NET DELAY        2.075        33.136  2       
+mux_23_i1_4_lut/A->mux_23_i1_4_lut/Z      SLICE           A0_TO_F0_DELAY   0.477        33.613  1       
+Snext_1__N_12[0]                                          NET DELAY        2.075        35.688  1       
+n2700_bdd_4_lut_4_lut/C->n2700_bdd_4_lut_4_lut/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477        36.165  2       
+Snext_1__N_1[0]                                           NET DELAY        2.075        38.240  2       
+i495_3_lut/B->i495_3_lut/Z                SLICE           B0_TO_F0_DELAY   0.477        38.717  2       
+Snext[0]                                                  NET DELAY        2.075        40.792  2       
 SLICE_45/A0->SLICE_45/F0                  SLICE           A0_TO_F0_DELAY   0.477        41.269  1       
-debug_c_0$n1 ( DI0 )                                      NET DELAY        0.000        41.269  1       
+Snext[0]$n1 ( DI0 )                                       NET DELAY        0.000        41.269  1       
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -382,32 +381,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -444,32 +445,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -506,32 +509,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -568,32 +573,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -630,32 +637,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -692,32 +701,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -754,32 +765,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -816,32 +829,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -878,32 +893,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 
                                                           CONSTRAINT     0.000    100000.000  1       
@@ -980,7 +997,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/state/Q  (SLICE)
-Path End         : mainTimer/clkCont_i16/D  (SLICE)
+Path End         : mainTimer/clkCont_i15/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -997,10 +1014,10 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 mainTimer/state/CK->mainTimer/state/Q     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  25      
-mainTimer/timeout_c                                       NET DELAY        2.075         6.993  25      
-mainTimer/i884_2_lut/B->mainTimer/i884_2_lut/Z
+mainTimer/TIME_OUT                                        NET DELAY        2.075         6.993  25      
+mainTimer/i858_2_lut/B->mainTimer/i858_2_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-mainTimer/clkCont_17__N_34[16] ( DI0 )                    NET DELAY        0.000         7.242  1       
+mainTimer/clkCont_17__N_31[15] ( DI0 )                    NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1020,7 +1037,7 @@ Path Slack  (Passed)                                                            
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/state/Q  (SLICE)
-Path End         : mainTimer/clkCont_i17/D  (SLICE)
+Path End         : mainTimer/clkCont_i16/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1037,10 +1054,10 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 mainTimer/state/CK->mainTimer/state/Q     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  25      
-mainTimer/timeout_c                                       NET DELAY        2.075         6.993  25      
-mainTimer/i882_2_lut/B->mainTimer/i882_2_lut/Z
+mainTimer/TIME_OUT                                        NET DELAY        2.075         6.993  25      
+mainTimer/i857_2_lut/B->mainTimer/i857_2_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-mainTimer/clkCont_17__N_34[17] ( DI0 )                    NET DELAY        0.000         7.242  1       
+mainTimer/clkCont_17__N_31[16] ( DI0 )                    NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1059,8 +1076,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : mainTimer/clkCont_i3/Q  (SLICE)
-Path End         : mainTimer/state/D  (SLICE)
+Path Begin       : mainTimer/state/Q  (SLICE)
+Path End         : mainTimer/clkCont_i17/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
 Logic Level      : 2
@@ -1076,12 +1093,11 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 
-mainTimer/clkCont_i3/CK->mainTimer/clkCont_i3/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  2       
-mainTimer/clkCont[3]                                      NET DELAY        2.075         6.993  2       
-mainTimer/i5_4_lut/A->mainTimer/i5_4_lut/Z
-                                          SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
-mainTimer/n3009 ( DI0 )                                   NET DELAY        0.000         7.242  1       
+mainTimer/state/CK->mainTimer/state/Q     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  25      
+mainTimer/TIME_OUT                                        NET DELAY        2.075         6.993  25      
+mainTimer/i855_2_lut/B->mainTimer/i855_2_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
+mainTimer/clkCont_17__N_31[17] ( DI0 )                    NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1099,6 +1115,47 @@ Path Slack  (Passed)                                                            
 
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : mainTimer/clkCont_i5/Q  (SLICE)
+Path End         : mainTimer/state/D  (SLICE)
+Source Clock     : SERCLK_OUT_c (R)
+Destination Clock: SERCLK_OUT_c (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
+STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150         4.150  102     
+
+
+
+mainTimer/clkCont_i5/CK->mainTimer/clkCont_i5/Q
+                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  2       
+mainTimer/clkCont[5]                                      NET DELAY        2.075         6.993  2       
+mainTimer/i12_4_lut/A->mainTimer/i12_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
+mainTimer/n2882 ( DI0 )                                   NET DELAY        0.000         7.242  1       
+
+
+                                                          CONSTRAINT     0.000         0.000  1       
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
+STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150         4.150  102     
+                                                          Uncertainty    0.000         4.150  
+                                                          Hold time      0.000         4.150  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -4.150  
+Arrival Time                                                                           7.242  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : keyboard/state_i0/Q  (SLICE)
 Path End         : keyboard/state_i1/D  (SLICE)
@@ -1118,50 +1175,11 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  14      
-keyboard/state[0]                                         NET DELAY        2.075         6.993  14      
+                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  12      
+keyboard/state[0]                                         NET DELAY        2.075         6.993  12      
 keyboard.SLICE_46/A0->keyboard.SLICE_46/F0
                                           SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
 keyboard.nextState[1]$n2 ( DI0 )                          NET DELAY        0.000         7.242  1       
-
-
-                                                          CONSTRAINT     0.000         0.000  1       
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
-STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150         4.150  102     
-                                                          Uncertainty    0.000         4.150  
-                                                          Hold time      0.000         4.150  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -4.150  
-Arrival Time                                                                           7.242  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : Sreg_i0/Q  (SLICE)
-Path End         : Sreg_i0/D  (SLICE)
-Source Clock     : SERCLK_OUT_c (R)
-Destination Clock: SERCLK_OUT_c (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
-STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150         4.150  102     
-
-
-
-Sreg_i0/CK->Sreg_i0/Q                     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  12      
-Sreg[0]                                                   NET DELAY        2.075         6.993  12      
-SLICE_45/C0->SLICE_45/F0                  SLICE           C0_TO_F0_DELAY   0.249         7.242  1       
-debug_c_0$n1 ( DI0 )                                      NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1202,7 +1220,7 @@ STATE_OUT/serial/j__i0/CK->STATE_OUT/serial/j__i0/Q
 STATE_OUT/serial/j[0]                                     NET DELAY        2.075         6.993  2       
 STATE_OUT/serial/add_6_add_5_1/B1->STATE_OUT/serial/add_6_add_5_1/S1
                                           SLICE           B1_TO_F1_DELAY   0.249         7.242  1       
-STATE_OUT/serial/n167[0]_2 ( DI1 )                        NET DELAY        0.000         7.242  1       
+STATE_OUT/serial/n167[0] ( DI1 )                          NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1243,7 +1261,7 @@ STATE_OUT/serial/j__i1/CK->STATE_OUT/serial/j__i1/Q
 STATE_OUT/serial/j[1]                                     NET DELAY        2.075         6.993  3       
 STATE_OUT/serial/add_6_add_5_3/B0->STATE_OUT/serial/add_6_add_5_3/S0
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/serial/n167[1]_2 ( DI0 )                        NET DELAY        0.000         7.242  1       
+STATE_OUT/serial/n167[1] ( DI0 )                          NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1283,7 +1301,7 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     SLICE           CLK_TO_Q1_DELAY  0.768
 STATE_OUT/j[0]_2                                          NET DELAY        2.075         6.993  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/S1
                                           SLICE           B1_TO_F1_DELAY   0.249         7.242  1       
-STATE_OUT/waiting_N_155[0]_2 ( DI1 )                      NET DELAY        0.000         7.242  1       
+STATE_OUT/waiting_N_152[0] ( DI1 )                        NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       
@@ -1323,7 +1341,7 @@ STATE_OUT/j__i1/CK->STATE_OUT/j__i1/Q     SLICE           CLK_TO_Q0_DELAY  0.768
 STATE_OUT/j[1]_2                                          NET DELAY        2.075         6.993  1       
 STATE_OUT/add_7_add_5_3/B0->STATE_OUT/add_7_add_5_3/S0
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/waiting_N_155[1]_2 ( DI0 )                      NET DELAY        0.000         7.242  1       
+STATE_OUT/waiting_N_152[1] ( DI0 )                        NET DELAY        0.000         7.242  1       
 
 
                                                           CONSTRAINT     0.000         0.000  1       

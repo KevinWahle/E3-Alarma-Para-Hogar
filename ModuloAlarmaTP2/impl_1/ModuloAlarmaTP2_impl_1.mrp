@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Thu Nov 18 16:20:55 2021
+Mapped on: Thu Nov 18 17:06:56 2021
 
 Design Information
 ------------------
@@ -25,15 +25,15 @@ Design Summary
       Number of inserted feedthru LUT4s:   3
       Number of replicated LUT4s:          5
       Number of ripple logic:             44 (88 LUT4s)
-   Number of IO sites used:   15 out of 39 (38%)
-      Number of IO sites used for general PIO: 15
+   Number of IO sites used:   10 out of 39 (26%)
+      Number of IO sites used for general PIO: 10
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
+      Number of IO sites used for PIO+I3C: 10 out of 36 (28%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 10 out of 39 (26%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -52,14 +52,14 @@ Design Summary
       Net KB_RECV_c: 2 loads, 2 rising, 0 falling (Driver: Port KB_RECV)
    Number of Clock Enables:  3
       Net VCC_net: 1 loads, 0 SLICEs
-      Net STATE_OUT.waiting_N_150: 2 loads, 2 SLICEs
-      Net STATE_OUT.n176: 3 loads, 3 SLICEs
+      Net STATE_OUT.waiting_N_147: 2 loads, 2 SLICEs
+      Net STATE_OUT.n173: 3 loads, 3 SLICEs
    Number of LSRs:  7
-      Net n177: 2 loads, 2 SLICEs
       Pin RESET_IN: 2 loads, 2 SLICEs (Net: RESET_IN_c)
-      Net n501: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_52: 19 loads, 19 SLICEs
-      Net STATE_OUT.waiting_N_150: 4 loads, 4 SLICEs
+      Net n174: 2 loads, 2 SLICEs
+      Net mainTimer.clkCont_17__N_49: 19 loads, 19 SLICEs
+      Net STATE_OUT.waiting_N_147: 4 loads, 4 SLICEs
+      Net STATE_OUT.n193: 2 loads, 2 SLICEs
 
                                     Page 1
 
@@ -69,30 +69,54 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net STATE_OUT.n196: 2 loads, 2 SLICEs
-      Net STATE_OUT.n176: 1 loads, 1 SLICEs
+      Net STATE_OUT.n173: 1 loads, 1 SLICEs
+      Net STATE_OUT.serial.n503: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
       Net waiting: 34 loads
-      Net waiting_N_154: 32 loads
-      Net n177: 31 loads
-      Net timeout_c: 25 loads
-      Net mainTimer.clkCont_17__N_52: 19 loads
-      Net state[0]: 14 loads
-      Net state[1]: 14 loads
-      Net Sreg[0]: 12 loads
-      Net Sreg[1]: 11 loads
-      Net keyboard.counter[0]: 9 loads
+      Net waiting_N_151: 32 loads
+      Net n174: 31 loads
+      Net TIME_OUT: 25 loads
+      Net mainTimer.clkCont_17__N_49: 19 loads
+      Net Sreg[0]: 13 loads
+      Net Sreg[1]: 12 loads
+      Net state[0]: 12 loads
+      Net KEY_STATUS[1]: 11 loads
+      Net state[1]: 11 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  15
    Number of errors:    0
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
+WARNING - map: No port matched 'KEY_STATUS[0]'.
+WARNING - map: Can't resolve object 'KEY_STATUS[0]' in constraint
+     'ldc_set_location -site {37} [get_ports {KEY_STATUS[0]}]'.
+WARNING - map: No port matched 'KEY_STATUS[1]'.
+WARNING - map: Can't resolve object 'KEY_STATUS[1]' in constraint
+     'ldc_set_location -site {34} [get_ports {KEY_STATUS[1]}]'.
+WARNING - map: No port matched 'debug[0]'.
+WARNING - map: Can't resolve object 'debug[0]' in constraint 'ldc_set_location
+     -site {27} [get_ports {debug[0]}]'.
+WARNING - map: No port matched 'debug[1]'.
+WARNING - map: Can't resolve object 'debug[1]' in constraint 'ldc_set_location
+     -site {26} [get_ports {debug[1]}]'.
+WARNING - map: No port matched 'timeout'.
+WARNING - map: Can't resolve object 'timeout' in constraint 'ldc_set_location
+     -site {25} [get_ports timeout]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {37} [get_ports
+     {KEY_STATUS[0]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {34} [get_ports
+     {KEY_STATUS[1]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {27} [get_ports
+     {debug[0]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {26} [get_ports
+     {debug[1]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {25} [get_ports
+     timeout]'.
 
 IO (PIO) Attributes
 -------------------
@@ -102,30 +126,6 @@ IO (PIO) Attributes
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | STATUS_SEND         | OUTPUT    | LVCMOS33  | O     |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| STATUS_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| SIREN_OUT           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| SERCLK_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| KEY_STATUS[1]       | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| KEY_STATUS[0]       | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| debug[1]            | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| debug[0]            | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| timeout             | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| SENSOR1_IN          | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| SENSOR2_IN          | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| KB_IN[1]            | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| KB_IN[0]            | INPUT     | LVCMOS33  |       |       |           |
 
                                     Page 2
 
@@ -135,6 +135,20 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
++---------------------+-----------+-----------+-------+-------+-----------+
+| STATUS_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SIREN_OUT           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SERCLK_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SENSOR1_IN          | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| SENSOR2_IN          | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| KB_IN[1]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| KB_IN[0]            | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | KB_RECV             | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -167,22 +181,8 @@ Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 1 secs
-   Total REAL Time: 2 secs
+   Total REAL Time: 0 secs
    Peak Memory Usage: 57 MB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

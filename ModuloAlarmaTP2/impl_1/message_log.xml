@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
+    <Task name="Map">
         <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>KEY_STATUS[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>KEY_STATUS[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {37} [get_ports {KEY_STATUS[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>KEY_STATUS[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>KEY_STATUS[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {34} [get_ports {KEY_STATUS[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>debug[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>debug[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {27} [get_ports {debug[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>debug[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>debug[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {26} [get_ports {debug[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>timeout</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>timeout</Dynamic>
+            <Dynamic>ldc_set_location -site {25} [get_ports timeout]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {37} [get_ports {KEY_STATUS[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {34} [get_ports {KEY_STATUS[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {27} [get_ports {debug[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {26} [get_ports {debug[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {25} [get_ports timeout]</Dynamic>
         </Message>
     </Task>
     <Task name="Synthesis">
@@ -420,10 +501,10 @@
         <Message>
             <ID>35901221</ID>
             <Severity>16</Severity>
-            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(93): </Dynamic>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(83): </Dynamic>
             <Dynamic>PREV_KEY</Dynamic>
             <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v</Navigation>
-            <Navigation>93</Navigation>
+            <Navigation>83</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -512,6 +593,12 @@
         </Message>
         <Message>
             <ID>35002039</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1191031</ID>
             <Severity>1</Severity>
         </Message>
     </Task>

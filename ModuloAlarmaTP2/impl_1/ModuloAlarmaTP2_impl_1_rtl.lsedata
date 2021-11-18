@@ -1,8 +1,8 @@
 <top name = "MainModule"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "KB_RECV"  type = "port" />
     <clockitem name = "SERCLK_OUT"  type = "net" />
+    <clockitem name = "KB_RECV"  type = "port" />
 </clocks>
 
 <!--

@@ -11,13 +11,7 @@ module MainModule (
     output wire SERCLK_OUT,		//Salida de Clock
 
     //input CTRL_IN, CTRL_RECV, CTRL_CLK,
-
-    input RESET_IN,				//Reset (just in case)
-	
-	// DEBUG
-	output wire [1:0]KEY_STATUS,
-	output wire [1:0]debug, // Comienza en modo inactivo
-	output wire timeout
+    input RESET_IN				//Reset (just in case)
 );
 
     // Clock interno del modulo principal
@@ -30,17 +24,14 @@ module MainModule (
     parameter [1:0] KEY_OK = 2'd0, KEY_ERROR = 2'd2, NO_KEY = 2'd3;
 	reg [1:0]Sreg = INACTIVO; // Comienza en modo inactivo
     reg [1:0]Snext;
-	//wire [1:0]KEY_STATUS;
-	
-	assign debug = Snext;
+	wire [1:0]KEY_STATUS;
 	//--------------------------------------------------------------------
 
 
     // SET DE TIMER ------------------------------------------------------
     wire TIME_OUT;
-	assign timeout = TIME_OUT;
     reg TIMER_EN;
-    wire [17:0] TIMER_COUNTER = 18'd50000; 	// 1 Segundo = 10000
+    wire [17:0] TIMER_COUNTER = 18'd150000; 	// 1 Segundo = 10000
     timer mainTimer (		 					// CLK con tiempo customizable
         .clkSignal(SERCLK_OUT),		    		// Se?al del CLK a utilizar
         .maxCount(TIMER_COUNTER),       		// Cantidad de pulsos a contar. Max: 262.143e3
@@ -66,11 +57,10 @@ module MainModule (
 
 
 	// Verificador de mensaje recibido
-	//wire [7:0] key = {2'b00,2'b01,2'b10,2'b11};
 	codeCkeck keyboard(
         .KB_RECV(KB_RECV),
         .KB_IN(KB_IN),
-        .validKey({2'd1, 2'd1, 2'd1, 2'd1}),
+        .validKey({2'd1, 2'd1, 2'd1, 2'd1}), //Password
         .CLK(SERCLK_OUT),
         .KEY_STATUS(KEY_STATUS)
     );
@@ -96,7 +86,10 @@ module MainModule (
 				else if (KEY_STATUS == KEY_ERROR) Snext <= ALARMA;
 				else if (KEY_STATUS == NO_KEY) begin
 					if (SENSOR1_IN) Snext <= ALARMA; // Ventana
-					else if (SENSOR2_IN) Snext <= ESPERA; // Puerta
+					else if (SENSOR2_IN) begin
+						TIMER_EN <= 1'b0;
+						Snext <= ESPERA; // Puerta
+					end
 					else begin 
 						PREV_KEY <= NO_KEY;
 						TIMER_EN <= 1'b0;

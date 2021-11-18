@@ -46,7 +46,7 @@ if (a)
 <A name="timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Thu Nov 18 16:20:57 2021
+Thu Nov 18 17:06:57 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -110,52 +110,49 @@ Operating conditions:
 Combinational Loops
 -------------------
 ++++ Loop1
-i1_3_lut/A	->	i1_3_lut/Z
+i495_3_lut/A	->	i495_3_lut/Z
 
 ++++ Loop2
-i40_4_lut/Z	->	i39_3_lut/Z
+i493_3_lut_4_lut/A	->	i493_3_lut_4_lut/Z
 
 ++++ Loop3
-i1_3_lut_adj_45/A	->	i1_3_lut_adj_45/Z
+i497_4_lut/A	->	i497_4_lut/Z
 
 ++++ Loop4
-i29_3_lut/Z	->	i1935_4_lut/Z
+i1_4_lut/B	->	i1_4_lut/Z
 
 ++++ Loop5
-i924_4_lut/Z	->	i29_3_lut/Z
+i513_3_lut/A	->	i513_3_lut/Z
 
 ++++ Loop6
-i936_3_lut/A	->	i936_3_lut/Z
+keyboard/i519_3_lut/A	->	keyboard/i519_3_lut/Z
 
 ++++ Loop7
 keyboard/i517_3_lut/A	->	keyboard/i517_3_lut/Z
 
 ++++ Loop8
-keyboard/i519_3_lut/A	->	keyboard/i519_3_lut/Z
-
-++++ Loop9
 keyboard/i515_3_lut/A	->	keyboard/i515_3_lut/Z
 
+++++ Loop9
+keyboard/i521_3_lut/A	->	keyboard/i521_3_lut/Z
+
 ++++ Loop10
-keyboard/i513_3_lut/A	->	keyboard/i513_3_lut/Z
-
-++++ Loop11
-keyboard/i503_3_lut/A	->	keyboard/i503_3_lut/Z
-
-++++ Loop12
-keyboard/i497_3_lut/A	->	keyboard/i497_3_lut/Z
-
-++++ Loop13
 keyboard/i501_3_lut/A	->	keyboard/i501_3_lut/Z
 
-++++ Loop14
+++++ Loop11
 keyboard/i499_3_lut/A	->	keyboard/i499_3_lut/Z
 
-++++ Loop15
+++++ Loop12
+keyboard/i503_3_lut/A	->	keyboard/i503_3_lut/Z
+
+++++ Loop13
+keyboard/i505_3_lut/A	->	keyboard/i505_3_lut/Z
+
+++++ Loop14
 keyboard/i1_2_lut/Z	->	keyboard/i12_4_lut/Z
 
-++++ Loop16
-keyboard/i505_4_lut/A	->	keyboard/i505_4_lut/Z
+++++ Loop15
+keyboard/i507_4_lut/A	->	keyboard/i507_4_lut/Z
 
 
 <A name="Timing_rpt_ClockSummary"></A><B><U><big>2  CLOCK SUMMARY</big></U></B>
@@ -182,7 +179,7 @@ Clock Domain Crossing
 
 <A name="Timing_rpt_ConstraintCoverage"></A><B><U><big>3.1.1  Constraint Coverage</big></U></B>
 
-Constraint Coverage: 95.0658%
+Constraint Coverage: 95.9161%
 
 <A name="Timing_rpt_Errors"></A><B><U><big>3.1.2  Timing Errors</big></U></B>
 
@@ -219,11 +216,11 @@ Setup # of endpoints with negative slack:|           0
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
 STATE_OUT/serial/status_send/DO0         |    2.843 ns 
+mainTimer/clkCont_i15/D                  |    3.092 ns 
 mainTimer/clkCont_i16/D                  |    3.092 ns 
 mainTimer/clkCont_i17/D                  |    3.092 ns 
 mainTimer/state/D                        |    3.092 ns 
 keyboard/state_i1/D                      |    3.092 ns 
-Sreg_i0/D                                |    3.092 ns 
 STATE_OUT/serial/j__i0/D                 |    3.092 ns 
 STATE_OUT/serial/j__i1/D                 |    3.092 ns 
 STATE_OUT/j__i0/D                        |    3.092 ns 
@@ -293,7 +290,7 @@ SIREN_OUT                               |                    output
 SERCLK_OUT                              |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        15
+Number of I/O ports without constraint  |                        10
                                         |                          
 -------------------------------------------------------------------
 
@@ -302,8 +299,8 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 2 Instance(s)          |           Type           
 -------------------------------------------------------------------
-keyboard/counter_156__i1                |                  No Clock
-keyboard/counter_156__i0                |                  No Clock
+keyboard/counter_153__i0                |                  No Clock
+keyboard/counter_153__i1                |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
@@ -418,13 +415,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -433,8 +430,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -443,13 +440,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -458,8 +455,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -468,13 +465,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -483,8 +480,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -493,13 +490,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -508,8 +505,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -518,13 +515,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -533,8 +530,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -543,13 +540,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i893_2_lut/A",
-            "phy_name":"SLICE_154/A0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i893_2_lut/Z",
-            "phy_name":"SLICE_154/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -558,8 +555,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"KEY_STATUS_c_1",
-            "phy_name":"KEY_STATUS_c_1"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -568,13 +565,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_4_lut/B",
-            "phy_name":"SLICE_155/B0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i2_4_lut/Z",
-            "phy_name":"SLICE_155/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -583,8 +580,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n63",
-            "phy_name":"n63"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -593,15 +590,65 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1_3_lut_adj_45/C",
-            "phy_name":"SLICE_196/C0"
+            "log_name":"Mux_85_i1_3_lut_3_lut_4_lut/C",
+            "phy_name":"SLICE_145/C0"
         },
         "pin1":
         {
-            "log_name":"i1_3_lut_adj_45/Z",
-            "phy_name":"SLICE_196/F0"
+            "log_name":"Mux_85_i1_3_lut_3_lut_4_lut/Z",
+            "phy_name":"SLICE_145/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"n1",
+            "phy_name":"n1"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"Mux_85_i3_4_lut/A",
+            "phy_name":"SLICE_163/A0"
+        },
+        "pin1":
+        {
+            "log_name":"Mux_85_i3_4_lut/Z",
+            "phy_name":"SLICE_163/F0"
+        },
+        "arrive":28.509,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"PREV_KEY_1__N_7",
+            "phy_name":"PREV_KEY_1__N_7"
+        },
+        "arrive":30.584,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i493_3_lut_4_lut/D",
+            "phy_name":"SLICE_151/D0"
+        },
+        "pin1":
+        {
+            "log_name":"i493_3_lut_4_lut/Z",
+            "phy_name":"SLICE_151/F0"
+        },
+        "arrive":31.061,
         "delay":0.477
     },
     {
@@ -611,56 +658,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"PREV_KEY[0]",
             "phy_name":"PREV_KEY[0]"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i1946_2_lut/A",
-            "phy_name":"SLICE_145/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i1946_2_lut/Z",
-            "phy_name":"SLICE_145/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n2448",
-            "phy_name":"n2448"
-        },
-        "arrive":30.584,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i41_4_lut/A",
-            "phy_name":"SLICE_197/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i41_4_lut/Z",
-            "phy_name":"SLICE_197/F0"
-        },
-        "arrive":31.061,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n22",
-            "phy_name":"n22"
-        },
         "arrive":33.136,
         "delay":2.075
     },
@@ -668,13 +665,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i39_3_lut/B",
-            "phy_name":"SLICE_157/B0"
+            "log_name":"mux_23_i1_4_lut/A",
+            "phy_name":"SLICE_150/A0"
         },
         "pin1":
         {
-            "log_name":"i39_3_lut/Z",
-            "phy_name":"SLICE_157/F0"
+            "log_name":"mux_23_i1_4_lut/Z",
+            "phy_name":"SLICE_150/F0"
         },
         "arrive":33.613,
         "delay":0.477
@@ -683,8 +680,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"debug_c_0",
-            "phy_name":"debug_c_0"
+            "log_name":"Snext_1__N_12[0]",
+            "phy_name":"Snext_1__N_12[0]"
         },
         "arrive":35.688,
         "delay":2.075
@@ -693,13 +690,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1_2_lut_3_lut_adj_43/C",
-            "phy_name":"SLICE_156/C0"
+            "log_name":"n2700_bdd_4_lut_4_lut/C",
+            "phy_name":"SLICE_142/C0"
         },
         "pin1":
         {
-            "log_name":"i1_2_lut_3_lut_adj_43/Z",
-            "phy_name":"SLICE_156/F0"
+            "log_name":"n2700_bdd_4_lut_4_lut/Z",
+            "phy_name":"SLICE_142/F0"
         },
         "arrive":36.165,
         "delay":0.477
@@ -708,8 +705,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n45",
-            "phy_name":"n45"
+            "log_name":"Snext_1__N_1[0]",
+            "phy_name":"Snext_1__N_1[0]"
         },
         "arrive":38.240,
         "delay":2.075
@@ -718,13 +715,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i40_4_lut/D",
-            "phy_name":"SLICE_205/D0"
+            "log_name":"i495_3_lut/B",
+            "phy_name":"SLICE_165/B0"
         },
         "pin1":
         {
-            "log_name":"i40_4_lut/Z",
-            "phy_name":"SLICE_205/F0"
+            "log_name":"i495_3_lut/Z",
+            "phy_name":"SLICE_165/F0"
         },
         "arrive":38.717,
         "delay":0.477
@@ -733,8 +730,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n19",
-            "phy_name":"n19"
+            "log_name":"Snext[0]",
+            "phy_name":"Snext[0]"
         },
         "arrive":40.792,
         "delay":2.075
@@ -758,8 +755,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"debug_c_0$n1",
-            "phy_name":"debug_c_0$n1"
+            "log_name":"Snext[0]$n1",
+            "phy_name":"Snext[0]$n1"
         },
         "arrive":41.269,
         "delay":0.000
@@ -770,40 +767,42 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i893_2_lut/A->i893_2_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        20.853  6       
-KEY_STATUS_c_1                                            NET DELAY        2.075        22.928  6       
-i2_4_lut/B->i2_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  2       
-n63                                                       NET DELAY        2.075        25.480  2       
-i1_3_lut_adj_45/C->i1_3_lut_adj_45/Z      SLICE           C0_TO_F0_DELAY   0.477        25.957  2       
-PREV_KEY[0]                                               NET DELAY        2.075        28.032  2       
-i1946_2_lut/A->i1946_2_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        28.509  1       
-n2448                                                     NET DELAY        2.075        30.584  1       
-i41_4_lut/A->i41_4_lut/Z                  SLICE           A0_TO_F0_DELAY   0.477        31.061  2       
-n22                                                       NET DELAY        2.075        33.136  2       
-i39_3_lut/B->i39_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        33.613  2       
-debug_c_0                                                 NET DELAY        2.075        35.688  2       
-i1_2_lut_3_lut_adj_43/C->i1_2_lut_3_lut_adj_43/Z
-                                          SLICE           C0_TO_F0_DELAY   0.477        36.165  1       
-n45                                                       NET DELAY        2.075        38.240  1       
-i40_4_lut/D->i40_4_lut/Z                  SLICE           D0_TO_F0_DELAY   0.477        38.717  2       
-n19                                                       NET DELAY        2.075        40.792  2       
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Mux_85_i1_3_lut_3_lut_4_lut/C->Mux_85_i1_3_lut_3_lut_4_lut/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477        25.957  1       
+n1                                                        NET DELAY        2.075        28.032  1       
+Mux_85_i3_4_lut/A->Mux_85_i3_4_lut/Z      SLICE           A0_TO_F0_DELAY   0.477        28.509  1       
+PREV_KEY_1__N_7                                           NET DELAY        2.075        30.584  1       
+i493_3_lut_4_lut/D->i493_3_lut_4_lut/Z    SLICE           D0_TO_F0_DELAY   0.477        31.061  2       
+PREV_KEY[0]                                               NET DELAY        2.075        33.136  2       
+mux_23_i1_4_lut/A->mux_23_i1_4_lut/Z      SLICE           A0_TO_F0_DELAY   0.477        33.613  1       
+Snext_1__N_12[0]                                          NET DELAY        2.075        35.688  1       
+n2700_bdd_4_lut_4_lut/C->n2700_bdd_4_lut_4_lut/Z
+                                          SLICE           C0_TO_F0_DELAY   0.477        36.165  2       
+Snext_1__N_1[0]                                           NET DELAY        2.075        38.240  2       
+i495_3_lut/B->i495_3_lut/Z                SLICE           B0_TO_F0_DELAY   0.477        38.717  2       
+Snext[0]                                                  NET DELAY        2.075        40.792  2       
 SLICE_45/A0->SLICE_45/F0                  SLICE           A0_TO_F0_DELAY   0.477        41.269  1       
-debug_c_0$n1 ( DI0 )                                      NET DELAY        0.000        41.269  1       
+Snext[0]$n1 ( DI0 )                                       NET DELAY        0.000        41.269  1       
 
 <tapath class="path_info">
 <xmp>
@@ -958,13 +957,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -973,8 +972,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -983,13 +982,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -998,8 +997,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -1008,13 +1007,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -1023,8 +1022,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -1033,13 +1032,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -1048,8 +1047,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -1058,13 +1057,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -1073,8 +1072,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -1083,13 +1082,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -1098,8 +1097,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -1108,13 +1107,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -1123,8 +1122,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -1133,15 +1132,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -1151,31 +1175,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -1183,13 +1182,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -1198,8 +1197,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -1210,32 +1209,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -1390,13 +1391,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -1405,8 +1406,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -1415,13 +1416,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -1430,8 +1431,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -1440,13 +1441,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -1455,8 +1456,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -1465,13 +1466,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -1480,8 +1481,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -1490,13 +1491,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -1505,8 +1506,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -1515,13 +1516,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -1530,8 +1531,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -1540,13 +1541,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -1555,8 +1556,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -1565,15 +1566,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -1583,31 +1609,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -1615,13 +1616,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -1630,8 +1631,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -1642,32 +1643,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -1822,13 +1825,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -1837,8 +1840,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -1847,13 +1850,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -1862,8 +1865,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -1872,13 +1875,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -1887,8 +1890,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -1897,13 +1900,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -1912,8 +1915,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -1922,13 +1925,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -1937,8 +1940,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -1947,13 +1950,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -1962,8 +1965,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -1972,13 +1975,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -1987,8 +1990,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -1997,15 +2000,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -2015,31 +2043,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -2047,13 +2050,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -2062,8 +2065,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -2074,32 +2077,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -2254,13 +2259,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -2269,8 +2274,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -2279,13 +2284,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -2294,8 +2299,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -2304,13 +2309,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -2319,8 +2324,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -2329,13 +2334,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -2344,8 +2349,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -2354,13 +2359,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -2369,8 +2374,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -2379,13 +2384,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -2394,8 +2399,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -2404,13 +2409,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -2419,8 +2424,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -2429,15 +2434,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -2447,31 +2477,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -2479,13 +2484,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -2494,8 +2499,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -2506,32 +2511,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -2686,13 +2693,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -2701,8 +2708,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -2711,13 +2718,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -2726,8 +2733,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -2736,13 +2743,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -2751,8 +2758,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -2761,13 +2768,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -2776,8 +2783,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -2786,13 +2793,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -2801,8 +2808,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -2811,13 +2818,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -2826,8 +2833,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -2836,13 +2843,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -2851,8 +2858,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -2861,15 +2868,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -2879,31 +2911,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -2911,13 +2918,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -2926,8 +2933,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -2938,32 +2945,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -3118,13 +3127,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -3133,8 +3142,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -3143,13 +3152,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -3158,8 +3167,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -3168,13 +3177,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -3183,8 +3192,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -3193,13 +3202,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -3208,8 +3217,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -3218,13 +3227,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -3233,8 +3242,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -3243,13 +3252,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -3258,8 +3267,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -3268,13 +3277,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -3283,8 +3292,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -3293,15 +3302,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -3311,31 +3345,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -3343,13 +3352,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -3358,8 +3367,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -3370,32 +3379,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -3550,13 +3561,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -3565,8 +3576,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -3575,13 +3586,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -3590,8 +3601,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -3600,13 +3611,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -3615,8 +3626,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -3625,13 +3636,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -3640,8 +3651,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -3650,13 +3661,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -3665,8 +3676,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -3675,13 +3686,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -3690,8 +3701,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -3700,13 +3711,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -3715,8 +3726,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -3725,15 +3736,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -3743,31 +3779,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -3775,13 +3786,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -3790,8 +3801,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -3802,32 +3813,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -3982,13 +3995,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -3997,8 +4010,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -4007,13 +4020,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -4022,8 +4035,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -4032,13 +4045,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -4047,8 +4060,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -4057,13 +4070,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -4072,8 +4085,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -4082,13 +4095,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -4097,8 +4110,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -4107,13 +4120,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -4122,8 +4135,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -4132,13 +4145,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -4147,8 +4160,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -4157,15 +4170,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -4175,31 +4213,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -4207,13 +4220,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -4222,8 +4235,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -4234,32 +4247,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -4414,13 +4429,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/C",
-            "phy_name":"keyboard.SLICE_170/C0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/C",
+            "phy_name":"keyboard.SLICE_172/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i927_2_lut_3_lut_4_lut/Z",
-            "phy_name":"keyboard.SLICE_170/F0"
+            "log_name":"keyboard/i2_3_lut_4_lut_adj_41/Z",
+            "phy_name":"keyboard.SLICE_172/F0"
         },
         "arrive":8.093,
         "delay":0.477
@@ -4429,8 +4444,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n1081",
-            "phy_name":"keyboard.n1081"
+            "log_name":"keyboard/n1765",
+            "phy_name":"keyboard.n1765"
         },
         "arrive":10.168,
         "delay":2.075
@@ -4439,13 +4454,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i499_3_lut/C",
-            "phy_name":"keyboard.SLICE_214/C0"
+            "log_name":"keyboard/i505_3_lut/C",
+            "phy_name":"keyboard.SLICE_173/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i499_3_lut/Z",
-            "phy_name":"keyboard.SLICE_214/F0"
+            "log_name":"keyboard/i505_3_lut/Z",
+            "phy_name":"keyboard.SLICE_173/F0"
         },
         "arrive":10.645,
         "delay":0.477
@@ -4454,8 +4469,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/actualKey[1][0]",
-            "phy_name":"keyboard.actualKey[1][0]"
+            "log_name":"keyboard/actualKey[3][0]",
+            "phy_name":"keyboard.actualKey[3][0]"
         },
         "arrive":12.720,
         "delay":2.075
@@ -4464,13 +4479,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1790_4_lut/D",
-            "phy_name":"keyboard.SLICE_149/D0"
+            "log_name":"keyboard/i1664_4_lut/A",
+            "phy_name":"keyboard.SLICE_156/A0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1790_4_lut/Z",
-            "phy_name":"keyboard.SLICE_149/F0"
+            "log_name":"keyboard/i1664_4_lut/Z",
+            "phy_name":"keyboard.SLICE_156/F0"
         },
         "arrive":13.197,
         "delay":0.477
@@ -4479,8 +4494,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n2249",
-            "phy_name":"keyboard.n2249"
+            "log_name":"keyboard/n2122",
+            "phy_name":"n2122"
         },
         "arrive":15.272,
         "delay":2.075
@@ -4489,13 +4504,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i3_3_lut/A",
-            "phy_name":"keyboard.SLICE_151/A0"
+            "log_name":"i5_4_lut/C",
+            "phy_name":"SLICE_146/C0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i3_3_lut/Z",
-            "phy_name":"keyboard.SLICE_151/F0"
+            "log_name":"i5_4_lut/Z",
+            "phy_name":"SLICE_146/F0"
         },
         "arrive":15.749,
         "delay":0.477
@@ -4504,8 +4519,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n8",
-            "phy_name":"keyboard.n8"
+            "log_name":"n12",
+            "phy_name":"n12"
         },
         "arrive":17.824,
         "delay":2.075
@@ -4514,13 +4529,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"keyboard/i1_4_lut/C",
-            "phy_name":"keyboard.SLICE_147/C0"
+            "log_name":"i6_4_lut/B",
+            "phy_name":"SLICE_148/B0"
         },
         "pin1":
         {
-            "log_name":"keyboard/i1_4_lut/Z",
-            "phy_name":"keyboard.SLICE_147/F0"
+            "log_name":"i6_4_lut/Z",
+            "phy_name":"SLICE_148/F0"
         },
         "arrive":18.301,
         "delay":0.477
@@ -4529,8 +4544,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"keyboard/n4",
-            "phy_name":"n4"
+            "log_name":"KEY_STATUS[1]",
+            "phy_name":"KEY_STATUS[1]"
         },
         "arrive":20.376,
         "delay":2.075
@@ -4539,13 +4554,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i2_3_lut_4_lut/C",
-            "phy_name":"SLICE_203/C0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/A",
+            "phy_name":"SLICE_152/A0"
         },
         "pin1":
         {
-            "log_name":"i2_3_lut_4_lut/Z",
-            "phy_name":"SLICE_203/F0"
+            "log_name":"KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z",
+            "phy_name":"SLICE_152/F0"
         },
         "arrive":20.853,
         "delay":0.477
@@ -4554,8 +4569,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n8",
-            "phy_name":"n8"
+            "log_name":"TIMER_EN_N_26",
+            "phy_name":"TIMER_EN_N_26"
         },
         "arrive":22.928,
         "delay":2.075
@@ -4564,13 +4579,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i1935_4_lut/A",
-            "phy_name":"SLICE_140/A0"
+            "log_name":"i3_4_lut/B",
+            "phy_name":"SLICE_144/B0"
         },
         "pin1":
         {
-            "log_name":"i1935_4_lut/Z",
-            "phy_name":"SLICE_140/F0"
+            "log_name":"i3_4_lut/Z",
+            "phy_name":"SLICE_144/F0"
         },
         "arrive":23.405,
         "delay":0.477
@@ -4579,8 +4594,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"n2443",
-            "phy_name":"n2443"
+            "log_name":"TIMER_EN_N_22",
+            "phy_name":"TIMER_EN_N_22"
         },
         "arrive":25.480,
         "delay":2.075
@@ -4589,15 +4604,40 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"i29_3_lut/B",
-            "phy_name":"SLICE_141/B0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/A",
+            "phy_name":"SLICE_167/A0"
         },
         "pin1":
         {
-            "log_name":"i29_3_lut/Z",
-            "phy_name":"SLICE_141/F0"
+            "log_name":"Sreg_1__I_0_i3_4_lut/Z",
+            "phy_name":"SLICE_167/F0"
         },
         "arrive":25.957,
+        "delay":0.477
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"TIMER_EN_N_17",
+            "phy_name":"TIMER_EN_N_17"
+        },
+        "arrive":28.032,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"i497_4_lut/C",
+            "phy_name":"SLICE_154/C0"
+        },
+        "pin1":
+        {
+            "log_name":"i497_4_lut/Z",
+            "phy_name":"SLICE_154/F0"
+        },
+        "arrive":28.509,
         "delay":0.477
     },
     {
@@ -4607,31 +4647,6 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
             "log_name":"mainTimer/TIMER_EN",
             "phy_name":"TIMER_EN"
         },
-        "arrive":28.032,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"i924_4_lut/A",
-            "phy_name":"SLICE_161/A0"
-        },
-        "pin1":
-        {
-            "log_name":"i924_4_lut/Z",
-            "phy_name":"SLICE_161/F0"
-        },
-        "arrive":28.509,
-        "delay":0.477
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"n27",
-            "phy_name":"n27"
-        },
         "arrive":30.584,
         "delay":2.075
     },
@@ -4639,13 +4654,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer.SLICE_204/A0",
-            "phy_name":"mainTimer.SLICE_204/A0"
+            "log_name":"mainTimer/EN_I_0_1_lut/A",
+            "phy_name":"mainTimer.SLICE_155/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer.SLICE_204/F0",
-            "phy_name":"mainTimer.SLICE_204/F0"
+            "log_name":"mainTimer/EN_I_0_1_lut/Z",
+            "phy_name":"mainTimer.SLICE_155/F0"
         },
         "arrive":31.061,
         "delay":0.477
@@ -4654,8 +4669,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_52",
-            "phy_name":"mainTimer.clkCont_17__N_52"
+            "log_name":"mainTimer/clkCont_17__N_49",
+            "phy_name":"mainTimer.clkCont_17__N_49"
         },
         "arrive":33.136,
         "delay":2.075
@@ -4666,32 +4681,34 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  14      
-keyboard/state[0]                                         NET DELAY        2.075         7.616  14      
-keyboard/i927_2_lut_3_lut_4_lut/C->keyboard/i927_2_lut_3_lut_4_lut/Z
+                                          SLICE           CLK_TO_Q0_DELAY  1.391         5.541  12      
+keyboard/state[0]                                         NET DELAY        2.075         7.616  12      
+keyboard/i2_3_lut_4_lut_adj_41/C->keyboard/i2_3_lut_4_lut_adj_41/Z
                                           SLICE           C0_TO_F0_DELAY   0.477         8.093  2       
-keyboard/n1081                                            NET DELAY        2.075        10.168  2       
-keyboard/i499_3_lut/C->keyboard/i499_3_lut/Z
+keyboard/n1765                                            NET DELAY        2.075        10.168  2       
+keyboard/i505_3_lut/C->keyboard/i505_3_lut/Z
                                           SLICE           C0_TO_F0_DELAY   0.477        10.645  2       
-keyboard/actualKey[1][0]                                  NET DELAY        2.075        12.720  2       
-keyboard/i1790_4_lut/D->keyboard/i1790_4_lut/Z
-                                          SLICE           D0_TO_F0_DELAY   0.477        13.197  1       
-keyboard/n2249                                            NET DELAY        2.075        15.272  1       
-keyboard/i3_3_lut/A->keyboard/i3_3_lut/Z  SLICE           A0_TO_F0_DELAY   0.477        15.749  1       
-keyboard/n8                                               NET DELAY        2.075        17.824  1       
-keyboard/i1_4_lut/C->keyboard/i1_4_lut/Z  SLICE           C0_TO_F0_DELAY   0.477        18.301  5       
-keyboard/n4                                               NET DELAY        2.075        20.376  5       
-i2_3_lut_4_lut/C->i2_3_lut_4_lut/Z        SLICE           C0_TO_F0_DELAY   0.477        20.853  1       
-n8                                                        NET DELAY        2.075        22.928  1       
-i1935_4_lut/A->i1935_4_lut/Z              SLICE           A0_TO_F0_DELAY   0.477        23.405  2       
-n2443                                                     NET DELAY        2.075        25.480  2       
-i29_3_lut/B->i29_3_lut/Z                  SLICE           B0_TO_F0_DELAY   0.477        25.957  2       
-mainTimer/TIMER_EN                                        NET DELAY        2.075        28.032  2       
-i924_4_lut/A->i924_4_lut/Z                SLICE           A0_TO_F0_DELAY   0.477        28.509  2       
-n27                                                       NET DELAY        2.075        30.584  2       
-mainTimer.SLICE_204/A0->mainTimer.SLICE_204/F0
+keyboard/actualKey[3][0]                                  NET DELAY        2.075        12.720  2       
+keyboard/i1664_4_lut/A->keyboard/i1664_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        13.197  1       
+keyboard/n2122                                            NET DELAY        2.075        15.272  1       
+i5_4_lut/C->i5_4_lut/Z                    SLICE           C0_TO_F0_DELAY   0.477        15.749  1       
+n12                                                       NET DELAY        2.075        17.824  1       
+i6_4_lut/B->i6_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        18.301  11      
+KEY_STATUS[1]                                             NET DELAY        2.075        20.376  11      
+KEY_STATUS_1__I_0_i3_3_lut_3_lut/A->KEY_STATUS_1__I_0_i3_3_lut_3_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        20.853  3       
+TIMER_EN_N_26                                             NET DELAY        2.075        22.928  3       
+i3_4_lut/B->i3_4_lut/Z                    SLICE           B0_TO_F0_DELAY   0.477        23.405  3       
+TIMER_EN_N_22                                             NET DELAY        2.075        25.480  3       
+Sreg_1__I_0_i3_4_lut/A->Sreg_1__I_0_i3_4_lut/Z
+                                          SLICE           A0_TO_F0_DELAY   0.477        25.957  1       
+TIMER_EN_N_17                                             NET DELAY        2.075        28.032  1       
+i497_4_lut/C->i497_4_lut/Z                SLICE           C0_TO_F0_DELAY   0.477        28.509  2       
+mainTimer/TIMER_EN                                        NET DELAY        2.075        30.584  2       
+mainTimer/EN_I_0_1_lut/A->mainTimer/EN_I_0_1_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.477        31.061  19      
-mainTimer/clkCont_17__N_52 ( LSR )                        NET DELAY        2.075        33.136  19      
+mainTimer/clkCont_17__N_49 ( LSR )                        NET DELAY        2.075        33.136  19      
 
 <tapath class="path_info">
 <xmp>
@@ -4797,7 +4814,7 @@ Path Slack       : 2.843 ns  (Passed)
     {
         "type":"pin",
         "log_name":"STATE_OUT/init_c/CK",
-        "phy_name":"STATE_OUT.SLICE_72/CLK"
+        "phy_name":"STATE_OUT.SLICE_74/CLK"
     },
     "path_sections":[
     {
@@ -4827,7 +4844,7 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
     {
         "type":"pin",
         "log_name":"STATE_OUT/init_c/Q",
-        "phy_name":"STATE_OUT.SLICE_72/Q0"
+        "phy_name":"STATE_OUT.SLICE_74/Q0"
     },
     "path_end":
     {
@@ -4841,12 +4858,12 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "pin0":
         {
             "log_name":"STATE_OUT/init_c/CK",
-            "phy_name":"STATE_OUT.SLICE_72/CLK"
+            "phy_name":"STATE_OUT.SLICE_74/CLK"
         },
         "pin1":
         {
             "log_name":"STATE_OUT/init_c/Q",
-            "phy_name":"STATE_OUT.SLICE_72/Q0"
+            "phy_name":"STATE_OUT.SLICE_74/Q0"
         },
         "arrive":4.918,
         "delay":0.768
@@ -4932,6 +4949,191 @@ Path Slack  (Passed)                                                            
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/state/Q  (SLICE)
+Path End         : mainTimer/clkCont_i15/D  (SLICE)
+Source Clock     : SERCLK_OUT_c (R)
+Destination Clock: SERCLK_OUT_c (R)
+Logic Level      : 2
+Delay Ratio      : 67.1% (route), 32.9% (logic)
+Clock Skew       : 0.000 ns
+Hold Constraint  : 0.000 ns 
+Path Slack       : 3.092 ns  (Passed)
+
+<tapath class="path_info">
+<xmp>
+{
+    "path_begin":
+    {
+        "type":"pin",
+        "log_name":"OSCInst1/CLKLF",
+        "phy_name":"OSCInst1/CLKLF"
+    },
+    "path_end":
+    {
+        "type":"pin",
+        "log_name":"mainTimer/state/CK",
+        "phy_name":"mainTimer.SLICE_50/CLK"
+    },
+    "path_sections":[
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"STATE_OUT/serial/SERCLK_OUT_c",
+            "phy_name":"SERCLK_OUT_c"
+        },
+        "arrive":4.150,
+        "delay":4.150
+    }
+    ]
+}
+</xmp>
+</tapath>
+Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
+STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150         4.150  102     
+
+
+<tapath class="path_info">
+<xmp>
+{
+    "path_begin":
+    {
+        "type":"pin",
+        "log_name":"mainTimer/state/Q",
+        "phy_name":"mainTimer.SLICE_50/Q0"
+    },
+    "path_end":
+    {
+        "type":"pin",
+        "log_name":"mainTimer/clkCont_i15/D",
+        "phy_name":"mainTimer.SLICE_53/DI0"
+    },
+    "path_sections":[
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"mainTimer/state/CK",
+            "phy_name":"mainTimer.SLICE_50/CLK"
+        },
+        "pin1":
+        {
+            "log_name":"mainTimer/state/Q",
+            "phy_name":"mainTimer.SLICE_50/Q0"
+        },
+        "arrive":4.918,
+        "delay":0.768
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"mainTimer/TIME_OUT",
+            "phy_name":"TIME_OUT"
+        },
+        "arrive":6.993,
+        "delay":2.075
+    },
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"mainTimer/i858_2_lut/B",
+            "phy_name":"mainTimer.SLICE_53/B0"
+        },
+        "pin1":
+        {
+            "log_name":"mainTimer/i858_2_lut/Z",
+            "phy_name":"mainTimer.SLICE_53/F0"
+        },
+        "arrive":7.242,
+        "delay":0.249
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"mainTimer/clkCont_17__N_31[15]",
+            "phy_name":"mainTimer.clkCont_17__N_31[15]"
+        },
+        "arrive":7.242,
+        "delay":0.000
+    }
+    ]
+}
+</xmp>
+</tapath>
+
+mainTimer/state/CK->mainTimer/state/Q     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  25      
+mainTimer/TIME_OUT                                        NET DELAY        2.075         6.993  25      
+mainTimer/i858_2_lut/B->mainTimer/i858_2_lut/Z
+                                          SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
+mainTimer/clkCont_17__N_31[15] ( DI0 )                    NET DELAY        0.000         7.242  1       
+
+<tapath class="path_info">
+<xmp>
+{
+    "path_begin":
+    {
+        "type":"pin",
+        "log_name":"OSCInst1/CLKLF",
+        "phy_name":"OSCInst1/CLKLF"
+    },
+    "path_end":
+    {
+        "type":"pin",
+        "log_name":"mainTimer/clkCont_i15/CK",
+        "phy_name":"mainTimer.SLICE_53/CLK"
+    },
+    "path_sections":[
+    {
+        "type":"site_delay",
+        "pin0":
+        {
+            "log_name":"",
+            "phy_name":""
+        },
+        "pin1":
+        {
+            "log_name":"",
+            "phy_name":""
+        },
+        "arrive":0.000,
+        "delay":0.000
+    },
+    {
+        "type":"net_delay",
+        "net":
+        {
+            "log_name":"STATE_OUT/serial/SERCLK_OUT_c",
+            "phy_name":"SERCLK_OUT_c"
+        },
+        "arrive":4.150,
+        "delay":4.150
+    }
+    ]
+}
+</xmp>
+</tapath>
+
+                                                          CONSTRAINT     0.000         0.000  1       
+OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
+STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150         4.150  102     
+                                                          Uncertainty    0.000         4.150  
+                                                          Hold time      0.000         4.150  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Required Time                                                                         -4.150  
+Arrival Time                                                                           7.242  
+----------------------------------------  --------------  -------------  -----  ------------  ------  
+Path Slack  (Passed)                                                                   3.092  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : mainTimer/state/Q  (SLICE)
 Path End         : mainTimer/clkCont_i16/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
@@ -5012,8 +5214,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/timeout_c",
-            "phy_name":"timeout_c"
+            "log_name":"mainTimer/TIME_OUT",
+            "phy_name":"TIME_OUT"
         },
         "arrive":6.993,
         "delay":2.075
@@ -5022,12 +5224,12 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer/i884_2_lut/B",
+            "log_name":"mainTimer/i857_2_lut/B",
             "phy_name":"mainTimer.SLICE_52/B0"
         },
         "pin1":
         {
-            "log_name":"mainTimer/i884_2_lut/Z",
+            "log_name":"mainTimer/i857_2_lut/Z",
             "phy_name":"mainTimer.SLICE_52/F0"
         },
         "arrive":7.242,
@@ -5037,8 +5239,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_34[16]",
-            "phy_name":"mainTimer.clkCont_17__N_34[16]"
+            "log_name":"mainTimer/clkCont_17__N_31[16]",
+            "phy_name":"mainTimer.clkCont_17__N_31[16]"
         },
         "arrive":7.242,
         "delay":0.000
@@ -5049,10 +5251,10 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 mainTimer/state/CK->mainTimer/state/Q     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  25      
-mainTimer/timeout_c                                       NET DELAY        2.075         6.993  25      
-mainTimer/i884_2_lut/B->mainTimer/i884_2_lut/Z
+mainTimer/TIME_OUT                                        NET DELAY        2.075         6.993  25      
+mainTimer/i857_2_lut/B->mainTimer/i857_2_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-mainTimer/clkCont_17__N_34[16] ( DI0 )                    NET DELAY        0.000         7.242  1       
+mainTimer/clkCont_17__N_31[16] ( DI0 )                    NET DELAY        0.000         7.242  1       
 
 <tapath class="path_info">
 <xmp>
@@ -5114,7 +5316,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : mainTimer/state/Q  (SLICE)
 Path End         : mainTimer/clkCont_i17/D  (SLICE)
@@ -5197,8 +5399,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/timeout_c",
-            "phy_name":"timeout_c"
+            "log_name":"mainTimer/TIME_OUT",
+            "phy_name":"TIME_OUT"
         },
         "arrive":6.993,
         "delay":2.075
@@ -5207,12 +5409,12 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer/i882_2_lut/B",
+            "log_name":"mainTimer/i855_2_lut/B",
             "phy_name":"mainTimer.SLICE_51/B0"
         },
         "pin1":
         {
-            "log_name":"mainTimer/i882_2_lut/Z",
+            "log_name":"mainTimer/i855_2_lut/Z",
             "phy_name":"mainTimer.SLICE_51/F0"
         },
         "arrive":7.242,
@@ -5222,8 +5424,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont_17__N_34[17]",
-            "phy_name":"mainTimer.clkCont_17__N_34[17]"
+            "log_name":"mainTimer/clkCont_17__N_31[17]",
+            "phy_name":"mainTimer.clkCont_17__N_31[17]"
         },
         "arrive":7.242,
         "delay":0.000
@@ -5234,10 +5436,10 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 mainTimer/state/CK->mainTimer/state/Q     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  25      
-mainTimer/timeout_c                                       NET DELAY        2.075         6.993  25      
-mainTimer/i882_2_lut/B->mainTimer/i882_2_lut/Z
+mainTimer/TIME_OUT                                        NET DELAY        2.075         6.993  25      
+mainTimer/i855_2_lut/B->mainTimer/i855_2_lut/Z
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-mainTimer/clkCont_17__N_34[17] ( DI0 )                    NET DELAY        0.000         7.242  1       
+mainTimer/clkCont_17__N_31[17] ( DI0 )                    NET DELAY        0.000         7.242  1       
 
 <tapath class="path_info">
 <xmp>
@@ -5299,9 +5501,9 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : mainTimer/clkCont_i3/Q  (SLICE)
+Path Begin       : mainTimer/clkCont_i5/Q  (SLICE)
 Path End         : mainTimer/state/D  (SLICE)
 Source Clock     : SERCLK_OUT_c (R)
 Destination Clock: SERCLK_OUT_c (R)
@@ -5323,8 +5525,8 @@ Path Slack       : 3.092 ns  (Passed)
     "path_end":
     {
         "type":"pin",
-        "log_name":"mainTimer/clkCont_i3/CK",
-        "phy_name":"mainTimer.SLICE_65/CLK"
+        "log_name":"mainTimer/clkCont_i5/CK",
+        "phy_name":"mainTimer.SLICE_63/CLK"
     },
     "path_sections":[
     {
@@ -5353,8 +5555,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
     "path_begin":
     {
         "type":"pin",
-        "log_name":"mainTimer/clkCont_i3/Q",
-        "phy_name":"mainTimer.SLICE_65/Q0"
+        "log_name":"mainTimer/clkCont_i5/Q",
+        "phy_name":"mainTimer.SLICE_63/Q0"
     },
     "path_end":
     {
@@ -5367,13 +5569,13 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer/clkCont_i3/CK",
-            "phy_name":"mainTimer.SLICE_65/CLK"
+            "log_name":"mainTimer/clkCont_i5/CK",
+            "phy_name":"mainTimer.SLICE_63/CLK"
         },
         "pin1":
         {
-            "log_name":"mainTimer/clkCont_i3/Q",
-            "phy_name":"mainTimer.SLICE_65/Q0"
+            "log_name":"mainTimer/clkCont_i5/Q",
+            "phy_name":"mainTimer.SLICE_63/Q0"
         },
         "arrive":4.918,
         "delay":0.768
@@ -5382,8 +5584,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/clkCont[3]",
-            "phy_name":"mainTimer.clkCont[3]"
+            "log_name":"mainTimer/clkCont[5]",
+            "phy_name":"mainTimer.clkCont[5]"
         },
         "arrive":6.993,
         "delay":2.075
@@ -5392,12 +5594,12 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"site_delay",
         "pin0":
         {
-            "log_name":"mainTimer/i5_4_lut/A",
+            "log_name":"mainTimer/i12_4_lut/A",
             "phy_name":"mainTimer.SLICE_50/A0"
         },
         "pin1":
         {
-            "log_name":"mainTimer/i5_4_lut/Z",
+            "log_name":"mainTimer/i12_4_lut/Z",
             "phy_name":"mainTimer.SLICE_50/F0"
         },
         "arrive":7.242,
@@ -5407,8 +5609,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"mainTimer/n3009",
-            "phy_name":"mainTimer.n3009"
+            "log_name":"mainTimer/n2882",
+            "phy_name":"mainTimer.n2882"
         },
         "arrive":7.242,
         "delay":0.000
@@ -5418,12 +5620,12 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </xmp>
 </tapath>
 
-mainTimer/clkCont_i3/CK->mainTimer/clkCont_i3/Q
+mainTimer/clkCont_i5/CK->mainTimer/clkCont_i5/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         4.918  2       
-mainTimer/clkCont[3]                                      NET DELAY        2.075         6.993  2       
-mainTimer/i5_4_lut/A->mainTimer/i5_4_lut/Z
+mainTimer/clkCont[5]                                      NET DELAY        2.075         6.993  2       
+mainTimer/i12_4_lut/A->mainTimer/i12_4_lut/Z
                                           SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
-mainTimer/n3009 ( DI0 )                                   NET DELAY        0.000         7.242  1       
+mainTimer/n2882 ( DI0 )                                   NET DELAY        0.000         7.242  1       
 
 <tapath class="path_info">
 <xmp>
@@ -5485,7 +5687,7 @@ Path Slack  (Passed)                                                            
 
 
 
-++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Path Begin       : keyboard/state_i0/Q  (SLICE)
 Path End         : keyboard/state_i1/D  (SLICE)
@@ -5605,8 +5807,8 @@ STATE_OUT/serial/SERCLK_OUT_c                             NET DELAY      4.150  
 </tapath>
 
 keyboard/state_i0/CK->keyboard/state_i0/Q
-                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  14      
-keyboard/state[0]                                         NET DELAY        2.075         6.993  14      
+                                          SLICE           CLK_TO_Q0_DELAY  0.768         4.918  12      
+keyboard/state[0]                                         NET DELAY        2.075         6.993  12      
 keyboard.SLICE_46/A0->keyboard.SLICE_46/F0
                                           SLICE           A0_TO_F0_DELAY   0.249         7.242  1       
 keyboard.nextState[1]$n2 ( DI0 )                          NET DELAY        0.000         7.242  1       
@@ -5625,190 +5827,6 @@ keyboard.nextState[1]$n2 ( DI0 )                          NET DELAY        0.000
         "type":"pin",
         "log_name":"keyboard/state_i1/CK",
         "phy_name":"keyboard.SLICE_46/CLK"
-    },
-    "path_sections":[
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"",
-            "phy_name":""
-        },
-        "pin1":
-        {
-            "log_name":"",
-            "phy_name":""
-        },
-        "arrive":0.000,
-        "delay":0.000
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"STATE_OUT/serial/SERCLK_OUT_c",
-            "phy_name":"SERCLK_OUT_c"
-        },
-        "arrive":4.150,
-        "delay":4.150
-    }
-    ]
-}
-</xmp>
-</tapath>
-
-                                                          CONSTRAINT     0.000         0.000  1       
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
-STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150         4.150  102     
-                                                          Uncertainty    0.000         4.150  
-                                                          Hold time      0.000         4.150  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Required Time                                                                         -4.150  
-Arrival Time                                                                           7.242  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-Path Slack  (Passed)                                                                   3.092  
-
-
-
-
-++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : Sreg_i0/Q  (SLICE)
-Path End         : Sreg_i0/D  (SLICE)
-Source Clock     : SERCLK_OUT_c (R)
-Destination Clock: SERCLK_OUT_c (R)
-Logic Level      : 2
-Delay Ratio      : 67.1% (route), 32.9% (logic)
-Clock Skew       : 0.000 ns
-Hold Constraint  : 0.000 ns 
-Path Slack       : 3.092 ns  (Passed)
-
-<tapath class="path_info">
-<xmp>
-{
-    "path_begin":
-    {
-        "type":"pin",
-        "log_name":"OSCInst1/CLKLF",
-        "phy_name":"OSCInst1/CLKLF"
-    },
-    "path_end":
-    {
-        "type":"pin",
-        "log_name":"Sreg_i0/CK",
-        "phy_name":"SLICE_45/CLK"
-    },
-    "path_sections":[
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"STATE_OUT/serial/SERCLK_OUT_c",
-            "phy_name":"SERCLK_OUT_c"
-        },
-        "arrive":4.150,
-        "delay":4.150
-    }
-    ]
-}
-</xmp>
-</tapath>
-Name                                      Cell/Site Name  Delay Name     Delay  Arrival Time  Fanout  
-----------------------------------------  --------------  -------------  -----  ------------  ------  
-OSCInst1/CLKLF                            LFOSC           CLOCK LATENCY  0.000         0.000  102     
-STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150         4.150  102     
-
-
-<tapath class="path_info">
-<xmp>
-{
-    "path_begin":
-    {
-        "type":"pin",
-        "log_name":"Sreg_i0/Q",
-        "phy_name":"SLICE_45/Q0"
-    },
-    "path_end":
-    {
-        "type":"pin",
-        "log_name":"Sreg_i0/D",
-        "phy_name":"SLICE_45/DI0"
-    },
-    "path_sections":[
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"Sreg_i0/CK",
-            "phy_name":"SLICE_45/CLK"
-        },
-        "pin1":
-        {
-            "log_name":"Sreg_i0/Q",
-            "phy_name":"SLICE_45/Q0"
-        },
-        "arrive":4.918,
-        "delay":0.768
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"Sreg[0]",
-            "phy_name":"Sreg[0]"
-        },
-        "arrive":6.993,
-        "delay":2.075
-    },
-    {
-        "type":"site_delay",
-        "pin0":
-        {
-            "log_name":"SLICE_45/C0",
-            "phy_name":"SLICE_45/C0"
-        },
-        "pin1":
-        {
-            "log_name":"SLICE_45/F0",
-            "phy_name":"SLICE_45/F0"
-        },
-        "arrive":7.242,
-        "delay":0.249
-    },
-    {
-        "type":"net_delay",
-        "net":
-        {
-            "log_name":"debug_c_0$n1",
-            "phy_name":"debug_c_0$n1"
-        },
-        "arrive":7.242,
-        "delay":0.000
-    }
-    ]
-}
-</xmp>
-</tapath>
-
-Sreg_i0/CK->Sreg_i0/Q                     SLICE           CLK_TO_Q0_DELAY  0.768         4.918  12      
-Sreg[0]                                                   NET DELAY        2.075         6.993  12      
-SLICE_45/C0->SLICE_45/F0                  SLICE           C0_TO_F0_DELAY   0.249         7.242  1       
-debug_c_0$n1 ( DI0 )                                      NET DELAY        0.000         7.242  1       
-
-<tapath class="path_info">
-<xmp>
-{
-    "path_begin":
-    {
-        "type":"pin",
-        "log_name":"OSCInst1/CLKLF",
-        "phy_name":"OSCInst1/CLKLF"
-    },
-    "path_end":
-    {
-        "type":"pin",
-        "log_name":"Sreg_i0/CK",
-        "phy_name":"SLICE_45/CLK"
     },
     "path_sections":[
     {
@@ -5963,8 +5981,8 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"STATE_OUT/serial/n167[0]_2",
-            "phy_name":"STATE_OUT.serial.n167[0]_2"
+            "log_name":"STATE_OUT/serial/n167[0]",
+            "phy_name":"STATE_OUT.serial.n167[0]"
         },
         "arrive":7.242,
         "delay":0.000
@@ -5979,7 +5997,7 @@ STATE_OUT/serial/j__i0/CK->STATE_OUT/serial/j__i0/Q
 STATE_OUT/serial/j[0]                                     NET DELAY        2.075         6.993  2       
 STATE_OUT/serial/add_6_add_5_1/B1->STATE_OUT/serial/add_6_add_5_1/S1
                                           SLICE           B1_TO_F1_DELAY   0.249         7.242  1       
-STATE_OUT/serial/n167[0]_2 ( DI1 )                        NET DELAY        0.000         7.242  1       
+STATE_OUT/serial/n167[0] ( DI1 )                          NET DELAY        0.000         7.242  1       
 
 <tapath class="path_info">
 <xmp>
@@ -6149,8 +6167,8 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"STATE_OUT/serial/n167[1]_2",
-            "phy_name":"STATE_OUT.serial.n167[1]_2"
+            "log_name":"STATE_OUT/serial/n167[1]",
+            "phy_name":"STATE_OUT.serial.n167[1]"
         },
         "arrive":7.242,
         "delay":0.000
@@ -6165,7 +6183,7 @@ STATE_OUT/serial/j__i1/CK->STATE_OUT/serial/j__i1/Q
 STATE_OUT/serial/j[1]                                     NET DELAY        2.075         6.993  3       
 STATE_OUT/serial/add_6_add_5_3/B0->STATE_OUT/serial/add_6_add_5_3/S0
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/serial/n167[1]_2 ( DI0 )                        NET DELAY        0.000         7.242  1       
+STATE_OUT/serial/n167[1] ( DI0 )                          NET DELAY        0.000         7.242  1       
 
 <tapath class="path_info">
 <xmp>
@@ -6252,7 +6270,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i0/CK",
-        "phy_name":"STATE_OUT.SLICE_20/CLK"
+        "phy_name":"STATE_OUT.SLICE_19/CLK"
     },
     "path_sections":[
     {
@@ -6282,13 +6300,13 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i0/Q",
-        "phy_name":"STATE_OUT.SLICE_20/Q1"
+        "phy_name":"STATE_OUT.SLICE_19/Q1"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i0/D",
-        "phy_name":"STATE_OUT.SLICE_20/DI1"
+        "phy_name":"STATE_OUT.SLICE_19/DI1"
     },
     "path_sections":[
     {
@@ -6296,12 +6314,12 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "pin0":
         {
             "log_name":"STATE_OUT/j__i0/CK",
-            "phy_name":"STATE_OUT.SLICE_20/CLK"
+            "phy_name":"STATE_OUT.SLICE_19/CLK"
         },
         "pin1":
         {
             "log_name":"STATE_OUT/j__i0/Q",
-            "phy_name":"STATE_OUT.SLICE_20/Q1"
+            "phy_name":"STATE_OUT.SLICE_19/Q1"
         },
         "arrive":4.918,
         "delay":0.768
@@ -6321,12 +6339,12 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "pin0":
         {
             "log_name":"STATE_OUT/add_7_add_5_1/B1",
-            "phy_name":"STATE_OUT.SLICE_20/B1"
+            "phy_name":"STATE_OUT.SLICE_19/B1"
         },
         "pin1":
         {
             "log_name":"STATE_OUT/add_7_add_5_1/S1",
-            "phy_name":"STATE_OUT.SLICE_20/F1"
+            "phy_name":"STATE_OUT.SLICE_19/F1"
         },
         "arrive":7.242,
         "delay":0.249
@@ -6335,8 +6353,8 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"STATE_OUT/waiting_N_155[0]_2",
-            "phy_name":"STATE_OUT.waiting_N_155[0]_2"
+            "log_name":"STATE_OUT/waiting_N_152[0]",
+            "phy_name":"STATE_OUT.waiting_N_152[0]"
         },
         "arrive":7.242,
         "delay":0.000
@@ -6350,7 +6368,7 @@ STATE_OUT/j__i0/CK->STATE_OUT/j__i0/Q     SLICE           CLK_TO_Q1_DELAY  0.768
 STATE_OUT/j[0]_2                                          NET DELAY        2.075         6.993  1       
 STATE_OUT/add_7_add_5_1/B1->STATE_OUT/add_7_add_5_1/S1
                                           SLICE           B1_TO_F1_DELAY   0.249         7.242  1       
-STATE_OUT/waiting_N_155[0]_2 ( DI1 )                      NET DELAY        0.000         7.242  1       
+STATE_OUT/waiting_N_152[0] ( DI1 )                        NET DELAY        0.000         7.242  1       
 
 <tapath class="path_info">
 <xmp>
@@ -6365,7 +6383,7 @@ STATE_OUT/waiting_N_155[0]_2 ( DI1 )                      NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i0/CK",
-        "phy_name":"STATE_OUT.SLICE_20/CLK"
+        "phy_name":"STATE_OUT.SLICE_19/CLK"
     },
     "path_sections":[
     {
@@ -6437,7 +6455,7 @@ Path Slack       : 3.092 ns  (Passed)
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i1/CK",
-        "phy_name":"STATE_OUT.SLICE_19/CLK"
+        "phy_name":"STATE_OUT.SLICE_17/CLK"
     },
     "path_sections":[
     {
@@ -6467,13 +6485,13 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i1/Q",
-        "phy_name":"STATE_OUT.SLICE_19/Q0"
+        "phy_name":"STATE_OUT.SLICE_17/Q0"
     },
     "path_end":
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i1/D",
-        "phy_name":"STATE_OUT.SLICE_19/DI0"
+        "phy_name":"STATE_OUT.SLICE_17/DI0"
     },
     "path_sections":[
     {
@@ -6481,12 +6499,12 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "pin0":
         {
             "log_name":"STATE_OUT/j__i1/CK",
-            "phy_name":"STATE_OUT.SLICE_19/CLK"
+            "phy_name":"STATE_OUT.SLICE_17/CLK"
         },
         "pin1":
         {
             "log_name":"STATE_OUT/j__i1/Q",
-            "phy_name":"STATE_OUT.SLICE_19/Q0"
+            "phy_name":"STATE_OUT.SLICE_17/Q0"
         },
         "arrive":4.918,
         "delay":0.768
@@ -6506,12 +6524,12 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "pin0":
         {
             "log_name":"STATE_OUT/add_7_add_5_3/B0",
-            "phy_name":"STATE_OUT.SLICE_19/B0"
+            "phy_name":"STATE_OUT.SLICE_17/B0"
         },
         "pin1":
         {
             "log_name":"STATE_OUT/add_7_add_5_3/S0",
-            "phy_name":"STATE_OUT.SLICE_19/F0"
+            "phy_name":"STATE_OUT.SLICE_17/F0"
         },
         "arrive":7.242,
         "delay":0.249
@@ -6520,8 +6538,8 @@ STATE_OUT/serial/SERCLK_OUT_c ( CLK )                     NET DELAY      4.150  
         "type":"net_delay",
         "net":
         {
-            "log_name":"STATE_OUT/waiting_N_155[1]_2",
-            "phy_name":"STATE_OUT.waiting_N_155[1]_2"
+            "log_name":"STATE_OUT/waiting_N_152[1]",
+            "phy_name":"STATE_OUT.waiting_N_152[1]"
         },
         "arrive":7.242,
         "delay":0.000
@@ -6535,7 +6553,7 @@ STATE_OUT/j__i1/CK->STATE_OUT/j__i1/Q     SLICE           CLK_TO_Q0_DELAY  0.768
 STATE_OUT/j[1]_2                                          NET DELAY        2.075         6.993  1       
 STATE_OUT/add_7_add_5_3/B0->STATE_OUT/add_7_add_5_3/S0
                                           SLICE           B0_TO_F0_DELAY   0.249         7.242  1       
-STATE_OUT/waiting_N_155[1]_2 ( DI0 )                      NET DELAY        0.000         7.242  1       
+STATE_OUT/waiting_N_152[1] ( DI0 )                        NET DELAY        0.000         7.242  1       
 
 <tapath class="path_info">
 <xmp>
@@ -6550,7 +6568,7 @@ STATE_OUT/waiting_N_155[1]_2 ( DI0 )                      NET DELAY        0.000
     {
         "type":"pin",
         "log_name":"STATE_OUT/j__i1/CK",
-        "phy_name":"STATE_OUT.SLICE_19/CLK"
+        "phy_name":"STATE_OUT.SLICE_17/CLK"
     },
     "path_sections":[
     {

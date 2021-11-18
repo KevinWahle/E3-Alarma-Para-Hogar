@@ -48,28 +48,23 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Thu Nov 18 16:21:16 2021
+Thu Nov 18 17:07:19 2021
 
 Pinout by Port Name:
-+---------------+----------+--------------+-------+--------------------+
-| Port Name     | Pin/Bank | Buffer Type  | Site  | Properties         |
-+---------------+----------+--------------+-------+--------------------+
-| KB_IN[0]      | 36/0     | LVCMOS33_IN  | PR10B | PULL:100K          |
-| KB_IN[1]      | 43/0     | LVCMOS33_IN  | PR10A | PULL:100K          |
-| KB_RECV       | 35/0     | LVCMOS33_IN  | PR13B | PULL:100K          |
-| KEY_STATUS[0] | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA PULL:NA  |
-| KEY_STATUS[1] | 34/0     | LVCMOS33_OUT | PR14B | DRIVE:8mA PULL:NA  |
-| RESET_IN      | 42/0     | LVCMOS33_IN  | PR9A  | PULL:100K          |
-| SENSOR1_IN    | 28/0     | LVCMOS33_IN  | PR18A | PULL:100K          |
-| SENSOR2_IN    | 38/0     | LVCMOS33_IN  | PR9B  | PULL:100K          |
-| SERCLK_OUT    | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
-| SIREN_OUT     | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA PULL:NA  |
-| STATUS_OUT    | 47/2     | LVCMOS33_OUT | PL7A  | DRIVE:8mA PULL:NA  |
-| STATUS_SEND   | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA PULL:NA  |
-| debug[0]      | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA PULL:NA  |
-| debug[1]      | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA PULL:NA  |
-| timeout       | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA PULL:NA  |
-+---------------+----------+--------------+-------+--------------------+
++-------------+----------+--------------+-------+--------------------+
+| Port Name   | Pin/Bank | Buffer Type  | Site  | Properties         |
++-------------+----------+--------------+-------+--------------------+
+| KB_IN[0]    | 36/0     | LVCMOS33_IN  | PR10B | PULL:100K          |
+| KB_IN[1]    | 43/0     | LVCMOS33_IN  | PR10A | PULL:100K          |
+| KB_RECV     | 35/0     | LVCMOS33_IN  | PR13B | PULL:100K          |
+| RESET_IN    | 42/0     | LVCMOS33_IN  | PR9A  | PULL:100K          |
+| SENSOR1_IN  | 28/0     | LVCMOS33_IN  | PR18A | PULL:100K          |
+| SENSOR2_IN  | 38/0     | LVCMOS33_IN  | PR9B  | PULL:100K          |
+| SERCLK_OUT  | 2/2      | LVCMOS33_OUT | PL9A  | DRIVE:8mA PULL:NA  |
+| SIREN_OUT   | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA PULL:NA  |
+| STATUS_OUT  | 47/2     | LVCMOS33_OUT | PL7A  | DRIVE:8mA PULL:NA  |
+| STATUS_SEND | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA PULL:NA  |
++-------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -101,16 +96,16 @@ Vccio by Bank:
 | 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
 | 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
 | 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
-| 25/0     | timeout             | LOCATED    | LVCMOS33_OUT | PR20B |                  |
-| 26/0     | debug[1]            | LOCATED    | LVCMOS33_OUT | PR19A |                  |
-| 27/0     | debug[0]            | LOCATED    | LVCMOS33_OUT | PR19B |                  |
+| 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
+| 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
+| 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
 | 28/0     | SENSOR1_IN          | LOCATED    | LVCMOS33_IN  | PR18A |                  |
 | 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
 | 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
-| 34/0     | KEY_STATUS[1]       | LOCATED    | LVCMOS33_OUT | PR14B |                  |
+| 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
 | 35/0     | KB_RECV             | LOCATED    | LVCMOS33_IN  | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     | KB_IN[0]            | LOCATED    | LVCMOS33_IN  | PR10B |                  |
-| 37/0     | KEY_STATUS[0]       | LOCATED    | LVCMOS33_OUT | PR14A | PCLKT0_0         |
+| 37/0     |     unused, PULL:UP |            |              | PR14A | PCLKT0_0         |
 | 38/0     | SENSOR2_IN          | LOCATED    | LVCMOS33_IN  | PR9B  |                  |
 | 39/0     |                     |            |              | PR5A  | RGB0             |
 | 40/0     |                     |            |              | PR6A  | RGB1             |
@@ -147,8 +142,6 @@ Locate Constraints for each Pin:
 ldc_set_location -site {36} [ get_ports {KB_IN[0]} ]
 ldc_set_location -site {43} [ get_ports {KB_IN[1]} ]
 ldc_set_location -site {35} [ get_ports {KB_RECV} ]
-ldc_set_location -site {37} [ get_ports {KEY_STATUS[0]} ]
-ldc_set_location -site {34} [ get_ports {KEY_STATUS[1]} ]
 ldc_set_location -site {42} [ get_ports {RESET_IN} ]
 ldc_set_location -site {28} [ get_ports {SENSOR1_IN} ]
 ldc_set_location -site {38} [ get_ports {SENSOR2_IN} ]
@@ -156,16 +149,13 @@ ldc_set_location -site {2} [ get_ports {SERCLK_OUT} ]
 ldc_set_location -site {46} [ get_ports {SIREN_OUT} ]
 ldc_set_location -site {47} [ get_ports {STATUS_OUT} ]
 ldc_set_location -site {45} [ get_ports {STATUS_SEND} ]
-ldc_set_location -site {27} [ get_ports {debug[0]} ]
-ldc_set_location -site {26} [ get_ports {debug[1]} ]
-ldc_set_location -site {25} [ get_ports {timeout} ]
 
 
 
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 18 16:21:16 2021
+Thu Nov 18 17:07:19 2021
 
 
 

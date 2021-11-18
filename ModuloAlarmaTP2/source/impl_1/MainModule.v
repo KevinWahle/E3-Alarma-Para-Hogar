@@ -40,10 +40,13 @@ module MainModule (
         .clkFinish(TIME_OUT) 		    // Cuando se llega a 0, emite señal de FINISH (Activo alto)
     );
     //--------------------------------------------------------------------
-
+	
+	//--------------------------------------------------------------------
+	//assign MSG = {SENSOR2_IN, SENSOR1_IN, Sreg==ALARMA, !(Sreg==INACTIVO)};
+    //--------------------------------------------------------------------
 
     // SET DE KEYBOARD - SERIAL OUT
-    wire [3:0] MSG;
+    wire [3:0] MSG = {SENSOR2_IN, SENSOR1_IN, Sreg==ALARMA, !(Sreg==INACTIVO)};
     reg INIT = 1;
     easySerialOut STATE_OUT(
         .EN(1'b1),	        		// ENANBLE
@@ -78,12 +81,6 @@ module MainModule (
     reg [1:0]Snext;
     parameter [1:0] INACTIVO = 0, ARMADO = 1, ESPERA = 2, ALARMA = 3;
     parameter [1:0] KEY_OK = 0, KEY_ERROR = 2, NO_KEY = 3;
-
-
-    //--------------------------------------------------------------------
-	assign MSG = {SENSOR2_IN, SENSOR1_IN, Sreg==ALARMA, !(Sreg==INACTIVO)};
-    //--------------------------------------------------------------------
-
 
     // Asignacion de estados
     always @ (Sreg, KEY_STATUS, SENSOR1_IN, SENSOR2_IN, TIME_OUT) begin      //IT IS NOT TERMINADO

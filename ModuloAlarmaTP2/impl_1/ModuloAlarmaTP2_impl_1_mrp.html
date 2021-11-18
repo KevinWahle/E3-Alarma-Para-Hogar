@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Map Report</TITLE>
-<link href="file:///C:/lscc/radiant/3.0/data/theme/css/dark/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/dark/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Wed Nov 17 17:30:26 2021
+Mapped on: Wed Nov 17 21:36:31 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -57,22 +57,22 @@ Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
      ModuloAlarmaTP2_impl_1_map.udb -mp ModuloAlarmaTP2_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers:  82 out of  5280 (2%)
+   Number of slice registers: 149 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           297 out of  5280 (6%)
-      Number of logic LUT4s:             201
-      Number of inserted feedthru LUT4s:  37
-      Number of replicated LUT4s:          5
-      Number of ripple logic:             27 (54 LUT4s)
-   Number of IO sites used:   7 out of 39 (18%)
-      Number of IO sites used for general PIO: 7
+   Number of LUT4s:           549 out of  5280 (10%)
+      Number of logic LUT4s:             370
+      Number of inserted feedthru LUT4s:  85
+      Number of replicated LUT4s:          6
+      Number of ripple logic:             44 (88 LUT4s)
+   Number of IO sites used:   16 out of 39 (41%)
+      Number of IO sites used for general PIO: 16
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 7 out of 36 (19%)
+      Number of IO sites used for PIO+I3C: 16 out of 36 (44%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 7 out of 39 (18%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 16 out of 39 (41%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -85,127 +85,217 @@ Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
-   Number of Clocks:  1
-      Net SERCLK_OUT_c: 82 loads, 82 rising, 0 falling (Driver: Pin
+   Number of Clocks:  2
+      Net TIMER_EN_N_19: 84 loads, 84 rising, 0 falling (Driver: Pin
+     i3536_2_lut/OUT)
+      Net SERCLK_OUT_c: 65 loads, 65 rising, 0 falling (Driver: Pin
      OSCInst1/CLKLF)
-   Number of Clock Enables:  38
+   Number of Clock Enables:  86
       Net VCC_net: 1 loads, 0 SLICEs
-      Net STATE_OUT.serial.n299: 1 loads, 1 SLICEs
-      Net mainTimer.n402: 1 loads, 1 SLICEs
-      Net mainTimer.n401: 1 loads, 1 SLICEs
-      Net mainTimer.n400: 1 loads, 1 SLICEs
-      Net mainTimer.n399: 1 loads, 1 SLICEs
-      Net mainTimer.n398: 1 loads, 1 SLICEs
-      Net mainTimer.n397: 1 loads, 1 SLICEs
-      Net mainTimer.n396: 1 loads, 1 SLICEs
-      Net mainTimer.n395: 1 loads, 1 SLICEs
-      Net mainTimer.n394: 1 loads, 1 SLICEs
+      Net Keyboard.n432: 1 loads, 1 SLICEs
+      Net Keyboard.n468: 1 loads, 1 SLICEs
+      Net Keyboard.n512: 1 loads, 1 SLICEs
+      Net Keyboard.n508: 1 loads, 1 SLICEs
+      Net Keyboard.n520: 1 loads, 1 SLICEs
+      Net Keyboard.n504: 1 loads, 1 SLICEs
+      Net Keyboard.n500: 1 loads, 1 SLICEs
+      Net Keyboard.n496: 1 loads, 1 SLICEs
 
-      Net mainTimer.n393: 1 loads, 1 SLICEs
-      Net mainTimer.n392: 1 loads, 1 SLICEs
-      Net mainTimer.n391: 1 loads, 1 SLICEs
-      Net mainTimer.n390: 1 loads, 1 SLICEs
-      Net mainTimer.n389: 1 loads, 1 SLICEs
-      Net mainTimer.n388: 1 loads, 1 SLICEs
-      Net mainTimer.n387: 1 loads, 1 SLICEs
-      Net mainTimer.n386: 1 loads, 1 SLICEs
-      Net mainTimer.n376: 1 loads, 1 SLICEs
-      Net mainTimer.n380: 1 loads, 1 SLICEs
-      Net mainTimer.n312: 1 loads, 1 SLICEs
-      Net mainTimer.n344: 1 loads, 1 SLICEs
-      Net mainTimer.n336: 1 loads, 1 SLICEs
-      Net mainTimer.n328: 1 loads, 1 SLICEs
-      Net mainTimer.n332: 1 loads, 1 SLICEs
-      Net mainTimer.n340: 1 loads, 1 SLICEs
-      Net mainTimer.n320: 1 loads, 1 SLICEs
-      Net mainTimer.n316: 1 loads, 1 SLICEs
-      Net mainTimer.n372: 1 loads, 1 SLICEs
-      Net mainTimer.n368: 1 loads, 1 SLICEs
-      Net mainTimer.n364: 1 loads, 1 SLICEs
-      Net mainTimer.n360: 1 loads, 1 SLICEs
-      Net mainTimer.n356: 1 loads, 1 SLICEs
-      Net mainTimer.n352: 1 loads, 1 SLICEs
-      Net mainTimer.n308: 1 loads, 1 SLICEs
-      Net mainTimer.n348: 1 loads, 1 SLICEs
-      Net mainTimer.n403: 1 loads, 1 SLICEs
-   Number of LSRs:  40
-      Net STATE_OUT.state_send_N_163: 5 loads, 5 SLICEs
-      Net STATE_OUT.serial.n2206: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_65: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_71: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_41: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_44: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_47: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_50: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_53: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_62: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_56: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_59: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_68: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_29: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_22: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_32: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_26: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_74: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_35: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_113: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_116: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_128: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_83: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_77: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_122: 1 loads, 1 SLICEs
-      Net mainTimer.clkFinish_N_150: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_80: 1 loads, 1 SLICEs
-      Net mainTimer.clkFinish_N_155: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_86: 1 loads, 1 SLICEs
+      Net Keyboard.n492: 1 loads, 1 SLICEs
+      Net Keyboard.n488: 1 loads, 1 SLICEs
+      Net Keyboard.n472: 1 loads, 1 SLICEs
+      Net Keyboard.n428: 1 loads, 1 SLICEs
+      Net Keyboard.n484: 1 loads, 1 SLICEs
+      Net Keyboard.n424: 1 loads, 1 SLICEs
+      Net Keyboard.n416: 1 loads, 1 SLICEs
+      Net Keyboard.n420: 1 loads, 1 SLICEs
+      Net Keyboard.n412: 1 loads, 1 SLICEs
+      Net Keyboard.n408: 1 loads, 1 SLICEs
+      Net Keyboard.n400: 1 loads, 1 SLICEs
+      Net Keyboard.n480: 1 loads, 1 SLICEs
+      Net Keyboard.n476: 1 loads, 1 SLICEs
+      Net Keyboard.n464: 1 loads, 1 SLICEs
+      Net Keyboard.n460: 1 loads, 1 SLICEs
+      Net Keyboard.n404: 1 loads, 1 SLICEs
+      Net Keyboard.n456: 1 loads, 1 SLICEs
+      Net Keyboard.n452: 1 loads, 1 SLICEs
+      Net Keyboard.n448: 1 loads, 1 SLICEs
+      Net Keyboard.n444: 1 loads, 1 SLICEs
+      Net Keyboard.n440: 1 loads, 1 SLICEs
+      Net Keyboard.n396: 1 loads, 1 SLICEs
+      Net Keyboard.n436: 1 loads, 1 SLICEs
+      Net Keyboard.n524: 1 loads, 1 SLICEs
+      Net Keyboard.n528: 1 loads, 1 SLICEs
+      Net Keyboard.n532: 1 loads, 1 SLICEs
+      Net Keyboard.n536: 1 loads, 1 SLICEs
+      Net Keyboard.n540: 1 loads, 1 SLICEs
+      Net Keyboard.n544: 1 loads, 1 SLICEs
+      Net Keyboard.n548: 1 loads, 1 SLICEs
+      Net Keyboard.n552: 1 loads, 1 SLICEs
+      Net Keyboard.n556: 1 loads, 1 SLICEs
+      Net Keyboard.n560: 1 loads, 1 SLICEs
+      Net Keyboard.n566: 1 loads, 1 SLICEs
+      Net Keyboard.n567: 1 loads, 1 SLICEs
+      Net Keyboard.n568: 1 loads, 1 SLICEs
+      Net Keyboard.n569: 1 loads, 1 SLICEs
+      Net Keyboard.n570: 1 loads, 1 SLICEs
+      Net Keyboard.n571: 1 loads, 1 SLICEs
+      Net Keyboard.n572: 1 loads, 1 SLICEs
+      Net Keyboard.n573: 1 loads, 1 SLICEs
+      Net Keyboard.n574: 1 loads, 1 SLICEs
+      Net Keyboard.n575: 1 loads, 1 SLICEs
+      Net Keyboard.n576: 1 loads, 1 SLICEs
+      Net Keyboard.n577: 1 loads, 1 SLICEs
+      Net Keyboard.n578: 1 loads, 1 SLICEs
+      Net Keyboard.n579: 1 loads, 1 SLICEs
+      Net Keyboard.n580: 1 loads, 1 SLICEs
+      Net Keyboard.n581: 1 loads, 1 SLICEs
+      Net Keyboard.n582: 1 loads, 1 SLICEs
+      Net Keyboard.n583: 1 loads, 1 SLICEs
+      Net Keyboard.n584: 1 loads, 1 SLICEs
+      Net Keyboard.n585: 1 loads, 1 SLICEs
+      Net Keyboard.n586: 1 loads, 1 SLICEs
+      Net Keyboard.n587: 1 loads, 1 SLICEs
+      Net Keyboard.n588: 1 loads, 1 SLICEs
+      Net Keyboard.n589: 1 loads, 1 SLICEs
 
-      Net mainTimer.clkCont_17__N_119: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_89: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_110: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_107: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_104: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_101: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_98: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_125: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_95: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_92: 1 loads, 1 SLICEs
-      Net mainTimer.clkCont_17__N_38: 1 loads, 1 SLICEs
+      Net Keyboard.n590: 1 loads, 1 SLICEs
+      Net Keyboard.n591: 1 loads, 1 SLICEs
+      Net Keyboard.n592: 1 loads, 1 SLICEs
+      Net Keyboard.n593: 1 loads, 1 SLICEs
+      Net Keyboard.n594: 1 loads, 1 SLICEs
+      Net Keyboard.n595: 1 loads, 1 SLICEs
+      Net Keyboard.n596: 1 loads, 1 SLICEs
+      Net Keyboard.n597: 1 loads, 1 SLICEs
+      Net Keyboard.n598: 1 loads, 1 SLICEs
+      Net Keyboard.n599: 1 loads, 1 SLICEs
+      Net Keyboard.n600: 1 loads, 1 SLICEs
+      Net Keyboard.n601: 1 loads, 1 SLICEs
+      Net Keyboard.n602: 1 loads, 1 SLICEs
+      Net Keyboard.n603: 1 loads, 1 SLICEs
+      Net Keyboard.n604: 1 loads, 1 SLICEs
+      Net Keyboard.n605: 1 loads, 1 SLICEs
+      Net Keyboard.n606: 1 loads, 1 SLICEs
+      Net Keyboard.n607: 1 loads, 1 SLICEs
+      Net Keyboard.n516: 1 loads, 1 SLICEs
+      Net STATE_OUT.serial.n388: 1 loads, 1 SLICEs
+   Number of LSRs:  87
+      Net Keyboard.counter_31__N_366: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_412: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_333: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_336: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_327: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_339: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_342: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_345: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_433: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_430: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_416: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_363: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_426: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_360: 1 loads, 1 SLICEs
+      Net Keyboard.valid_1__N_233: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_357: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_393: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_437: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_351: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_423: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_419: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_390: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_387: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_354: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_384: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_381: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_378: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_375: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_372: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_348: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_369: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_324: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_321: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_318: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_315: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_312: 1 loads, 1 SLICEs
+
+      Net Keyboard.counter_31__N_309: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_306: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_303: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_300: 1 loads, 1 SLICEs
+      Net Keyboard.valid_1__N_195: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_398: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_254: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_282: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_280: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_256: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_258: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_260: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_262: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_264: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_266: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_408: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_406: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_404: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_276: 1 loads, 1 SLICEs
+      Net Keyboard.valid_1__N_193: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_274: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_298: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_278: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_410: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_396: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_402: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_270: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_296: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_294: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_292: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_290: 1 loads, 1 SLICEs
+      Net Keyboard.actualKey_0__1__N_400: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_272: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_288: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_286: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_284: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_268: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_252: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_250: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_248: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_246: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_244: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_242: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_240: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_238: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_236: 1 loads, 1 SLICEs
+      Net Keyboard.valid_1__N_191: 1 loads, 1 SLICEs
+      Net Keyboard.counter_31__N_330: 1 loads, 1 SLICEs
+      Net STATE_OUT.state_send_N_67: 5 loads, 5 SLICEs
+      Net STATE_OUT.serial.counter_31__N_185: 1 loads, 1 SLICEs
+      Net mainTimer.clkCont_17__N_38: 19 loads, 19 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net clkCont_17__N_23: 60 loads
-      Net TIME_OUT: 57 loads
-      Net STATE_OUT.init: 40 loads
-      Net STATE_OUT.n1975: 39 loads
-      Net VCC_net: 35 loads
-      Net STATE_OUT.counter_31__N_217[2]: 29 loads
-      Net STATE_OUT.counter[2]: 12 loads
-      Net state[1]: 9 loads
-      Net state[0]: 8 loads
-      Net STATE_OUT.waiting: 6 loads
+      Net Keyboard.KB_RECV_c: 126 loads
+      Net Keyboard.valid_1__N_192[0]: 100 loads
+      Net STATE_OUT.init: 68 loads
+      Net STATE_OUT.serial.n63: 42 loads
+      Net VCC_net: 36 loads
+
+      Net TIME_OUT: 25 loads
+      Net mainTimer.clkCont_17__N_38: 19 loads
+      Net Keyboard.counter[0]: 14 loads
+      Net Sreg_c_0: 10 loads
+      Net Sreg_c_1: 10 loads
 
 
 
 
-   Number of warnings:  12
+   Number of warnings:  0
    Number of errors:    0
 
+
+   Number of warnings:  0
    Number of errors:    0
 
 
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: Top module port 'KB_IN[1]' does not connect to anything.
-WARNING - map: Top module port 'KB_IN[0]' does not connect to anything.
-WARNING - map: Top module port 'KB_RECV' does not connect to anything.
-WARNING - map: Top module port 'CTRL_IN' does not connect to anything.
-WARNING - map: Top module port 'CTRL_RECV' does not connect to anything.
-WARNING - map: Top module port 'CTRL_CLK' does not connect to anything.
-WARNING - map: Top module port 'KB_IN[1]' does not connect to anything.
-WARNING - map: Top module port 'KB_IN[0]' does not connect to anything.
-WARNING - map: Top module port 'KB_RECV' does not connect to anything.
-WARNING - map: Top module port 'CTRL_IN' does not connect to anything.
-WARNING - map: Top module port 'CTRL_RECV' does not connect to anything.
-WARNING - map: Top module port 'CTRL_CLK' does not connect to anything.
+   No errors or warnings present.
 
 
 
@@ -215,21 +305,39 @@ WARNING - map: Top module port 'CTRL_CLK' does not connect to anything.
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| STATUS_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
+| KB_RECV             | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | SIREN_OUT           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| STATUS_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | STATUS_SEND         | OUTPUT    | LVCMOS33  |       |       |           |
-
 +---------------------+-----------+-----------+-------+-------+-----------+
 | SERCLK_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RESET_OUT           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| Sreg[1]             | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| Sreg[0]             | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| KEY_STATUS[1]       | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| KEY_STATUS[0]       | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DEBUG_KEY[1]        | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| DEBUG_KEY[0]        | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | SENSOR1_IN          | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | SENSOR2_IN          | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| KB_IN[1]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| KB_IN[0]            | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
 
 OSC Summary
 -----------
@@ -255,7 +363,19 @@ Instance Name: OSCInst1
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 58 MB
+   Peak Memory Usage: 62 MB
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

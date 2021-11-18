@@ -10,10 +10,17 @@ module MainModule (
 
     output wire SERCLK_OUT,
 
-    input CTRL_IN, CTRL_RECV, CTRL_CLK,
+    //input CTRL_IN, CTRL_RECV, CTRL_CLK,
 
-    output reg RESET_OUT 
+    output reg RESET_OUT, 
     //input RESET_IN
+	
+	
+	//DEBUG
+	output reg [1:0]Sreg = 0,
+	output wire [1:0]KEY_STATUS,
+	
+	output [1:0] DEBUG_KEY
 );
 
     // Clock interno del modulo principal
@@ -50,9 +57,8 @@ module MainModule (
 
 
 	// Verificador de mensaje recibido
-	// wire[1:0] RESULT;
 	wire [7:0] key = {2'b00,2'b01,2'b10,2'b11};
-	wire [1:0]KEY_STATUS;
+	//wire [1:0]KEY_STATUS;
     reg KEY_RST = 1'b0;
 
     keyChecker Keyboard(
@@ -61,13 +67,14 @@ module MainModule (
         .cable2(KB_IN[0]), 
         .keyIn(key),
         .keyStatus(KEY_STATUS),
-        .reset(KEY_RST)
+        .reset(KEY_RST),
+		.salidaActualKey(DEBUG_KEY)
     );
     //--------------------------------------------------------------------
 
 
     //Variables y parametros
-    reg [1:0]Sreg = 0; // Comienza en modo inactivo
+    //reg [1:0]Sreg = 0; // Comienza en modo inactivo
     reg [1:0]Snext;
     parameter INACTIVO = 0, ARMADO = 1, ESPERA = 2, ALARMA = 3;
     parameter KEY_OK = 0, KEY_ERROR = 2, NO_KEY = 3;

@@ -34,18 +34,18 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--sdc "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.sdc"
--path "C:/lscc/radiant/3.0/ispfpga/ice40tp/data" "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1" "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2"
--ver "C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
--ver "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v"
-"D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v"
-"D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v"
-"D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v"
-"D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v"
+-sdc "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.sdc"
+-path "C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data" "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/impl_1" "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2"
+-ver "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
+-ver "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v"
+"D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v"
 
 
--path "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2"
+-path "D:/Electronica/Electronica 3/TP2/TP2-G2_E3/ModuloAlarmaTP2"
 -top MainModule
 -udb "ModuloAlarmaTP2_impl_1_rtl.udb"
 -output_hdl "ModuloAlarmaTP2_impl_1.vm"

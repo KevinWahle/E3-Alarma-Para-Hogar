@@ -3,34 +3,43 @@ Report for cell MainModule
    Instance path: MainModule
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        297        100.0
-                                 IOBUF	          7        100.0
-                                PFUREG	         82        100.0
+                                  LUT4	        549        100.0
+                                 IOBUF	         16        100.0
+                                PFUREG	        149        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                         easySerialOut	          1        42.4
-                                 timer	          1        22.2
+                         easySerialOut	          1        23.0
+                            keyChecker	          1        48.3
+                                 timer	          1         8.4
+---------------------------------------------------
+Report for cell keyChecker
+   Instance path: MainModule/Keyboard
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        265        48.3
+                                 IOBUF	          1         6.2
+                                PFUREG	         84        56.4
 ---------------------------------------------------
 Report for cell easySerialOut
    Instance path: MainModule/STATE_OUT
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        126        42.4
-                                PFUREG	         44        53.7
+                                  LUT4	        126        23.0
+                                PFUREG	         44        29.5
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                             serialOut	          1        27.6
+                             serialOut	          1        20.8
 ---------------------------------------------------
 Report for cell serialOut
    Instance path: MainModule/STATE_OUT/serial
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         82        27.6
-                                PFUREG	         38        46.3
+                                  LUT4	        114        20.8
+                                PFUREG	         38        25.5
 ---------------------------------------------------
 Report for cell timer
    Instance path: MainModule/mainTimer
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         66        22.2
-                                PFUREG	         38        46.3
+                                  LUT4	         46         8.4
+                                PFUREG	         19        12.8

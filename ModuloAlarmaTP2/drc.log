@@ -1,6 +1,3 @@
 DRC: Design Rule Check Radiant Software (64-bit) 3.0.0.24.1
-Wed Nov 17 20:18:53 2021
+Wed Nov 17 21:14:11 2021
 
-WARNING - Top module port 'CTRL_IN' does not connect to anything.
-WARNING - Top module port 'CTRL_RECV' does not connect to anything.
-WARNING - Top module port 'CTRL_CLK' does not connect to anything.

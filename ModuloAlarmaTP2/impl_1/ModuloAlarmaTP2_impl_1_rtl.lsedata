@@ -2,7 +2,7 @@
 
 <clocks>
     <clockitem name = "SERCLK_OUT"  type = "net" />
-    <clockitem name = "KB_RECV"  type = "port" />
+    <clockitem name = "TIMER_EN_N_19"  type = "net" />
 </clocks>
 
 <!--

@@ -1,213 +1,103 @@
 
-"C:/lscc/radiant/3.0/tcltk/windows/bin/tclsh" "ModuloAlarmaTP2_impl_1_synthesize.tcl"
+tmcheck -par "ModuloAlarmaTP2_impl_1.par" 
 
-synthesis -f ModuloAlarmaTP2_impl_1_lattice.synproj
-synthesis:  version Radiant Software (64-bit) 3.0.0.24.1
+bitgen -w "ModuloAlarmaTP2_impl_1.udb" -f "ModuloAlarmaTP2_impl_1.t2b" 
+Loading ModuloAlarmaTP2_impl_1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
 
+
+
+Design:  MainModule
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+
+
+BITGEN: Bitstream Generator Radiant Software (64-bit) 3.0.0.24.1
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Nov 17 20:15:20 2021
 
 
-Command Line:  C:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
+Running DRC.
+DRC detected 0 errors and 0 warnings.
 
-INFO - synthesis: Lattice Synthesis Engine Launched.
-Synthesis options:
-The -a option is iCE40UP.
-The -t option is SG48.
-The -sp option is High-Performance_1.2V.
-The -p option is iCE40UP5K.
-                                                          
-
-
-##########################################################
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
 
 
-### Lattice Family     : iCE40UP
+Creating bit map...
+Saving bit stream in "D:\Electronica\Electronica 3\TP2\TP2-G2_E3\ModuloAlarmaTP2\impl_1\ModuloAlarmaTP2_impl_1.bin".
+Bitstream generation complete!
 
-
-### Device             : iCE40UP5K
-
-
-### Package            : SG48
-
-
-### Performance Grade  : High-Performance_1.2V
-
-
-                                                         
-
-
-INFO - User-Selected Strategy SettingsOptimization goal = Area
-Top-level module name = MainModule.
-Target frequency = 200.000000 MHz.
-Maximum fanout = 1000.
-Timing path count = 3
-RWCheckOnRam = 0
-
-BRAM utilization = 100.000000 %
-DSP usage = true
-DSP utilization = 100.000000 %
-fsm_encoding_style = auto
-resolve_mixed_drivers = 0
-fix_gated_clocks = 1
-
-
-Mux style = auto (Default)
-Use Carry Chain = true
-carry_chain_length = 0
-Loop Limit = 1950.
-Use IO Insertion = TRUE
-Use IO Reg = AUTO
-
-Resource Sharing = TRUE
-Propagate Constants = TRUE
-Remove Duplicate Registers = TRUE
-Output HDL file name = ModuloAlarmaTP2_impl_1.vm.
-ROM style = auto
-RAM style = auto
-The -comp option is FALSE.
-The -syn option is FALSE.
--sdc option: SDC file input is D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.sdc.
--path C:/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
--path D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2 (searchpath added)
--path D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1 (searchpath added)
-Mixed language design
-Verilog design file = C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v
-VHDL library = pmi
-VHDL design file = C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
-The -r option is OFF. [ Remove LOC Properties is OFF. ]
-Compile design.
-Compile Design Begin
-Analyzing Verilog file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(1):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_addsub.v(40):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(2):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_add.v(50):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(3):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(4):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_counter.v(39):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(5):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_fifo.v(44):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(6):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v(47):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(7):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_mac.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(8):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v(53):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(9):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v(52):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(10):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_mult.v(51):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(11):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v(48):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(12):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(13):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_rom.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(14):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_sub.v(50):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(15):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45):analyzing included file . VERI-1328INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17):analyzing included file . VERI-1328Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v. VERI-1482
-Analyzing VHDL file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-Analyzing VHDL file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
-
-INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4):analyzing package . VHDL-1014unit MainModule is not yet analyzed. VHDL-1485
-INFO - The default VHDL library search path is now ""D:/Users/nicob/Desktop/ITBA/3-Electro". VHDL-1504Top module language type = Verilog.
-Top module name (Verilog, mixed language): MainModule
-INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "C:/lscc/radiant/3.0/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(764):compiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018                                                         
-
-
-### Number of Logic Cells: 5280
-
-
-### Number of RAM Blocks: 30
-
-
-### Number of DSP Blocks: 8
-
-
-### Number of PLLs: 1
-
-
-### Number of IO Pins: 56
-
-
-##########################################################
-
-
-                                                         
-
-
-WARNING - Initial value found on net TIMER_EN_N_19 will be ignored due to unrecognized driver typeWARNING - I/O Port CTRL_IN 's net has no driver and is unused.WARNING - I/O Port CTRL_RECV 's net has no driver and is unused.WARNING - I/O Port CTRL_CLK 's net has no driver and is unused.WARNING - I/O Port RESET_OUT 's net has no driver and is unused.######## Missing driver on net RESET_OUT. Patching with GND.
-
-
-
-WARNING - I/O Port CTRL_IN 's net has no driver and is unused.WARNING - I/O Port CTRL_RECV 's net has no driver and is unused.WARNING - I/O Port CTRL_CLK 's net has no driver and is unused.WARNING - Initial value found on instance \STATE_OUT/waiting will be ignored.WARNING - Mapping latch Snext_1__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch TIMER_EN_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch Snext_1__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-################### Begin Area Report (MainModule)######################
-Number of register bits => 107 of 5280 (2 % )
-CCU2 => 44
-FD1P3XZ => 107
-IB => 5
-LSOSC_CORE => 1
-LUT4 => 191
-OB => 5
-################### End Area Report ##################
-Number of odd-length carry chains : 0
-Number of even-length carry chains : 3
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 2
-  Net : SERCLK_OUT_c, loads : 1
-  Net : KB_RECV_c, loads : 0
-Clock Enable Nets
-Number of Clock Enables: 0
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : STATE_OUT/init, loads : 68
-  Net : STATE_OUT/serial/n63, loads : 38
-  Net : TIMER_EN_N_19, loads : 34
-  Net : Keyboard/keyStatus_1__N_191[0], loads : 34
-  Net : mainTimer/TIME_OUT, loads : 23
-  Net : mainTimer/clkCont_17__N_38, loads : 19
-  Net : Keyboard/KEY_STATUS[1], loads : 11
-  Net : Keyboard/KEY_STATUS[0], loads : 11
-  Net : Keyboard/counter[0], loads : 11
-  Net : KB_IN_c_1, loads : 8
-################### End Clock Report ##################
-
-Peak Memory Usage: 78 MB
-
---------------------------------------------------------------
-Total CPU Time: 2 secs 
-Total REAL Time: 3 secs 
---------------------------------------------------------------
-
-
-postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o ModuloAlarmaTP2_impl_1_syn.udb ModuloAlarmaTP2_impl_1.vm -ldc "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1/ModuloAlarmaTP2_impl_1.ldc"
-POSTSYN: Post Synthesis Process Radiant Software (64-bit) 3.0.0.24.1
-Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o ModuloAlarmaTP2_impl_1_syn.udb -ldc D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1/ModuloAlarmaTP2_impl_1.ldc -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml ModuloAlarmaTP2_impl_1.vm 
-   Architecture:     iCE40UP
-   Device:           iCE40UP5K
-   Package:          SG48
-   Performance:      High-Performance_1.2V
-Reading input file 'ModuloAlarmaTP2_impl_1.vm' ...
-CPU Time to convert: 0.265625
-REAL Time to convert: 0
-convert PEAK Memory Usage: 27 MB
-convert CURRENT Memory Usage: 27 MB
-Reading constraint file 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1/ModuloAlarmaTP2_impl_1.ldc' ...
-Removing unused logic ...
-Starting design annotation....
-Writing output file 'ModuloAlarmaTP2_impl_1_syn.udb'.
-POSTSYN finished successfully.
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 33 MB
+Peak Memory Usage: 111 MB
 
 
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1  -html -rpt "ModuloAlarmaTP2_impl_1.tws" "ModuloAlarmaTP2_impl_1_syn.udb" 
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt ModuloAlarmaTP2_impl_1.tws ModuloAlarmaTP2_impl_1_syn.udb -gui
-Starting design reading...
-Initializing timer
-Starting design annotation....
-371 pins removed from timing;  check file logicalTimingIgnoredPins.log
-High-Performance_1.2V
+ibisgen "ModuloAlarmaTP2_impl_1.udb" "C:/Program Files/lscc/radiant/3.0/cae_library/ibis/iCE40UP.ibs"
+IBIS Models Generator: Lattice Radiant Software (64-bit) 3.0.0.24.1
 
-Starting full timing analysis...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.0/ispfpga.
+Wed Nov 17 21:36:47 2021
+
+Loading ModuloAlarmaTP2_impl_1.udb ...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
-Connections ignored  71  counted  1018  covered  604
+Performance Hardware Data Status:   Advanced       Version 1.0.
 
-STA Runtime and Peak Memory Usage :
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 49 MB
 
- 0.681638s wall, 0.312500s user + 0.343750s system = 0.656250s CPU (96.3%)
 
+Design:  MainModule
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
+
+Created design models.
+
+
+Generating: D:\Electronica\Electronica 3\TP2\TP2-G2_E3\ModuloAlarmaTP2\impl_1\IBIS\ModuloAlarmaTP2_impl_1.ibs
+
+
+    <postMsg mid="1191031" type="Info" dynamic="0" navigation="0"  />
+
+backanno "ModuloAlarmaTP2_impl_1.udb"  -o "ModuloAlarmaTP2_impl_1_vo.vo"      -sp "High-Performance_1.2V"  -w -neg
+backanno: version Radiant Software (64-bit) 3.0.0.24.1
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Loading udb::Database ...
+Design:  MainModule
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+Performance Hardware Data Status:   Advanced       Version 1.0.
+
+
+
+Writing a verilog netlist based on the ModuloAlarmaTP2_impl_1 design file.
+
+Writing Verilog netlist to file ModuloAlarmaTP2_impl_1_vo.vo
+Writing SDF timing to file ModuloAlarmaTP2_impl_1_vo.sdf
+Backanno finished with 0 posted error messages.
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 93 MB

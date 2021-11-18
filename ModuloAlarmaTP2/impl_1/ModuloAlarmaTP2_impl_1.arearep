@@ -1,47 +1,39 @@
 ----------------------------------------------------------------------
 Report for cell MainModule.TECH
-Register bits:  107 of 5280 (2.027%)
-I/O cells:      10
+Register bits:  149 of 5280 (2.822%)
+I/O cells:      15
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2        44          100.0
-                            FD1P3XZ       107          100.0
+                            FD1P3XZ       149          100.0
                                  IB         5          100.0
                          LSOSC_CORE         1          100.0
-                               LUT4       191          100.0
-                                 OB         5          100.0
+                               LUT4       368          100.0
+                                 OB        11          100.0
 SUB MODULES
                       easySerialOut         1
                          keyChecker         1
                           serialOut         1
                               timer         1
-                              TOTAL       357
+                              TOTAL       582
 ----------------------------------------------------------------------
 Report for cell keyChecker.v1
 Instance Path : Keyboard
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        17           38.6
-                            FD1P3XZ        42           39.3
-                               LUT4        56           29.3
-                              TOTAL       115
-----------------------------------------------------------------------
-Report for cell timer.v1
-Instance Path : mainTimer
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        10           22.7
-                            FD1P3XZ        19           17.8
-                               LUT4        26           13.6
-                              TOTAL        55
+                            FD1P3XZ        84           56.4
+                                 IB         1           20.0
+                               LUT4       237           64.4
+                              TOTAL       339
 ----------------------------------------------------------------------
 Report for cell easySerialOut.v1
 Instance Path : STATE_OUT
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        17           38.6
-                            FD1P3XZ        44           41.1
-                               LUT4        92           48.2
+                            FD1P3XZ        44           29.5
+                               LUT4        92           25.0
 SUB MODULES
                           serialOut         1
                               TOTAL       154
@@ -51,6 +43,15 @@ Instance Path : STATE_OUT.serial
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        17           38.6
-                            FD1P3XZ        38           35.5
-                               LUT4        79           41.4
-                              TOTAL       134
+                            FD1P3XZ        38           25.5
+                               LUT4        80           21.7
+                              TOTAL       135
+----------------------------------------------------------------------
+Report for cell timer.v1
+Instance Path : mainTimer
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10           22.7
+                            FD1P3XZ        19           12.8
+                               LUT4        26            7.1
+                              TOTAL        55

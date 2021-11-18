@@ -9,7 +9,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 18 13:30:24 2021
+Thu Nov 18 14:45:06 2021
 
 
 Command Line:  C:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
@@ -99,7 +99,7 @@ Analyzing VHDL file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
 INFO - "c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4):analyzing package . VHDL-1014unit MainModule is not yet analyzed. VHDL-1485
 INFO - The default VHDL library search path is now ""D:/Users/nicob/Desktop/ITBA/3-Electro". VHDL-1504Top module language type = Verilog.
 Top module name (Verilog, mixed language): MainModule
-INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "C:/lscc/radiant/3.0/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(764):compiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221                                                         
+INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "C:/lscc/radiant/3.0/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(764):compiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018INFO - "d:/users/nicob/desktop/itba/3-electrocompiling module . VERI-1018WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221WARNING - "d:/users/nicob/desktop/itba/3-electro should be on the sensitivity list. VERI-1221                                                         
 
 
 ### Number of Logic Cells: 5280
@@ -128,14 +128,14 @@ WARNING - Initial value found on net KEY_STATUS[1] will be ignored due to unreco
 
 WARNING - Mapping latch Snext_1__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch TIMER_EN_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/actualKey_0__1__I_0_2_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/KB_IN_1__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/KB_IN_1__I_0_3_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/KB_IN_1__I_0_2_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/nextState_1__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/nextState_1__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch Snext_1__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/actualKey_0__1__I_0_2_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/KB_IN_1__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/KB_IN_1__I_0_3_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsWARNING - Mapping latch \keyboard/KB_IN_1__I_0_2_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statementsINFO - Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 ################### Begin Area Report (MainModule)######################
-Number of register bits => 100 of 5280 (1 % )
+Number of register bits => 102 of 5280 (1 % )
 CCU2 => 44
-FD1P3XZ => 100
+FD1P3XZ => 102
 IB => 6
 IOL_B => 1
 LSOSC_CORE => 1
-LUT4 => 160
-OB => 4
+LUT4 => 162
+OB => 9
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
 Number of even-length carry chains : 3
@@ -151,21 +151,21 @@ Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : STATE_OUT/waiting, loads : 32
   Net : STATE_OUT/waiting_N_139, loads : 31
-  Net : STATE_OUT/serial/n114, loads : 30
-  Net : mainTimer/TIME_OUT, loads : 21
+  Net : STATE_OUT/serial/n119, loads : 30
+  Net : mainTimer/timeout_c, loads : 22
   Net : mainTimer/clkCont_17__N_37, loads : 19
-  Net : Sreg[0], loads : 10
-  Net : keyboard/state[1], loads : 10
+  Net : keyboard/state[1], loads : 11
   Net : keyboard/state[0], loads : 10
   Net : Sreg[1], loads : 9
+  Net : Sreg[0], loads : 9
   Net : keyboard/counter[0], loads : 8
 ################### End Clock Report ##################
 
-Peak Memory Usage: 78 MB
+Peak Memory Usage: 80 MB
 
 --------------------------------------------------------------
 Total CPU Time: 2 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 3 secs 
 --------------------------------------------------------------
 
 
@@ -177,8 +177,8 @@ Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V 
    Package:          SG48
    Performance:      High-Performance_1.2V
 Reading input file 'ModuloAlarmaTP2_impl_1.vm' ...
-CPU Time to convert: 0.21875
-REAL Time to convert: 0
+CPU Time to convert: 0.28125
+REAL Time to convert: 1
 convert PEAK Memory Usage: 27 MB
 convert CURRENT Memory Usage: 27 MB
 Reading constraint file 'D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1/ModuloAlarmaTP2_impl_1.ldc' ...
@@ -196,20 +196,20 @@ timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt ModuloAlarmaTP2_i
 Starting design reading...
 Initializing timer
 Starting design annotation....
-392 pins removed from timing;  check file logicalTimingIgnoredPins.log
+401 pins removed from timing;  check file logicalTimingIgnoredPins.log
 High-Performance_1.2V
 
 Starting full timing analysis...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.0/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
-Connections ignored  106  counted  863  covered  828
+Connections ignored  108  counted  884  covered  842
 
 STA Runtime and Peak Memory Usage :
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
 Peak Memory Usage: 50 MB
 
- 0.835784s wall, 0.437500s user + 0.375000s system = 0.812500s CPU (97.2%)
+ 0.909610s wall, 0.531250s user + 0.343750s system = 0.875000s CPU (96.2%)
 
 
 map "ModuloAlarmaTP2_impl_1_syn.udb" "D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.pdc" -o "ModuloAlarmaTP2_impl_1_map.udb" -mp "ModuloAlarmaTP2_impl_1.mrp" -hierrpt     
@@ -242,22 +242,22 @@ Optimizing...
 
 
 Design Summary:
-   Number of slice registers: 100 out of  5280 (2%)
+   Number of slice registers: 102 out of  5280 (2%)
    Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:           257 out of  5280 (5%)
-      Number of logic LUT4s:             161
+   Number of LUT4s:           259 out of  5280 (5%)
+      Number of logic LUT4s:             163
       Number of inserted feedthru LUT4s:   3
       Number of replicated LUT4s:          5
       Number of ripple logic:             44 (88 LUT4s)
-   Number of IO sites used:   10 out of 39 (26%)
-      Number of IO sites used for general PIO: 10
+   Number of IO sites used:   15 out of 39 (38%)
+      Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 10 out of 36 (28%)
+      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 10 out of 39 (26%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -271,30 +271,30 @@ Design Summary:
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  2
-      Net SERCLK_OUT_c: 99 loads, 99 rising, 0 falling (Driver: Pin OSCInst1/CLKLF)
+      Net SERCLK_OUT_c: 101 loads, 101 rising, 0 falling (Driver: Pin OSCInst1/CLKLF)
       Net KB_RECV_c: 2 loads, 2 rising, 0 falling (Driver: Port KB_RECV)
    Number of Clock Enables:  3
       Net VCC_net: 1 loads, 0 SLICEs
       Net STATE_OUT.waiting_N_135: 2 loads, 2 SLICEs
-      Net STATE_OUT.n113: 3 loads, 3 SLICEs
+      Net STATE_OUT.n118: 3 loads, 3 SLICEs
    Number of LSRs:  7
-      Net n114: 2 loads, 2 SLICEs
       Pin RESET_IN: 2 loads, 2 SLICEs (Net: RESET_IN_c)
+      Net n119: 2 loads, 2 SLICEs
       Net mainTimer.clkCont_17__N_37: 19 loads, 19 SLICEs
       Net STATE_OUT.waiting_N_135: 4 loads, 4 SLICEs
-      Net STATE_OUT.n135_c: 2 loads, 2 SLICEs
-      Net STATE_OUT.n113: 1 loads, 1 SLICEs
-      Net STATE_OUT.serial.n439: 1 loads, 1 SLICEs
+      Net STATE_OUT.n141_c: 2 loads, 2 SLICEs
+      Net STATE_OUT.n118: 1 loads, 1 SLICEs
+      Net STATE_OUT.serial.n446: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
       Net waiting: 34 loads
       Net waiting_N_139: 32 loads
-      Net n114: 31 loads
-      Net TIME_OUT: 22 loads
+      Net n119: 31 loads
+      Net timeout_c: 23 loads
       Net mainTimer.clkCont_17__N_37: 19 loads
+      Net state[1]: 13 loads
       Net state[0]: 12 loads
-      Net state[1]: 11 loads
-      Net Sreg[0]: 10 loads
       Net keyboard.counter[0]: 9 loads
+      Net Sreg[0]: 9 loads
       Net Sreg[1]: 9 loads
 Running physical design DRC...
 
@@ -306,7 +306,7 @@ Running physical design DRC...
 
 
 Total CPU Time: 1 secs  
-Total REAL Time: 0 secs  
+Total REAL Time: 2 secs  
 Peak Memory Usage: 57 MB
 
 
@@ -325,7 +325,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.09 seconds
+Successfully loading udb, 0.16 seconds
 
 Initializing timer
 Starting design annotation....
@@ -334,7 +334,7 @@ High-Performance_1.2V
 
 Starting full timing analysis...
 Performance Hardware Data Status:   Advanced       Version 1.0.
-Connections ignored  102  counted  876  covered  839
+Connections ignored  104  counted  900  covered  852
 Changing speed to m
 
 Starting full timing analysis...
@@ -342,15 +342,15 @@ Starting full timing analysis...
 STA Runtime and Peak Memory Usage :
 Total CPU Time: 1 secs 
 Total REAL Time: 2 secs 
-Peak Memory Usage: 64 MB
+Peak Memory Usage: 65 MB
 
- 1.368802s wall, 1.156250s user + 0.203125s system = 1.359375s CPU (99.3%)
+ 1.858299s wall, 1.500000s user + 0.296875s system = 1.796875s CPU (96.7%)
 
 
 par -f "ModuloAlarmaTP2_impl_1.p2t" "ModuloAlarmaTP2_impl_1_map.udb" "ModuloAlarmaTP2_impl_1.udb"
 
 Lattice Place and Route Report for Design "ModuloAlarmaTP2_impl_1_map.udb"
-Thu Nov 18 13:30:31 2021
+Thu Nov 18 14:45:15 2021
 
 PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -368,15 +368,15 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
-Number of Signals: 444
-Number of Connections: 997
+Number of Signals: 448
+Number of Connections: 1019
 Device utilization summary:
 
-   SLICE (est.)     139/2640          5% used
-     LUT            257/5280          4% used
-     REG            100/5280          1% used
-   PIO               10/56           17% used
-                     10/36           27% bonded
+   SLICE (est.)     137/2640          5% used
+     LUT            259/5280          4% used
+     REG            102/5280          1% used
+   PIO               15/56           26% used
+                     15/36           41% bonded
    IOLOGIC            1/56            1% used
    DSP                0/8             0% used
    I2C                0/2             0% used
@@ -395,36 +395,37 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   10 out of 10 pins locked (100% locked).
-
+   14 out of 15 pins locked (93% locked).
+.
+.........
 Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 0 secs 
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 2 secs , REAL time: 2 secs 
+Finished Placer Phase 0 (AP).  CPU time: 2 secs , REAL time: 3 secs 
 
-Starting Placer Phase 1. CPU time: 2 secs , REAL time: 2 secs 
+Starting Placer Phase 1. CPU time: 2 secs , REAL time: 3 secs 
 ..  ..
 ....................
 
-Placer score = 34977.
+Placer score = 39389.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            137/2640          5% used
+   SLICE            135/2640          5% used
 
-Finished Placer Phase 1. CPU time: 15 secs , REAL time: 16 secs 
+Finished Placer Phase 1. CPU time: 17 secs , REAL time: 18 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  40471
-Finished Placer Phase 2.  CPU time: 15 secs , REAL time: 16 secs 
+Placer score =  45316
+Finished Placer Phase 2.  CPU time: 17 secs , REAL time: 18 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clocks :
-  PRIMARY "SERCLK_OUT_c" from comp "OSCInst1" on site "LFOSC_R26C32", clk load = 55, ce load = 0, sr load = 0
+  PRIMARY "SERCLK_OUT_c" from comp "OSCInst1" on site "LFOSC_R26C32", clk load = 56, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -432,26 +433,26 @@ Global Clocks :
 
 
 I/O Usage Summary (final):
-   10 out of 56 (17.9%) I/O sites used.
-   10 out of 36 (27.8%) bonded I/O sites used.
-   Number of I/O comps: 10; differential: 0
+   15 out of 56 (26.8%) I/O sites used.
+   15 out of 36 (41.7%) bonded I/O sites used.
+   Number of I/O comps: 15; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
-+----------+---------------+------------+------------+------------+
-| I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
-+----------+---------------+------------+------------+------------+
-| 0        | 6 / 14 ( 42%) | 3.3V       |            |            |
-| 1        | 0 / 14 (  0%) | OFF        |            |            |
-| 2        | 4 / 8 ( 50%)  | 3.3V       |            |            |
-+----------+---------------+------------+------------+------------+
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 11 / 14 ( 78%) | 3.3V       |            |            |
+| 1        | 0 / 14 (  0%)  | OFF        |            |            |
+| 2        | 4 / 8 ( 50%)   | 3.3V       |            |            |
++----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 15 secs , REAL time: 16 secs 
+Total Placer CPU time: 17 secs , REAL time: 18 secs 
 
 Writing design to file ModuloAlarmaTP2_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 13:30:47 11/18/21
+Start NBR router at 14:45:34 11/18/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -469,14 +470,14 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-176 connections routed with dedicated routing resources
+178 connections routed with dedicated routing resources
 1 global clock signals routed
-231 connections routed (of 940 total) (24.57%)
+234 connections routed (of 960 total) (24.38%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
 #5  Signal "SERCLK_OUT_c"
-       Clock   loads: 55    out of    55 routed (100.00%)
+       Clock   loads: 56    out of    56 routed (100.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
 Other clocks:
     Signal "KB_RECV_c"
@@ -486,29 +487,26 @@ Other clocks:
 Completed routing resource preassignment
     TimerIf::skewscore 0
 
-Start NBR section for initial routing at 13:30:47 11/18/21
+Start NBR section for initial routing at 14:45:34 11/18/21
 Level 4, iteration 1
 5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack<setup>: 99971.160ns/0.000ns; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 13:30:48 11/18/21
+Start NBR section for normal routing at 14:45:35 11/18/21
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 0 secs 
-Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 99971.424ns/0.000ns; real time: 0 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 13:30:48 11/18/21
+Start NBR section for setup/hold timing optimization with effort level 3 at 14:45:35 11/18/21
 Changing speed to M
 
 Starting full timing analysis...
 Changing speed to 6
 
-Start NBR section for post-routing at 13:30:49 11/18/21
+Start NBR section for post-routing at 14:45:35 11/18/21
 
 End NBR router with 0 unrouted connection
 
@@ -527,9 +525,9 @@ Changing speed to M
 Starting full timing analysis...
 Changing speed to 6
 Total CPU time 2 secs 
-Total REAL time: 3 secs 
+Total REAL time: 2 secs 
 Completely routed.
-End of route.  940 routed (100.00%); 0 unrouted.
+End of route.  960 routed (100.00%); 0 unrouted.
 
 Writing design to file ModuloAlarmaTP2_impl_1_par.dir/5_1.udb ...
 
@@ -542,9 +540,9 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.719
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 17 secs 
-Total REAL Time: 19 secs 
-Peak Memory Usage: 104 MB
+Total CPU  Time: 21 secs 
+Total REAL Time: 22 secs 
+Peak Memory Usage: 105 MB
 
 
 par done!
@@ -572,7 +570,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.09 seconds
+Successfully loading udb, 0.14 seconds
 
 Initializing timer
 Starting design annotation....
@@ -581,17 +579,17 @@ High-Performance_1.2V
 
 Starting full timing analysis...
 Performance Hardware Data Status:   Advanced       Version 1.0.
-Connections ignored  57  counted  865  covered  827
+Connections ignored  58  counted  888  covered  838
 Changing speed to m
 
 Starting full timing analysis...
 
 STA Runtime and Peak Memory Usage :
-Total CPU Time: 1 secs 
+Total CPU Time: 2 secs 
 Total REAL Time: 2 secs 
 Peak Memory Usage: 90 MB
 
- 2.009800s wall, 1.562500s user + 0.390625s system = 1.953125s CPU (97.2%)
+ 2.393589s wall, 1.906250s user + 0.421875s system = 2.328125s CPU (97.3%)
 
 
 tmcheck -par "ModuloAlarmaTP2_impl_1.par" 
@@ -637,14 +635,14 @@ Saving bit stream in "D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\Modu
 Bitstream generation complete!
 
 Total CPU Time: 1 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 0 secs 
 Peak Memory Usage: 107 MB
 
 
 ibisgen "ModuloAlarmaTP2_impl_1.udb" "C:/lscc/radiant/3.0/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 3.0.0.24.1
 
-Thu Nov 18 13:30:54 2021
+Thu Nov 18 14:45:42 2021
 
 Loading ModuloAlarmaTP2_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/3.0/ispfpga.
@@ -694,5 +692,5 @@ Writing Verilog netlist to file ModuloAlarmaTP2_impl_1_vo.vo
 Writing SDF timing to file ModuloAlarmaTP2_impl_1_vo.sdf
 Backanno finished with 0 posted error messages.
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 85 MB

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Export">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35001786</ID>
@@ -412,6 +418,14 @@
             <Navigation>68</Navigation>
         </Message>
         <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(92): </Dynamic>
+            <Dynamic>PREV_KEY</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v</Navigation>
+            <Navigation>92</Navigation>
+        </Message>
+        <Message>
             <ID>35001771</ID>
             <Severity>16</Severity>
             <Dynamic>KEY_STATUS[1]</Dynamic>
@@ -488,12 +502,6 @@
         </Message>
         <Message>
             <ID>35002039</ID>
-            <Severity>1</Severity>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1191031</ID>
             <Severity>1</Severity>
         </Message>
     </Task>

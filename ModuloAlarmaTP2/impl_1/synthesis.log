@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 18 13:30:24 2021
+Thu Nov 18 14:45:06 2021
 
 
 Command Line:  C:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
@@ -146,6 +146,7 @@ WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/modul
 WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): actualKey should be on the sensitivity list. VERI-1221
 WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): key should be on the sensitivity list. VERI-1221
 WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(68): KB_IN should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(92): PREV_KEY should be on the sensitivity list. VERI-1221
                                                          
 
 
@@ -191,14 +192,14 @@ WARNING - synthesis: Mapping latch \keyboard/KB_IN_1__I_0_2_i2 to logic since no
 INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 ################### Begin Area Report (MainModule)######################
-Number of register bits => 100 of 5280 (1 % )
+Number of register bits => 102 of 5280 (1 % )
 CCU2 => 44
-FD1P3XZ => 100
+FD1P3XZ => 102
 IB => 6
 IOL_B => 1
 LSOSC_CORE => 1
-LUT4 => 160
-OB => 4
+LUT4 => 162
+OB => 9
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
 Number of even-length carry chains : 3
@@ -214,19 +215,19 @@ Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : STATE_OUT/waiting, loads : 32
   Net : STATE_OUT/waiting_N_139, loads : 31
-  Net : STATE_OUT/serial/n114, loads : 30
-  Net : mainTimer/TIME_OUT, loads : 21
+  Net : STATE_OUT/serial/n119, loads : 30
+  Net : mainTimer/timeout_c, loads : 22
   Net : mainTimer/clkCont_17__N_37, loads : 19
-  Net : Sreg[0], loads : 10
-  Net : keyboard/state[1], loads : 10
+  Net : keyboard/state[1], loads : 11
   Net : keyboard/state[0], loads : 10
   Net : Sreg[1], loads : 9
+  Net : Sreg[0], loads : 9
   Net : keyboard/counter[0], loads : 8
 ################### End Clock Report ##################
 
-Peak Memory Usage: 78 MB
+Peak Memory Usage: 80 MB
 
 --------------------------------------------------------------
 Total CPU Time: 2 secs 
-Total REAL Time: 2 secs 
+Total REAL Time: 3 secs 
 --------------------------------------------------------------

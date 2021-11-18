@@ -19,6 +19,7 @@ module timer (
 		if (RST | !EN) begin
 			state <= COUNT;
 			clkCont <= 0;
+			
 		end
 		else
 			case (state)
@@ -37,6 +38,6 @@ module timer (
 			endcase
 	end
 
-	assign clkFinish = (state == FINISH);
+	assign clkFinish = state;
 	
 endmodule

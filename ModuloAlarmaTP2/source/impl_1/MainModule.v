@@ -12,7 +12,12 @@ module MainModule (
 
     //input CTRL_IN, CTRL_RECV, CTRL_CLK,
 
-    input RESET_IN				//Reset (just in case)
+    input RESET_IN,				//Reset (just in case)
+	
+	// DEBUG
+	output wire [1:0]KEY_STATUS,
+	output wire [1:0]debug, // Comienza en modo inactivo
+	output wire timeout
 );
 
     // Clock interno del modulo principal
@@ -25,14 +30,17 @@ module MainModule (
     parameter [1:0] KEY_OK = 2'd0, KEY_ERROR = 2'd2, NO_KEY = 2'd3;
 	reg [1:0]Sreg = INACTIVO; // Comienza en modo inactivo
     reg [1:0]Snext;
-	wire [1:0]KEY_STATUS;
+	//wire [1:0]KEY_STATUS;
+	
+	assign debug = Snext;
 	//--------------------------------------------------------------------
 
 
     // SET DE TIMER ------------------------------------------------------
     wire TIME_OUT;
+	assign timeout = TIME_OUT;
     reg TIMER_EN;
-    wire [17:0] TIMER_COUNTER = 18'd150000; 	// 1 Segundo = 10000
+    wire [17:0] TIMER_COUNTER = 18'd50000; 	// 1 Segundo = 10000
     timer mainTimer (		 					// CLK con tiempo customizable
         .clkSignal(SERCLK_OUT),		    		// Se?al del CLK a utilizar
         .maxCount(TIMER_COUNTER),       		// Cantidad de pulsos a contar. Max: 262.143e3
@@ -44,7 +52,7 @@ module MainModule (
 	
 
     // SET DE KEYBOARD - SERIAL OUT --------------------------------------
-    wire [3:0] MSG = {SENSOR2_IN, SENSOR1_IN, Sreg==ALARMA, !(Sreg==INACTIVO)};
+    wire [3:0] MSG = {!(Sreg==INACTIVO), Sreg==ALARMA, SENSOR1_IN, SENSOR2_IN};
 	reg INIT = 1;
     easySerialOut STATE_OUT(
         .EN(1'b1),	        		// ENANBLE
@@ -59,7 +67,6 @@ module MainModule (
 
 	// Verificador de mensaje recibido
 	wire [7:0] key = {2'b00,2'b01,2'b10,2'b11};
-    reg KEY_RST = 1'b0;
 	codeCkeck keyboard(
         .KB_RECV(KB_RECV),
         .KB_IN(KB_IN),
@@ -68,18 +75,23 @@ module MainModule (
         .KEY_STATUS(KEY_STATUS)
     );
     //--------------------------------------------------------------------
-
+	reg [1:0]PREV_KEY = NO_KEY;
 
     // Asignacion de estados
     always @ (Sreg, KEY_STATUS, SENSOR1_IN, SENSOR2_IN, TIME_OUT) begin      //IT IS NOT TERMINADO
 		case (Sreg)
 			INACTIVO: begin
-				if (KEY_STATUS == KEY_OK) Snext <= ARMADO;	
+				if (KEY_STATUS == KEY_OK) begin
+					Snext <= ARMADO;	
+				end
 				else Snext <= INACTIVO;
 			end
 			
 			ARMADO:	begin
-				if (KEY_STATUS == KEY_OK) Snext <= INACTIVO;
+				if (KEY_STATUS == KEY_OK) begin
+					if(PREV_KEY == KEY_OK) Snext <= ARMADO;
+					else Snext <= INACTIVO;
+				end
 				else if (KEY_STATUS == KEY_ERROR) Snext <= ALARMA;
 				else if (KEY_STATUS == NO_KEY) begin
 					if (SENSOR1_IN) Snext <= ALARMA; // Ventana
@@ -89,7 +101,7 @@ module MainModule (
 			end
 				
 			ESPERA: begin
-				if (KEY_STATUS == KEY_ERROR || KEY_STATUS == NO_KEY) TIMER_EN <= 1'b1;
+				if (KEY_STATUS == NO_KEY) TIMER_EN <= 1'b1;
 				else if (TIME_OUT) begin
 					TIMER_EN <= 1'b0;
 					Snext <= ALARMA;
@@ -109,17 +121,17 @@ module MainModule (
 			default:
 				Snext <= INACTIVO;
 		endcase
-
-		if (KEY_STATUS == NO_KEY) KEY_RST = 1'b0;
-		else KEY_RST = 1'b1;
     end
     //--------------------------------------------------------------------
 
 
     //Cambiador de estados para la maquina de estados
 	always @(posedge SERCLK_OUT or posedge RESET_IN) begin
-        if (RESET_IN == 1) Sreg <= INACTIVO; 
-		else Sreg <= Snext;
+        if (RESET_IN == 1) Sreg <= INACTIVO;
+		else begin 
+			Sreg <= Snext;
+			PREV_KEY <= KEY_STATUS;
+		end
 	end
     //--------------------------------------------------------------------
 

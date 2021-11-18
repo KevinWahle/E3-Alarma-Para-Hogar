@@ -270,22 +270,6 @@
             <Navigation>17</Navigation>
         </Message>
         <Message>
-            <ID>35901875</ID>
-            <Severity>16</Severity>
-            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(49): </Dynamic>
-            <Dynamic>ALARMA</Dynamic>
-            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v</Navigation>
-            <Navigation>49</Navigation>
-        </Message>
-        <Message>
-            <ID>35901875</ID>
-            <Severity>16</Severity>
-            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(49): </Dynamic>
-            <Dynamic>INACTIVO</Dynamic>
-            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v</Navigation>
-            <Navigation>49</Navigation>
-        </Message>
-        <Message>
             <ID>35921014</ID>
             <Severity>1</Severity>
             <Dynamic>c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4): </Dynamic>

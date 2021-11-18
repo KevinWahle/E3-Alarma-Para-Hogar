@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 18 11:49:21 2021
+Thu Nov 18 12:37:25 2021
 
 
 Command Line:  C:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
@@ -116,9 +116,9 @@ The -syn option is FALSE.
 -path D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/impl_1 (searchpath added)
 Mixed language design
 Verilog design file = C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
+Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v
 VHDL library = pmi
@@ -160,11 +160,9 @@ INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49): analyzing incl
 INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v. VERI-1482
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v. VERI-1482
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v. VERI-1482
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(49): identifier ALARMA is used before its declaration. VERI-1875
-WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v(49): identifier INACTIVO is used before its declaration. VERI-1875
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v. VERI-1482
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
@@ -220,11 +218,11 @@ INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are s
 Number of register bits => 138 of 5280 (2 % )
 CCU2 => 61
 FD1P3XZ => 138
-IB => 5
+IB => 6
 IOL_B => 1
 LSOSC_CORE => 1
 LUT4 => 159
-OB => 10
+OB => 6
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
 Number of even-length carry chains : 4
@@ -242,14 +240,14 @@ Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : STATE_OUT/waiting, loads : 32
-  Net : Keyboard/n430, loads : 32
+  Net : Keyboard/n442, loads : 32
   Net : STATE_OUT/waiting_N_139, loads : 31
-  Net : STATE_OUT/serial/n113, loads : 30
-  Net : mainTimer/TIME_OUT, loads : 23
+  Net : STATE_OUT/serial/n122, loads : 30
+  Net : mainTimer/TIME_OUT, loads : 21
   Net : mainTimer/clkCont_17__N_37, loads : 19
   Net : Keyboard/DEBUG_KEY_c_0, loads : 10
-  Net : Sreg_c_1, loads : 8
-  Net : Sreg_c_0, loads : 8
+  Net : Sreg[0], loads : 9
+  Net : Sreg[1], loads : 7
   Net : STATE_OUT/waiting_N_135, loads : 7
 ################### End Clock Report ##################
 

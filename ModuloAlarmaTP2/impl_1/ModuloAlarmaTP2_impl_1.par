@@ -1,5 +1,5 @@
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 18 15:12:36 2021
+Thu Nov 18 16:20:58 2021
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	ModuloAlarmaTP2_impl_1_map.udb ModuloAlarmaTP2_impl_1.udb 
@@ -8,16 +8,16 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            99972.000    0            1.719        0            20           Completed
+5_1   *      0            99970.832    0            1.719        0            22           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 20 secs 
+Total (real) run time for 1-seed: 22 secs 
 
 par done!
 
 Lattice Place and Route Report for Design "ModuloAlarmaTP2_impl_1_map.udb"
-Thu Nov 18 15:12:36 2021
+Thu Nov 18 16:20:58 2021
 
 PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -36,12 +36,12 @@ Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
 Number of Signals: 452
-Number of Connections: 1029
+Number of Connections: 1031
 Device utilization summary:
 
-   SLICE (est.)     139/2640          5% used
-     LUT            263/5280          4% used
-     REG            102/5280          1% used
+   SLICE (est.)     141/2640          5% used
+     LUT            265/5280          5% used
+     REG            100/5280          1% used
    PIO               15/56           26% used
                      15/36           41% bonded
    IOLOGIC            1/56            1% used
@@ -62,37 +62,36 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   14 out of 15 pins locked (93% locked).
-.
-.........
-Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 2 secs 
+   15 out of 15 pins locked (100% locked).
+
+Finished Placer Phase 0 (HIER). CPU time: 1 secs , REAL time: 0 secs 
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 1 secs , REAL time: 2 secs 
+Finished Placer Phase 0 (AP).  CPU time: 2 secs , REAL time: 2 secs 
 
-Starting Placer Phase 1. CPU time: 1 secs , REAL time: 2 secs 
+Starting Placer Phase 1. CPU time: 2 secs , REAL time: 2 secs 
 ..  ..
 ....................
 
-Placer score = 41738.
+Placer score = 40556.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            138/2640          5% used
+   SLICE            139/2640          5% used
 
-Finished Placer Phase 1. CPU time: 15 secs , REAL time: 16 secs 
+Finished Placer Phase 1. CPU time: 17 secs , REAL time: 18 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  47881
-Finished Placer Phase 2.  CPU time: 15 secs , REAL time: 17 secs 
+Placer score =  46626
+Finished Placer Phase 2.  CPU time: 18 secs , REAL time: 18 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clocks :
-  PRIMARY "SERCLK_OUT_c" from comp "OSCInst1" on site "LFOSC_R26C32", clk load = 56, ce load = 0, sr load = 0
+  PRIMARY "SERCLK_OUT_c" from comp "OSCInst1" on site "LFOSC_R26C32", clk load = 55, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -109,17 +108,17 @@ I/O Bank Usage Summary:
 +----------+----------------+------------+------------+------------+
 | I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+----------------+------------+------------+------------+
-| 0        | 10 / 14 ( 71%) | 3.3V       |            |            |
-| 1        | 1 / 14 (  7%)  | 3.3V       |            |            |
+| 0        | 11 / 14 ( 78%) | 3.3V       |            |            |
+| 1        | 0 / 14 (  0%)  | OFF        |            |            |
 | 2        | 4 / 8 ( 50%)   | 3.3V       |            |            |
 +----------+----------------+------------+------------+------------+
 
-Total Placer CPU time: 15 secs , REAL time: 17 secs 
+Total Placer CPU time: 18 secs , REAL time: 18 secs 
 
 Writing design to file ModuloAlarmaTP2_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 15:12:53 11/18/21
+Start NBR router at 16:21:16 11/18/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -137,14 +136,14 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-178 connections routed with dedicated routing resources
+176 connections routed with dedicated routing resources
 1 global clock signals routed
-234 connections routed (of 970 total) (24.12%)
+231 connections routed (of 973 total) (23.74%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
 #5  Signal "SERCLK_OUT_c"
-       Clock   loads: 56    out of    56 routed (100.00%)
+       Clock   loads: 55    out of    55 routed (100.00%)
        Data    loads: 0     out of     1 routed (  0.00%)
 Other clocks:
     Signal "KB_RECV_c"
@@ -153,27 +152,24 @@ Other clocks:
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 15:12:53 11/18/21
+Start NBR section for initial routing at 16:21:17 11/18/21
 Level 4, iteration 1
-10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.504ns/0.000ns; real time: 0 secs 
+11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 99970.616ns/0.000ns; real time: 2 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 15:12:54 11/18/21
+Start NBR section for normal routing at 16:21:18 11/18/21
 Level 4, iteration 1
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.504ns/0.000ns; real time: 0 secs 
-Level 4, iteration 2
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 99971.504ns/0.000ns; real time: 0 secs 
+Estimated worst slack/total negative slack<setup>: 99970.368ns/0.000ns; real time: 2 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 15:12:54 11/18/21
+Start NBR section for setup/hold timing optimization with effort level 3 at 16:21:18 11/18/21
 
 Starting full timing analysis...
 
-Start NBR section for post-routing at 15:12:55 11/18/21
+Start NBR section for post-routing at 16:21:18 11/18/21
 
 End NBR router with 0 unrouted connection
 
@@ -189,10 +185,10 @@ Notes: The timing info is calculated for SETUP only.
 
 
 Starting full timing analysis...
-Total CPU time 2 secs 
+Total CPU time 3 secs 
 Total REAL time: 3 secs 
 Completely routed.
-End of route.  970 routed (100.00%); 0 unrouted.
+End of route.  973 routed (100.00%); 0 unrouted.
 
 Writing design to file ModuloAlarmaTP2_impl_1_par.dir/5_1.udb ...
 
@@ -202,15 +198,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 99972.000
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 99970.832
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.719
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 19 secs 
-Total REAL Time: 20 secs 
-Peak Memory Usage: 105 MB
+Total CPU  Time: 21 secs 
+Total REAL Time: 22 secs 
+Peak Memory Usage: 106 MB
 
 
 par done!

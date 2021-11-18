@@ -66,11 +66,11 @@ module MainModule (
 
 
 	// Verificador de mensaje recibido
-	wire [7:0] key = {2'b00,2'b01,2'b10,2'b11};
+	//wire [7:0] key = {2'b00,2'b01,2'b10,2'b11};
 	codeCkeck keyboard(
         .KB_RECV(KB_RECV),
         .KB_IN(KB_IN),
-        .validKey({2'd0, 2'd1, 2'd2, 2'd3}),
+        .validKey({2'd1, 2'd1, 2'd1, 2'd1}),
         .CLK(SERCLK_OUT),
         .KEY_STATUS(KEY_STATUS)
     );
@@ -78,11 +78,12 @@ module MainModule (
 	reg [1:0]PREV_KEY = NO_KEY;
 
     // Asignacion de estados
-    always @ (Sreg, KEY_STATUS, SENSOR1_IN, SENSOR2_IN, TIME_OUT) begin      //IT IS NOT TERMINADO
+    always @ (Sreg, KEY_STATUS, SENSOR1_IN, SENSOR2_IN, TIME_OUT) begin    
 		case (Sreg)
 			INACTIVO: begin
 				if (KEY_STATUS == KEY_OK) begin
-					Snext <= ARMADO;	
+					PREV_KEY <= KEY_OK;
+					Snext <= ARMADO;
 				end
 				else Snext <= INACTIVO;
 			end
@@ -96,6 +97,11 @@ module MainModule (
 				else if (KEY_STATUS == NO_KEY) begin
 					if (SENSOR1_IN) Snext <= ALARMA; // Ventana
 					else if (SENSOR2_IN) Snext <= ESPERA; // Puerta
+					else begin 
+						PREV_KEY <= NO_KEY;
+						TIMER_EN <= 1'b0;
+						Snext <= ARMADO;
+					end
 				end
 				else Snext <= ARMADO;
 			end
@@ -104,6 +110,7 @@ module MainModule (
 				if (TIME_OUT) Snext <= ALARMA;				
 				else if (KEY_STATUS == NO_KEY) TIMER_EN <= 1'b1;
 				else if (KEY_STATUS == KEY_OK) begin
+					PREV_KEY <= KEY_OK;
 					TIMER_EN <= 1'b0;
 					Snext <= INACTIVO;
 				end
@@ -126,10 +133,7 @@ module MainModule (
     //Cambiador de estados para la maquina de estados
 	always @(posedge SERCLK_OUT or posedge RESET_IN) begin
         if (RESET_IN == 1) Sreg <= INACTIVO;
-		else begin 
-			Sreg <= Snext;
-			PREV_KEY <= KEY_STATUS;
-		end
+		else Sreg <= Snext;
 	end
     //--------------------------------------------------------------------
 

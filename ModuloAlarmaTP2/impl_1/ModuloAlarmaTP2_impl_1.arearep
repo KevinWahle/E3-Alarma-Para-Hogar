@@ -1,15 +1,15 @@
 ----------------------------------------------------------------------
 Report for cell MainModule.TECH
-Register bits:  102 of 5280 (1.932%)
+Register bits:  100 of 5280 (1.894%)
 I/O cells:      15
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2        44          100.0
-                            FD1P3XZ       102          100.0
+                            FD1P3XZ       100          100.0
                                  IB         6          100.0
                               IOL_B         1          100.0
                          LSOSC_CORE         1          100.0
-                               LUT4       166          100.0
+                               LUT4       168          100.0
                                  OB         9          100.0
 SUB MODULES
                           codeCkeck         1
@@ -18,41 +18,41 @@ SUB MODULES
                               timer         1
                               TOTAL       333
 ----------------------------------------------------------------------
+Report for cell codeCkeck.v1
+Instance Path : keyboard
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         4            4.0
+                               LUT4        22           13.1
+                              TOTAL        26
+----------------------------------------------------------------------
 Report for cell timer.v1
 Instance Path : mainTimer
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        10           22.7
-                            FD1P3XZ        19           18.6
-                               LUT4        26           15.7
+                            FD1P3XZ        19           19.0
+                               LUT4        26           15.5
                               TOTAL        55
-----------------------------------------------------------------------
-Report for cell codeCkeck.v1
-Instance Path : keyboard
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3XZ         4            3.9
-                               LUT4        23           13.9
-                              TOTAL        27
 ----------------------------------------------------------------------
 Report for cell easySerialOut.v1
 Instance Path : STATE_OUT
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        34           77.3
-                            FD1P3XZ        75           73.5
+                            FD1P3XZ        75           75.0
                               IOL_B         1          100.0
-                               LUT4        34           20.5
+                               LUT4        33           19.6
 SUB MODULES
                           serialOut         1
-                              TOTAL       145
+                              TOTAL       144
 ----------------------------------------------------------------------
 Report for cell serialOut.v1
 Instance Path : STATE_OUT.serial
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        17           38.6
-                            FD1P3XZ        37           36.3
+                            FD1P3XZ        37           37.0
                               IOL_B         1          100.0
-                               LUT4        14            8.4
-                              TOTAL        69
+                               LUT4        13            7.7
+                              TOTAL        68

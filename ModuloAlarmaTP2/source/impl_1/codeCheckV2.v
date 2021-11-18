@@ -48,7 +48,6 @@ module codeCkeck (
 					nextState <= FINISH;
 				else
 					actualKey[counter + 1] <= KB_IN;
-
 			end
 			
 			FINISH: begin

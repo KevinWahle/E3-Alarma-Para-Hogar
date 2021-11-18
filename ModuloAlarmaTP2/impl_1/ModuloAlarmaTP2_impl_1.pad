@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Thu Nov 18 15:12:53 2021
+Thu Nov 18 16:21:16 2021
 
 Pinout by Port Name:
 +---------------+----------+--------------+-------+--------------------+
@@ -26,7 +26,7 @@ Pinout by Port Name:
 | STATUS_SEND   | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA PULL:NA  |
 | debug[0]      | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA PULL:NA  |
 | debug[1]      | 26/0     | LVCMOS33_OUT | PR19A | DRIVE:8mA PULL:NA  |
-| timeout       | 6/1      | LVCMOS33_OUT | PL14B | DRIVE:8mA PULL:NA  |
+| timeout       | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA PULL:NA  |
 +---------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
@@ -34,7 +34,6 @@ Vccio by Bank:
 | Bank | Vccio |
 +------+-------+
 | 0    | 3.3V  |
-| 1    | 3.3V  |
 | 2    | 3.3V  |
 +------+-------+
 
@@ -45,7 +44,7 @@ Pinout by Pin Number:
 | 2/2      | SERCLK_OUT          | LOCATED    | LVCMOS33_OUT | PL9A  |                  |
 | 3/2      |     unused, PULL:UP |            |              | PL10B |                  |
 | 4/2      |     unused, PULL:UP |            |              | PL10A |                  |
-| 6/1      | timeout             |            | LVCMOS33_OUT | PL14B |                  |
+| 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
 | 11/1     |     unused, PULL:UP |            |              | PL18A |                  |
@@ -60,7 +59,7 @@ Pinout by Pin Number:
 | 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
 | 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
 | 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
-| 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
+| 25/0     | timeout             | LOCATED    | LVCMOS33_OUT | PR20B |                  |
 | 26/0     | debug[1]            | LOCATED    | LVCMOS33_OUT | PR19A |                  |
 | 27/0     | debug[0]            | LOCATED    | LVCMOS33_OUT | PR19B |                  |
 | 28/0     | SENSOR1_IN          | LOCATED    | LVCMOS33_IN  | PR18A |                  |
@@ -117,12 +116,12 @@ ldc_set_location -site {47} [ get_ports {STATUS_OUT} ]
 ldc_set_location -site {45} [ get_ports {STATUS_SEND} ]
 ldc_set_location -site {27} [ get_ports {debug[0]} ]
 ldc_set_location -site {26} [ get_ports {debug[1]} ]
-ldc_set_location -site {6} [ get_ports {timeout} ]
+ldc_set_location -site {25} [ get_ports {timeout} ]
 
 
 
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Thu Nov 18 15:12:53 2021
+Thu Nov 18 16:21:16 2021
 

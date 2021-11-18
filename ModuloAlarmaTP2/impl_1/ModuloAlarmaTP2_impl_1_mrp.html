@@ -47,32 +47,33 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Wed Nov 17 23:54:03 2021
+Mapped on: Thu Nov 18 12:49:37 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
-     3/TP2/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.pdc -o
+Command line:   map ModuloAlarmaTP2_impl_1_syn.udb
+     D:/Users/nicob/Desktop/ITBA/3-Electro
+     3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/impl_1.pdc -o
      ModuloAlarmaTP2_impl_1_map.udb -mp ModuloAlarmaTP2_impl_1.mrp -hierrpt -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 107 out of  5280 (2%)
-   Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           261 out of  5280 (5%)
-      Number of logic LUT4s:             158
-      Number of inserted feedthru LUT4s:   1
-      Number of replicated LUT4s:         14
+   Number of slice registers: 100 out of  5280 (2%)
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:           257 out of  5280 (5%)
+      Number of logic LUT4s:             161
+      Number of inserted feedthru LUT4s:   3
+      Number of replicated LUT4s:          5
       Number of ripple logic:             44 (88 LUT4s)
-   Number of IO sites used:   15 out of 39 (38%)
-      Number of IO sites used for general PIO: 15
+   Number of IO sites used:   10 out of 39 (26%)
+      Number of IO sites used for general PIO: 10
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
+      Number of IO sites used for PIO+I3C: 10 out of 36 (28%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 10 out of 39 (26%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -86,35 +87,38 @@ Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  2
-      Net KB_RECV_c: 27 loads, 27 rising, 0 falling (Driver: Port KB_RECV)
-      Net SERCLK_OUT_c: 65 loads, 65 rising, 0 falling (Driver: Pin
+      Net SERCLK_OUT_c: 99 loads, 99 rising, 0 falling (Driver: Pin
      OSCInst1/CLKLF)
-   Number of Clock Enables:  2
+      Net KB_RECV_c: 2 loads, 2 rising, 0 falling (Driver: Port KB_RECV)
+   Number of Clock Enables:  3
       Net VCC_net: 1 loads, 0 SLICEs
-      Net STATE_OUT.serial.n341: 1 loads, 1 SLICEs
-   Number of LSRs:  5
-      Net Keyboard.valid_1__N_272[0]: 1 loads, 1 SLICEs
-      Net Keyboard.n351: 17 loads, 17 SLICEs
-      Net STATE_OUT.state_send_N_66: 5 loads, 5 SLICEs
-      Net STATE_OUT.serial.counter_31__N_184: 1 loads, 1 SLICEs
+      Net STATE_OUT.waiting_N_135: 2 loads, 2 SLICEs
+      Net STATE_OUT.n113: 3 loads, 3 SLICEs
+   Number of LSRs:  7
+      Net n114: 2 loads, 2 SLICEs
+      Pin RESET_IN: 2 loads, 2 SLICEs (Net: RESET_IN_c)
       Net mainTimer.clkCont_17__N_37: 19 loads, 19 SLICEs
+      Net STATE_OUT.waiting_N_135: 4 loads, 4 SLICEs
+      Net STATE_OUT.n135_c: 2 loads, 2 SLICEs
+
+      Net STATE_OUT.n113: 1 loads, 1 SLICEs
+      Net STATE_OUT.serial.n439: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net STATE_OUT.init: 68 loads
-
-      Net STATE_OUT.n63: 42 loads
-      Net VCC_net: 36 loads
-      Net TIME_OUT: 25 loads
+      Net waiting: 34 loads
+      Net waiting_N_139: 32 loads
+      Net n114: 31 loads
+      Net TIME_OUT: 22 loads
       Net mainTimer.clkCont_17__N_37: 19 loads
-      Net Keyboard.n351: 17 loads
-      Net DEBUG_KEY_c_0: 13 loads
-      Net Sreg_c_0: 10 loads
-      Net Sreg_c_1: 10 loads
-      Net Keyboard.n35: 9 loads
+      Net state[0]: 12 loads
+      Net state[1]: 11 loads
+      Net Sreg[0]: 10 loads
+      Net keyboard.counter[0]: 9 loads
+      Net Sreg[1]: 9 loads
 
 
 
 
-   Number of warnings:  1
+   Number of warnings:  0
    Number of errors:    0
 
 
@@ -122,9 +126,7 @@ Command line:   map ModuloAlarmaTP2_impl_1_syn.udb D:/Electronica/Electronica
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: The clock port [KB_RECV] is assigned to a non clock dedicated pin
-     [32], which might affect the clock performance. Use dedicated clock
-     resources for the port.
+   No errors or warnings present.
 
 
 
@@ -134,25 +136,13 @@ WARNING - map: The clock port [KB_RECV] is assigned to a non clock dedicated pin
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| STATUS_SEND         | OUTPUT    | LVCMOS33  | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | STATUS_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | SIREN_OUT           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| STATUS_SEND         | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | SERCLK_OUT          | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Sreg[1]             | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Sreg[0]             | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| KEY_STATUS[1]       | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| KEY_STATUS[0]       | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DEBUG_KEY[1]        | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| DEBUG_KEY[0]        | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | SENSOR1_IN          | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -161,9 +151,10 @@ WARNING - map: The clock port [KB_RECV] is assigned to a non clock dedicated pin
 | KB_IN[1]            | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | KB_IN[0]            | INPUT     | LVCMOS33  |       |       |           |
-
 +---------------------+-----------+-----------+-------+-------+-----------+
 | KB_RECV             | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RESET_IN            | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
@@ -171,6 +162,7 @@ WARNING - map: The clock port [KB_RECV] is assigned to a non clock dedicated pin
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
 Block i1 was optimized away.
+
 
 OSC Summary
 -----------
@@ -188,6 +180,8 @@ OSC 1:                                 Pin/Node Value
 
 Instance Name: OSCInst1
          Type: LFOSC
+Instance Name: STATE_OUT/serial/status_send
+         Type: IOLOGIC
 
 
 
@@ -196,7 +190,15 @@ Instance Name: OSCInst1
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 58 MB
+   Peak Memory Usage: 57 MB
+
+
+
+
+
+
+
+
 
 
 

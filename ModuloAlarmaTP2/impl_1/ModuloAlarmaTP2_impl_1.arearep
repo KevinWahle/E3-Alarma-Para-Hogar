@@ -1,40 +1,48 @@
 ----------------------------------------------------------------------
 Report for cell MainModule.TECH
-Register bits:  138 of 5280 (2.614%)
-I/O cells:      12
+Register bits:  100 of 5280 (1.894%)
+I/O cells:      10
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        61          100.0
-                            FD1P3XZ       138          100.0
+                               CCU2        44          100.0
+                            FD1P3XZ       100          100.0
                                  IB         6          100.0
                               IOL_B         1          100.0
                          LSOSC_CORE         1          100.0
-                               LUT4       159          100.0
-                                 OB         6          100.0
+                               LUT4       160          100.0
+                                 OB         4          100.0
 SUB MODULES
+                          codeCkeck         1
                       easySerialOut         1
-                         keyChecker         1
                           serialOut         1
                               timer         1
-                              TOTAL       376
+                              TOTAL       320
 ----------------------------------------------------------------------
-Report for cell keyChecker.v1
-Instance Path : Keyboard
+Report for cell codeCkeck.v1
+Instance Path : keyboard
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        17           27.9
-                            FD1P3XZ        42           30.4
-                               LUT4        24           15.1
-                              TOTAL        83
+                            FD1P3XZ         4            4.0
+                               LUT4        22           13.8
+                              TOTAL        26
+----------------------------------------------------------------------
+Report for cell timer.v1
+Instance Path : mainTimer
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        10           22.7
+                            FD1P3XZ        19           19.0
+                               LUT4        26           16.2
+                              TOTAL        55
 ----------------------------------------------------------------------
 Report for cell easySerialOut.v1
 Instance Path : STATE_OUT
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        34           55.7
-                            FD1P3XZ        75           54.3
+                                FA2        34           77.3
+                            FD1P3XZ        75           75.0
                               IOL_B         1          100.0
-                               LUT4        34           21.4
+                               LUT4        34           21.2
 SUB MODULES
                           serialOut         1
                               TOTAL       145
@@ -43,17 +51,8 @@ Report for cell serialOut.v1
 Instance Path : STATE_OUT.serial
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        17           27.9
-                            FD1P3XZ        37           26.8
+                                FA2        17           38.6
+                            FD1P3XZ        37           37.0
                               IOL_B         1          100.0
                                LUT4        14            8.8
                               TOTAL        69
-----------------------------------------------------------------------
-Report for cell timer.v1
-Instance Path : mainTimer
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                                FA2        10           16.4
-                            FD1P3XZ        19           13.8
-                               LUT4        26           16.4
-                              TOTAL        55

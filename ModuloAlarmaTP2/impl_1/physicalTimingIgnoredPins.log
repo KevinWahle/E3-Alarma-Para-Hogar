@@ -1,64 +1,31 @@
-SLICE/D1 input Keyboard.SLICE_16 has no outgoing device arc
-SLICE/CIN1 input Keyboard.SLICE_16 has no outgoing device arc
-     ** Keyboard.SLICE_16/COUT0 is driving a pin on an incomplete path
-SLICE/C0 input Keyboard.SLICE_16 is on an incomplete path
-SLICE/CIN0 input Keyboard.SLICE_16 is on an incomplete path
-SLICE/COUT0 GND  Keyboard.SLICE_9
-     *** Keyboard.SLICE_9/D1 is driven by constant or a pin on an incomplete path
-     *** Keyboard.SLICE_9/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/COUT0 GND  STATE_OUT.serial.SLICE_22
-     *** STATE_OUT.serial.SLICE_22/D1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_22/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/D1 input STATE_OUT.serial.SLICE_31 has no outgoing device arc
-SLICE/CIN1 input STATE_OUT.serial.SLICE_31 has no outgoing device arc
-     ** STATE_OUT.serial.SLICE_31/COUT0 is driving a pin on an incomplete path
-SLICE/C0 input STATE_OUT.serial.SLICE_31is connected to a constant net
-SLICE/B0 input STATE_OUT.serial.SLICE_31 is on an incomplete path
-SLICE/CIN0 input STATE_OUT.serial.SLICE_31 is on an incomplete path
-     ** STATE_OUT.serial.SLICE_192/F0 is driving a pin on an incomplete path
-SLICE/D1 input mainTimer.SLICE_37 has no outgoing device arc
-SLICE/CIN1 input mainTimer.SLICE_37 has no outgoing device arc
-     ** mainTimer.SLICE_37/COUT0 is driving a pin on an incomplete path
-SLICE/B0 input mainTimer.SLICE_37 is on an incomplete path
-SLICE/CIN0 input mainTimer.SLICE_37 is on an incomplete path
-SLICE/COUT0 GND  mainTimer.SLICE_41
-     *** mainTimer.SLICE_41/D1 is driven by constant or a pin on an incomplete path
-     *** mainTimer.SLICE_41/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/F0 VCC  SLICE_169
-     *** Keyboard.SLICE_9/B1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_17/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_17/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_18/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_18/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_19/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_19/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_20/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_20/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_21/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_21/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_22/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_23/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_23/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_24/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_24/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_25/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_25/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_26/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_26/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_27/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_27/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_28/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_28/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_29/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_29/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_30/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_30/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_32/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_32/C0 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_33/C1 is driven by constant or a pin on an incomplete path
-     *** STATE_OUT.serial.SLICE_33/C0 is driven by constant or a pin on an incomplete path
-     *** mainTimer.SLICE_41/C1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input mainTimer.SLICE_8 has no outgoing device arc
+SLICE/CIN1 input mainTimer.SLICE_8 has no outgoing device arc
+     ** mainTimer.SLICE_8/COUT0 is driving a pin on an incomplete path
+SLICE/B0 input mainTimer.SLICE_8 is on an incomplete path
+SLICE/CIN0 input mainTimer.SLICE_8 is on an incomplete path
+SLICE/COUT0 GND  mainTimer.SLICE_9
+     *** mainTimer.SLICE_9/D1 is driven by constant or a pin on an incomplete path
+     *** mainTimer.SLICE_9/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  STATE_OUT.SLICE_13
+     *** STATE_OUT.SLICE_13/D1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT.SLICE_13/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input STATE_OUT.SLICE_20 has no outgoing device arc
+SLICE/CIN1 input STATE_OUT.SLICE_20 has no outgoing device arc
+     ** STATE_OUT.SLICE_20/COUT0 is driving a pin on an incomplete path
+SLICE/B0 input STATE_OUT.SLICE_20 is on an incomplete path
+SLICE/CIN0 input STATE_OUT.SLICE_20 is on an incomplete path
+SLICE/D1 input STATE_OUT.serial.SLICE_27 has no outgoing device arc
+SLICE/CIN1 input STATE_OUT.serial.SLICE_27 has no outgoing device arc
+     ** STATE_OUT.serial.SLICE_27/COUT0 is driving a pin on an incomplete path
+SLICE/B0 input STATE_OUT.serial.SLICE_27 is on an incomplete path
+SLICE/CIN0 input STATE_OUT.serial.SLICE_27 is on an incomplete path
+     ** SLICE_117/Q1 is driving a pin on an incomplete path
+SLICE/COUT0 GND  STATE_OUT.serial.SLICE_43
+     *** STATE_OUT.serial.SLICE_43/D1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT.serial.SLICE_43/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/F0 VCC  SLICE_202
+     *** mainTimer.SLICE_9/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT.SLICE_13/C1 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT.serial.SLICE_43/C1 is driven by constant or a pin on an incomplete path
      *** OSCInst1/CLKLFPU is driven by constant or a pin on an incomplete path
      *** OSCInst1/CLKLFEN is driven by constant or a pin on an incomplete path
-SLICE/C0 input STATE_OUT.serial.SLICE_192 is on an incomplete path
-SLICE/B0 input STATE_OUT.serial.SLICE_192 is on an incomplete path

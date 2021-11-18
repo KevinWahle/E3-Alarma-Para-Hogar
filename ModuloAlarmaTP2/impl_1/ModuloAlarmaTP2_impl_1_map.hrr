@@ -3,42 +3,48 @@ Report for cell MainModule
    Instance path: MainModule
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        261        100.0
-                                 IOBUF	         15        100.0
-                                PFUREG	        107        100.0
+                                 IOLGC	       1.00        100.0
+                                  LUT4	        257        100.0
+                                 IOREG	          1        100.0
+                                 IOBUF	         10        100.0
+                                PFUREG	        100        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                         easySerialOut	          1        48.3
-                            keyChecker	          1        22.2
-                                 timer	          1        17.6
+                             codeCkeck	          1         8.6
+                         easySerialOut	          1        39.3
+                                 timer	          1        17.9
 ---------------------------------------------------
-Report for cell keyChecker
-   Instance path: MainModule/Keyboard
+Report for cell codeCkeck
+   Instance path: MainModule/keyboard
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         58        22.2
-                                PFUREG	         42        39.3
----------------------------------------------------
-Report for cell easySerialOut
-   Instance path: MainModule/STATE_OUT
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        126        48.3
-                                PFUREG	         44        41.1
-SUB MODULES
-                                  cell	      count    LUT4 Usage(%)
-                             serialOut	          1        40.6
----------------------------------------------------
-Report for cell serialOut
-   Instance path: MainModule/STATE_OUT/serial
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        106        40.6
-                                PFUREG	         38        35.5
+                                  LUT4	         22         8.6
+                                PFUREG	          4         4.0
 ---------------------------------------------------
 Report for cell timer
    Instance path: MainModule/mainTimer
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         46        17.6
-                                PFUREG	         19        17.8
+                                  LUT4	         46        17.9
+                                PFUREG	         19        19.0
+---------------------------------------------------
+Report for cell easySerialOut
+   Instance path: MainModule/STATE_OUT
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	        101        39.3
+                                 IOREG	          1        100.0
+                                PFUREG	         75        75.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             serialOut	          1        18.3
+---------------------------------------------------
+Report for cell serialOut
+   Instance path: MainModule/STATE_OUT/serial
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       1.00        100.0
+                                  LUT4	         47        18.3
+                                 IOREG	          1        100.0
+                                PFUREG	         37        37.0

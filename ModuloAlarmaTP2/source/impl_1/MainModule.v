@@ -1,21 +1,18 @@
 module MainModule (
     // I/O PINS
-    output wire SIREN_OUT,   	//Salida de sirena
+    output wire SIREN_OUT,   		//Salida de sirena
     input SENSOR1_IN, SENSOR2_IN,  //Sensores
 
     output wire STATUS_OUT, 	//Datos
     output wire STATUS_SEND, 	//Habilitador
     input wire [1:0] KB_IN,   	//Datos
-    input wire KB_RECV,   			//Habilitador 
+    input wire KB_RECV,   		//Habilitador 
 
-    output wire SERCLK_OUT,
+    output wire SERCLK_OUT,		//Salida de Clock
 
     //input CTRL_IN, CTRL_RECV, CTRL_CLK,
 
-    input RESET_IN,
-		
-	//DEBUG	
-	output [1:0] DEBUG_KEY
+    input RESET_IN				//Reset (just in case)
 );
 
     // Clock interno del modulo principal
@@ -63,14 +60,12 @@ module MainModule (
 	// Verificador de mensaje recibido
 	wire [7:0] key = {2'b00,2'b01,2'b10,2'b11};
     reg KEY_RST = 1'b0;
-    keyChecker Keyboard(
-        .pulsed(KB_RECV), 
-        .cable1(KB_IN[1]), 
-        .cable2(KB_IN[0]), 
-        .keyIn(key),
-        .keyStatus(KEY_STATUS),
-        //.reset(KEY_RST),
-		.salidaActualKey(DEBUG_KEY)
+	codeCkeck keyboard(
+        .KB_RECV(KB_RECV),
+        .KB_IN(KB_IN),
+        .validKey({2'd0, 2'd1, 2'd2, 2'd3}),
+        .CLK(SERCLK_OUT),
+        .KEY_STATUS(KEY_STATUS)
     );
     //--------------------------------------------------------------------
 

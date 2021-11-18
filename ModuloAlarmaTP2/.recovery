@@ -6,7 +6,10 @@
         <Source name="source/impl_1/MainModule.v" type="Verilog" type_short="Verilog">
             <Options top_module="MainModule"/>
         </Source>
-        <Source name="source/impl_1/CodeChecker.v" type="Verilog" type_short="Verilog">
+        <Source name="source/impl_1/CodeChecker.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/codeCheckV2.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="source/impl_1/easySerialOut.v" type="Verilog" type_short="Verilog">

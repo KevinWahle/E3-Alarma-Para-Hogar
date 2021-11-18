@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Export">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35001786</ID>
@@ -326,10 +332,100 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v(1): </Dynamic>
-            <Dynamic>keyChecker</Dynamic>
-            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v</Navigation>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(1): </Dynamic>
+            <Dynamic>codeCkeck</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
             <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(50): </Dynamic>
+            <Dynamic>KB_IN</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): </Dynamic>
+            <Dynamic>actualKey</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): </Dynamic>
+            <Dynamic>key</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): </Dynamic>
+            <Dynamic>actualKey</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): </Dynamic>
+            <Dynamic>key</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>56</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): </Dynamic>
+            <Dynamic>actualKey</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): </Dynamic>
+            <Dynamic>key</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): </Dynamic>
+            <Dynamic>actualKey</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): </Dynamic>
+            <Dynamic>key</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>57</Navigation>
+        </Message>
+        <Message>
+            <ID>35901221</ID>
+            <Severity>16</Severity>
+            <Dynamic>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(68): </Dynamic>
+            <Dynamic>KB_IN</Dynamic>
+            <Navigation>d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v</Navigation>
+            <Navigation>68</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>KEY_STATUS[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>KEY_STATUS[0]</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>
@@ -344,7 +440,57 @@
         <Message>
             <ID>35001783</ID>
             <Severity>16</Severity>
+            <Dynamic>\keyboard/actualKey_0__1__I_0_2_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/KB_IN_1__I_0_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/KB_IN_1__I_0_3_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/KB_IN_1__I_0_2_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/nextState_1__I_0_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/nextState_1__I_0_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
             <Dynamic>Snext_1__I_0_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/actualKey_0__1__I_0_2_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/KB_IN_1__I_0_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/KB_IN_1__I_0_3_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>16</Severity>
+            <Dynamic>\keyboard/KB_IN_1__I_0_2_i2</Dynamic>
         </Message>
         <Message>
             <ID>35002039</ID>

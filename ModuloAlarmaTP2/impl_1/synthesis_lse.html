@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Nov 18 12:37:25 2021
+Thu Nov 18 12:48:51 2021
 
 
 Command Line:  C:\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f ModuloAlarmaTP2_impl_1_lattice.synproj -gui -msgset D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/promote.xml 
@@ -117,7 +117,7 @@ The -syn option is FALSE.
 Mixed language design
 Verilog design file = C:/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/MainModule.v
-Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/CodeChecker.v
+Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/codeCheckV2.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/easySerialOut.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/serialOut.v
 Verilog design file = D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/ModuloAlarmaTP2/source/impl_1/timer.v
@@ -161,7 +161,7 @@ INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing includ
 INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO - synthesis: c:/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/mainmodule.v. VERI-1482
-Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v. VERI-1482
+Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v. VERI-1482
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v. VERI-1482
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v. VERI-1482
 Analyzing Verilog file d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v. VERI-1482
@@ -178,7 +178,17 @@ INFO - synthesis: C:/lscc/radiant/3.0/ispfpga/../cae_library/synthesis/verilog/i
 INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/timer.v(4): compiling module timer. VERI-1018
 INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/easyserialout.v(5): compiling module easySerialOut. VERI-1018
 INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/serialout.v(1): compiling module serialOut. VERI-1018
-INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codechecker.v(1): compiling module keyChecker. VERI-1018
+INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(1): compiling module codeCkeck. VERI-1018
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(50): KB_IN should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): actualKey should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): key should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): actualKey should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(56): key should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): actualKey should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): key should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): actualKey should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(57): key should be on the sensitivity list. VERI-1221
+WARNING - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloalarmatp2/source/impl_1/codecheckv2.v(68): KB_IN should be on the sensitivity list. VERI-1221
                                                          
 
 
@@ -203,29 +213,41 @@ INFO - synthesis: d:/users/nicob/desktop/itba/3-electro 3/tps/tp2-g2_e3/moduloal
                                                          
 
 
+WARNING - synthesis: Initial value found on net KEY_STATUS[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net KEY_STATUS[0] will be ignored due to unrecognized driver type
 
 
 
 WARNING - synthesis: Mapping latch Snext_1__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch TIMER_EN_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/actualKey_0__1__I_0_2_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/KB_IN_1__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/KB_IN_1__I_0_3_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/KB_IN_1__I_0_2_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/nextState_1__I_0_i1 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/nextState_1__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch Snext_1__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/actualKey_0__1__I_0_2_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/KB_IN_1__I_0_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/KB_IN_1__I_0_3_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch \keyboard/KB_IN_1__I_0_2_i2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (MainModule)######################
-Number of register bits => 138 of 5280 (2 % )
-CCU2 => 61
-FD1P3XZ => 138
+Number of register bits => 100 of 5280 (1 % )
+CCU2 => 44
+FD1P3XZ => 100
 IB => 6
 IOL_B => 1
 LSOSC_CORE => 1
-LUT4 => 159
-OB => 6
+LUT4 => 160
+OB => 4
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
-Number of even-length carry chains : 4
+Number of even-length carry chains : 3
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -240,18 +262,18 @@ Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : STATE_OUT/waiting, loads : 32
-  Net : Keyboard/n442, loads : 32
   Net : STATE_OUT/waiting_N_139, loads : 31
-  Net : STATE_OUT/serial/n122, loads : 30
+  Net : STATE_OUT/serial/n114, loads : 30
   Net : mainTimer/TIME_OUT, loads : 21
   Net : mainTimer/clkCont_17__N_37, loads : 19
-  Net : Keyboard/DEBUG_KEY_c_0, loads : 10
-  Net : Sreg[0], loads : 9
-  Net : Sreg[1], loads : 7
-  Net : STATE_OUT/waiting_N_135, loads : 7
+  Net : Sreg[0], loads : 10
+  Net : keyboard/state[1], loads : 10
+  Net : keyboard/state[0], loads : 10
+  Net : Sreg[1], loads : 9
+  Net : keyboard/counter[0], loads : 8
 ################### End Clock Report ##################
 
-Peak Memory Usage: 79 MB
+Peak Memory Usage: 78 MB
 
 --------------------------------------------------------------
 Total CPU Time: 2 secs 

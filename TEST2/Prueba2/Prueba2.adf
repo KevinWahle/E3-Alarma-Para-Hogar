@@ -1,0 +1,44 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=Prueba2
+
+[Library]
+Prueba2=.\Prueba2\Prueba2.lib
+
+[$LibMap$]
+Prueba2=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\TEST2\Prueba2\src
+
+[Files]
+/CodeChecker.v=-1
+/easySerialOut.v=-1
+/MainModule.v=-1
+/serialOut.v=-1
+/timer.v=-1
+
+[Files.Data]
+.\src\CodeChecker.v=Verilog Source Code
+.\src\easySerialOut.v=Verilog Source Code
+.\src\MainModule.v=Verilog Source Code
+.\src\serialOut.v=Verilog Source Code
+.\src\timer.v=Verilog Source Code
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,142 @@
+# Design: Design Prueba2 already active.
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/CodeChecker.v $dsn/src/easySerialOut.v $dsn/src/MainModule.v $dsn/src/serialIn.v $dsn/src/serialOut.v $dsn/src/timer.v
+# Pass 1. Scanning modules hierarchy.
+# Warning: VCP2515 MainModule.v : (27, 73): Undefined module: LSOSC was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5220 serialIn.v : (23, 42): Variable reference to a non-variable serialIn.
+# Error: VCP5118 serialIn.v : (23, 1): Non-typed object used in expression: serialIn [module].
+# Error: VCP2980 serialIn.v : (23, 1): Variable 'msg' cannot be driven by both procedural and continuous assignment.
+# Compile failure 3 Errors 1 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/serialOut.v
+# Pass 1. Scanning modules hierarchy.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: serialOut.
+# $root top modules: serialOut.
+# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/timer.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: timer.
+# $root top modules: serialOut timer.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/serialIn.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5220 serialIn.v : (23, 42): Variable reference to a non-variable serialIn.
+# Error: VCP5118 serialIn.v : (23, 1): Non-typed object used in expression: serialIn [module].
+# Error: VCP2980 serialIn.v : (23, 1): Variable 'msg' cannot be driven by both procedural and continuous assignment.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/CodeChecker.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: keyChecker.
+# $root top modules: serialOut timer keyChecker.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/easySerialOut.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2113 Module serialOut found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: easySerialOut.
+# $root top modules: timer keyChecker easySerialOut.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/serialIn.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5220 serialIn.v : (23, 42): Variable reference to a non-variable serialIn.
+# Error: VCP5118 serialIn.v : (23, 1): Non-typed object used in expression: serialIn [module].
+# Error: VCP2980 serialIn.v : (23, 1): Variable 'msg' cannot be driven by both procedural and continuous assignment.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/serialIn.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Error: VCP5220 serialIn.v : (23, 42): Variable reference to a non-variable serialIn.
+# Error: VCP5118 serialIn.v : (23, 1): Non-typed object used in expression: serialIn [module].
+# Error: VCP2980 serialIn.v : (23, 1): Variable 'msg' cannot be driven by both procedural and continuous assignment.
+# Compile failure 3 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 MainModule.v : (27, 73): Undefined module: LSOSC was used. Port connection rules will not be checked at such instantiations.
+# Info: VCP2113 Module timer found in current working library.
+# Info: VCP2113 Module easySerialOut found in current working library.
+# Info: VCP2113 Module keyChecker found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MainModule.
+# $root top modules: MainModule.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 MainModule.v : (27, 73): Undefined module: LSOSC was used. Port connection rules will not be checked at such instantiations.
+# Info: VCP2113 Module timer found in current working library.
+# Info: VCP2113 Module easySerialOut found in current working library.
+# Info: VCP2113 Module keyChecker found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MainModule.
+# $root top modules: MainModule.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work Prueba2 $dsn/src/MainModule.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 MainModule.v : (27, 73): Undefined module: LSOSC was used. Port connection rules will not be checked at such instantiations.
+# Info: VCP2113 Module timer found in current working library.
+# Info: VCP2113 Module easySerialOut found in current working library.
+# Info: VCP2113 Module keyChecker found in current working library.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: MainModule.
+# $root top modules: MainModule.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done

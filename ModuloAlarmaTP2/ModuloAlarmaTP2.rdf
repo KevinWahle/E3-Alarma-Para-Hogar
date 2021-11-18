@@ -3,14 +3,17 @@
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
         <Options def_top="MainModule" top="MainModule"/>
-        <Source name="source/impl_1/CodeChecker.v" type="Verilog" type_short="Verilog">
+        <Source name="source/impl_1/MainModule.v" type="Verilog" type_short="Verilog">
+            <Options top_module="MainModule"/>
+        </Source>
+        <Source name="source/impl_1/CodeChecker.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/codeCheckV2.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="source/impl_1/easySerialOut.v" type="Verilog" type_short="Verilog">
             <Options/>
-        </Source>
-        <Source name="source/impl_1/MainModule.v" type="Verilog" type_short="Verilog">
-            <Options top_module="MainModule"/>
         </Source>
         <Source name="source/impl_1/serialOut.v" type="Verilog" type_short="Verilog">
             <Options/>

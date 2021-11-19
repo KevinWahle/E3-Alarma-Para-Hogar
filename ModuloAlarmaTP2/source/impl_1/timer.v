@@ -3,7 +3,7 @@
 // un ciclo y vuelve a contar.
 module timer (
     input clkSignal,			// Se?al del CLK a utilizar
-    input[17:0] maxCount,		// Cantidad de pulsos a contar. Max: 131.071
+    input[17:0] maxCount,		// Cantidad de pulsos a contar. Max: 262.144
     input wire EN,      		// Se?al de ENABLE
     input wire RST,     		// Se?al de RESET 
     output wire clkFinish		// Cuando se llega a 0, emite se?al de FINISH (Activo alto)

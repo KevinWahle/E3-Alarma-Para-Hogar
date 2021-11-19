@@ -13,38 +13,41 @@ module	easySerialOut(
 		
 	reg init;
 	reg [3:0] cont = 0;
-	reg waiting = 0;
+	reg waiting = 1;
+	integer j=0;
 	
+	// SERIAL OUT --------------------------------------------------------
 	serialOut serial(
-		.init(init),        // Recibo de aviso de transmisiÃ³n
-		.clk(CLK),         // seÃ±al de clock
-		.state(msg),        // Estado a transmitir
-		.status_send(state_send),		// Envio de aviso de transmisiÃ³n
-		.status_out(state_out) // Canal de transmisiÃ³n
+		.init(init),        		// Recibo de aviso de transmisión
+		.clk(CLK),         			// señal de clock
+		.state(msg),        		// Estado a transmitir
+		.status_send(state_send),	// Envio de aviso de transmisión
+		.status_out(state_out) 		// Canal de transmisión
     );
+	//--------------------------------------------------------------------
 		
-	always @ (posedge CLK, negedge state_send) begin
-		if (!state_send) begin
-			cont = 0;
-			waiting = 1;
-		end
-		else if (EN) begin		
-			if (waiting) begin
+	always @ (posedge CLK) begin
+		if (EN) begin
+			if(waiting) begin
+				init = 0;
 				cont = cont + 1'b1;
 				if (cont == SB) begin
 					waiting = 0;
-					init = 1;
 				end
 			end
-			else begin
-				init = 0;
+			else begin	// Envia el MSG
+				init = 1;
+				cont = 0;
+				j = j + 1;			// Esperamos que serial out env?e todo el mensaje
+				if (j>3) begin
+					j=0;
+					waiting = 1;
+				end
 			end
-		end		
+		end
+		else begin
+			init = 0;
+			cont = 0;
+		end
 	end
-	
-	//always @ (negedge state_send) begin
-	//	cont = 0;
-	//	waiting = 1;
-	//end
-		
 endmodule

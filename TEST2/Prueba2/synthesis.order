@@ -1,5 +1,6 @@
-i<>.\src\CodeChecker.v
 i<>.\src\easySerialOut.v
 i<>.\src\MainModule.v
 i<>.\src\serialOut.v
 i<>.\src\timer.v
+i<>.\src\codeCheckV2.v
+i<>.\src\MainTestBench.v

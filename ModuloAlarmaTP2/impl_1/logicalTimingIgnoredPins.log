@@ -1,33 +1,13 @@
-FA2/A0 input add_7_add_5_1is connected to a constant net
-FA2/A1 input add_7_add_5_1is connected to a constant net
-FA2/A0 input add_7_add_5_5is connected to a constant net
-FA2/A1 input add_7_add_5_5is connected to a constant net
-FA2/A0 input add_7_add_5_3is connected to a constant net
-FA2/A1 input add_7_add_5_3is connected to a constant net
-FA2/A0 input add_7_add_5_9is connected to a constant net
-FA2/A1 input add_7_add_5_9is connected to a constant net
 FA2/A0 input add_7_add_5_13is connected to a constant net
 FA2/A1 input add_7_add_5_13is connected to a constant net
-FA2/A0 input add_7_add_5_11is connected to a constant net
-FA2/A1 input add_7_add_5_11is connected to a constant net
-FA2/A0 input add_7_add_5_7is connected to a constant net
-FA2/A1 input add_7_add_5_7is connected to a constant net
-FA2/A0 input add_7_add_5_17is connected to a constant net
-FA2/A1 input add_7_add_5_17is connected to a constant net
-FA2/A0 input add_7_add_5_31is connected to a constant net
-FA2/A1 input add_7_add_5_31is connected to a constant net
-FA2/A0 input add_7_add_5_9is connected to a constant net
-FA2/A1 input add_7_add_5_9is connected to a constant net
-FA2/A0 input add_7_add_5_11is connected to a constant net
-FA2/A1 input add_7_add_5_11is connected to a constant net
-FA2/A0 input add_7_add_5_13is connected to a constant net
-FA2/A1 input add_7_add_5_13is connected to a constant net
-FA2/A0 input add_7_add_5_7is connected to a constant net
-FA2/A1 input add_7_add_5_7is connected to a constant net
 FA2/A0 input add_7_add_5_15is connected to a constant net
 FA2/A1 input add_7_add_5_15is connected to a constant net
-FA2/A0 input add_7_add_5_17is connected to a constant net
-FA2/A1 input add_7_add_5_17is connected to a constant net
+FA2/A0 input add_7_add_5_11is connected to a constant net
+FA2/A1 input add_7_add_5_11is connected to a constant net
+FA2/A0 input add_7_add_5_9is connected to a constant net
+FA2/A1 input add_7_add_5_9is connected to a constant net
+FA2/A0 input add_7_add_5_7is connected to a constant net
+FA2/A1 input add_7_add_5_7is connected to a constant net
 FA2/A0 input add_7_add_5_19is connected to a constant net
 FA2/A1 input add_7_add_5_19is connected to a constant net
 FA2/B1 input add_7_add_5_19is connected to a constant net
@@ -38,8 +18,26 @@ FA2/CI1 input add_7_add_5_19 has no outgoing device arc
 FA2/B0 input add_7_add_5_19 is on an incomplete path
 FA2/C0 input add_7_add_5_19is connected to a constant net
 FA2/CI0 input add_7_add_5_19 is on an incomplete path
-FA2/A0 input add_6_add_5_7is connected to a constant net
-FA2/A1 input add_6_add_5_7is connected to a constant net
+FA2/A0 input add_7_add_5_17is connected to a constant net
+FA2/A1 input add_7_add_5_17is connected to a constant net
+FA2/A0 input add_7_add_5_31is connected to a constant net
+FA2/A1 input add_7_add_5_31is connected to a constant net
+FA2/A0 input add_7_add_5_17is connected to a constant net
+FA2/A1 input add_7_add_5_17is connected to a constant net
+FA2/A0 input add_7_add_5_7is connected to a constant net
+FA2/A1 input add_7_add_5_7is connected to a constant net
+FA2/A0 input add_7_add_5_3is connected to a constant net
+FA2/A1 input add_7_add_5_3is connected to a constant net
+FA2/A0 input add_7_add_5_5is connected to a constant net
+FA2/A1 input add_7_add_5_5is connected to a constant net
+FA2/A0 input add_7_add_5_1is connected to a constant net
+FA2/A1 input add_7_add_5_1is connected to a constant net
+FA2/A0 input add_7_add_5_9is connected to a constant net
+FA2/A1 input add_7_add_5_9is connected to a constant net
+FA2/A0 input add_7_add_5_13is connected to a constant net
+FA2/A1 input add_7_add_5_13is connected to a constant net
+FA2/A0 input add_7_add_5_11is connected to a constant net
+FA2/A1 input add_7_add_5_11is connected to a constant net
 VHI/Z VCC  i2
      *** STATE_OUT/serial/status_out/SP is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i0/SP is driven by constant or a pin on an incomplete path
@@ -169,7 +167,9 @@ VLO/Z GND  i1
      *** STATE_OUT/serial/add_6_add_5_17/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i21/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/temp_data_out_i0_i0/SR is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_7/A0 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_7/C0 is driven by constant or a pin on an incomplete path
+     *** STATE_OUT/serial/add_6_add_5_7/A1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/add_6_add_5_7/C1 is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/temp_data_out_i0_i1/SR is driven by constant or a pin on an incomplete path
      *** STATE_OUT/serial/j__i2/SR is driven by constant or a pin on an incomplete path

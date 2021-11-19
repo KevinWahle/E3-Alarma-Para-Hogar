@@ -22,23 +22,27 @@ FLOWTOOLS=NONE
 FAMILY=
 fileopenfolder=D:\Users\nicob\Desktop\ITBA\3-Electro 3\TPs\TP2-G2_E3\TEST2\Prueba2\src
 
-[Files]
-/CodeChecker.v=-1
-/easySerialOut.v=-1
-/MainModule.v=-1
-/serialOut.v=-1
-/timer.v=-1
-
-[Files.Data]
-.\src\CodeChecker.v=Verilog Source Code
-.\src\easySerialOut.v=Verilog Source Code
-.\src\MainModule.v=Verilog Source Code
-.\src\serialOut.v=Verilog Source Code
-.\src\timer.v=Verilog Source Code
-
 [SpecTracer]
 WindowVisible=0
+
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+[Files]
+/easySerialOut.v=-1
+/MainModule.v=-1
+/serialOut.v=-1
+/timer.v=-1
+/codeCheckV2.v=-1
+/MainTestBench.v=-1
+
+[Files.Data]
+.\src\easySerialOut.v=Verilog Source Code
+.\src\MainModule.v=Verilog Source Code
+.\src\serialOut.v=Verilog Source Code
+.\src\timer.v=Verilog Source Code
+.\src\codeCheckV2.v=Verilog Source Code
+.\src\MainTestBench.v=Verilog Source Code
+

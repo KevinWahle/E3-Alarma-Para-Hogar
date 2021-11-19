@@ -38,7 +38,7 @@ module	easySerialOut(
 			else begin	// Envia el MSG
 				init = 1;
 				cont = 0;
-				j = j + 1;			// Esperamos que serial out env?e todo el mensaje
+				j = j + 1;			// Esperamos que serial out envie todo el mensaje
 				if (j>3) begin
 					j=0;
 					waiting = 1;

@@ -10,11 +10,10 @@ module MainModule (
 
     output wire SERCLK_OUT,		//Salida de Clock
 
-    //input CTRL_IN, CTRL_RECV, CTRL_CLK,
     input RESET_IN				//Reset (just in case)
 );
 
-    // Clock interno del modulo principal
+    // Clock interno del modulo principal --------------------------------
     LSOSC OSCInst1 (.CLKLFEN(1'b1), .CLKLFPU(1'b1), .CLKLF(SERCLK_OUT));
     //--------------------------------------------------------------------	
 
@@ -67,7 +66,7 @@ module MainModule (
     //--------------------------------------------------------------------
 	reg [1:0]PREV_KEY = NO_KEY;
 
-    // Asignacion de estados
+    // Máquina de estados ------------------------------------------------
     always @ (Sreg, KEY_STATUS, SENSOR1_IN, SENSOR2_IN, TIME_OUT) begin    
 		case (Sreg)
 			INACTIVO: begin
@@ -123,7 +122,7 @@ module MainModule (
     //--------------------------------------------------------------------
 
 
-    //Cambiador de estados para la maquina de estados
+    //Cambiador de estados para la maquina de estados --------------------
 	always @(posedge SERCLK_OUT or posedge RESET_IN) begin
         if (RESET_IN == 1) Sreg <= INACTIVO;
 		else Sreg <= Snext;

@@ -1,13 +1,17 @@
-8
+26
 ~M 0 "" 0 $root
 ~A 1 "" 0 $root
-~M 3 "../src/MainModule.v" 1 MainModule
+~M 1 "../src/MainModule.v" 1 MainModule
 ~A 1 "../src/MainModule.v" 1 MainModule
-~M 3 "../src/easySerialOut.v" 5 easySerialOut
+~M 3 "../src/MainTestBench.v" 1 Test
+~A 1 "../src/MainTestBench.v" 1 Test
+~M 1 "../src/codeCheckV2.v" 1 codeCkeck
+~A 1 "../src/codeCheckV2.v" 1 codeCkeck
+~M 1 "../src/easySerialOut.v" 5 easySerialOut
 ~A 1 "../src/easySerialOut.v" 5 easySerialOut
 ~M 3 "../src/CodeChecker.v" 1 keyChecker
 ~A 1 "../src/CodeChecker.v" 1 keyChecker
-~M 3 "../src/serialOut.v" 1 serialOut
+~M 1 "../src/serialOut.v" 1 serialOut
 ~A 1 "../src/serialOut.v" 1 serialOut
-~M 3 "../src/timer.v" 4 timer
+~M 1 "../src/timer.v" 4 timer
 ~A 1 "../src/timer.v" 4 timer

@@ -1,39 +1,57 @@
-timestamp=1637206983282
+timestamp=1637275308436
 
 [~A]
 D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/CodeChecker.v=0*4028*4985
-D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/MainModule.v=0*16590*17674
-D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/easySerialOut.v=0*6070*6805
-D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/serialOut.v=0*403*1086
-D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/timer.v=0*2146*2921
-LastVerilogToplevel=MainModule
-ModifyID=8
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/MainModule.v=0*61211*62744
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/MainTestBench.v=0*63711*64462
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/codeCheckV2.v=0*24198*25251
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/easySerialOut.v=0*18742*19493
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/easySerialOut.v_MainModule.v_serialOut.v_timer.v_codeCheckV2.v=0*30318*33229
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/easySerialOut.v_MainModule.v_serialOut.v_timer.v_codeCheckV2.v_MainTestBench.v=0*41802*45049
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/serialOut.v=0*20544*21195
+D:/Users/nicob/Desktop/ITBA/3-Electro 3/TPs/TP2-G2_E3/TEST2/Prueba2/src/timer.v=0*22287*23062
+LastVerilogToplevel=Test
+ModifyID=26
 Version=74
 
 [~MFT]
-0=6|0Prueba2.mgf|17674|6678
-1=4|1Prueba2.mgf|26737|18013
-3=8|3Prueba2.mgf|19668|11364
+0=6|0Prueba2.mgf|64462|30319
+1=4|1Prueba2.mgf|115026|97912
+3=8|3Prueba2.mgf|86518|72891
 
 [$root]
-A/$root=22|||1*26363
-BinI32/$root=3*18098
-SLP=3*18202
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c92162813cf12e98d144c50fe28b0ad5e1d2a
+A/$root=22|||1*114668
+BinI32/$root=3*84889
+SLP=3*84993
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c73a565f2ade592f8ac1c68f484c9216b62db7b8f043d892afae9791a1675706
 
 [MainModule]
-A/MainModule=22|../src/MainModule.v|1|1*26737
-BinI32/MainModule=3*18270
+A/MainModule=22|../src/MainModule.v|1|1*109876
+BinI32/MainModule=3*82018
 R=../src/MainModule.v|1
-SLP=3*19668
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|43615d02bc632f2b0b1ffabf651d78cd833a4c1c8227764e868d33607abb7ea13f4323803fd27b3e449c1af737965e98
+SLP=3*83668
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|43615d02bc632f2b0b1ffabf651d78cd833a4c1c8227764e868d33607abb7ea1ef6ca6d9d70105c38bab98782b23a865
+
+[Test]
+A/Test=22|../src/MainTestBench.v|1|1*115026
+BinI32/Test=3*85061
+R=../src/MainTestBench.v|1
+SLP=3*86518
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|f46b564c3ef88fe1c883b891ccb8cc0311829738a0bef4c12c69cbfc1c5c107d
+
+[codeCkeck]
+A/codeCkeck=22|../src/codeCheckV2.v|1|1*84817
+BinI32/codeCkeck=3*59392
+R=../src/codeCheckV2.v|1
+SLP=3*60685
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|74e7605784a9a7bcafd6853b35589bb998d2145bfa960fbd2af40ee1a1bfc42c1f4237645b167076f9e5dc81b3d66e94
 
 [easySerialOut]
-A/easySerialOut=22|../src/easySerialOut.v|5|1*8170
-BinI32/easySerialOut=3*6300
+A/easySerialOut=22|../src/easySerialOut.v|5|1*74871
+BinI32/easySerialOut=3*52338
 R=../src/easySerialOut.v|5
-SLP=3*6944
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c5663e96af30df21e8a6ed0df2d5006479719e6ec52c8a8fe4d0b70a61dc1b3a84a9d42dfbe3feb959d67e7b8a7ecde7
+SLP=3*53051
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c5663e96af30df21e8a6ed0df2d5006479719e6ec52c8a8fe4d0b70a61dc1b3acf9cf61c9060de49e134e5038c561f90
 
 [keyChecker]
 A/keyChecker=22|../src/CodeChecker.v|1|1*4419
@@ -43,23 +61,25 @@ SLP=3*5047
 Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|020ecdcb0820f72a6110ad9c7bd2f26d099e898f144dbe3e7fdd6fa8e1e77f2c1fea5193b5dff302d0fa1724946617ad
 
 [serialOut]
-A/serialOut=22|../src/serialOut.v|1|1*374
-BinI32/serialOut=3*172
+A/serialOut=22|../src/serialOut.v|1|1*76737
+BinI32/serialOut=3*53622
 R=../src/serialOut.v|1
-SLP=3*873
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2e284213e73823c3ad7dcaed77b73efae9215e4a9e21b919b5b4f6e3d86a4bfd764925408935e2cb27e0d5329c88e94
+SLP=3*54228
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|e2e284213e73823c3ad7dcaed77b73efae9215e4a9e21b919b5b4f6e3d86a4bf32c2ed3c34bd5524de2410dc041cc704
 
 [timer]
-A/timer=22|../src/timer.v|4|1*2169
-BinI32/timer=3*1517
+A/timer=22|../src/timer.v|4|1*82957
+BinI32/timer=3*57574
 R=../src/timer.v|4
-SLP=3*2872
-Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c2ae8f0b7b95b6d69da7be83d99f8f4945d33c389afd8f9eb8f4338c070256e3
+SLP=3*58882
+Version=11.1.262.7351 (Windows)|0000000b789cd3f53752d02d2e33ca3634020010aa02e5|c2ae8f0b7b95b6d69da7be83d99f8f49fcd6c0fb43fd7ec9e4c181f7796c35a9
 
 [~U]
-$root=12|0*16043|
-MainModule=12|0*16241||0x10
-easySerialOut=12|0*5813||0x10
+$root=12|0*63357|
+MainModule=12|0*60812|
+Test=12|0*63539||0x10
+codeCkeck=12|0*41278|
+easySerialOut=12|0*40112|
 keyChecker=12|0*3727||0x10
-serialOut=12|0*166||0x10
-timer=12|0*1880||0x10
+serialOut=12|0*40369|
+timer=12|0*41012|
